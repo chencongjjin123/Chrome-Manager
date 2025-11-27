@@ -4,7 +4,7 @@ var __publicField = (obj, key, value) => {
   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
   return value;
 };
-(function () {
+(function() {
   "use strict";
   function getUuid() {
     const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -447,10 +447,10 @@ var __publicField = (obj, key, value) => {
   }
   var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
   var sensorsdata = { exports: {} };
-  (function (module, exports) {
-    !function (e, t) {
+  (function(module, exports) {
+    !function(e, t) {
       module.exports = t();
-    }(0, function () {
+    }(0, function() {
       var e, t = {};
       function r(e2) {
         if (!e2)
@@ -461,7 +461,7 @@ var __publicField = (obj, key, value) => {
       function n() {
         return Date.now && r(Date.now) ? Date.now() : new Date().getTime();
       }
-      t.DEFAULT_SEND_TYPE = "image", function () {
+      t.DEFAULT_SEND_TYPE = "image", function() {
         var e2 = { "function": true, object: true }, t2 = e2[typeof window] && window || this;
         var r2 = t2.JSON, n2 = t2.JSON3, i2 = false, a2 = function o2(r3, n3) {
           r3 || (r3 = t2.Object()), n3 || (n3 = t2.Object());
@@ -488,7 +488,7 @@ var __publicField = (obj, key, value) => {
             else if ("date-serialization" == e3) {
               if (t3 = y2("json-stringify") && v2) {
                 var r4 = n3.stringify;
-                m2(function () {
+                m2(function() {
                   t3 = '"-271821-04-20T00:00:00.000Z"' == r4(new l2(-864e13)) && '"+275760-09-13T00:00:00.000Z"' == r4(new l2(864e13)) && '"-000001-01-01T00:00:00.000Z"' == r4(new l2(-621987552e5)) && '"1969-12-31T23:59:59.999Z"' == r4(new l2(-1));
                 });
               }
@@ -496,67 +496,67 @@ var __publicField = (obj, key, value) => {
               var o3, s3 = '{"a":[1,true,false,null,"\\u0000\\b\\n\\f\\r\\t"]}';
               if ("json-stringify" == e3) {
                 var u3 = "function" == typeof (r4 = n3.stringify);
-                u3 && ((o3 = function () {
+                u3 && ((o3 = function() {
                   return 1;
-                }).toJSON = o3, m2(function () {
+                }).toJSON = o3, m2(function() {
                   u3 = "0" === r4(0) && "0" === r4(new i3()) && '""' == r4(new a3()) && r4(_2) === f2 && r4(f2) === f2 && r4() === f2 && "1" === r4(o3) && "[1]" == r4([o3]) && "[null]" == r4([f2]) && "null" == r4(null) && "[null,null,null]" == r4([f2, _2, null]) && r4({ a: [o3, true, false, null, "\0\b\n\f\r	"] }) == s3 && "1" === r4(null, o3) && "[\n 1,\n 2\n]" == r4([1, 2], null, 1);
-                }, function () {
+                }, function() {
                   u3 = false;
                 })), t3 = u3;
               }
               if ("json-parse" == e3) {
                 var c3, p3 = n3.parse;
-                "function" == typeof p3 && m2(function () {
-                  0 !== p3("0") || p3(false) || (o3 = p3(s3), (c3 = 5 == o3.a.length && 1 === o3.a[0]) && (m2(function () {
+                "function" == typeof p3 && m2(function() {
+                  0 !== p3("0") || p3(false) || (o3 = p3(s3), (c3 = 5 == o3.a.length && 1 === o3.a[0]) && (m2(function() {
                     c3 = !p3('"	"');
-                  }), c3 && m2(function () {
+                  }), c3 && m2(function() {
                     c3 = 1 !== p3("01");
-                  }), c3 && m2(function () {
+                  }), c3 && m2(function() {
                     c3 = 1 !== p3("1.");
                   })));
-                }, function () {
+                }, function() {
                   c3 = false;
                 }), t3 = c3;
               }
             }
             return y2[e3] = !!t3;
           }
-          if (m2(function () {
+          if (m2(function() {
             v2 = -109252 == v2.getUTCFullYear() && 0 === v2.getUTCMonth() && 1 === v2.getUTCDate() && 10 == v2.getUTCHours() && 37 == v2.getUTCMinutes() && 6 == v2.getUTCSeconds() && 708 == v2.getUTCMilliseconds();
           }), y2["bug-string-char-index"] = y2["date-serialization"] = y2.json = y2["json-stringify"] = y2["json-parse"] = null, !y2("json")) {
-            var b2 = y2("bug-string-char-index"), w2 = function (t3, r4) {
+            var b2 = y2("bug-string-char-index"), w2 = function(t3, r4) {
               var n4, i4, a4, o3 = 0;
-              for (a4 in (n4 = function () {
+              for (a4 in (n4 = function() {
                 this.valueOf = 0;
               }).prototype.valueOf = 0, i4 = new n4())
                 h2.call(i4, a4) && o3++;
-              return n4 = i4 = null, o3 ? w2 = function (e3, t4) {
+              return n4 = i4 = null, o3 ? w2 = function(e3, t4) {
                 var r5, n5, i5 = "[object Function]" == _2.call(e3);
                 for (r5 in e3)
                   i5 && "prototype" == r5 || !h2.call(e3, r5) || (n5 = "constructor" === r5) || t4(r5);
                 (n5 || h2.call(e3, r5 = "constructor")) && t4(r5);
-              } : (i4 = ["valueOf", "toString", "toLocaleString", "propertyIsEnumerable", "isPrototypeOf", "hasOwnProperty", "constructor"], w2 = function (t4, r5) {
+              } : (i4 = ["valueOf", "toString", "toLocaleString", "propertyIsEnumerable", "isPrototypeOf", "hasOwnProperty", "constructor"], w2 = function(t4, r5) {
                 var n5, a5, o4 = "[object Function]" == _2.call(t4), s3 = !o4 && "function" != typeof t4.constructor && e2[typeof t4.hasOwnProperty] && t4.hasOwnProperty || h2;
                 for (n5 in t4)
                   o4 && "prototype" == n5 || !s3.call(t4, n5) || r5(n5);
-                for (a5 = i4.length; n5 = i4[--a5];)
+                for (a5 = i4.length; n5 = i4[--a5]; )
                   s3.call(t4, n5) && r5(n5);
               }), w2(t3, r4);
             };
             if (!y2("json-stringify") && !y2("date-serialization")) {
-              var S2 = { 92: "\\\\", 34: '\\"', 8: "\\b", 12: "\\f", 10: "\\n", 13: "\\r", 9: "\\t" }, k2 = function (e3, t3) {
+              var S2 = { 92: "\\\\", 34: '\\"', 8: "\\b", 12: "\\f", 10: "\\n", 13: "\\r", 9: "\\t" }, k2 = function(e3, t3) {
                 return ("000000" + (t3 || 0)).slice(-e3);
-              }, P2 = function (e3) {
+              }, P2 = function(e3) {
                 var t3, r4, n4, i4, a4, o3, s3, l3, u3;
                 if (v2)
-                  t3 = function (e4) {
+                  t3 = function(e4) {
                     r4 = e4.getUTCFullYear(), n4 = e4.getUTCMonth(), i4 = e4.getUTCDate(), o3 = e4.getUTCHours(), s3 = e4.getUTCMinutes(), l3 = e4.getUTCSeconds(), u3 = e4.getUTCMilliseconds();
                   };
                 else {
-                  var c3 = p2.floor, d3 = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334], f3 = function (e4, t4) {
+                  var c3 = p2.floor, d3 = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334], f3 = function(e4, t4) {
                     return d3[t4] + 365 * (e4 - 1970) + c3((e4 - 1969 + (t4 = +(t4 > 1))) / 4) - c3((e4 - 1901 + t4) / 100) + c3((e4 - 1601 + t4) / 400);
                   };
-                  t3 = function (e4) {
+                  t3 = function(e4) {
                     for (i4 = c3(e4 / 864e5), r4 = c3(i4 / 365.2425) + 1970 - 1; f3(r4 + 1, 0) <= i4; r4++)
                       ;
                     for (n4 = c3((i4 - f3(r4, 0)) / 30.42); f3(r4, n4 + 1) <= i4; n4++)
@@ -564,30 +564,30 @@ var __publicField = (obj, key, value) => {
                     i4 = 1 + i4 - f3(r4, n4), o3 = c3((a4 = (e4 % 864e5 + 864e5) % 864e5) / 36e5) % 24, s3 = c3(a4 / 6e4) % 60, l3 = c3(a4 / 1e3) % 60, u3 = a4 % 1e3;
                   };
                 }
-                return (P2 = function (e4) {
+                return (P2 = function(e4) {
                   return e4 > -1 / 0 && e4 < 1 / 0 ? (t3(e4), e4 = (r4 <= 0 || r4 >= 1e4 ? (r4 < 0 ? "-" : "+") + k2(6, r4 < 0 ? -r4 : r4) : k2(4, r4)) + "-" + k2(2, n4 + 1) + "-" + k2(2, i4) + "T" + k2(2, o3) + ":" + k2(2, s3) + ":" + k2(2, l3) + "." + k2(3, u3) + "Z", r4 = n4 = i4 = o3 = s3 = l3 = u3 = null) : e4 = null, e4;
                 })(e3);
               };
               if (y2("json-stringify") && !y2("date-serialization")) {
-                let C2 = function (e3) {
+                let C2 = function(e3) {
                   return P2(this);
                 };
                 var O2 = n3.stringify;
-                n3.stringify = function (e3, t3, r4) {
+                n3.stringify = function(e3, t3, r4) {
                   var n4 = l2.prototype.toJSON;
                   l2.prototype.toJSON = C2;
                   var i4 = O2(e3, t3, r4);
                   return l2.prototype.toJSON = n4, i4;
                 };
               } else {
-                var j2 = function (e3) {
+                var j2 = function(e3) {
                   var t3 = e3.charCodeAt(0), r4 = S2[t3];
                   return r4 || "\\u00" + k2(2, t3.toString(16));
-                }, N2 = /[\x00-\x1f\x22\x5c]/g, T2 = function (e3) {
+                }, N2 = /[\x00-\x1f\x22\x5c]/g, T2 = function(e3) {
                   return N2.lastIndex = 0, '"' + (N2.test(e3) ? e3.replace(N2, j2) : e3) + '"';
-                }, I2 = function (e3, t3, r4, n4, i4, a4, o3) {
+                }, I2 = function(e3, t3, r4, n4, i4, a4, o3) {
                   var s3, u3, p3, d3, g3, h3, v3, y3, b3;
-                  if (m2(function () {
+                  if (m2(function() {
                     s3 = t3[e3];
                   }), "object" == typeof s3 && s3 && (s3.getUTCFullYear && "[object Date]" == _2.call(s3) && s3.toJSON === l2.prototype.toJSON ? s3 = P2(s3) : "function" == typeof s3.toJSON && (s3 = s3.toJSON(e3))), r4 && (s3 = r4.call(t3, e3, s3)), s3 == f2)
                     return s3 === f2 ? s3 : "null";
@@ -603,7 +603,7 @@ var __publicField = (obj, key, value) => {
                       return T2("" + s3);
                   }
                   if ("object" == typeof s3) {
-                    for (v3 = o3.length; v3--;)
+                    for (v3 = o3.length; v3--; )
                       if (o3[v3] === s3)
                         throw c2();
                     if (o3.push(s3), d3 = [], y3 = a4, a4 += i4, "[object Array]" == p3) {
@@ -611,28 +611,28 @@ var __publicField = (obj, key, value) => {
                         g3 = I2(h3, s3, r4, n4, i4, a4, o3), d3.push(g3 === f2 ? "null" : g3);
                       b3 = d3.length ? i4 ? "[\n" + a4 + d3.join(",\n" + a4) + "\n" + y3 + "]" : "[" + d3.join(",") + "]" : "[]";
                     } else
-                      w2(n4 || s3, function (e4) {
+                      w2(n4 || s3, function(e4) {
                         var t4 = I2(e4, s3, r4, n4, i4, a4, o3);
                         t4 !== f2 && d3.push(T2(e4) + ":" + (i4 ? " " : "") + t4);
                       }), b3 = d3.length ? i4 ? "{\n" + a4 + d3.join(",\n" + a4) + "\n" + y3 + "}" : "{" + d3.join(",") + "}" : "{}";
                     return o3.pop(), b3;
                   }
                 };
-                n3.stringify = function (t3, r4, n4) {
+                n3.stringify = function(t3, r4, n4) {
                   var i4, a4, o3, s3;
                   if (e2[typeof r4] && r4) {
                     if ("[object Function]" == (s3 = _2.call(r4)))
                       a4 = r4;
                     else if ("[object Array]" == s3) {
                       o3 = {};
-                      for (var l3, u3 = 0, c3 = r4.length; u3 < c3;)
+                      for (var l3, u3 = 0, c3 = r4.length; u3 < c3; )
                         l3 = r4[u3++], "[object String]" != (s3 = _2.call(l3)) && "[object Number]" != s3 || (o3[l3] = 1);
                     }
                   }
                   if (n4)
                     if ("[object Number]" == (s3 = _2.call(n4))) {
                       if ((n4 -= n4 % 1) > 0)
-                        for (n4 > 10 && (n4 = 10), i4 = ""; i4.length < n4;)
+                        for (n4 > 10 && (n4 = 10), i4 = ""; i4.length < n4; )
                           i4 += " ";
                     } else
                       "[object String]" == s3 && (i4 = n4.length <= 10 ? n4 : n4.slice(0, 10));
@@ -641,10 +641,10 @@ var __publicField = (obj, key, value) => {
               }
             }
             if (!y2("json-parse")) {
-              var A2, D2, $2 = a3.fromCharCode, x2 = { 92: "\\", 34: '"', 47: "/", 98: "\b", 116: "	", 110: "\n", 102: "\f", 114: "\r" }, E2 = function () {
+              var A2, D2, $2 = a3.fromCharCode, x2 = { 92: "\\", 34: '"', 47: "/", 98: "\b", 116: "	", 110: "\n", 102: "\f", 114: "\r" }, E2 = function() {
                 throw A2 = D2 = null, u2();
-              }, L2 = function () {
-                for (var e3, t3, r4, n4, i4, a4 = D2, o3 = a4.length; A2 < o3;)
+              }, L2 = function() {
+                for (var e3, t3, r4, n4, i4, a4 = D2, o3 = a4.length; A2 < o3; )
                   switch (i4 = a4.charCodeAt(A2)) {
                     case 9:
                     case 10:
@@ -660,7 +660,7 @@ var __publicField = (obj, key, value) => {
                     case 44:
                       return e3 = b2 ? a4.charAt(A2) : a4[A2], A2++, e3;
                     case 34:
-                      for (e3 = "@", A2++; A2 < o3;)
+                      for (e3 = "@", A2++; A2 < o3; )
                         if ((i4 = a4.charCodeAt(A2)) < 32)
                           E2();
                         else if (92 == i4)
@@ -686,7 +686,7 @@ var __publicField = (obj, key, value) => {
                         else {
                           if (34 == i4)
                             break;
-                          for (i4 = a4.charCodeAt(A2), t3 = A2; i4 >= 32 && 92 != i4 && 34 != i4;)
+                          for (i4 = a4.charCodeAt(A2), t3 = A2; i4 >= 32 && 92 != i4 && 34 != i4; )
                             i4 = a4.charCodeAt(++A2);
                           e3 += a4.slice(t3, A2);
                         }
@@ -720,124 +720,118 @@ var __publicField = (obj, key, value) => {
                       E2();
                   }
                 return "$";
-              }, U2 = function (e3) {
+              }, U2 = function(e3) {
                 var t3, r4;
                 if ("$" == e3 && E2(), "string" == typeof e3) {
                   if ("@" == (b2 ? e3.charAt(0) : e3[0]))
                     return e3.slice(1);
                   if ("[" == e3) {
-                    for (t3 = []; "]" != (e3 = L2());)
+                    for (t3 = []; "]" != (e3 = L2()); )
                       r4 ? "," == e3 ? "]" == (e3 = L2()) && E2() : E2() : r4 = true, "," == e3 && E2(), t3.push(U2(e3));
                     return t3;
                   }
                   if ("{" == e3) {
-                    for (t3 = {}; "}" != (e3 = L2());)
+                    for (t3 = {}; "}" != (e3 = L2()); )
                       r4 ? "," == e3 ? "}" == (e3 = L2()) && E2() : E2() : r4 = true, "," != e3 && "string" == typeof e3 && "@" == (b2 ? e3.charAt(0) : e3[0]) && ":" == L2() || E2(), t3[e3.slice(1)] = U2(L2());
                     return t3;
                   }
                   E2();
                 }
                 return e3;
-              }, R2 = function (e3, t3, r4) {
+              }, R2 = function(e3, t3, r4) {
                 var n4 = B2(e3, t3, r4);
                 n4 === f2 ? delete e3[t3] : e3[t3] = n4;
-              }, B2 = function (e3, t3, r4) {
+              }, B2 = function(e3, t3, r4) {
                 var n4, i4 = e3[t3];
                 if ("object" == typeof i4 && i4)
                   if ("[object Array]" == _2.call(i4))
-                    for (n4 = i4.length; n4--;)
+                    for (n4 = i4.length; n4--; )
                       R2(_2, w2, i4);
                   else
-                    w2(i4, function (e4) {
+                    w2(i4, function(e4) {
                       R2(i4, e4, r4);
                     });
                 return r4.call(e3, t3, i4);
               };
-              n3.parse = function (e3, t3) {
+              n3.parse = function(e3, t3) {
                 var r4, n4;
                 return A2 = 0, D2 = "" + e3, r4 = U2(L2()), "$" != L2() && E2(), A2 = D2 = null, t3 && "[object Function]" == _2.call(t3) ? B2(((n4 = {})[""] = r4, n4), "", t3) : r4;
               };
             }
           }
           return n3.runInContext = o2, n3;
-        }(t2, t2.JSON3 = {
-          noConflict: function () {
-            return i2 || (i2 = true, t2.JSON = r2, t2.JSON3 = n2, r2 = n2 = null), a2;
-          }
-        });
+        }(t2, t2.JSON3 = { noConflict: function() {
+          return i2 || (i2 = true, t2.JSON = r2, t2.JSON3 = n2, r2 = n2 = null), a2;
+        } });
         t2.JSON ? (t2.JSON.parse = a2.parse, t2.JSON.stringify = a2.stringify) : t2.JSON = { parse: a2.parse, stringify: a2.stringify };
-      }.call(window), function (e2) {
+      }.call(window), function(e2) {
         if (e2.atob)
           try {
             e2.atob(" ");
           } catch (a2) {
-            e2.atob = (t2 = e2.atob, (r2 = function (e3) {
+            e2.atob = (t2 = e2.atob, (r2 = function(e3) {
               return t2(String(e3).replace(/[\t\n\f\r ]+/g, ""));
             }).original = t2, r2);
           }
         else {
           var t2, r2, n2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=", i2 = /^(?:[A-Za-z\d+\/]{4})*?(?:[A-Za-z\d+\/]{2}(?:==)?|[A-Za-z\d+\/]{3}=?)?$/;
-          e2.btoa = function (e3) {
+          e2.btoa = function(e3) {
             e3 = String(e3);
-            for (var t3, r3, i3, a2, o2 = "", s2 = 0, l2 = e3.length % 3; s2 < e3.length;) {
+            for (var t3, r3, i3, a2, o2 = "", s2 = 0, l2 = e3.length % 3; s2 < e3.length; ) {
               if ((r3 = e3.charCodeAt(s2++)) > 255 || (i3 = e3.charCodeAt(s2++)) > 255 || (a2 = e3.charCodeAt(s2++)) > 255)
                 return "";
               o2 += n2.charAt((t3 = r3 << 16 | i3 << 8 | a2) >> 18 & 63) + n2.charAt(t3 >> 12 & 63) + n2.charAt(t3 >> 6 & 63) + n2.charAt(63 & t3);
             }
             return l2 ? o2.slice(0, l2 - 3) + "===".substring(l2) : o2;
-          }, e2.atob = function (e3) {
+          }, e2.atob = function(e3) {
             if (e3 = String(e3).replace(/[\t\n\f\r ]+/g, ""), !i2.test(e3))
               return "";
             e3 += "==".slice(2 - (3 & e3.length));
-            for (var t3, r3, a2, o2 = "", s2 = 0; s2 < e3.length;)
+            for (var t3, r3, a2, o2 = "", s2 = 0; s2 < e3.length; )
               t3 = n2.indexOf(e3.charAt(s2++)) << 18 | n2.indexOf(e3.charAt(s2++)) << 12 | (r3 = n2.indexOf(e3.charAt(s2++))) << 6 | (a2 = n2.indexOf(e3.charAt(s2++))), o2 += 64 === r3 ? String.fromCharCode(t3 >> 16 & 255) : 64 === a2 ? String.fromCharCode(t3 >> 16 & 255, t3 >> 8 & 255) : String.fromCharCode(t3 >> 16 & 255, t3 >> 8 & 255, 255 & t3);
             return o2;
           };
         }
       }(window);
-      var i = {
-        setup: function (t2) {
-          e = t2;
-        }, log: function () {
-          (e || console && console.log || function () {
-          }).apply(null, arguments);
+      var i = { setup: function(t2) {
+        e = t2;
+      }, log: function() {
+        (e || console && console.log || function() {
+        }).apply(null, arguments);
+      } }, a = { get: function(e2) {
+        return window.localStorage.getItem(e2);
+      }, parse: function(e2) {
+        var t2;
+        try {
+          t2 = JSON.parse(a.get(e2)) || null;
+        } catch (r2) {
+          i.log(r2);
         }
-      }, a = {
-        get: function (e2) {
-          return window.localStorage.getItem(e2);
-        }, parse: function (e2) {
-          var t2;
-          try {
-            t2 = JSON.parse(a.get(e2)) || null;
-          } catch (r2) {
-            i.log(r2);
-          }
-          return t2;
-        }, set: function (e2, t2) {
-          try {
-            window.localStorage.setItem(e2, t2);
-          } catch (r2) {
-            i.log(r2);
-          }
-        }, remove: function (e2) {
-          window.localStorage.removeItem(e2);
-        }, isSupport: function () {
-          var e2 = true;
-          try {
-            var t2 = "__local_store_support__", r2 = "testIsSupportStorage";
-            a.set(t2, r2), a.get(t2) !== r2 && (e2 = false), a.remove(t2);
-          } catch (n2) {
-            e2 = false;
-          }
-          return e2;
+        return t2;
+      }, set: function(e2, t2) {
+        try {
+          window.localStorage.setItem(e2, t2);
+        } catch (r2) {
+          i.log(r2);
         }
-      };
+      }, remove: function(e2) {
+        window.localStorage.removeItem(e2);
+      }, isSupport: function() {
+        var e2 = true;
+        try {
+          var t2 = "__local_store_support__", r2 = "testIsSupportStorage";
+          a.set(t2, r2), a.get(t2) !== r2 && (e2 = false), a.remove(t2);
+        } catch (n2) {
+          e2 = false;
+        }
+        return e2;
+      } };
       function s(e2) {
         return null != e2 && "[object Object]" == Object.prototype.toString.call(e2);
       }
-      var l = function () {
+      var l = function() {
         var e2 = new Date().getTime();
-        return function (t2) {
+        return function(t2) {
           return Math.ceil((e2 = (9301 * e2 + 49297) % 233280) / 233280 * t2);
         };
       }();
@@ -879,7 +873,7 @@ var __publicField = (obj, key, value) => {
       }
       function _(e2) {
         e2 = e2 || "";
-        for (var t2 = function () {
+        for (var t2 = function() {
           function e3() {
           }
           return "function" != typeof Object.create ? (e3.prototype = null, new e3()) : /* @__PURE__ */ Object.create(null);
@@ -899,25 +893,25 @@ var __publicField = (obj, key, value) => {
         return e2.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
       }
       function y(e2) {
-        var t2 = function (e3) {
+        var t2 = function(e3) {
           this._fields = { Username: 4, Password: 5, Port: 7, Protocol: 2, Host: 6, Path: 8, URL: 0, QueryString: 9, Fragment: 10 }, this._values = {}, this._regex = /^((\w+):\/\/)?((\w+):?(\w+)?@)?([^\/\?:]+):?(\d+)?(\/?[^\?#]+)?\??([^#]+)?#?(\w*)/, void 0 !== e3 && this._parse(e3);
         };
-        return t2.prototype.setUrl = function (e3) {
+        return t2.prototype.setUrl = function(e3) {
           this._parse(e3);
-        }, t2.prototype._initValues = function () {
+        }, t2.prototype._initValues = function() {
           for (var e3 in this._fields)
             this._values[e3] = "";
-        }, t2.prototype.addQueryString = function (e3) {
+        }, t2.prototype.addQueryString = function(e3) {
           if ("object" != typeof e3)
             return false;
           var t3 = this._values.QueryString || "";
           for (var r2 in e3)
             t3 = new RegExp(r2 + "[^&]+").test(t3) ? t3.replace(new RegExp(r2 + "[^&]+"), r2 + "=" + e3[r2]) : "&" === t3.slice(-1) ? t3 + r2 + "=" + e3[r2] : "" === t3 ? r2 + "=" + e3[r2] : t3 + "&" + r2 + "=" + e3[r2];
           this._values.QueryString = t3;
-        }, t2.prototype.getUrl = function () {
+        }, t2.prototype.getUrl = function() {
           var e3 = "";
           return e3 += this._values.Origin, e3 += this._values.Port ? ":" + this._values.Port : "", e3 += this._values.Path, e3 += this._values.QueryString ? "?" + this._values.QueryString : "", e3 += this._values.Fragment ? "#" + this._values.Fragment : "";
-        }, t2.prototype._parse = function (e3) {
+        }, t2.prototype._parse = function(e3) {
           this._initValues();
           var t3 = this._regex.exec(e3);
           t3 || i.log("URLParser::_parse -> Invalid URL");
@@ -929,57 +923,53 @@ var __publicField = (obj, key, value) => {
       }
       function b(e2) {
         var t2, r2 = {};
-        if ("function" == typeof window.URL && function () {
+        if ("function" == typeof window.URL && function() {
           try {
             return "http://modernizr.com/" === new URL("http://modernizr.com/").href;
           } catch (e3) {
             return false;
           }
         }())
-          (r2 = new URL(e2)).searchParams || (r2.searchParams = (t2 = _(r2.search), {
-            get: function (e3) {
-              return t2[e3];
-            }
-          }));
+          (r2 = new URL(e2)).searchParams || (r2.searchParams = (t2 = _(r2.search), { get: function(e3) {
+            return t2[e3];
+          } }));
         else {
           h(e2) || (e2 = String(e2)), e2 = v(e2);
           if (false === /^https?:\/\/.+/.test(e2))
             return void i.log("Invalid URL");
           var n2 = y(e2);
-          r2.hash = n2._values.Fragment, r2.host = n2._values.Host ? n2._values.Host + (n2._values.Port ? ":" + n2._values.Port : "") : "", r2.href = n2._values.URL, r2.password = n2._values.Password, r2.pathname = n2._values.Path, r2.port = n2._values.Port, r2.search = n2._values.QueryString ? "?" + n2._values.QueryString : "", r2.username = n2._values.Username, r2.hostname = n2._values.Hostname, r2.protocol = n2._values.Protocol ? n2._values.Protocol + ":" : "", r2.origin = n2._values.Origin ? n2._values.Origin + (n2._values.Port ? ":" + n2._values.Port : "") : "", r2.searchParams = function () {
+          r2.hash = n2._values.Fragment, r2.host = n2._values.Host ? n2._values.Host + (n2._values.Port ? ":" + n2._values.Port : "") : "", r2.href = n2._values.URL, r2.password = n2._values.Password, r2.pathname = n2._values.Path, r2.port = n2._values.Port, r2.search = n2._values.QueryString ? "?" + n2._values.QueryString : "", r2.username = n2._values.Username, r2.hostname = n2._values.Hostname, r2.protocol = n2._values.Protocol ? n2._values.Protocol + ":" : "", r2.origin = n2._values.Origin ? n2._values.Origin + (n2._values.Port ? ":" + n2._values.Port : "") : "", r2.searchParams = function() {
             var e3 = _("?" + n2._values.QueryString);
-            return {
-              get: function (t3) {
-                return e3[t3];
-              }
-            };
+            return { get: function(t3) {
+              return e3[t3];
+            } };
           }();
         }
         return r2;
       }
-      p.prototype.get = function (e2, t2, r2, i2) {
+      p.prototype.get = function(e2, t2, r2, i2) {
         if (!e2)
           throw new Error("key is must");
-        t2 = t2 || 1e4, r2 = r2 || 1e3, i2 = i2 || function () {
+        t2 = t2 || 1e4, r2 = r2 || 1e3, i2 = i2 || function() {
         };
         var o2 = this.lockGetPrefix + e2, s2 = a.get(o2), l2 = String(u());
         if (s2 && (s2 = c(s2) || { randomNum: 0, expireTime: 0 }).expireTime > n())
           return i2(null);
-        a.set(o2, JSON.stringify({ randomNum: l2, expireTime: n() + t2 })), setTimeout(function () {
+        a.set(o2, JSON.stringify({ randomNum: l2, expireTime: n() + t2 })), setTimeout(function() {
           (s2 = c(a.get(o2)) || { randomNum: 0, expireTime: 0 }) && s2.randomNum === l2 ? (i2(a.get(e2)), a.remove(e2), a.remove(o2)) : i2(null);
         }, r2);
-      }, p.prototype.set = function (e2, t2, r2, i2, o2) {
+      }, p.prototype.set = function(e2, t2, r2, i2, o2) {
         if (!e2 || !t2)
           throw new Error("key and val is must");
-        r2 = r2 || 1e4, i2 = i2 || 1e3, o2 = o2 || function () {
+        r2 = r2 || 1e4, i2 = i2 || 1e3, o2 = o2 || function() {
         };
         var s2 = this.lockSetPrefix + e2, l2 = a.get(s2), p2 = String(u());
         if (l2 && (l2 = c(l2) || { randomNum: 0, expireTime: 0 }).expireTime > n())
           return o2({ status: "fail", reason: "This key is locked" });
-        a.set(s2, JSON.stringify({ randomNum: p2, expireTime: n() + r2 })), setTimeout(function () {
+        a.set(s2, JSON.stringify({ randomNum: p2, expireTime: n() + r2 })), setTimeout(function() {
           (l2 = c(a.get(s2)) || { randomNum: 0, expireTime: 0 }).randomNum === p2 ? a.set(e2, t2) && o2({ status: "success" }) : o2({ status: "fail", reason: "This key is locked" });
         }, i2);
-      }, f.prototype.on = function (e2, t2) {
+      }, f.prototype.on = function(e2, t2) {
         if (!e2 || !t2)
           return false;
         if (!d(t2))
@@ -987,7 +977,7 @@ var __publicField = (obj, key, value) => {
         this._events[e2] = this._events[e2] || [];
         var r2 = "object" == typeof t2;
         return this._events[e2].push(r2 ? t2 : { listener: t2, once: false }), this;
-      }, f.prototype.prepend = function (e2, t2) {
+      }, f.prototype.prepend = function(e2, t2) {
         if (!e2 || !t2)
           return false;
         if (!d(t2))
@@ -995,11 +985,11 @@ var __publicField = (obj, key, value) => {
         this._events[e2] = this._events[e2] || [];
         var r2 = "object" == typeof t2;
         return this._events[e2].unshift(r2 ? t2 : { listener: t2, once: false }), this;
-      }, f.prototype.prependOnce = function (e2, t2) {
+      }, f.prototype.prependOnce = function(e2, t2) {
         return this.prepend(e2, { listener: t2, once: true });
-      }, f.prototype.once = function (e2, t2) {
+      }, f.prototype.once = function(e2, t2) {
         return this.on(e2, { listener: t2, once: true });
-      }, f.prototype.off = function (e2, t2) {
+      }, f.prototype.off = function(e2, t2) {
         var r2 = this._events[e2];
         if (!r2)
           return false;
@@ -1009,7 +999,7 @@ var __publicField = (obj, key, value) => {
           for (var n2 = 0, i2 = r2.length; n2 < i2; n2++)
             r2[n2] && r2[n2].listener === t2 && r2.splice(n2, 1);
         return this;
-      }, f.prototype.emit = function (e2, t2) {
+      }, f.prototype.emit = function(e2, t2) {
         var r2 = this._events[e2];
         if (!r2)
           return false;
@@ -1018,19 +1008,19 @@ var __publicField = (obj, key, value) => {
           i2 && (i2.listener.call(this, t2 || {}), i2.once && this.off(e2, n2));
         }
         return this;
-      }, f.prototype.removeAllListeners = function (e2) {
+      }, f.prototype.removeAllListeners = function(e2) {
         e2 && this._events[e2] ? this._events[e2] = [] : this._events = {};
-      }, f.prototype.listeners = function (e2) {
+      }, f.prototype.listeners = function(e2) {
         return e2 && "string" == typeof e2 ? this._events[e2] : this._events;
       };
-      var w, S = (w = function () {
-        for (var e2 = 1 * new Date(), t2 = 0; e2 == 1 * new Date();)
+      var w, S = (w = function() {
+        for (var e2 = 1 * new Date(), t2 = 0; e2 == 1 * new Date(); )
           t2++;
         return e2.toString(16) + t2.toString(16);
-      }, function () {
+      }, function() {
         var e2 = String(screen.height * screen.width);
         e2 = e2 && /\d{5,}/.test(e2) ? e2.toString(16) : String(31242 * u()).replace(".", "").slice(0, 8);
-        var t2 = w() + "-" + u().toString(16).replace(".", "") + "-" + function () {
+        var t2 = w() + "-" + u().toString(16).replace(".", "") + "-" + function() {
           var e3, t3, r2 = navigator.userAgent, n2 = [], i2 = 0;
           function a2(e4, t4) {
             var r3, i3 = 0;
@@ -1056,9 +1046,9 @@ var __publicField = (obj, key, value) => {
       function O(e2) {
         return new j(e2);
       }
-      var j = function (e2) {
+      var j = function(e2) {
         this.ele = e2;
-      }, N = function (e2, t2) {
+      }, N = function(e2, t2) {
         for (var r2 = []; e2; e2 = e2.nextSibling)
           1 === e2.nodeType && e2 !== t2 && r2.push(e2);
         return r2;
@@ -1067,22 +1057,22 @@ var __publicField = (obj, key, value) => {
         function i2(e3) {
           return e3 && (e3.preventDefault = i2.preventDefault, e3.stopPropagation = i2.stopPropagation, e3._getPath = i2._getPath), e3;
         }
-        i2._getPath = function () {
+        i2._getPath = function() {
           return this.path || this.composedPath && this.composedPath() || O(this.target).getParents();
-        }, i2.preventDefault = function () {
+        }, i2.preventDefault = function() {
           this.returnValue = false;
-        }, i2.stopPropagation = function () {
+        }, i2.stopPropagation = function() {
           this.cancelBubble = true;
         };
-        (function (e3, t3, r3) {
+        (function(e3, t3, r3) {
           if (n2 === void 0 && "click" === t3 && (n2 = true), e3 && e3.addEventListener)
-            e3.addEventListener(t3, function (e4) {
+            e3.addEventListener(t3, function(e4) {
               e4._getPath = i2._getPath, r3.call(this, e4);
             }, n2);
           else {
             var a2 = "on" + t3, o2 = e3[a2];
-            e3[a2] = function (e4, t4, r4, n3) {
-              return function (a3) {
+            e3[a2] = function(e4, t4, r4, n3) {
+              return function(a3) {
                 if (!(a3 = a3 || i2(window.event)))
                   return void 0;
                 a3.target = a3.srcElement;
@@ -1148,17 +1138,15 @@ var __publicField = (obj, key, value) => {
         if (!r2)
           return false;
         e2.type || (e2.type = e2.data ? "POST" : "GET");
-        var n2, a2 = (e2 = $({
-          success: function () {
-          }, error: function () {
-          }
-        }, e2)).success, o2 = e2.error;
-        e2.success = function (e3) {
+        var n2, a2 = (e2 = $({ success: function() {
+        }, error: function() {
+        } }, e2)).success, o2 = e2.error;
+        e2.success = function(e3) {
           a2(e3), n2 && (clearTimeout(n2), n2 = null);
-        }, e2.error = function (e3) {
+        }, e2.error = function(e3) {
           o2(e3), n2 && (clearTimeout(n2), n2 = null);
-        }, n2 = setTimeout(function () {
-          !function () {
+        }, n2 = setTimeout(function() {
+          !function() {
             try {
               r2 && "object" == typeof r2 && r2.abort && r2.abort();
             } catch (t3) {
@@ -1166,11 +1154,11 @@ var __publicField = (obj, key, value) => {
             }
             n2 && (clearTimeout(n2), n2 = null, e2.error && e2.error(), r2.onreadystatechange = null, r2.onload = null, r2.onerror = null);
           }();
-        }, e2.timeout), "undefined" != typeof XDomainRequest && r2 instanceof XDomainRequest && (r2.onload = function () {
+        }, e2.timeout), "undefined" != typeof XDomainRequest && r2 instanceof XDomainRequest && (r2.onload = function() {
           e2.success && e2.success(t2(r2.responseText)), r2.onreadystatechange = null, r2.onload = null, r2.onerror = null;
-        }, r2.onerror = function () {
+        }, r2.onerror = function() {
           e2.error && e2.error(t2(r2.responseText), r2.status), r2.onreadystatechange = null, r2.onerror = null, r2.onload = null;
-        }), r2.onreadystatechange = function () {
+        }), r2.onreadystatechange = function() {
           try {
             4 == r2.readyState && (r2.status >= 200 && r2.status < 300 || 304 == r2.status ? e2.success(t2(r2.responseText)) : e2.error(t2(r2.responseText), r2.status), r2.onreadystatechange = null, r2.onload = null);
           } catch (n3) {
@@ -1178,7 +1166,7 @@ var __publicField = (obj, key, value) => {
           }
         }, r2.open(e2.type, e2.url, true);
         try {
-          e2.credentials && (r2.withCredentials = true), s(e2.header) && D(e2.header, function (e3, t3) {
+          e2.credentials && (r2.withCredentials = true), s(e2.header) && D(e2.header, function(e3, t3) {
             r2.setRequestHeader && r2.setRequestHeader(t3, e3);
           }), e2.data && (e2.cors || r2.setRequestHeader && r2.setRequestHeader("X-Requested-With", "XMLHttpRequest"), "application/json" === e2.contentType ? r2.setRequestHeader && r2.setRequestHeader("Content-type", "application/json; charset=UTF-8") : r2.setRequestHeader && r2.setRequestHeader("Content-type", "application/x-www-form-urlencoded"));
         } catch (l2) {
@@ -1188,14 +1176,14 @@ var __publicField = (obj, key, value) => {
       }
       function E(e2, t2) {
         var r2 = [];
-        return null == e2 ? r2 : Array.prototype.map && e2.map === Array.prototype.map ? e2.map(t2) : (D(e2, function (e3, n2, i2) {
+        return null == e2 ? r2 : Array.prototype.map && e2.map === Array.prototype.map ? e2.map(t2) : (D(e2, function(e3, n2, i2) {
           r2.push(t2(e3, n2, i2));
         }), r2);
       }
       function L(e2) {
         var t2 = [];
         try {
-          t2 = E(atob(e2).split(""), function (e3) {
+          t2 = E(atob(e2).split(""), function(e3) {
             return "%" + ("00" + e3.charCodeAt(0).toString(16)).slice(-2);
           });
         } catch (r2) {
@@ -1210,7 +1198,7 @@ var __publicField = (obj, key, value) => {
       function U(e2) {
         var t2 = "";
         try {
-          t2 = btoa(encodeURIComponent(e2).replace(/%([0-9A-F]{2})/g, function (e3, t3) {
+          t2 = btoa(encodeURIComponent(e2).replace(/%([0-9A-F]{2})/g, function(e3, t3) {
             return String.fromCharCode("0x" + t3);
           }));
         } catch (r2) {
@@ -1218,124 +1206,120 @@ var __publicField = (obj, key, value) => {
         }
         return t2;
       }
-      j.prototype = {
-        addClass: function (e2) {
-          return -1 === (" " + this.ele.className + " ").indexOf(" " + e2 + " ") && (this.ele.className = this.ele.className + ("" === this.ele.className ? "" : " ") + e2), this;
-        }, removeClass: function (e2) {
-          var t2 = " " + this.ele.className + " ";
-          return -1 !== t2.indexOf(" " + e2 + " ") && (this.ele.className = t2.replace(" " + e2 + " ", " ").slice(1, -1)), this;
-        }, hasClass: function (e2) {
-          return -1 !== (" " + this.ele.className + " ").indexOf(" " + e2 + " ");
-        }, attr: function (e2, t2) {
-          return "string" == typeof e2 && P(t2) ? this.ele.getAttribute(e2) : ("string" == typeof e2 && (t2 = String(t2), this.ele.setAttribute(e2, t2)), this);
-        }, offset: function () {
+      j.prototype = { addClass: function(e2) {
+        return -1 === (" " + this.ele.className + " ").indexOf(" " + e2 + " ") && (this.ele.className = this.ele.className + ("" === this.ele.className ? "" : " ") + e2), this;
+      }, removeClass: function(e2) {
+        var t2 = " " + this.ele.className + " ";
+        return -1 !== t2.indexOf(" " + e2 + " ") && (this.ele.className = t2.replace(" " + e2 + " ", " ").slice(1, -1)), this;
+      }, hasClass: function(e2) {
+        return -1 !== (" " + this.ele.className + " ").indexOf(" " + e2 + " ");
+      }, attr: function(e2, t2) {
+        return "string" == typeof e2 && P(t2) ? this.ele.getAttribute(e2) : ("string" == typeof e2 && (t2 = String(t2), this.ele.setAttribute(e2, t2)), this);
+      }, offset: function() {
+        var e2 = this.ele.getBoundingClientRect();
+        if (e2.width || e2.height) {
+          var t2 = this.ele.ownerDocument.documentElement;
+          return { top: e2.top + window.pageYOffset - t2.clientTop, left: e2.left + window.pageXOffset - t2.clientLeft };
+        }
+        return { top: 0, left: 0 };
+      }, getSize: function() {
+        if (!window.getComputedStyle)
+          return { width: this.ele.offsetWidth, height: this.ele.offsetHeight };
+        try {
           var e2 = this.ele.getBoundingClientRect();
-          if (e2.width || e2.height) {
-            var t2 = this.ele.ownerDocument.documentElement;
-            return { top: e2.top + window.pageYOffset - t2.clientTop, left: e2.left + window.pageXOffset - t2.clientLeft };
-          }
-          return { top: 0, left: 0 };
-        }, getSize: function () {
-          if (!window.getComputedStyle)
-            return { width: this.ele.offsetWidth, height: this.ele.offsetHeight };
-          try {
-            var e2 = this.ele.getBoundingClientRect();
-            return { width: e2.width, height: e2.height };
-          } catch (t2) {
-            return { width: 0, height: 0 };
-          }
-        }, getStyle: function (e2) {
-          return this.ele.currentStyle ? this.ele.currentStyle[e2] : this.ele.ownerDocument.defaultView.getComputedStyle(this.ele, null).getPropertyValue(e2);
-        }, wrap: function (e2) {
-          var t2 = document.createElement(e2);
-          return this.ele.parentNode.insertBefore(t2, this.ele), t2.appendChild(this.ele), O(t2);
-        }, getCssStyle: function (e2) {
-          var t2 = this.ele.style.getPropertyValue(e2);
-          if (t2)
-            return t2;
-          var r2 = null;
-          if ("function" == typeof window.getMatchedCSSRules && (r2 = window.getMatchedCSSRules(this.ele)), !r2 || !C(r2))
-            return null;
-          for (var n2 = r2.length - 1; n2 >= 0; n2--) {
-            if (t2 = r2[n2].style.getPropertyValue(e2))
-              return t2;
-          }
-        }, sibling: function (e2, t2) {
-          for (; (e2 = e2[t2]) && 1 !== e2.nodeType;)
-            ;
-          return e2;
-        }, next: function () {
-          return this.sibling(this.ele, "nextSibling");
-        }, prev: function () {
-          return this.sibling(this.ele, "previousSibling");
-        }, siblings: function () {
-          return N((this.ele.parentNode || {}).firstChild, this.ele);
-        }, children: function () {
-          return N(this.ele.firstChild);
-        }, parent: function () {
-          var e2 = this.ele.parentNode;
-          return O(e2 = e2 && 11 !== e2.nodeType ? e2 : null);
-        }, previousElementSibling: function () {
-          var e2 = this.ele;
-          if ("previousElementSibling" in document.documentElement)
-            return O(e2.previousElementSibling);
-          for (; e2 = e2.previousSibling;)
-            if (1 === e2.nodeType)
-              return O(e2);
-          return O(null);
-        }, getSameTypeSiblings: function () {
-          for (var e2 = this.ele, t2 = e2.parentNode, r2 = e2.tagName.toLowerCase(), n2 = [], i2 = 0; i2 < t2.children.length; i2++) {
-            var a2 = t2.children[i2];
-            1 === a2.nodeType && a2.tagName.toLowerCase() === r2 && n2.push(t2.children[i2]);
-          }
-          return n2;
-        }, getParents: function () {
-          try {
-            var e2 = this.ele;
-            if (!k(e2))
-              return [];
-            var t2 = [e2];
-            if (null === e2 || null === e2.parentElement)
-              return [];
-            for (; null !== e2.parentElement;)
-              e2 = e2.parentElement, t2.push(e2);
-            return t2;
-          } catch (r2) {
-            return [];
-          }
+          return { width: e2.width, height: e2.height };
+        } catch (t2) {
+          return { width: 0, height: 0 };
         }
-      };
-      var R = {
-        get: function (e2) {
-          for (var t2 = e2 + "=", r2 = document.cookie.split(";"), n2 = 0; n2 < r2.length; n2++) {
-            for (var i2 = r2[n2]; " " == i2.charAt(0);)
-              i2 = i2.substring(1, i2.length);
-            if (0 == i2.indexOf(t2))
-              return g(i2.substring(t2.length, i2.length));
-          }
+      }, getStyle: function(e2) {
+        return this.ele.currentStyle ? this.ele.currentStyle[e2] : this.ele.ownerDocument.defaultView.getComputedStyle(this.ele, null).getPropertyValue(e2);
+      }, wrap: function(e2) {
+        var t2 = document.createElement(e2);
+        return this.ele.parentNode.insertBefore(t2, this.ele), t2.appendChild(this.ele), O(t2);
+      }, getCssStyle: function(e2) {
+        var t2 = this.ele.style.getPropertyValue(e2);
+        if (t2)
+          return t2;
+        var r2 = null;
+        if ("function" == typeof window.getMatchedCSSRules && (r2 = window.getMatchedCSSRules(this.ele)), !r2 || !C(r2))
           return null;
-        }, set: function (e2, t2, r2, n2, i2, a2) {
-          var o2 = a2, s2 = "", l2 = "", u2 = "";
-          if (0 !== (r2 = null == r2 ? 73e3 : r2)) {
-            var c2 = new Date();
-            "s" === String(r2).slice(-1) ? c2.setTime(c2.getTime() + 1e3 * Number(String(r2).slice(0, -1))) : c2.setTime(c2.getTime() + 24 * r2 * 60 * 60 * 1e3), s2 = "; expires=" + c2.toGMTString();
-          }
-          function p2(e3) {
-            return !!e3 && e3.replace(/\r\n/g, "");
-          }
-          n2 && "" !== n2 && (u2 = "; SameSite=" + n2), i2 && (l2 = "; secure");
-          var d2 = "", f2 = "", g2 = "";
-          e2 && (d2 = p2(e2)), t2 && (f2 = p2(t2)), o2 && (g2 = p2(o2)), d2 && f2 && (document.cookie = d2 + "=" + encodeURIComponent(f2) + s2 + "; path=/" + g2 + u2 + l2);
-        }, remove: function (e2, t2) {
-          this.set(e2, "1", -1, t2);
-        }, isSupport: function (e2, t2, r2, n2, i2) {
-          e2 = e2 || "cookie_support_test", t2 = t2 || "1";
-          var a2 = this;
-          return navigator.cookieEnabled && (a2.set(e2, t2, r2, n2, i2), a2.get(e2) === t2 && (a2.remove(e2), true));
+        for (var n2 = r2.length - 1; n2 >= 0; n2--) {
+          if (t2 = r2[n2].style.getPropertyValue(e2))
+            return t2;
         }
-      };
+      }, sibling: function(e2, t2) {
+        for (; (e2 = e2[t2]) && 1 !== e2.nodeType; )
+          ;
+        return e2;
+      }, next: function() {
+        return this.sibling(this.ele, "nextSibling");
+      }, prev: function() {
+        return this.sibling(this.ele, "previousSibling");
+      }, siblings: function() {
+        return N((this.ele.parentNode || {}).firstChild, this.ele);
+      }, children: function() {
+        return N(this.ele.firstChild);
+      }, parent: function() {
+        var e2 = this.ele.parentNode;
+        return O(e2 = e2 && 11 !== e2.nodeType ? e2 : null);
+      }, previousElementSibling: function() {
+        var e2 = this.ele;
+        if ("previousElementSibling" in document.documentElement)
+          return O(e2.previousElementSibling);
+        for (; e2 = e2.previousSibling; )
+          if (1 === e2.nodeType)
+            return O(e2);
+        return O(null);
+      }, getSameTypeSiblings: function() {
+        for (var e2 = this.ele, t2 = e2.parentNode, r2 = e2.tagName.toLowerCase(), n2 = [], i2 = 0; i2 < t2.children.length; i2++) {
+          var a2 = t2.children[i2];
+          1 === a2.nodeType && a2.tagName.toLowerCase() === r2 && n2.push(t2.children[i2]);
+        }
+        return n2;
+      }, getParents: function() {
+        try {
+          var e2 = this.ele;
+          if (!k(e2))
+            return [];
+          var t2 = [e2];
+          if (null === e2 || null === e2.parentElement)
+            return [];
+          for (; null !== e2.parentElement; )
+            e2 = e2.parentElement, t2.push(e2);
+          return t2;
+        } catch (r2) {
+          return [];
+        }
+      } };
+      var R = { get: function(e2) {
+        for (var t2 = e2 + "=", r2 = document.cookie.split(";"), n2 = 0; n2 < r2.length; n2++) {
+          for (var i2 = r2[n2]; " " == i2.charAt(0); )
+            i2 = i2.substring(1, i2.length);
+          if (0 == i2.indexOf(t2))
+            return g(i2.substring(t2.length, i2.length));
+        }
+        return null;
+      }, set: function(e2, t2, r2, n2, i2, a2) {
+        var o2 = a2, s2 = "", l2 = "", u2 = "";
+        if (0 !== (r2 = null == r2 ? 73e3 : r2)) {
+          var c2 = new Date();
+          "s" === String(r2).slice(-1) ? c2.setTime(c2.getTime() + 1e3 * Number(String(r2).slice(0, -1))) : c2.setTime(c2.getTime() + 24 * r2 * 60 * 60 * 1e3), s2 = "; expires=" + c2.toGMTString();
+        }
+        function p2(e3) {
+          return !!e3 && e3.replace(/\r\n/g, "");
+        }
+        n2 && "" !== n2 && (u2 = "; SameSite=" + n2), i2 && (l2 = "; secure");
+        var d2 = "", f2 = "", g2 = "";
+        e2 && (d2 = p2(e2)), t2 && (f2 = p2(t2)), o2 && (g2 = p2(o2)), d2 && f2 && (document.cookie = d2 + "=" + encodeURIComponent(f2) + s2 + "; path=/" + g2 + u2 + l2);
+      }, remove: function(e2, t2) {
+        this.set(e2, "1", -1, t2);
+      }, isSupport: function(e2, t2, r2, n2, i2) {
+        e2 = e2 || "cookie_support_test", t2 = t2 || "1";
+        var a2 = this;
+        return navigator.cookieEnabled && (a2.set(e2, t2, r2, n2, i2), a2.get(e2) === t2 && (a2.remove(e2), true));
+      } };
       function B(e2) {
-        return D(Array.prototype.slice.call(arguments, 1), function (t2) {
+        return D(Array.prototype.slice.call(arguments, 1), function(t2) {
           for (var r2 in t2)
             void 0 !== t2[r2] && void 0 === e2[r2] && (e2[r2] = t2[r2]);
         }), e2;
@@ -1359,7 +1343,7 @@ var __publicField = (obj, key, value) => {
         return e2.getFullYear() + "-" + t2(e2.getMonth() + 1) + "-" + t2(e2.getDate()) + " " + t2(e2.getHours()) + ":" + t2(e2.getMinutes()) + ":" + t2(e2.getSeconds()) + "." + t2(e2.getMilliseconds());
       }
       function q(e2) {
-        return D(Array.prototype.slice.call(arguments, 1), function (t2) {
+        return D(Array.prototype.slice.call(arguments, 1), function(t2) {
           for (var r2 in t2)
             void 0 !== t2[r2] && (s(t2[r2]) && s(e2[r2]) ? $(e2[r2], t2[r2]) : e2[r2] = t2[r2]);
         }), e2;
@@ -1377,11 +1361,11 @@ var __publicField = (obj, key, value) => {
       }
       function K(e2, t2, r2) {
         t2 = t2 || "domain_test";
-        var n2 = function (e3) {
+        var n2 = function(e3) {
           return "string" == typeof e3 && e3.match(/^[a-zA-Z0-9\u4e00-\u9fa5\-\.]+$/) ? e3 : "";
         }(e2 = e2 || location.hostname), i2 = n2.split(".");
         if (C(i2) && i2.length >= 2 && !/^(\d+\.)+\d+$/.test(n2)) {
-          for (var a2 = "." + i2.splice(i2.length - 1, 1); i2.length > 0;)
+          for (var a2 = "." + i2.splice(i2.length - 1, 1); i2.length > 0; )
             if (a2 = "." + i2.splice(i2.length - 1, 1) + a2, R.set(t2, "true", 0, null, r2, "; domain=" + a2), -1 !== document.cookie.indexOf(t2 + "=true"))
               return R.set(t2, "true", "-1s", null, r2, "; domain=" + a2), a2;
         }
@@ -1396,7 +1380,7 @@ var __publicField = (obj, key, value) => {
           if (!a2)
             return e3;
           try {
-            t3 = function (e4, t4) {
+            t3 = function(e4, t4) {
               var r3;
               if ("body" === (e4 = v(e4)))
                 return document.getElementsByTagName("body")[0];
@@ -1504,10 +1488,10 @@ var __publicField = (obj, key, value) => {
           for (var i2 = e2.split(""), a2 = 0; a2 < i2.length; a2++) {
             var o2 = i2[a2].charCodeAt(), s2 = 31 * n2 + o2;
             if (s2 > t2)
-              for (n2 = r2 + n2; (s2 = 31 * n2 + o2) < r2;)
+              for (n2 = r2 + n2; (s2 = 31 * n2 + o2) < r2; )
                 n2 = n2 / 2 + o2;
             if (s2 < r2)
-              for (n2 = t2 + n2; (s2 = 31 * n2 + o2) > t2;)
+              for (n2 = t2 + n2; (s2 = 31 * n2 + o2) > t2; )
                 n2 = n2 / 2 + o2;
             n2 = 31 * n2 + o2;
           }
@@ -1560,68 +1544,64 @@ var __publicField = (obj, key, value) => {
       function _e(e2) {
         if (!s(e2) || !h(e2.callbackName))
           return i.log("JSONP \u8BF7\u6C42\u7F3A\u5C11 callbackName"), false;
-        e2.success = r(e2.success) ? e2.success : function () {
-        }, e2.error = r(e2.error) ? e2.error : function () {
+        e2.success = r(e2.success) ? e2.success : function() {
+        }, e2.error = r(e2.error) ? e2.error : function() {
         }, e2.data = e2.data || "";
         var t2 = document.createElement("script"), n2 = document.getElementsByTagName("head")[0], a2 = null, o2 = false;
         n2.appendChild(t2);
-        ge(e2.timeout) && (a2 = setTimeout(function () {
+        ge(e2.timeout) && (a2 = setTimeout(function() {
           if (o2)
             return false;
-          e2.error("timeout"), window[e2.callbackName] = function () {
+          e2.error("timeout"), window[e2.callbackName] = function() {
             i.log("call jsonp error");
           }, a2 = null, n2.removeChild(t2), o2 = true;
-        }, Math.min(e2.timeout, 3e4))), window[e2.callbackName] = function () {
-          clearTimeout(a2), a2 = null, e2.success.apply(null, arguments), window[e2.callbackName] = function () {
+        }, Math.min(e2.timeout, 3e4))), window[e2.callbackName] = function() {
+          clearTimeout(a2), a2 = null, e2.success.apply(null, arguments), window[e2.callbackName] = function() {
             i.log("call jsonp error");
           }, n2.removeChild(t2);
         };
         var l2 = encodeURIComponent(e2.callbackName), u2 = "";
         if (e2.url.indexOf("?") > -1 ? e2.url += "&callbackName=" + l2 : e2.url += "?callbackName=" + l2, s(e2.data)) {
           var c2 = [];
-          D(e2.data, function (e3, t3) {
+          D(e2.data, function(e3, t3) {
             c2.push(encodeURIComponent(t3) + "=" + encodeURIComponent(e3));
           }), (u2 = c2.join("&")) && (e2.url += "&" + u2);
         }
-        t2.onerror = function (r2) {
+        t2.onerror = function(r2) {
           if (o2)
             return false;
-          window[e2.callbackName] = function () {
+          window[e2.callbackName] = function() {
             i.log("call jsonp error");
           }, clearTimeout(a2), a2 = null, n2.removeChild(t2), e2.error(r2), o2 = true;
         }, t2.src = e2.url;
       }
       function he(e2) {
-        ({
-          visibleHandler: r(e2.visible) ? e2.visible : function () {
-          }, hiddenHandler: r(e2.hidden) ? e2.hidden : function () {
-          }, visibilityChange: null, hidden: null, isSupport: function () {
-            return "undefined" != typeof document[this.hidden];
-          }, init: function () {
-            "undefined" != typeof document.hidden ? (this.hidden = "hidden", this.visibilityChange = "visibilitychange") : "undefined" != typeof document.mozHidden ? (this.hidden = "mozHidden", this.visibilityChange = "mozvisibilitychange") : "undefined" != typeof document.msHidden ? (this.hidden = "msHidden", this.visibilityChange = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (this.hidden = "webkitHidden", this.visibilityChange = "webkitvisibilitychange"), this.listen();
-          }, listen: function () {
-            if (this.isSupport()) {
-              var e3 = this;
-              T(document, this.visibilityChange, function () {
-                document[e3.hidden] ? e3.hiddenHandler() : e3.visibleHandler();
-              }, 1);
-            } else
-              T(window, "focus", this.visibleHandler), T(window, "blur", this.hiddenHandler);
-          }
-        }).init();
+        ({ visibleHandler: r(e2.visible) ? e2.visible : function() {
+        }, hiddenHandler: r(e2.hidden) ? e2.hidden : function() {
+        }, visibilityChange: null, hidden: null, isSupport: function() {
+          return "undefined" != typeof document[this.hidden];
+        }, init: function() {
+          "undefined" != typeof document.hidden ? (this.hidden = "hidden", this.visibilityChange = "visibilitychange") : "undefined" != typeof document.mozHidden ? (this.hidden = "mozHidden", this.visibilityChange = "mozvisibilitychange") : "undefined" != typeof document.msHidden ? (this.hidden = "msHidden", this.visibilityChange = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (this.hidden = "webkitHidden", this.visibilityChange = "webkitvisibilitychange"), this.listen();
+        }, listen: function() {
+          if (this.isSupport()) {
+            var e3 = this;
+            T(document, this.visibilityChange, function() {
+              document[e3.hidden] ? e3.hiddenHandler() : e3.visibleHandler();
+            }, 1);
+          } else
+            T(window, "focus", this.visibleHandler), T(window, "blur", this.hiddenHandler);
+        } }).init();
       }
       function me(e2) {
-        e2 = $({
-          success: function () {
-          }, error: function () {
-          }, appendCall: function (e3) {
-            document.getElementsByTagName("head")[0].appendChild(e3);
-          }
-        }, e2);
+        e2 = $({ success: function() {
+        }, error: function() {
+        }, appendCall: function(e3) {
+          document.getElementsByTagName("head")[0].appendChild(e3);
+        } }, e2);
         var t2 = null;
-        "css" === e2.type && ((t2 = document.createElement("link")).rel = "stylesheet", t2.href = e2.url), "js" === e2.type && ((t2 = document.createElement("script")).async = "async", t2.setAttribute("charset", "UTF-8"), t2.src = e2.url, t2.type = "text/javascript"), t2.onload = t2.onreadystatechange = function () {
+        "css" === e2.type && ((t2 = document.createElement("link")).rel = "stylesheet", t2.href = e2.url), "js" === e2.type && ((t2 = document.createElement("script")).async = "async", t2.setAttribute("charset", "UTF-8"), t2.src = e2.url, t2.type = "text/javascript"), t2.onload = t2.onreadystatechange = function() {
           this.readyState && "loaded" !== this.readyState && "complete" !== this.readyState || (e2.success(), t2.onload = t2.onreadystatechange = null);
-        }, t2.onerror = function () {
+        }, t2.onerror = function() {
           e2.error(), t2.onerror = null;
         }, e2.appendCall(t2);
       }
@@ -1636,21 +1616,19 @@ var __publicField = (obj, key, value) => {
         return ve(e2 = String(e2), 113);
       }
       function be(e2) {
-        s(e2) && D(e2, function (t2, r2) {
+        s(e2) && D(e2, function(t2, r2) {
           s(t2) ? be(e2[r2]) : J(t2) && (e2[r2] = M(t2));
         });
       }
-      var we = {
-        isSupport: function () {
-          var e2 = true, t2 = "testIsSupportStorage";
-          try {
-            sessionStorage && sessionStorage.setItem ? (sessionStorage.setItem("__session_storage_support__", t2), sessionStorage.removeItem("__session_storage_support__", t2), e2 = true) : e2 = false;
-          } catch (r2) {
-            e2 = false;
-          }
-          return e2;
+      var we = { isSupport: function() {
+        var e2 = true, t2 = "testIsSupportStorage";
+        try {
+          sessionStorage && sessionStorage.setItem ? (sessionStorage.setItem("__session_storage_support__", t2), sessionStorage.removeItem("__session_storage_support__", t2), e2 = true) : e2 = false;
+        } catch (r2) {
+          e2 = false;
         }
-      };
+        return e2;
+      } };
       function Se(e2) {
         var t2 = document.createElement("style");
         t2.type = "text/css";
@@ -1664,7 +1642,7 @@ var __publicField = (obj, key, value) => {
       }
       function ke(e2) {
         var t2 = [];
-        return null == e2 ? t2 : (D(e2, function (e3) {
+        return null == e2 ? t2 : (D(e2, function(e3) {
           t2[t2.length] = e3;
         }), t2);
       }
@@ -1680,143 +1658,135 @@ var __publicField = (obj, key, value) => {
       function Ne(e2) {
         return "__proto__" !== e2 && "constructor" !== e2 && "prototype" !== e2;
       }
-      var Te = {
-        __proto__: null, noPrototypePollution: Ne, ConcurrentStorage: p, EventEmitter: f, URL: b, UUID: S, addEvent: T, addHashEvent: I, ajax: x, base64Decode: L, base64Encode: U, bindReady: function (e2, t2) {
-          t2 = t2 || window;
-          var r2 = false, n2 = true, a2 = t2.document, o2 = a2.documentElement, s2 = a2.addEventListener, l2 = s2 ? "addEventListener" : "attachEvent", u2 = s2 ? "removeEventListener" : "detachEvent", c2 = s2 ? "" : "on", p2 = function (n3) {
-            "readystatechange" == n3.type && "complete" != a2.readyState || (("load" == n3.type ? t2 : a2)[u2](c2 + n3.type, p2, false), !r2 && (r2 = true) && e2.call(t2, n3.type || n3));
-          }, d2 = function () {
-            try {
-              o2.doScroll("left");
-            } catch (e3) {
-              return void setTimeout(d2, 50);
-            }
-            p2("poll");
-          };
-          if ("complete" == a2.readyState)
-            e2.call(t2, "lazy");
-          else {
-            if (!s2 && o2.doScroll) {
-              try {
-                n2 = !t2.frameElement;
-              } catch (f2) {
-                i.log(f2);
-              }
-              n2 && d2();
-            }
-            a2[l2](c2 + "DOMContentLoaded", p2, false), a2[l2](c2 + "readystatechange", p2, false), t2[l2](c2 + "load", p2, false);
-          }
-        }, cookie: R, coverExtend: B, decodeURI: H, decodeURIComponent: g, dfmapping: function (e2) {
-          var t2 = "t6KJCZa5pDdQ9khoEM3Tj70fbP2eLSyc4BrsYugARqFIw1mzlGNVXOHiWvxUn8", r2 = t2.length - 1, n2 = {}, i2 = 0;
-          for (i2 = 0; i2 < t2.length; i2++)
-            n2[t2.charAt(i2)] = t2.charAt(r2 - i2);
-          var a2 = "";
-          for (i2 = 0; i2 < e2.length; i2++)
-            e2.charAt(i2) in n2 ? a2 += n2[e2.charAt(i2)] : a2 += e2.charAt(i2);
-          return a2;
-        }, each: D, encodeDates: function La(e2) {
-          return D(e2, function (t2, r2) {
-            J(t2) ? e2[r2] = M(t2) : s(t2) && (e2[r2] = La(t2));
-          }), e2;
-        }, extend: $, extend2Lev: q, filter: F, formatDate: M, formatJsonString: function (e2) {
+      var Te = { __proto__: null, noPrototypePollution: Ne, ConcurrentStorage: p, EventEmitter: f, URL: b, UUID: S, addEvent: T, addHashEvent: I, ajax: x, base64Decode: L, base64Encode: U, bindReady: function(e2, t2) {
+        t2 = t2 || window;
+        var r2 = false, n2 = true, a2 = t2.document, o2 = a2.documentElement, s2 = a2.addEventListener, l2 = s2 ? "addEventListener" : "attachEvent", u2 = s2 ? "removeEventListener" : "detachEvent", c2 = s2 ? "" : "on", p2 = function(n3) {
+          "readystatechange" == n3.type && "complete" != a2.readyState || (("load" == n3.type ? t2 : a2)[u2](c2 + n3.type, p2, false), !r2 && (r2 = true) && e2.call(t2, n3.type || n3));
+        }, d2 = function() {
           try {
-            return JSON.stringify(e2, null, "  ");
-          } catch (t2) {
-            return JSON.stringify(e2);
+            o2.doScroll("left");
+          } catch (e3) {
+            return void setTimeout(d2, 50);
           }
-        }, getCookieTopLevelDomain: K, getDomBySelector: V, getElementContent: z, getHostname: W, getIOSVersion: X, getQueryParam: Z, getQueryParamsFromUrl: Y, getRandom: u, getRandomBasic: l, getScreenOrientation: function () {
-          var e2 = screen.msOrientation || screen.mozOrientation || (screen.orientation || {}).type, t2 = "\u672A\u53D6\u5230\u503C";
-          if (e2)
-            t2 = e2.indexOf("landscape") > -1 ? "landscape" : "portrait";
-          else if (G()) {
-            var r2 = window.matchMedia || window.msMatchMedia;
-            r2("(orientation: landscape)").matches ? t2 = "landscape" : r2("(orientation: portrait)").matches && (t2 = "portrait");
-          }
-          return t2;
-        }, getUA: Q, getURL: ee, getURLPath: te, getURLSearchParams: _, hasAttribute: re, hasAttributes: ne, hashCode: ie, hashCode53: ae, indexOf: oe, inherit: function (e2, t2) {
-          return e2.prototype = new t2(), e2.prototype.constructor = e2, e2.superclass = t2.prototype, e2;
-        }, isArguments: le, isArray: C, isBoolean: ue, isDate: J, isElement: k, isEmptyObject: ce, isFunction: r, isHttpUrl: pe, isIOS: de, isJSONString: fe, isNumber: ge, isObject: s, isString: h, isSupportBeaconSend: function () {
-          var e2 = false;
-          if ("object" != typeof navigator || "function" != typeof navigator.sendBeacon)
-            return e2;
-          var t2 = Q(), r2 = navigator.userAgent.toLowerCase();
-          if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-            var n2 = (r2.match(/os [\d._]*/gi) + "").replace(/[^0-9|_.]/gi, "").replace(/_/gi, ".").split(".");
-            "undefined" == typeof t2.safari && (t2.safari = n2[0]), n2[0] && (t2.qqBuildinBrowser || t2.qqBrowser) ? e2 = false : n2[0] && n2[0] < 13 ? (t2.chrome > 41 || t2.firefox > 30 || t2.opera > 25 || t2.safari > 12) && (e2 = true) : (t2.chrome > 41 || t2.firefox > 30 || t2.opera > 25 || t2.safari > 11.3) && (e2 = true);
-          } else
-            (t2.chrome > 38 || t2.edge > 13 || t2.firefox > 30 || t2.opera > 25 || t2.safari > 11) && (e2 = true);
-          return e2;
-        }, isSupportCors: function () {
-          return "undefined" != typeof window.XMLHttpRequest && ("withCredentials" in new XMLHttpRequest() || "undefined" != typeof XDomainRequest);
-        }, isUndefined: P, jsonp: _e, listenPageState: he, loadScript: me, localStorage: a, logger: i, map: E, mediaQueriesSupported: G, now: n, removeScriptProtocol: function (e2) {
-          if ("string" != typeof e2)
-            return "";
-          for (var t2 = /^\s*javascript/i; t2.test(e2);)
-            e2 = e2.replace(t2, "");
-          return e2;
-        }, rot13defs: ye, rot13obfs: ve, ry: O, safeJSONParse: c, searchObjDate: be, sessionStorage: we, setCssStyle: Se, strToUnicode: function (e2) {
-          if ("string" != typeof e2)
-            return i.log("\u8F6C\u6362unicode\u9519\u8BEF", e2), e2;
-          for (var t2 = "", r2 = 0; r2 < e2.length; r2++)
-            t2 += "\\" + e2.charCodeAt(r2).toString(16);
-          return t2;
-        }, throttle: function (e2, t2, r2) {
-          var i2, a2, o2, s2 = null, l2 = 0;
-          r2 || (r2 = {});
-          var u2 = function () {
-            l2 = false === r2.leading ? 0 : n(), s2 = null, o2 = e2.apply(i2, a2), s2 || (i2 = a2 = null);
-          };
-          return function () {
-            var c2 = n();
-            l2 || false !== r2.leading || (l2 = c2);
-            var p2 = t2 - (c2 - l2);
-            return i2 = this, a2 = arguments, p2 <= 0 || p2 > t2 ? (s2 && (clearTimeout(s2), s2 = null), l2 = c2, o2 = e2.apply(i2, a2), s2 || (i2 = a2 = null)) : s2 || false === r2.trailing || (s2 = setTimeout(u2, p2)), o2;
-          };
-        }, toArray: function (e2) {
-          return e2 ? e2.toArray ? e2.toArray() : C(e2) || le(e2) ? Array.prototype.slice.call(e2) : ke(e2) : [];
-        }, trim: v, unique: Pe, urlParse: y, urlSafeBase64: {
-          encode: function (e2) {
-            return e2.replace(/[+\/=]/g, function (e3) {
-              return Ce[e3];
-            });
-          }, decode: function (e2) {
-            return e2.replace(/[-_.]/g, function (e3) {
-              return Oe[e3];
-            });
-          }, trim: function (e2) {
-            return e2.replace(/[.=]{1,2}$/, "");
-          }, isBase64: function (e2) {
-            return /^[A-Za-z0-9+\/]*[=]{0,2}$/.test(e2);
-          }, isUrlSafeBase64: function (e2) {
-            return /^[A-Za-z0-9_-]*[.]{0,2}$/.test(e2);
-          }
-        }, values: ke, xhr: A, startsWith: je
-      }, Ie = [], Ae = {
-        appendWriter: function (e2) {
-          Ie.push(e2);
-        }, msg: function () {
-          var e2 = { module: "", level: "log", brand: "web-sdk", content: null };
-          return e2.content = Array.prototype.slice.call(arguments), {
-            module: function (t2) {
-              return h(t2) && (e2.module = t2), this;
-            }, level: function (t2) {
-              return h(t2) && (e2.level = t2), this;
-            }, brand: function (t2) {
-              return h(t2) && (e2.brand = t2), this;
-            }, log: function () {
-              if (e2.content && e2.content.length) {
-                for (var t2 = 0; t2 < Ie.length; t2++)
-                  if ("function" == typeof Ie[t2])
-                    try {
-                      Ie[t2].call(null, e2);
-                    } catch (r2) {
-                    }
-              }
-              return this;
+          p2("poll");
+        };
+        if ("complete" == a2.readyState)
+          e2.call(t2, "lazy");
+        else {
+          if (!s2 && o2.doScroll) {
+            try {
+              n2 = !t2.frameElement;
+            } catch (f2) {
+              i.log(f2);
             }
-          };
+            n2 && d2();
+          }
+          a2[l2](c2 + "DOMContentLoaded", p2, false), a2[l2](c2 + "readystatechange", p2, false), t2[l2](c2 + "load", p2, false);
         }
-      };
+      }, cookie: R, coverExtend: B, decodeURI: H, decodeURIComponent: g, dfmapping: function(e2) {
+        var t2 = "t6KJCZa5pDdQ9khoEM3Tj70fbP2eLSyc4BrsYugARqFIw1mzlGNVXOHiWvxUn8", r2 = t2.length - 1, n2 = {}, i2 = 0;
+        for (i2 = 0; i2 < t2.length; i2++)
+          n2[t2.charAt(i2)] = t2.charAt(r2 - i2);
+        var a2 = "";
+        for (i2 = 0; i2 < e2.length; i2++)
+          e2.charAt(i2) in n2 ? a2 += n2[e2.charAt(i2)] : a2 += e2.charAt(i2);
+        return a2;
+      }, each: D, encodeDates: function La(e2) {
+        return D(e2, function(t2, r2) {
+          J(t2) ? e2[r2] = M(t2) : s(t2) && (e2[r2] = La(t2));
+        }), e2;
+      }, extend: $, extend2Lev: q, filter: F, formatDate: M, formatJsonString: function(e2) {
+        try {
+          return JSON.stringify(e2, null, "  ");
+        } catch (t2) {
+          return JSON.stringify(e2);
+        }
+      }, getCookieTopLevelDomain: K, getDomBySelector: V, getElementContent: z, getHostname: W, getIOSVersion: X, getQueryParam: Z, getQueryParamsFromUrl: Y, getRandom: u, getRandomBasic: l, getScreenOrientation: function() {
+        var e2 = screen.msOrientation || screen.mozOrientation || (screen.orientation || {}).type, t2 = "\u672A\u53D6\u5230\u503C";
+        if (e2)
+          t2 = e2.indexOf("landscape") > -1 ? "landscape" : "portrait";
+        else if (G()) {
+          var r2 = window.matchMedia || window.msMatchMedia;
+          r2("(orientation: landscape)").matches ? t2 = "landscape" : r2("(orientation: portrait)").matches && (t2 = "portrait");
+        }
+        return t2;
+      }, getUA: Q, getURL: ee, getURLPath: te, getURLSearchParams: _, hasAttribute: re, hasAttributes: ne, hashCode: ie, hashCode53: ae, indexOf: oe, inherit: function(e2, t2) {
+        return e2.prototype = new t2(), e2.prototype.constructor = e2, e2.superclass = t2.prototype, e2;
+      }, isArguments: le, isArray: C, isBoolean: ue, isDate: J, isElement: k, isEmptyObject: ce, isFunction: r, isHttpUrl: pe, isIOS: de, isJSONString: fe, isNumber: ge, isObject: s, isString: h, isSupportBeaconSend: function() {
+        var e2 = false;
+        if ("object" != typeof navigator || "function" != typeof navigator.sendBeacon)
+          return e2;
+        var t2 = Q(), r2 = navigator.userAgent.toLowerCase();
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+          var n2 = (r2.match(/os [\d._]*/gi) + "").replace(/[^0-9|_.]/gi, "").replace(/_/gi, ".").split(".");
+          "undefined" == typeof t2.safari && (t2.safari = n2[0]), n2[0] && (t2.qqBuildinBrowser || t2.qqBrowser) ? e2 = false : n2[0] && n2[0] < 13 ? (t2.chrome > 41 || t2.firefox > 30 || t2.opera > 25 || t2.safari > 12) && (e2 = true) : (t2.chrome > 41 || t2.firefox > 30 || t2.opera > 25 || t2.safari > 11.3) && (e2 = true);
+        } else
+          (t2.chrome > 38 || t2.edge > 13 || t2.firefox > 30 || t2.opera > 25 || t2.safari > 11) && (e2 = true);
+        return e2;
+      }, isSupportCors: function() {
+        return "undefined" != typeof window.XMLHttpRequest && ("withCredentials" in new XMLHttpRequest() || "undefined" != typeof XDomainRequest);
+      }, isUndefined: P, jsonp: _e, listenPageState: he, loadScript: me, localStorage: a, logger: i, map: E, mediaQueriesSupported: G, now: n, removeScriptProtocol: function(e2) {
+        if ("string" != typeof e2)
+          return "";
+        for (var t2 = /^\s*javascript/i; t2.test(e2); )
+          e2 = e2.replace(t2, "");
+        return e2;
+      }, rot13defs: ye, rot13obfs: ve, ry: O, safeJSONParse: c, searchObjDate: be, sessionStorage: we, setCssStyle: Se, strToUnicode: function(e2) {
+        if ("string" != typeof e2)
+          return i.log("\u8F6C\u6362unicode\u9519\u8BEF", e2), e2;
+        for (var t2 = "", r2 = 0; r2 < e2.length; r2++)
+          t2 += "\\" + e2.charCodeAt(r2).toString(16);
+        return t2;
+      }, throttle: function(e2, t2, r2) {
+        var i2, a2, o2, s2 = null, l2 = 0;
+        r2 || (r2 = {});
+        var u2 = function() {
+          l2 = false === r2.leading ? 0 : n(), s2 = null, o2 = e2.apply(i2, a2), s2 || (i2 = a2 = null);
+        };
+        return function() {
+          var c2 = n();
+          l2 || false !== r2.leading || (l2 = c2);
+          var p2 = t2 - (c2 - l2);
+          return i2 = this, a2 = arguments, p2 <= 0 || p2 > t2 ? (s2 && (clearTimeout(s2), s2 = null), l2 = c2, o2 = e2.apply(i2, a2), s2 || (i2 = a2 = null)) : s2 || false === r2.trailing || (s2 = setTimeout(u2, p2)), o2;
+        };
+      }, toArray: function(e2) {
+        return e2 ? e2.toArray ? e2.toArray() : C(e2) || le(e2) ? Array.prototype.slice.call(e2) : ke(e2) : [];
+      }, trim: v, unique: Pe, urlParse: y, urlSafeBase64: { encode: function(e2) {
+        return e2.replace(/[+\/=]/g, function(e3) {
+          return Ce[e3];
+        });
+      }, decode: function(e2) {
+        return e2.replace(/[-_.]/g, function(e3) {
+          return Oe[e3];
+        });
+      }, trim: function(e2) {
+        return e2.replace(/[.=]{1,2}$/, "");
+      }, isBase64: function(e2) {
+        return /^[A-Za-z0-9+\/]*[=]{0,2}$/.test(e2);
+      }, isUrlSafeBase64: function(e2) {
+        return /^[A-Za-z0-9_-]*[.]{0,2}$/.test(e2);
+      } }, values: ke, xhr: A, startsWith: je }, Ie = [], Ae = { appendWriter: function(e2) {
+        Ie.push(e2);
+      }, msg: function() {
+        var e2 = { module: "", level: "log", brand: "web-sdk", content: null };
+        return e2.content = Array.prototype.slice.call(arguments), { module: function(t2) {
+          return h(t2) && (e2.module = t2), this;
+        }, level: function(t2) {
+          return h(t2) && (e2.level = t2), this;
+        }, brand: function(t2) {
+          return h(t2) && (e2.brand = t2), this;
+        }, log: function() {
+          if (e2.content && e2.content.length) {
+            for (var t2 = 0; t2 < Ie.length; t2++)
+              if ("function" == typeof Ie[t2])
+                try {
+                  Ie[t2].call(null, e2);
+                } catch (r2) {
+                }
+          }
+          return this;
+        } };
+      } };
       function De() {
         Ae.msg.apply(Ae, arguments).log();
       }
@@ -1842,22 +1812,20 @@ var __publicField = (obj, key, value) => {
             return "" === e2 ? "url\u89E3\u6790\u5931\u8D25" : "" === n2 ? "url\u89E3\u6790\u5931\u8D25" : n2;
         }
       }
-      var Me = {
-        get: function (e2) {
-          return R.get(e2);
-        }, set: function (e2, t2, r2, n2) {
-          var i2 = "";
-          if (n2 = P(n2) ? Ee.cross_subdomain : n2) {
-            var a2 = Je(location.href);
-            "url\u89E3\u6790\u5931\u8D25" === a2 && (a2 = ""), i2 = a2 ? "; domain=" + a2 : "";
-          }
-          return R.set(e2, t2, r2, Ee.set_cookie_samesite, Ee.is_secure_cookie, i2);
-        }, remove: function (e2, t2) {
-          return t2 = P(t2) ? Ee.cross_subdomain : t2, R.remove(e2, t2);
-        }, isSupport: function (e2, t2) {
-          return e2 = e2 || "sajssdk_2015_cookie_access_test", t2 = t2 || "1", R.isSupport(e2, t2, 0, null, Ee.is_secure_cookie);
+      var Me = { get: function(e2) {
+        return R.get(e2);
+      }, set: function(e2, t2, r2, n2) {
+        var i2 = "";
+        if (n2 = P(n2) ? Ee.cross_subdomain : n2) {
+          var a2 = Je(location.href);
+          "url\u89E3\u6790\u5931\u8D25" === a2 && (a2 = ""), i2 = a2 ? "; domain=" + a2 : "";
         }
-      };
+        return R.set(e2, t2, r2, Ee.set_cookie_samesite, Ee.is_secure_cookie, i2);
+      }, remove: function(e2, t2) {
+        return t2 = P(t2) ? Ee.cross_subdomain : t2, R.remove(e2, t2);
+      }, isSupport: function(e2, t2) {
+        return e2 = e2 || "sajssdk_2015_cookie_access_test", t2 = t2 || "1", R.isSupport(e2, t2, 0, null, Ee.is_secure_cookie);
+      } };
       function qe(e2, r2) {
         var n2 = "";
         if (false === Ee.cross_subdomain) {
@@ -1880,42 +1848,38 @@ var __publicField = (obj, key, value) => {
         return Me.isSupport() ? null !== Me.get("sensorsdata_is_new_user") || null !== Me.get(qe("new_user")) : null !== Ke.get(Ke.getNewUserFlagMemoryKey("new_user"));
       }
       Me.getNewUser = Fe;
-      var Ke = {
-        data: {}, get: function (e2) {
-          var t2 = this.data[e2];
-          return t2 === void 0 ? null : t2._expirationTimestamp_ !== void 0 ? new Date().getTime() > t2._expirationTimestamp_ ? null : t2.value : t2;
-        }, set: function (e2, t2, r2) {
-          if (r2) {
-            var n2 = new Date();
-            t2 = { value: t2, _expirationTimestamp_: "s" === String(r2).slice(-1) ? n2.getTime() + 1e3 * Number(String(r2).slice(0, -1)) : n2.getTime() + 24 * r2 * 60 * 60 * 1e3 };
-          }
-          this.data[e2] = t2;
-        }, getNewUserFlagMemoryKey: function (e2) {
-          return "sajssdk_2015_" + Ee.sdk_id + e2;
+      var Ke = { data: {}, get: function(e2) {
+        var t2 = this.data[e2];
+        return t2 === void 0 ? null : t2._expirationTimestamp_ !== void 0 ? new Date().getTime() > t2._expirationTimestamp_ ? null : t2.value : t2;
+      }, set: function(e2, t2, r2) {
+        if (r2) {
+          var n2 = new Date();
+          t2 = { value: t2, _expirationTimestamp_: "s" === String(r2).slice(-1) ? n2.getTime() + 1e3 * Number(String(r2).slice(0, -1)) : n2.getTime() + 24 * r2 * 60 * 60 * 1e3 };
         }
-      }, Ve = {
-        checkIsAddSign: function (e2) {
-          "track" === e2.type && (Fe() ? e2.properties.$is_first_day = true : e2.properties.$is_first_day = false);
-        }, is_first_visit_time: false, is_page_first_visited: false, checkIsFirstTime: function (e2) {
-          "track" === e2.type && "$pageview" === e2.event && (this.is_first_visit_time ? (e2.properties.$is_first_time = true, this.is_first_visit_time = false) : e2.properties.$is_first_time = false);
-        }, setDeviceId: function () {
-        }, storeInitCheck: function () {
-          if (t.is_first_visitor) {
-            var e2 = new Date(), r2 = { h: 23 - e2.getHours(), m: 59 - e2.getMinutes(), s: 59 - e2.getSeconds() };
-            Me.isSupport() ? Me.set(qe("new_user"), "1", 3600 * r2.h + 60 * r2.m + r2.s + "s") : Ke.set(Ke.getNewUserFlagMemoryKey("new_user"), "1", 3600 * r2.h + 60 * r2.m + r2.s + "s"), this.is_first_visit_time = true, this.is_page_first_visited = true;
-          } else
-            Fe() || (this.checkIsAddSign = function (e3) {
-              "track" === e3.type && (e3.properties.$is_first_day = false);
-            }), this.checkIsFirstTime = function (e3) {
-              "track" === e3.type && "$pageview" === e3.event && (e3.properties.$is_first_time = false);
-            };
-        }
-      };
+        this.data[e2] = t2;
+      }, getNewUserFlagMemoryKey: function(e2) {
+        return "sajssdk_2015_" + Ee.sdk_id + e2;
+      } }, Ve = { checkIsAddSign: function(e2) {
+        "track" === e2.type && (Fe() ? e2.properties.$is_first_day = true : e2.properties.$is_first_day = false);
+      }, is_first_visit_time: false, is_page_first_visited: false, checkIsFirstTime: function(e2) {
+        "track" === e2.type && "$pageview" === e2.event && (this.is_first_visit_time ? (e2.properties.$is_first_time = true, this.is_first_visit_time = false) : e2.properties.$is_first_time = false);
+      }, setDeviceId: function() {
+      }, storeInitCheck: function() {
+        if (t.is_first_visitor) {
+          var e2 = new Date(), r2 = { h: 23 - e2.getHours(), m: 59 - e2.getMinutes(), s: 59 - e2.getSeconds() };
+          Me.isSupport() ? Me.set(qe("new_user"), "1", 3600 * r2.h + 60 * r2.m + r2.s + "s") : Ke.set(Ke.getNewUserFlagMemoryKey("new_user"), "1", 3600 * r2.h + 60 * r2.m + r2.s + "s"), this.is_first_visit_time = true, this.is_page_first_visited = true;
+        } else
+          Fe() || (this.checkIsAddSign = function(e3) {
+            "track" === e3.type && (e3.properties.$is_first_day = false);
+          }), this.checkIsFirstTime = function(e3) {
+            "track" === e3.type && "$pageview" === e3.event && (e3.properties.$is_first_time = false);
+          };
+      } };
       function ze(e2, t2, r2) {
         var n2 = !(!s(Ee.heatmap) || !Ee.heatmap.useCapture);
         return s(Ee.heatmap) && P(Ee.heatmap.useCapture) && "click" === t2 && (n2 = true), T(e2, t2, r2, n2);
       }
-      var We = function () {
+      var We = function() {
         this._events = [], this.pendingEvents = [];
       };
       function Xe() {
@@ -1929,29 +1893,25 @@ var __publicField = (obj, key, value) => {
           return false;
         }
       }
-      We.prototype = {
-        emit: function (e2) {
-          var t2 = [].slice.call(arguments, 1);
-          D(this._events, function (r2) {
-            r2.type === e2 && r2.callback.apply(r2.context, t2);
-          }), this.pendingEvents.push({ type: e2, data: t2 }), this.pendingEvents.length > 20 && this.pendingEvents.shift();
-        }, on: function (e2, t2, n2, i2) {
-          r(t2) && (this._events.push({ type: e2, callback: t2, context: n2 || this }), i2 = false !== i2, this.pendingEvents.length > 0 && i2 && D(this.pendingEvents, function (r2) {
-            r2.type === e2 && t2.apply(n2, r2.data);
-          }));
-        }, tempAdd: function (e2, t2) {
-          if (t2 && e2)
-            return this.emit(e2, t2);
-        }, isReady: function () {
-        }
-      };
-      var Ze = {
-        data: {}, id: function () {
-          return this.data.id ? this.data.id : (this.data.id = Ge(), this.data.id);
-        }, type: function () {
-          return this.data.type ? this.data.type : (this.data.type = Ye(), this.data.type);
-        }
-      };
+      We.prototype = { emit: function(e2) {
+        var t2 = [].slice.call(arguments, 1);
+        D(this._events, function(r2) {
+          r2.type === e2 && r2.callback.apply(r2.context, t2);
+        }), this.pendingEvents.push({ type: e2, data: t2 }), this.pendingEvents.length > 20 && this.pendingEvents.shift();
+      }, on: function(e2, t2, n2, i2) {
+        r(t2) && (this._events.push({ type: e2, callback: t2, context: n2 || this }), i2 = false !== i2, this.pendingEvents.length > 0 && i2 && D(this.pendingEvents, function(r2) {
+          r2.type === e2 && t2.apply(n2, r2.data);
+        }));
+      }, tempAdd: function(e2, t2) {
+        if (t2 && e2)
+          return this.emit(e2, t2);
+      }, isReady: function() {
+      } };
+      var Ze = { data: {}, id: function() {
+        return this.data.id ? this.data.id : (this.data.id = Ge(), this.data.id);
+      }, type: function() {
+        return this.data.type ? this.data.type : (this.data.type = Ye(), this.data.type);
+      } };
       function Ye() {
         var e2 = Y(document.referrer);
         if (ce(e2) || !e2.eqid) {
@@ -2010,52 +1970,46 @@ var __publicField = (obj, key, value) => {
               return n2;
         return "\u672A\u77E5\u641C\u7D22\u5F15\u64CE";
       }
-      var nt = {
-        distinct_id: function () {
-        }, jssdkDebug: function () {
-        }, _sendDebug: function (e2) {
-        }, apph5: function (e2) {
-          var t2 = "app_h5\u6253\u901A\u5931\u8D25-", r2 = { 1: t2 + "use_app_track\u4E3Afalse", 2: t2 + "Android\u6216\u8005iOS\uFF0C\u6CA1\u6709\u66B4\u9732\u76F8\u5E94\u65B9\u6CD5", 3.1: t2 + "Android\u6821\u9A8Cserver_url\u5931\u8D25", 3.2: t2 + "iOS\u6821\u9A8Cserver_url\u5931\u8D25", 4.1: t2 + "H5 \u6821\u9A8C iOS server_url \u5931\u8D25", 4.2: t2 + "H5 \u6821\u9A8C Android server_url \u5931\u8D25" }, n2 = e2.output, i2 = e2.step, a2 = e2.data || "";
-          "all" !== n2 && "console" !== n2 || De(r2[i2]), ("all" === n2 || "code" === n2) && s(Ee.is_debug) && Ee.is_debug.apph5 && (a2.type && "profile" === a2.type.slice(0, 7) || (a2.properties._jssdk_debug_info = "apph5-" + String(i2)));
-        }, defineMode: function (e2) {
-          var t2 = { 1: { title: "\u5F53\u524D\u9875\u9762\u65E0\u6CD5\u8FDB\u884C\u53EF\u89C6\u5316\u5168\u57CB\u70B9", message: "App SDK \u4E0E Web JS SDK \u6CA1\u6709\u8FDB\u884C\u6253\u901A\uFF0C\u8BF7\u8054\u7CFB\u8D35\u65B9\u6280\u672F\u4EBA\u5458\u4FEE\u6B63 App SDK \u7684\u914D\u7F6E\uFF0C\u8BE6\u7EC6\u4FE1\u606F\u8BF7\u67E5\u770B\u6587\u6863\u3002", link_text: "", link_url: "" }, 2: { title: "\u5F53\u524D\u9875\u9762\u65E0\u6CD5\u8FDB\u884C\u53EF\u89C6\u5316\u5168\u57CB\u70B9", message: "App SDK \u4E0E Web JS SDK \u6CA1\u6709\u8FDB\u884C\u6253\u901A\uFF0C\u8BF7\u8054\u7CFB\u8D35\u65B9\u6280\u672F\u4EBA\u5458\u4FEE\u6B63 Web JS SDK \u7684\u914D\u7F6E\uFF0C\u8BE6\u7EC6\u4FE1\u606F\u8BF7\u67E5\u770B\u6587\u6863\u3002", link_text: "", link_url: "" }, 3: { title: "\u5F53\u524D\u9875\u9762\u65E0\u6CD5\u8FDB\u884C\u53EF\u89C6\u5316\u5168\u57CB\u70B9", message: "Web JS SDK \u6CA1\u6709\u5F00\u542F\u5168\u57CB\u70B9\u914D\u7F6E\uFF0C\u8BF7\u8054\u7CFB\u8D35\u65B9\u5DE5\u4F5C\u4EBA\u5458\u4FEE\u6B63 SDK \u7684\u914D\u7F6E\uFF0C\u8BE6\u7EC6\u4FE1\u606F\u8BF7\u67E5\u770B\u6587\u6863\u3002", link_text: "", link_url: "" }, 4: { title: "\u5F53\u524D\u9875\u9762\u65E0\u6CD5\u8FDB\u884C\u53EF\u89C6\u5316\u5168\u57CB\u70B9", message: "Web JS SDK \u914D\u7F6E\u7684\u6570\u636E\u6821\u9A8C\u5730\u5740\u4E0E App SDK \u914D\u7F6E\u7684\u6570\u636E\u6821\u9A8C\u5730\u5740\u4E0D\u4E00\u81F4\uFF0C\u8BF7\u8054\u7CFB\u8D35\u65B9\u5DE5\u4F5C\u4EBA\u5458\u4FEE\u6B63 SDK \u7684\u914D\u7F6E\uFF0C\u8BE6\u7EC6\u4FE1\u606F\u8BF7\u67E5\u770B\u6587\u6863\u3002", link_text: "", link_url: "" } };
-          return !(!e2 || !t2[e2]) && t2[e2];
-        }, protocol: {
-          protocolIsSame: function (e2, t2) {
-            try {
-              if (b(e2).protocol !== b(t2).protocol)
-                return false;
-            } catch (r2) {
-              return $e("\u4E0D\u652F\u6301 _.URL \u65B9\u6CD5"), false;
-            }
-            return true;
-          }, serverUrl: function () {
-            h(Ee.server_url) && "" !== Ee.server_url && !this.protocolIsSame(Ee.server_url, location.href) && $e("SDK \u68C0\u6D4B\u5230\u60A8\u7684\u6570\u636E\u53D1\u9001\u5730\u5740\u548C\u5F53\u524D\u9875\u9762\u5730\u5740\u7684\u534F\u8BAE\u4E0D\u4E00\u81F4\uFF0C\u5EFA\u8BAE\u60A8\u4FEE\u6539\u6210\u4E00\u81F4\u7684\u534F\u8BAE\u3002\n\u56E0\u4E3A\uFF1A1\u3001https \u4E0B\u9762\u53D1\u9001 http \u7684\u56FE\u7247\u8BF7\u6C42\u4F1A\u5931\u8D25\u30022\u3001http \u9875\u9762\u4F7F\u7528 https + ajax \u65B9\u5F0F\u53D1\u6570\u636E\uFF0C\u5728 ie9 \u53CA\u4EE5\u4E0B\u4F1A\u4E22\u5931\u6570\u636E\u3002");
-          }, ajax: function (e2) {
-            if (e2 === Ee.server_url)
-              return false;
-            h(e2) && "" !== e2 && !this.protocolIsSame(e2, location.href) && $e("SDK \u68C0\u6D4B\u5230\u60A8\u7684\u6570\u636E\u53D1\u9001\u5730\u5740\u548C\u5F53\u524D\u9875\u9762\u5730\u5740\u7684\u534F\u8BAE\u4E0D\u4E00\u81F4\uFF0C\u5EFA\u8BAE\u60A8\u4FEE\u6539\u6210\u4E00\u81F4\u7684\u534F\u8BAE\u3002\u56E0\u4E3A http \u9875\u9762\u4F7F\u7528 https + ajax \u65B9\u5F0F\u53D1\u6570\u636E\uFF0C\u5728 ie9 \u53CA\u4EE5\u4E0B\u4F1A\u4E22\u5931\u6570\u636E\u3002");
-          }
+      var nt = { distinct_id: function() {
+      }, jssdkDebug: function() {
+      }, _sendDebug: function(e2) {
+      }, apph5: function(e2) {
+        var t2 = "app_h5\u6253\u901A\u5931\u8D25-", r2 = { 1: t2 + "use_app_track\u4E3Afalse", 2: t2 + "Android\u6216\u8005iOS\uFF0C\u6CA1\u6709\u66B4\u9732\u76F8\u5E94\u65B9\u6CD5", 3.1: t2 + "Android\u6821\u9A8Cserver_url\u5931\u8D25", 3.2: t2 + "iOS\u6821\u9A8Cserver_url\u5931\u8D25", 4.1: t2 + "H5 \u6821\u9A8C iOS server_url \u5931\u8D25", 4.2: t2 + "H5 \u6821\u9A8C Android server_url \u5931\u8D25" }, n2 = e2.output, i2 = e2.step, a2 = e2.data || "";
+        "all" !== n2 && "console" !== n2 || De(r2[i2]), ("all" === n2 || "code" === n2) && s(Ee.is_debug) && Ee.is_debug.apph5 && (a2.type && "profile" === a2.type.slice(0, 7) || (a2.properties._jssdk_debug_info = "apph5-" + String(i2)));
+      }, defineMode: function(e2) {
+        var t2 = { 1: { title: "\u5F53\u524D\u9875\u9762\u65E0\u6CD5\u8FDB\u884C\u53EF\u89C6\u5316\u5168\u57CB\u70B9", message: "App SDK \u4E0E Web JS SDK \u6CA1\u6709\u8FDB\u884C\u6253\u901A\uFF0C\u8BF7\u8054\u7CFB\u8D35\u65B9\u6280\u672F\u4EBA\u5458\u4FEE\u6B63 App SDK \u7684\u914D\u7F6E\uFF0C\u8BE6\u7EC6\u4FE1\u606F\u8BF7\u67E5\u770B\u6587\u6863\u3002", link_text: "", link_url: "" }, 2: { title: "\u5F53\u524D\u9875\u9762\u65E0\u6CD5\u8FDB\u884C\u53EF\u89C6\u5316\u5168\u57CB\u70B9", message: "App SDK \u4E0E Web JS SDK \u6CA1\u6709\u8FDB\u884C\u6253\u901A\uFF0C\u8BF7\u8054\u7CFB\u8D35\u65B9\u6280\u672F\u4EBA\u5458\u4FEE\u6B63 Web JS SDK \u7684\u914D\u7F6E\uFF0C\u8BE6\u7EC6\u4FE1\u606F\u8BF7\u67E5\u770B\u6587\u6863\u3002", link_text: "", link_url: "" }, 3: { title: "\u5F53\u524D\u9875\u9762\u65E0\u6CD5\u8FDB\u884C\u53EF\u89C6\u5316\u5168\u57CB\u70B9", message: "Web JS SDK \u6CA1\u6709\u5F00\u542F\u5168\u57CB\u70B9\u914D\u7F6E\uFF0C\u8BF7\u8054\u7CFB\u8D35\u65B9\u5DE5\u4F5C\u4EBA\u5458\u4FEE\u6B63 SDK \u7684\u914D\u7F6E\uFF0C\u8BE6\u7EC6\u4FE1\u606F\u8BF7\u67E5\u770B\u6587\u6863\u3002", link_text: "", link_url: "" }, 4: { title: "\u5F53\u524D\u9875\u9762\u65E0\u6CD5\u8FDB\u884C\u53EF\u89C6\u5316\u5168\u57CB\u70B9", message: "Web JS SDK \u914D\u7F6E\u7684\u6570\u636E\u6821\u9A8C\u5730\u5740\u4E0E App SDK \u914D\u7F6E\u7684\u6570\u636E\u6821\u9A8C\u5730\u5740\u4E0D\u4E00\u81F4\uFF0C\u8BF7\u8054\u7CFB\u8D35\u65B9\u5DE5\u4F5C\u4EBA\u5458\u4FEE\u6B63 SDK \u7684\u914D\u7F6E\uFF0C\u8BE6\u7EC6\u4FE1\u606F\u8BF7\u67E5\u770B\u6587\u6863\u3002", link_text: "", link_url: "" } };
+        return !(!e2 || !t2[e2]) && t2[e2];
+      }, protocol: { protocolIsSame: function(e2, t2) {
+        try {
+          if (b(e2).protocol !== b(t2).protocol)
+            return false;
+        } catch (r2) {
+          return $e("\u4E0D\u652F\u6301 _.URL \u65B9\u6CD5"), false;
         }
-      }, it = {
-        initPage: function () {
-          var e2 = Qe(), t2 = ee(), r2 = Je(t2);
-          r2 || nt.jssdkDebug("url_domain\u5F02\u5E38_" + t2 + "_" + r2), this.pageProp = { referrer: e2, referrer_host: e2 ? W(e2) : "", url: t2, url_host: W(t2, "url_host\u53D6\u503C\u5F02\u5E38"), url_domain: r2 };
-        }, pageProp: {}, campaignParams: function () {
-          return t.kit.getUtmData();
-        }, campaignParamsStandard: function (e2, t2) {
-          e2 = e2 || "", t2 = t2 || "";
-          var r2 = it.campaignParams(), n2 = {}, i2 = {};
-          return D(r2, function (r3, a2, o2) {
-            -1 !== (" " + Ue + " ").indexOf(" " + a2 + " ") ? n2[e2 + a2] = o2[a2] : i2[t2 + a2] = o2[a2];
-          }), { $utms: n2, otherUtms: i2 };
-        }, properties: function () {
-          var e2 = window.innerHeight || document.documentElement.clientHeight || document.body && document.body.clientHeight || 0, t2 = window.innerWidth || document.documentElement.clientWidth || document.body && document.body.clientWidth || 0;
-          return { $timezone_offset: new Date().getTimezoneOffset(), $screen_height: Number(screen.height) || 0, $screen_width: Number(screen.width) || 0, $viewport_height: e2, $viewport_width: t2, $lib: "js", $lib_version: Re };
-        }, currentProps: {}, register: function (e2) {
-          $(it.currentProps, e2);
-        }
-      };
+        return true;
+      }, serverUrl: function() {
+        h(Ee.server_url) && "" !== Ee.server_url && !this.protocolIsSame(Ee.server_url, location.href) && $e("SDK \u68C0\u6D4B\u5230\u60A8\u7684\u6570\u636E\u53D1\u9001\u5730\u5740\u548C\u5F53\u524D\u9875\u9762\u5730\u5740\u7684\u534F\u8BAE\u4E0D\u4E00\u81F4\uFF0C\u5EFA\u8BAE\u60A8\u4FEE\u6539\u6210\u4E00\u81F4\u7684\u534F\u8BAE\u3002\n\u56E0\u4E3A\uFF1A1\u3001https \u4E0B\u9762\u53D1\u9001 http \u7684\u56FE\u7247\u8BF7\u6C42\u4F1A\u5931\u8D25\u30022\u3001http \u9875\u9762\u4F7F\u7528 https + ajax \u65B9\u5F0F\u53D1\u6570\u636E\uFF0C\u5728 ie9 \u53CA\u4EE5\u4E0B\u4F1A\u4E22\u5931\u6570\u636E\u3002");
+      }, ajax: function(e2) {
+        if (e2 === Ee.server_url)
+          return false;
+        h(e2) && "" !== e2 && !this.protocolIsSame(e2, location.href) && $e("SDK \u68C0\u6D4B\u5230\u60A8\u7684\u6570\u636E\u53D1\u9001\u5730\u5740\u548C\u5F53\u524D\u9875\u9762\u5730\u5740\u7684\u534F\u8BAE\u4E0D\u4E00\u81F4\uFF0C\u5EFA\u8BAE\u60A8\u4FEE\u6539\u6210\u4E00\u81F4\u7684\u534F\u8BAE\u3002\u56E0\u4E3A http \u9875\u9762\u4F7F\u7528 https + ajax \u65B9\u5F0F\u53D1\u6570\u636E\uFF0C\u5728 ie9 \u53CA\u4EE5\u4E0B\u4F1A\u4E22\u5931\u6570\u636E\u3002");
+      } } }, it = { initPage: function() {
+        var e2 = Qe(), t2 = ee(), r2 = Je(t2);
+        r2 || nt.jssdkDebug("url_domain\u5F02\u5E38_" + t2 + "_" + r2), this.pageProp = { referrer: e2, referrer_host: e2 ? W(e2) : "", url: t2, url_host: W(t2, "url_host\u53D6\u503C\u5F02\u5E38"), url_domain: r2 };
+      }, pageProp: {}, campaignParams: function() {
+        return t.kit.getUtmData();
+      }, campaignParamsStandard: function(e2, t2) {
+        e2 = e2 || "", t2 = t2 || "";
+        var r2 = it.campaignParams(), n2 = {}, i2 = {};
+        return D(r2, function(r3, a2, o2) {
+          -1 !== (" " + Ue + " ").indexOf(" " + a2 + " ") ? n2[e2 + a2] = o2[a2] : i2[t2 + a2] = o2[a2];
+        }), { $utms: n2, otherUtms: i2 };
+      }, properties: function() {
+        var e2 = window.innerHeight || document.documentElement.clientHeight || document.body && document.body.clientHeight || 0, t2 = window.innerWidth || document.documentElement.clientWidth || document.body && document.body.clientWidth || 0;
+        return { $timezone_offset: new Date().getTimezoneOffset(), $screen_height: Number(screen.height) || 0, $screen_width: Number(screen.width) || 0, $viewport_height: e2, $viewport_width: t2, $lib: "js", $lib_version: Re };
+      }, currentProps: {}, register: function(e2) {
+        $(it.currentProps, e2);
+      } };
       function at() {
         function e2(e3, t3) {
           for (var r3 = 0; r3 < e3.length; r3++)
@@ -2075,7 +2029,7 @@ var __publicField = (obj, key, value) => {
       }
       function st(e2) {
         var t2 = e2.properties, n2 = JSON.parse(JSON.stringify(e2));
-        s(t2) && D(t2, function (e3, i2) {
+        s(t2) && D(t2, function(e3, i2) {
           if (r(e3))
             try {
               t2[i2] = e3(n2), r(t2[i2]) && ($e("\u60A8\u7684\u5C5E\u6027- " + i2 + " \u683C\u5F0F\u4E0D\u6EE1\u8DB3\u8981\u6C42\uFF0C\u6211\u4EEC\u5DF2\u7ECF\u5C06\u5176\u5220\u9664"), delete t2[i2]);
@@ -2093,7 +2047,7 @@ var __publicField = (obj, key, value) => {
       }
       function ut(e2) {
         var t2 = {};
-        return D(e2, function (e3, r2) {
+        return D(e2, function(e3, r2) {
           null != e3 && (t2[r2] = e3);
         }), t2;
       }
@@ -2128,31 +2082,29 @@ var __publicField = (obj, key, value) => {
         var r2 = [];
         "string" == typeof e2 && e2 in _t.EVENT_LIST && (r2 = _t.EVENT_LIST[e2], _t[r2[0]].on(r2[1], t2));
       }
-      _t.spa = ht, _t.sdk = new f(), _t.data = new f(), _t.initSystemEvent = function () {
+      _t.spa = ht, _t.sdk = new f(), _t.data = new f(), _t.initSystemEvent = function() {
         var e2, t2, n2, i2, a2;
-        e2 = function (e3) {
+        e2 = function(e3) {
           ht.emit("switch", e3);
-        }, n2 = location.href, i2 = window.history.pushState, a2 = window.history.replaceState, r(window.history.pushState) && (window.history.pushState = function () {
+        }, n2 = location.href, i2 = window.history.pushState, a2 = window.history.replaceState, r(window.history.pushState) && (window.history.pushState = function() {
           i2.apply(window.history, arguments), e2(n2), n2 = location.href;
-        }), r(window.history.replaceState) && (window.history.replaceState = function () {
+        }), r(window.history.replaceState) && (window.history.replaceState = function() {
           a2.apply(window.history, arguments), e2(n2), n2 = location.href;
-        }), t2 = window.document.documentMode ? "hashchange" : i2 ? "popstate" : "hashchange", T(window, t2, function () {
+        }), t2 = window.document.documentMode ? "hashchange" : i2 ? "popstate" : "hashchange", T(window, t2, function() {
           e2(n2), n2 = location.href;
         });
       }, _t.EVENT_LIST = { spaSwitch: ["spa", "switch"], sdkBeforeInit: ["sdk", "beforeInit"], sdkInitPara: ["sdk", "initPara"], sdkAfterInitPara: ["sdk", "afterInitPara"], sdkInitAPI: ["sdk", "initAPI"], sdkAfterInitAPI: ["sdk", "afterInitAPI"], sdkAfterInit: ["sdk", "afterInit"], sdkReady: ["sdk", "ready"], dataSendSuccess: ["data", "sendSuccess"], dataSendFail: ["data", "sendFail"] };
-      var vt = function (e2) {
+      var vt = function(e2) {
         this.callback = e2.callback, this.server_url = e2.server_url, this.data = e2.data, this.origin_data = e2.origin_data;
       };
-      vt.prototype.start = function () {
+      vt.prototype.start = function() {
         var e2 = this, t2 = new Date();
-        dt({
-          url: this.server_url, type: "POST", data: e2.data, credentials: false, timeout: Ee.datasend_timeout, cors: true, success: function (r2, n2) {
-            _t.data.emit("sendSuccess", { status: String(n2), resText: r2, type: "ajax_single", timeout_config: Ee.datasend_timeout, request_timeout: new Date() - t2, data: e2.origin_data }), e2.end();
-          }, error: function (r2, n2) {
-            _t.data.emit("sendFail", { status: String(n2), resText: r2, type: "ajax_single", timeout_config: Ee.datasend_timeout, request_timeout: new Date() - t2, data: e2.origin_data }), e2.end();
-          }
-        });
-      }, vt.prototype.end = function () {
+        dt({ url: this.server_url, type: "POST", data: e2.data, credentials: false, timeout: Ee.datasend_timeout, cors: true, success: function(r2, n2) {
+          _t.data.emit("sendSuccess", { status: String(n2), resText: r2, type: "ajax_single", timeout_config: Ee.datasend_timeout, request_timeout: new Date() - t2, data: e2.origin_data }), e2.end();
+        }, error: function(r2, n2) {
+          _t.data.emit("sendFail", { status: String(n2), resText: r2, type: "ajax_single", timeout_config: Ee.datasend_timeout, request_timeout: new Date() - t2, data: e2.origin_data }), e2.end();
+        } });
+      }, vt.prototype.end = function() {
         if (this.callback) {
           if (De("warning: sdk callback is deprecated."), !r(this.callback))
             return void De("error: sdk callback must be function.");
@@ -2162,117 +2114,113 @@ var __publicField = (obj, key, value) => {
       function yt() {
         this.sendTimeStamp = 0, this.timer = null, this.serverUrl = "", this.hasTabStorage = false;
       }
-      yt.prototype = {
-        batchInterval: function () {
-          "" === this.serverUrl && this.getServerUrl(), this.hasTabStorage || (this.generateTabStorage(), this.hasTabStorage = true);
-          var e2 = this;
-          e2.timer = setTimeout(function () {
-            e2.updateExpireTime(), e2.recycle(), e2.send(), clearTimeout(e2.timer), e2.batchInterval();
-          }, Ee.batch_send.send_interval);
-        }, getServerUrl: function () {
-          if (!(h(Ee.server_url) && "" !== Ee.server_url || C(Ee.server_url) && Ee.server_url.length))
-            return xe("\u5F53\u524D server_url \u4E3A\u7A7A\u6216\u4E0D\u6B63\u786E\uFF0C\u53EA\u5728\u63A7\u5236\u53F0\u6253\u5370\u65E5\u5FD7\uFF0Cnetwork \u4E2D\u4E0D\u4F1A\u53D1\u6570\u636E\uFF0C\u8BF7\u914D\u7F6E\u6B63\u786E\u7684 server_url\uFF01");
-          this.serverUrl = C(Ee.server_url) ? Ee.server_url[0] : Ee.server_url;
-        }, send: function () {
-          if (this.sendTimeStamp && n() - this.sendTimeStamp < Ee.batch_send.send_interval)
-            return false;
-          var e2 = a.get(this.tabKey);
-          if (e2) {
-            this.sendTimeStamp = n();
-            var r2 = Pe((e2 = c(e2) || this.generateTabStorageVal()).data);
-            if (r2.length) {
-              for (var i2 = [], o2 = 0; o2 < r2.length; o2++) {
-                var s2 = t.store.readObjectVal(r2[o2]);
-                s2 && (s2._flush_time = new Date().getTime(), i2.push(s2));
-              }
-              i2.length && this.request(i2, e2.data);
+      yt.prototype = { batchInterval: function() {
+        "" === this.serverUrl && this.getServerUrl(), this.hasTabStorage || (this.generateTabStorage(), this.hasTabStorage = true);
+        var e2 = this;
+        e2.timer = setTimeout(function() {
+          e2.updateExpireTime(), e2.recycle(), e2.send(), clearTimeout(e2.timer), e2.batchInterval();
+        }, Ee.batch_send.send_interval);
+      }, getServerUrl: function() {
+        if (!(h(Ee.server_url) && "" !== Ee.server_url || C(Ee.server_url) && Ee.server_url.length))
+          return xe("\u5F53\u524D server_url \u4E3A\u7A7A\u6216\u4E0D\u6B63\u786E\uFF0C\u53EA\u5728\u63A7\u5236\u53F0\u6253\u5370\u65E5\u5FD7\uFF0Cnetwork \u4E2D\u4E0D\u4F1A\u53D1\u6570\u636E\uFF0C\u8BF7\u914D\u7F6E\u6B63\u786E\u7684 server_url\uFF01");
+        this.serverUrl = C(Ee.server_url) ? Ee.server_url[0] : Ee.server_url;
+      }, send: function() {
+        if (this.sendTimeStamp && n() - this.sendTimeStamp < Ee.batch_send.send_interval)
+          return false;
+        var e2 = a.get(this.tabKey);
+        if (e2) {
+          this.sendTimeStamp = n();
+          var r2 = Pe((e2 = c(e2) || this.generateTabStorageVal()).data);
+          if (r2.length) {
+            for (var i2 = [], o2 = 0; o2 < r2.length; o2++) {
+              var s2 = t.store.readObjectVal(r2[o2]);
+              s2 && (s2._flush_time = new Date().getTime(), i2.push(s2));
             }
-          }
-        }, updateExpireTime: function () {
-          var e2 = a.get(this.tabKey);
-          e2 && ((e2 = c(e2) || this.generateTabStorageVal()).expireTime = n() + 2 * Ee.batch_send.send_interval, e2.serverUrl = this.serverUrl, a.set(this.tabKey, JSON.stringify(e2)));
-        }, request: function (e2, t2) {
-          var r2 = this, n2 = new Date();
-          dt({
-            url: this.serverUrl, type: "POST", data: "data_list=" + encodeURIComponent(U(JSON.stringify(e2))), credentials: false, timeout: Ee.batch_send.datasend_timeout, cors: true, success: function (i2, a2) {
-              _t.data.emit("sendSuccess", { status: String(a2), resText: i2, type: "ajax_batch", timeout_config: Ee.batch_send.datasend_timeout, request_timeout: new Date() - n2, data: e2 }), r2.remove(t2), r2.sendTimeStamp = 0;
-            }, error: function (t3, i2) {
-              _t.data.emit("sendFail", { status: String(i2), resText: t3, type: "ajax_batch", timeout_config: Ee.batch_send.datasend_timeout, request_timeout: new Date() - n2, data: e2 }), r2.sendTimeStamp = 0;
-            }
-          });
-        }, remove: function (e2) {
-          var t2 = a.get(this.tabKey);
-          if (t2) {
-            for (var r2 = (c(t2) || this.generateTabStorageVal()).data, n2 = 0; n2 < e2.length; n2++) {
-              var i2 = oe(r2, e2[n2]);
-              i2 > -1 && r2.splice(i2, 1), a.remove(e2[n2]);
-            }
-            r2 = Pe(r2), a.set(this.tabKey, JSON.stringify(this.generateTabStorageVal(r2)));
-          }
-        }, add: function (e2) {
-          var r2 = "sawebjssdk-" + String(u()), i2 = a.get(this.tabKey);
-          null === i2 ? (this.tabKey = "tab-sawebjssdk-" + String(u()), i2 = this.generateTabStorageVal()) : i2 = c(i2) || this.generateTabStorageVal(), i2.data.push(r2), i2.expireTime = n() + 2 * Ee.batch_send.send_interval, a.set(this.tabKey, JSON.stringify(i2)), t.store.saveObjectVal(r2, e2), "track_signup" !== e2.type && "$pageview" !== e2.event || this.sendImmediately();
-        }, generateTabStorage: function () {
-          this.tabKey = "tab-sawebjssdk-" + String(u()), a.set(this.tabKey, JSON.stringify(this.generateTabStorageVal()));
-        }, generateTabStorageVal: function (e2) {
-          return { data: e2 = e2 || [], expireTime: n() + 2 * Ee.batch_send.send_interval, serverUrl: this.serverUrl };
-        }, sendImmediately: function () {
-          this.send();
-        }, recycle: function () {
-          for (var e2 = {}, t2 = 0; t2 < localStorage.length; t2++) {
-            var r2 = localStorage.key(t2), i2 = this;
-            if (0 === r2.indexOf("tab-sawebjssdk-")) {
-              for (var o2 = c(a.get(r2)) || this.generateTabStorageVal(), s2 = 0; s2 < o2.data.length; s2++)
-                e2[o2.data[s2]] = true;
-              if (r2 !== i2.tabKey && n() > o2.expireTime && this.serverUrl === o2.serverUrl)
-                new p("sajssdk-lock-get-").get(r2, 1e4, 1e3, function (e3) {
-                  if (e3) {
-                    null === a.get(i2.tabKey) && i2.generateTabStorage();
-                    var t3 = c(e3) || i2.generateTabStorageVal(), r3 = c(a.get(i2.tabKey)) || i2.generateTabStorageVal();
-                    r3.data = Pe(r3.data.concat(t3.data)), a.set(i2.tabKey, JSON.stringify(r3));
-                  }
-                });
-            } else if (0 === r2.indexOf("sajssdk-lock-get-")) {
-              var l2 = c(a.get(r2)) || { expireTime: 0 };
-              n() - l2.expireTime > 1e4 && a.remove(r2);
-            }
-          }
-          for (var u2 = 0; u2 < localStorage.length; u2++) {
-            var d2 = localStorage.key(u2);
-            0 !== d2.indexOf("sawebjssdk-") || e2[d2] || a.remove(d2);
+            i2.length && this.request(i2, e2.data);
           }
         }
-      };
-      var bt = function (e2) {
+      }, updateExpireTime: function() {
+        var e2 = a.get(this.tabKey);
+        e2 && ((e2 = c(e2) || this.generateTabStorageVal()).expireTime = n() + 2 * Ee.batch_send.send_interval, e2.serverUrl = this.serverUrl, a.set(this.tabKey, JSON.stringify(e2)));
+      }, request: function(e2, t2) {
+        var r2 = this, n2 = new Date();
+        dt({ url: this.serverUrl, type: "POST", data: "data_list=" + encodeURIComponent(U(JSON.stringify(e2))), credentials: false, timeout: Ee.batch_send.datasend_timeout, cors: true, success: function(i2, a2) {
+          _t.data.emit("sendSuccess", { status: String(a2), resText: i2, type: "ajax_batch", timeout_config: Ee.batch_send.datasend_timeout, request_timeout: new Date() - n2, data: e2 }), r2.remove(t2), r2.sendTimeStamp = 0;
+        }, error: function(t3, i2) {
+          _t.data.emit("sendFail", { status: String(i2), resText: t3, type: "ajax_batch", timeout_config: Ee.batch_send.datasend_timeout, request_timeout: new Date() - n2, data: e2 }), r2.sendTimeStamp = 0;
+        } });
+      }, remove: function(e2) {
+        var t2 = a.get(this.tabKey);
+        if (t2) {
+          for (var r2 = (c(t2) || this.generateTabStorageVal()).data, n2 = 0; n2 < e2.length; n2++) {
+            var i2 = oe(r2, e2[n2]);
+            i2 > -1 && r2.splice(i2, 1), a.remove(e2[n2]);
+          }
+          r2 = Pe(r2), a.set(this.tabKey, JSON.stringify(this.generateTabStorageVal(r2)));
+        }
+      }, add: function(e2) {
+        var r2 = "sawebjssdk-" + String(u()), i2 = a.get(this.tabKey);
+        null === i2 ? (this.tabKey = "tab-sawebjssdk-" + String(u()), i2 = this.generateTabStorageVal()) : i2 = c(i2) || this.generateTabStorageVal(), i2.data.push(r2), i2.expireTime = n() + 2 * Ee.batch_send.send_interval, a.set(this.tabKey, JSON.stringify(i2)), t.store.saveObjectVal(r2, e2), "track_signup" !== e2.type && "$pageview" !== e2.event || this.sendImmediately();
+      }, generateTabStorage: function() {
+        this.tabKey = "tab-sawebjssdk-" + String(u()), a.set(this.tabKey, JSON.stringify(this.generateTabStorageVal()));
+      }, generateTabStorageVal: function(e2) {
+        return { data: e2 = e2 || [], expireTime: n() + 2 * Ee.batch_send.send_interval, serverUrl: this.serverUrl };
+      }, sendImmediately: function() {
+        this.send();
+      }, recycle: function() {
+        for (var e2 = {}, t2 = 0; t2 < localStorage.length; t2++) {
+          var r2 = localStorage.key(t2), i2 = this;
+          if (0 === r2.indexOf("tab-sawebjssdk-")) {
+            for (var o2 = c(a.get(r2)) || this.generateTabStorageVal(), s2 = 0; s2 < o2.data.length; s2++)
+              e2[o2.data[s2]] = true;
+            if (r2 !== i2.tabKey && n() > o2.expireTime && this.serverUrl === o2.serverUrl)
+              new p("sajssdk-lock-get-").get(r2, 1e4, 1e3, function(e3) {
+                if (e3) {
+                  null === a.get(i2.tabKey) && i2.generateTabStorage();
+                  var t3 = c(e3) || i2.generateTabStorageVal(), r3 = c(a.get(i2.tabKey)) || i2.generateTabStorageVal();
+                  r3.data = Pe(r3.data.concat(t3.data)), a.set(i2.tabKey, JSON.stringify(r3));
+                }
+              });
+          } else if (0 === r2.indexOf("sajssdk-lock-get-")) {
+            var l2 = c(a.get(r2)) || { expireTime: 0 };
+            n() - l2.expireTime > 1e4 && a.remove(r2);
+          }
+        }
+        for (var u2 = 0; u2 < localStorage.length; u2++) {
+          var d2 = localStorage.key(u2);
+          0 !== d2.indexOf("sawebjssdk-") || e2[d2] || a.remove(d2);
+        }
+      } };
+      var bt = function(e2) {
         this.callback = e2.callback, this.server_url = e2.server_url, this.data = e2.data;
       };
-      bt.prototype.start = function () {
+      bt.prototype.start = function() {
         var e2 = this;
-        "object" == typeof navigator && "function" == typeof navigator.sendBeacon && navigator.sendBeacon(this.server_url, this.data), setTimeout(function () {
+        "object" == typeof navigator && "function" == typeof navigator.sendBeacon && navigator.sendBeacon(this.server_url, this.data), setTimeout(function() {
           e2.end();
         }, 40);
-      }, bt.prototype.end = function () {
+      }, bt.prototype.end = function() {
         if (this.callback) {
           if (De("warning: sdk callback is deprecated."), !r(this.callback))
             return void De("error: sdk callback must be function.");
           this.callback();
         }
       };
-      var wt = function (e2) {
+      var wt = function(e2) {
         this.callback = e2.callback, this.img = document.createElement("img"), this.img.width = 1, this.img.height = 1, Ee.img_use_crossorigin && (this.img.crossOrigin = "anonymous"), this.server_url = e2.data;
       };
-      wt.prototype.start = function () {
+      wt.prototype.start = function() {
         var e2 = this;
-        Ee.ignore_oom && (this.img.onload = function () {
+        Ee.ignore_oom && (this.img.onload = function() {
           this.onload = null, this.onerror = null, this.onabort = null, e2.end();
-        }, this.img.onerror = function () {
+        }, this.img.onerror = function() {
           this.onload = null, this.onerror = null, this.onabort = null, e2.end();
-        }, this.img.onabort = function () {
+        }, this.img.onabort = function() {
           this.onload = null, this.onerror = null, this.onabort = null, e2.end();
         }), this.img.src = this.server_url;
-      }, wt.prototype.lastClear = function () {
+      }, wt.prototype.lastClear = function() {
         Q().ie !== void 0 ? this.img.src = "about:blank" : this.img.src = "";
-      }, wt.prototype.end = function () {
+      }, wt.prototype.end = function() {
         if (this.callback) {
           if (De("warning: sdk callback is deprecated."), !r(this.callback))
             return void De("error: sdk callback must be function.");
@@ -2280,225 +2228,197 @@ var __publicField = (obj, key, value) => {
         }
         self.lastClear && self.lastClear();
       };
-      var St = { __proto__: null, addEvent: ze, EventEmitterSa: We, cookie: Me, info: it, getReferrer: Qe, getCurrentDomain: Je, isBaiduTraffic: Xe, getReferrerEqid: Ge, getReferrerEqidType: Ye, getBaiduKeyword: Ze, isReferralTraffic: et, getKeywordFromReferrer: tt, getReferSearchEngine: rt, getSourceFromReferrer: at, getWxAdIdFromUrl: ot, parseSuperProperties: st, searchConfigData: lt, strip_empty_properties: ut, getEleInfo: ct, getElementContent: pt, ajax: dt, optimizeServerUrl: ft, encodeTrackData: gt, AjaxSend: vt, BatchSend: yt, BeaconSend: bt, ImageSend: wt }, kt = new We(), Pt = {
-        requests: [], _sessionState: {}, _state: { distinct_id: "", first_id: "", props: {}, identities: {} }, getProps: function () {
-          return this._state.props || {};
-        }, getSessionProps: function () {
-        }, getOriginDistinctId: function () {
-          return this._state._distinct_id || this._state.distinct_id;
-        }, getOriginUnionId: function (e2) {
-          var t2 = {}, r2 = (e2 = e2 || this._state)._first_id || e2.first_id, n2 = e2._distinct_id || e2.distinct_id;
-          return r2 && n2 ? (t2.login_id = n2, t2.anonymous_id = r2) : t2.anonymous_id = n2, t2;
-        }, getIdentities: function () {
-          var e2 = JSON.parse(JSON.stringify(this._state.identities));
-          return e2.$identity_anonymous_id = this.getAnonymousId(), e2;
-        }, getAnonymousId: function () {
-          return Pt._state._first_id || Pt._state.first_id || Pt._state._distinct_id || Pt._state.distinct_id;
-        }, getDistinctId: function () {
-          var e2 = this.getUnionId();
-          return e2.login_id || e2.anonymous_id;
-        }, getUnionId: function (e2) {
-          var t2 = this.getOriginUnionId(e2);
-          return t2.login_id && this._state.history_login_id && this._state.history_login_id.name && this._state.history_login_id.name !== He.LOGIN && (t2.login_id = this._state.history_login_id.name + "+" + t2.login_id), t2;
-        }, getFirstId: function () {
-          return this._state._first_id || this._state.first_id;
-        }, initSessionState: function () {
-        }, setOnce: function (e2, t2) {
-          e2 in this._state || this.set(e2, t2);
-        }, set: function (e2, t2) {
-          this._state = this._state || {};
-          var r2 = this._state.distinct_id;
-          this._state[e2] = t2, "first_id" === e2 ? delete this._state._first_id : "distinct_id" === e2 && delete this._state._distinct_id, this.save(), "distinct_id" === e2 && r2 && kt.tempAdd("changeDistinctId", t2);
-        }, change: function (e2, t2) {
-          this._state["_" + e2] = t2;
-        }, setSessionProps: function () {
-          t.log("initSessionState \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u8BF7\u4E0D\u8981\u4F7F\u7528\u8BE5\u529F\u80FD\uFF0C\u5982\u6709\u9700\u6C42\u8054\u7CFB\u6280\u672F\u987E\u95EE");
-        }, setSessionPropsOnce: function () {
-          t.log("initSessionState \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u8BF7\u4E0D\u8981\u4F7F\u7528\u8BE5\u529F\u80FD\uFF0C\u5982\u6709\u9700\u6C42\u8054\u7CFB\u6280\u672F\u987E\u95EE");
-        }, setProps: function (e2, r2) {
-          var n2 = {};
-          for (var i2 in n2 = r2 ? e2 : $(this._state.props || {}, e2))
-            "string" == typeof n2[i2] && (n2[i2] = n2[i2].slice(0, t.para.max_referrer_string_length));
-          this.set("props", n2);
-        }, setPropsOnce: function (e2) {
-          var t2 = this._state.props || {};
-          B(t2, e2), this.set("props", t2);
-        }, clearAllProps: function (e2) {
+      var St = { __proto__: null, addEvent: ze, EventEmitterSa: We, cookie: Me, info: it, getReferrer: Qe, getCurrentDomain: Je, isBaiduTraffic: Xe, getReferrerEqid: Ge, getReferrerEqidType: Ye, getBaiduKeyword: Ze, isReferralTraffic: et, getKeywordFromReferrer: tt, getReferSearchEngine: rt, getSourceFromReferrer: at, getWxAdIdFromUrl: ot, parseSuperProperties: st, searchConfigData: lt, strip_empty_properties: ut, getEleInfo: ct, getElementContent: pt, ajax: dt, optimizeServerUrl: ft, encodeTrackData: gt, AjaxSend: vt, BatchSend: yt, BeaconSend: bt, ImageSend: wt }, kt = new We(), Pt = { requests: [], _sessionState: {}, _state: { distinct_id: "", first_id: "", props: {}, identities: {} }, getProps: function() {
+        return this._state.props || {};
+      }, getSessionProps: function() {
+      }, getOriginDistinctId: function() {
+        return this._state._distinct_id || this._state.distinct_id;
+      }, getOriginUnionId: function(e2) {
+        var t2 = {}, r2 = (e2 = e2 || this._state)._first_id || e2.first_id, n2 = e2._distinct_id || e2.distinct_id;
+        return r2 && n2 ? (t2.login_id = n2, t2.anonymous_id = r2) : t2.anonymous_id = n2, t2;
+      }, getIdentities: function() {
+        var e2 = JSON.parse(JSON.stringify(this._state.identities));
+        return e2.$identity_anonymous_id = this.getAnonymousId(), e2;
+      }, getAnonymousId: function() {
+        return Pt._state._first_id || Pt._state.first_id || Pt._state._distinct_id || Pt._state.distinct_id;
+      }, getDistinctId: function() {
+        var e2 = this.getUnionId();
+        return e2.login_id || e2.anonymous_id;
+      }, getUnionId: function(e2) {
+        var t2 = this.getOriginUnionId(e2);
+        return t2.login_id && this._state.history_login_id && this._state.history_login_id.name && this._state.history_login_id.name !== He.LOGIN && (t2.login_id = this._state.history_login_id.name + "+" + t2.login_id), t2;
+      }, getFirstId: function() {
+        return this._state._first_id || this._state.first_id;
+      }, initSessionState: function() {
+      }, setOnce: function(e2, t2) {
+        e2 in this._state || this.set(e2, t2);
+      }, set: function(e2, t2) {
+        this._state = this._state || {};
+        var r2 = this._state.distinct_id;
+        this._state[e2] = t2, "first_id" === e2 ? delete this._state._first_id : "distinct_id" === e2 && delete this._state._distinct_id, this.save(), "distinct_id" === e2 && r2 && kt.tempAdd("changeDistinctId", t2);
+      }, change: function(e2, t2) {
+        this._state["_" + e2] = t2;
+      }, setSessionProps: function() {
+        t.log("initSessionState \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u8BF7\u4E0D\u8981\u4F7F\u7528\u8BE5\u529F\u80FD\uFF0C\u5982\u6709\u9700\u6C42\u8054\u7CFB\u6280\u672F\u987E\u95EE");
+      }, setSessionPropsOnce: function() {
+        t.log("initSessionState \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u8BF7\u4E0D\u8981\u4F7F\u7528\u8BE5\u529F\u80FD\uFF0C\u5982\u6709\u9700\u6C42\u8054\u7CFB\u6280\u672F\u987E\u95EE");
+      }, setProps: function(e2, r2) {
+        var n2 = {};
+        for (var i2 in n2 = r2 ? e2 : $(this._state.props || {}, e2))
+          "string" == typeof n2[i2] && (n2[i2] = n2[i2].slice(0, t.para.max_referrer_string_length));
+        this.set("props", n2);
+      }, setPropsOnce: function(e2) {
+        var t2 = this._state.props || {};
+        B(t2, e2), this.set("props", t2);
+      }, clearAllProps: function(e2) {
+        var t2;
+        if (C(e2) && e2.length > 0)
+          for (t2 = 0; t2 < e2.length; t2++)
+            h(e2[t2]) && -1 === e2[t2].indexOf("latest_") && s(this._state.props) && e2[t2] in this._state.props && delete this._state.props[e2[t2]];
+        else if (s(this._state.props))
+          for (t2 in this._state.props)
+            1 !== t2.indexOf("latest_") && delete this._state.props[t2];
+        this.sessionSave({}), this.save();
+      }, sessionSave: function() {
+        t.log("initSessionState \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u8BF7\u4E0D\u8981\u4F7F\u7528\u8BE5\u529F\u80FD\uFF0C\u5982\u6709\u9700\u6C42\u8054\u7CFB\u6280\u672F\u987E\u95EE");
+      }, save: function() {
+        var e2 = JSON.parse(JSON.stringify(this._state));
+        delete e2._first_id, delete e2._distinct_id, e2.identities && (e2.identities = U(JSON.stringify(e2.identities)));
+        var r2 = JSON.stringify(e2);
+        t.para.encrypt_cookie && (r2 = t.kit.userEncrypt(r2)), Me.set(this.getCookieName(), r2, 360, t.para.cross_subdomain);
+      }, getCookieName: function() {
+        var e2 = "";
+        if (false === t.para.cross_subdomain) {
+          try {
+            var r2 = location.host;
+            P(t.para.white_list[r2]) || (e2 = t.para.white_list[r2]);
+          } catch (n2) {
+            $e(n2);
+          }
+          e2 = "string" == typeof e2 && "" !== e2 ? "sa_jssdk_2015_" + t.para.sdk_id + e2.replace(/\./g, "_") : "sa_jssdk_2015_root" + t.para.sdk_id;
+        } else
+          e2 = "sensorsdata2015jssdkcross" + t.para.sdk_id;
+        return e2;
+      }, init: function() {
+        this.initSessionState();
+        var e2, r2, n2 = S();
+        Me.isSupport() && (e2 = Me.get(this.getCookieName()), r2 = c(e2 = t.kit.userDecryptIfNeeded(e2))), Me.isSupport() && null !== e2 && fe(e2) && s(r2) && (!s(r2) || r2.distinct_id) ? (Pt._state = $(function(e3) {
           var t2;
-          if (C(e2) && e2.length > 0)
-            for (t2 = 0; t2 < e2.length; t2++)
-              h(e2[t2]) && -1 === e2[t2].indexOf("latest_") && s(this._state.props) && e2[t2] in this._state.props && delete this._state.props[e2[t2]];
-          else if (s(this._state.props))
-            for (t2 in this._state.props)
-              1 !== t2.indexOf("latest_") && delete this._state.props[t2];
-          this.sessionSave({}), this.save();
-        }, sessionSave: function () {
-          t.log("initSessionState \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u8BF7\u4E0D\u8981\u4F7F\u7528\u8BE5\u529F\u80FD\uFF0C\u5982\u6709\u9700\u6C42\u8054\u7CFB\u6280\u672F\u987E\u95EE");
-        }, save: function () {
-          var e2 = JSON.parse(JSON.stringify(this._state));
-          delete e2._first_id, delete e2._distinct_id, e2.identities && (e2.identities = U(JSON.stringify(e2.identities)));
-          var r2 = JSON.stringify(e2);
-          t.para.encrypt_cookie && (r2 = t.kit.userEncrypt(r2)), Me.set(this.getCookieName(), r2, 360, t.para.cross_subdomain);
-        }, getCookieName: function () {
-          var e2 = "";
-          if (false === t.para.cross_subdomain) {
-            try {
-              var r2 = location.host;
-              P(t.para.white_list[r2]) || (e2 = t.para.white_list[r2]);
-            } catch (n2) {
-              $e(n2);
-            }
-            e2 = "string" == typeof e2 && "" !== e2 ? "sa_jssdk_2015_" + t.para.sdk_id + e2.replace(/\./g, "_") : "sa_jssdk_2015_root" + t.para.sdk_id;
-          } else
-            e2 = "sensorsdata2015jssdkcross" + t.para.sdk_id;
-          return e2;
-        }, init: function () {
-          this.initSessionState();
-          var e2, r2, n2 = S();
-          Me.isSupport() && (e2 = Me.get(this.getCookieName()), r2 = c(e2 = t.kit.userDecryptIfNeeded(e2))), Me.isSupport() && null !== e2 && fe(e2) && s(r2) && (!s(r2) || r2.distinct_id) ? (Pt._state = $(function (e3) {
-            var t2;
-            e3.identities && (0 === e3.identities.indexOf("\n/") ? e3.identities = c(ye(e3.identities)) : e3.identities = c(L(e3.identities)));
-            var r3 = Pt.getOriginUnionId(e3);
-            e3.identities && s(e3.identities) && !ce(e3.identities) || (e3.identities = {}, e3.identities.$identity_cookie_id = S()), e3.history_login_id = e3.history_login_id || {};
-            var n3 = e3.history_login_id.name;
-            if (r3.login_id)
-              if (n3 && e3.identities.hasOwnProperty(n3)) {
-                if (e3.identities[n3] !== r3.login_id) {
-                  for (t2 in e3.identities[n3] = r3.login_id, e3.identities)
-                    e3.identities.hasOwnProperty(t2) && "$identity_cookie_id" !== t2 && t2 !== n3 && delete e3.identities[t2];
-                  e3.history_login_id.value = r3.login_id;
-                }
-              } else {
-                var i2 = n3 || He.LOGIN;
-                for (t2 in e3.identities[i2] = r3.login_id, e3.identities)
-                  e3.identities.hasOwnProperty(t2) && "$identity_cookie_id" !== t2 && t2 !== i2 && delete e3.identities[t2];
-                e3.history_login_id = { name: i2, value: r3.login_id };
+          e3.identities && (0 === e3.identities.indexOf("\n/") ? e3.identities = c(ye(e3.identities)) : e3.identities = c(L(e3.identities)));
+          var r3 = Pt.getOriginUnionId(e3);
+          e3.identities && s(e3.identities) && !ce(e3.identities) || (e3.identities = {}, e3.identities.$identity_cookie_id = S()), e3.history_login_id = e3.history_login_id || {};
+          var n3 = e3.history_login_id.name;
+          if (r3.login_id)
+            if (n3 && e3.identities.hasOwnProperty(n3)) {
+              if (e3.identities[n3] !== r3.login_id) {
+                for (t2 in e3.identities[n3] = r3.login_id, e3.identities)
+                  e3.identities.hasOwnProperty(t2) && "$identity_cookie_id" !== t2 && t2 !== n3 && delete e3.identities[t2];
+                e3.history_login_id.value = r3.login_id;
               }
-            else {
-              if (e3.identities.hasOwnProperty("$identity_login_id") || e3.identities.hasOwnProperty(n3))
-                for (t2 in e3.identities)
-                  e3.identities.hasOwnProperty(t2) && "$identity_cookie_id" !== t2 && "$identity_anonymous_id" !== t2 && delete e3.identities[t2];
-              e3.history_login_id = { name: "", value: "" };
+            } else {
+              var i2 = n3 || He.LOGIN;
+              for (t2 in e3.identities[i2] = r3.login_id, e3.identities)
+                e3.identities.hasOwnProperty(t2) && "$identity_cookie_id" !== t2 && t2 !== i2 && delete e3.identities[t2];
+              e3.history_login_id = { name: i2, value: r3.login_id };
             }
-            return e3;
-          }(r2)), Pt.save()) : (t.is_first_visitor = true, function (e3) {
-            Pt.set("distinct_id", e3), Pt.set("identities", { $identity_cookie_id: e3 }), Pt.set("history_login_id", { name: "", value: "" });
-          }(n2)), Ve.setDeviceId(n2, this), Ve.storeInitCheck();
-        }, saveObjectVal: function (e2, r2) {
-          h(r2) || (r2 = JSON.stringify(r2)), 1 == t.para.encrypt_cookie && (r2 = t.kit.userEncrypt(r2)), a.set(e2, r2);
-        }, readObjectVal: function (e2) {
-          var r2 = a.get(e2);
-          return r2 ? c(r2 = t.kit.userDecryptIfNeeded(r2)) : null;
+          else {
+            if (e3.identities.hasOwnProperty("$identity_login_id") || e3.identities.hasOwnProperty(n3))
+              for (t2 in e3.identities)
+                e3.identities.hasOwnProperty(t2) && "$identity_cookie_id" !== t2 && "$identity_anonymous_id" !== t2 && delete e3.identities[t2];
+            e3.history_login_id = { name: "", value: "" };
+          }
+          return e3;
+        }(r2)), Pt.save()) : (t.is_first_visitor = true, function(e3) {
+          Pt.set("distinct_id", e3), Pt.set("identities", { $identity_cookie_id: e3 }), Pt.set("history_login_id", { name: "", value: "" });
+        }(n2)), Ve.setDeviceId(n2, this), Ve.storeInitCheck();
+      }, saveObjectVal: function(e2, r2) {
+        h(r2) || (r2 = JSON.stringify(r2)), 1 == t.para.encrypt_cookie && (r2 = t.kit.userEncrypt(r2)), a.set(e2, r2);
+      }, readObjectVal: function(e2) {
+        var r2 = a.get(e2);
+        return r2 ? c(r2 = t.kit.userDecryptIfNeeded(r2)) : null;
+      } }, Ct = { string: function(e2) {
+        $e(e2 + " must be string");
+      }, emptyString: function(e2) {
+        $e(e2 + "'s is empty");
+      }, regexTest: function(e2) {
+        $e(e2 + " is invalid");
+      }, idLength: function(e2) {
+        $e(e2 + " length is longer than " + Ee.max_id_length);
+      }, keyLength: function(e2) {
+        $e(e2 + " length is longer than " + Ee.max_key_length);
+      }, stringLength: function(e2) {
+        $e(e2 + " length is longer than " + Ee.max_string_length);
+      }, voidZero: function(e2) {
+        $e(e2 + "'s is undefined");
+      }, reservedLoginId: function(e2) {
+        $e(e2 + " is invalid");
+      }, reservedBind: function(e2) {
+        $e(e2 + " is invalid");
+      }, reservedUnbind: function(e2) {
+        $e(e2 + " is invalid");
+      } }, Ot = { regName: /^((?!^distinct_id$|^original_id$|^time$|^properties$|^id$|^first_id$|^second_id$|^users$|^events$|^event$|^user_id$|^date$|^datetime$|^user_tag.*|^user_group.*)[a-zA-Z_$][a-zA-Z\d_$]*)$/i, loginIDReservedNames: ["$identity_anonymous_id", "$identity_cookie_id"], bindReservedNames: ["$identity_login_id", "$identity_anonymous_id", "$identity_cookie_id"], unbindReservedNames: ["$identity_anonymous_id", He.LOGIN], string: function(e2) {
+        return !!h(e2);
+      }, emptyString: function(e2) {
+        return !(!h(e2) || 0 === v(e2).length);
+      }, regexTest: function(e2) {
+        return !(!h(e2) || !this.regName.test(e2));
+      }, idLength: function(e2) {
+        return !(!h(e2) || e2.length > Ee.max_id_length);
+      }, keyLength: function(e2) {
+        return !(!h(e2) || e2.length > Ee.max_key_length);
+      }, stringLength: function(e2) {
+        return !(!h(e2) || e2.length > Ee.max_string_length);
+      }, voidZero: function(e2) {
+        return void 0 !== e2;
+      }, reservedLoginId: function(e2) {
+        return !(oe(this.loginIDReservedNames, e2) > -1);
+      }, reservedUnbind: function(e2) {
+        return !(oe(this.unbindReservedNames, e2) > -1);
+      }, reservedBind: function(e2) {
+        var t2 = Pt._state.history_login_id;
+        return (!t2 || !t2.name || t2.name !== e2) && !(oe(this.bindReservedNames, e2) > -1);
+      } }, jt = { distinct_id: { rules: ["string", "emptyString", "idLength"], onComplete: function(e2, t2, n2) {
+        return !e2 && ("emptyString" === n2 && (t2 = "Id"), r(Ct[n2]) && Ct[n2](t2), "idLength" === n2) || e2;
+      } }, event: { rules: ["string", "emptyString", "keyLength", "regexTest"], onComplete: function(e2, t2, n2) {
+        return e2 || ("emptyString" === n2 && (t2 = "eventName"), r(Ct[n2]) && Ct[n2](t2)), true;
+      } }, propertyKey: { rules: ["string", "emptyString", "keyLength", "regexTest"], onComplete: function(e2, t2, n2) {
+        return e2 || ("emptyString" === n2 && (t2 = "Property key"), r(Ct[n2]) && Ct[n2](t2)), true;
+      } }, propertyValue: { rules: ["voidZero"], onComplete: function(e2, t2, n2) {
+        return e2 || r(Ct[n2]) && Ct[n2]("Property Value"), true;
+      } }, properties: function(e2) {
+        return s(e2) ? D(e2, function(e3, t2) {
+          Nt({ propertyKey: t2 });
+          Nt({ propertyValue: e3 }, function(e4, n2, i2) {
+            return e4 || (n2 = t2 + "'s Value", r(Ct[i2]) && Ct[i2](n2)), true;
+          });
+        }) : Ot.voidZero(e2) && $e("properties\u53EF\u4EE5\u6CA1\u6709\uFF0C\u4F46\u6709\u7684\u8BDD\u5FC5\u987B\u662F\u5BF9\u8C61"), true;
+      }, propertiesMust: function(e2) {
+        return e2 !== void 0 && s(e2) && !ce(e2) ? this.properties.call(this, e2) : $e("properties\u5FC5\u987B\u662F\u5BF9\u8C61"), true;
+      }, item_type: { rules: ["string", "emptyString", "keyLength", "regexTest"], onComplete: function(e2, t2, n2) {
+        return e2 || ("emptyString" === n2 && (t2 = "item_type"), r(Ct[n2]) && Ct[n2](t2)), true;
+      } }, item_id: { rules: ["string", "emptyString", "stringLength"], onComplete: function(e2, t2, n2) {
+        return e2 || ("emptyString" === n2 && (t2 = "item_id"), r(Ct[n2]) && Ct[n2](t2)), true;
+      } }, loginIdKey: { rules: ["string", "emptyString", "keyLength", "regexTest", "reservedLoginId"], onComplete: function(e2, t2, n2) {
+        return !e2 && ("emptyString" === n2 && (t2 = "login_id_key"), r(Ct[n2]) && Ct[n2](t2), "keyLength" === n2) || e2;
+      } }, bindKey: { rules: ["string", "emptyString", "keyLength", "regexTest", "reservedBind"], onComplete: function(e2, t2, n2) {
+        return !e2 && ("emptyString" === n2 && (t2 = "Key"), r(Ct[n2]) && Ct[n2](t2), "keyLength" === n2) || e2;
+      } }, unbindKey: { rules: ["string", "emptyString", "keyLength", "regexTest", "reservedUnbind"], onComplete: function(e2, t2, n2) {
+        return !e2 && ("emptyString" === n2 && (t2 = "Key"), r(Ct[n2]) && Ct[n2](t2), "keyLength" === n2) || e2;
+      } }, bindValue: { rules: ["string", "emptyString", "idLength"], onComplete: function(e2, t2, n2) {
+        return !e2 && ("emptyString" === n2 && (t2 = "Value"), r(Ct[n2]) && Ct[n2](t2), "idLength" === n2) || e2;
+      } }, check: function(e2, t2, n2) {
+        var i2 = this[e2];
+        if (r(i2))
+          return i2.call(this, t2);
+        if (!i2)
+          return false;
+        for (var a2 = 0; a2 < i2.rules.length; a2++) {
+          var o2 = i2.rules[a2], s2 = Ot[o2](t2), l2 = r(n2) ? n2(s2, t2, o2) : i2.onComplete(s2, t2, o2);
+          if (!s2)
+            return l2;
         }
-      }, Ct = {
-        string: function (e2) {
-          $e(e2 + " must be string");
-        }, emptyString: function (e2) {
-          $e(e2 + "'s is empty");
-        }, regexTest: function (e2) {
-          $e(e2 + " is invalid");
-        }, idLength: function (e2) {
-          $e(e2 + " length is longer than " + Ee.max_id_length);
-        }, keyLength: function (e2) {
-          $e(e2 + " length is longer than " + Ee.max_key_length);
-        }, stringLength: function (e2) {
-          $e(e2 + " length is longer than " + Ee.max_string_length);
-        }, voidZero: function (e2) {
-          $e(e2 + "'s is undefined");
-        }, reservedLoginId: function (e2) {
-          $e(e2 + " is invalid");
-        }, reservedBind: function (e2) {
-          $e(e2 + " is invalid");
-        }, reservedUnbind: function (e2) {
-          $e(e2 + " is invalid");
-        }
-      }, Ot = {
-        regName: /^((?!^distinct_id$|^original_id$|^time$|^properties$|^id$|^first_id$|^second_id$|^users$|^events$|^event$|^user_id$|^date$|^datetime$|^user_tag.*|^user_group.*)[a-zA-Z_$][a-zA-Z\d_$]*)$/i, loginIDReservedNames: ["$identity_anonymous_id", "$identity_cookie_id"], bindReservedNames: ["$identity_login_id", "$identity_anonymous_id", "$identity_cookie_id"], unbindReservedNames: ["$identity_anonymous_id", He.LOGIN], string: function (e2) {
-          return !!h(e2);
-        }, emptyString: function (e2) {
-          return !(!h(e2) || 0 === v(e2).length);
-        }, regexTest: function (e2) {
-          return !(!h(e2) || !this.regName.test(e2));
-        }, idLength: function (e2) {
-          return !(!h(e2) || e2.length > Ee.max_id_length);
-        }, keyLength: function (e2) {
-          return !(!h(e2) || e2.length > Ee.max_key_length);
-        }, stringLength: function (e2) {
-          return !(!h(e2) || e2.length > Ee.max_string_length);
-        }, voidZero: function (e2) {
-          return void 0 !== e2;
-        }, reservedLoginId: function (e2) {
-          return !(oe(this.loginIDReservedNames, e2) > -1);
-        }, reservedUnbind: function (e2) {
-          return !(oe(this.unbindReservedNames, e2) > -1);
-        }, reservedBind: function (e2) {
-          var t2 = Pt._state.history_login_id;
-          return (!t2 || !t2.name || t2.name !== e2) && !(oe(this.bindReservedNames, e2) > -1);
-        }
-      }, jt = {
-        distinct_id: {
-          rules: ["string", "emptyString", "idLength"], onComplete: function (e2, t2, n2) {
-            return !e2 && ("emptyString" === n2 && (t2 = "Id"), r(Ct[n2]) && Ct[n2](t2), "idLength" === n2) || e2;
-          }
-        }, event: {
-          rules: ["string", "emptyString", "keyLength", "regexTest"], onComplete: function (e2, t2, n2) {
-            return e2 || ("emptyString" === n2 && (t2 = "eventName"), r(Ct[n2]) && Ct[n2](t2)), true;
-          }
-        }, propertyKey: {
-          rules: ["string", "emptyString", "keyLength", "regexTest"], onComplete: function (e2, t2, n2) {
-            return e2 || ("emptyString" === n2 && (t2 = "Property key"), r(Ct[n2]) && Ct[n2](t2)), true;
-          }
-        }, propertyValue: {
-          rules: ["voidZero"], onComplete: function (e2, t2, n2) {
-            return e2 || r(Ct[n2]) && Ct[n2]("Property Value"), true;
-          }
-        }, properties: function (e2) {
-          return s(e2) ? D(e2, function (e3, t2) {
-            Nt({ propertyKey: t2 });
-            Nt({ propertyValue: e3 }, function (e4, n2, i2) {
-              return e4 || (n2 = t2 + "'s Value", r(Ct[i2]) && Ct[i2](n2)), true;
-            });
-          }) : Ot.voidZero(e2) && $e("properties\u53EF\u4EE5\u6CA1\u6709\uFF0C\u4F46\u6709\u7684\u8BDD\u5FC5\u987B\u662F\u5BF9\u8C61"), true;
-        }, propertiesMust: function (e2) {
-          return e2 !== void 0 && s(e2) && !ce(e2) ? this.properties.call(this, e2) : $e("properties\u5FC5\u987B\u662F\u5BF9\u8C61"), true;
-        }, item_type: {
-          rules: ["string", "emptyString", "keyLength", "regexTest"], onComplete: function (e2, t2, n2) {
-            return e2 || ("emptyString" === n2 && (t2 = "item_type"), r(Ct[n2]) && Ct[n2](t2)), true;
-          }
-        }, item_id: {
-          rules: ["string", "emptyString", "stringLength"], onComplete: function (e2, t2, n2) {
-            return e2 || ("emptyString" === n2 && (t2 = "item_id"), r(Ct[n2]) && Ct[n2](t2)), true;
-          }
-        }, loginIdKey: {
-          rules: ["string", "emptyString", "keyLength", "regexTest", "reservedLoginId"], onComplete: function (e2, t2, n2) {
-            return !e2 && ("emptyString" === n2 && (t2 = "login_id_key"), r(Ct[n2]) && Ct[n2](t2), "keyLength" === n2) || e2;
-          }
-        }, bindKey: {
-          rules: ["string", "emptyString", "keyLength", "regexTest", "reservedBind"], onComplete: function (e2, t2, n2) {
-            return !e2 && ("emptyString" === n2 && (t2 = "Key"), r(Ct[n2]) && Ct[n2](t2), "keyLength" === n2) || e2;
-          }
-        }, unbindKey: {
-          rules: ["string", "emptyString", "keyLength", "regexTest", "reservedUnbind"], onComplete: function (e2, t2, n2) {
-            return !e2 && ("emptyString" === n2 && (t2 = "Key"), r(Ct[n2]) && Ct[n2](t2), "keyLength" === n2) || e2;
-          }
-        }, bindValue: {
-          rules: ["string", "emptyString", "idLength"], onComplete: function (e2, t2, n2) {
-            return !e2 && ("emptyString" === n2 && (t2 = "Value"), r(Ct[n2]) && Ct[n2](t2), "idLength" === n2) || e2;
-          }
-        }, check: function (e2, t2, n2) {
-          var i2 = this[e2];
-          if (r(i2))
-            return i2.call(this, t2);
-          if (!i2)
-            return false;
-          for (var a2 = 0; a2 < i2.rules.length; a2++) {
-            var o2 = i2.rules[a2], s2 = Ot[o2](t2), l2 = r(n2) ? n2(s2, t2, o2) : i2.onComplete(s2, t2, o2);
-            if (!s2)
-              return l2;
-          }
-          return true;
-        }
-      };
+        return true;
+      } };
       function Nt(e2, t2) {
         for (var r2 in e2)
           if (Object.prototype.hasOwnProperty.call(e2, r2) && !jt.check(r2, e2[r2], t2))
@@ -2507,7 +2427,7 @@ var __publicField = (obj, key, value) => {
       }
       function Tt(e2) {
         var t2 = ["$element_selector", "$element_path"], r2 = ["sensorsdata_app_visual_properties"];
-        s(e2) && D(e2, function (n2, i2) {
+        s(e2) && D(e2, function(n2, i2) {
           if (s(n2))
             Tt(e2[i2]);
           else if (h(n2)) {
@@ -2518,438 +2438,412 @@ var __publicField = (obj, key, value) => {
           var a2, o2;
         });
       }
-      var It = {
-        initUrl: function () {
-          var e2, r2, n2 = { server_url: { project: "", host: "" }, page_url: { host: "", pathname: "" } };
-          if (!pe(t.para.server_url))
-            return xe("----vcollect---server_url\u5FC5\u987B\u4E3A\u6709\u6548 URL \u5B57\u7B26\u4E32"), false;
-          try {
-            e2 = b(t.para.server_url), n2.server_url.project = e2.searchParams.get("project") || "default", n2.server_url.host = e2.host;
-          } catch (i2) {
-            return xe("----vcollect---server_url\u89E3\u6790\u5F02\u5E38", i2), false;
-          }
-          try {
-            r2 = b(location.href), n2.page_url.host = r2.hostname, n2.page_url.pathname = r2.pathname;
-          } catch (i2) {
-            return xe("----vcollect---\u9875\u9762\u5730\u5740\u89E3\u6790\u5F02\u5E38", i2), false;
-          }
-          return n2;
-        }, isDiv: function (e2) {
-          if (e2.element_path && "div" !== v(e2.element_path.split(">").pop()).slice(0, 3))
-            return false;
-          return true;
-        }, configIsMatchNew: function (e2, t2) {
-          if (h(e2.$element_selector) && h(t2.element_selector)) {
-            if ("element_selector" === t2.element_field && "equal" === t2["function"])
-              return e2.$element_selector === t2.element_selector;
-            if ("element_selector" === t2.element_field && "contain" === t2["function"])
-              return e2.$element_selector.indexOf(t2.element_selector) > -1;
-          }
-          if (h(e2.$element_path) && h(t2.element_path)) {
-            if ("element_path" === t2.element_field && "equal" === t2["function"])
-              return e2.$element_path === t2.element_path;
-            if ("element_path" === t2.element_field && "contain" === t2["function"])
-              return e2.$element_path.indexOf(t2.element_path) > -1;
-          }
-          return false;
-        }, configIsMatch: function (e2, t2) {
-          return (!t2.limit_element_content || t2.element_content === e2.$element_content) && ((!t2.limit_element_position || t2.element_position === String(e2.$element_position)) && (t2.element_field && t2["function"] ? It.configIsMatchNew(e2, t2) : It.configIsMatchOldVersion(e2, t2)));
-        }, configIsMatchOldVersion: function (e2, t2) {
-          if (!t2.element_path)
-            return false;
-          if (e2.$element_position !== void 0) {
-            if (t2.element_path !== e2.$element_path)
-              return false;
-          } else if (It.isDiv({ element_path: t2.element_path })) {
-            if (e2.$element_path.indexOf(t2.element_path) < 0)
-              return false;
-          } else if (t2.element_path !== e2.$element_path)
-            return false;
-          return true;
-        }, filterConfig: function (e2, t2, r2) {
-          var n2 = [];
-          if (!r2) {
-            var i2 = It.initUrl();
-            if (!i2)
-              return [];
-            r2 = i2.page_url;
-          }
-          return "$WebClick" === e2.event && D(t2, function (t3) {
-            s(t3) && ("webclick" === t3.event_type || "appclick" === t3.event_type) && s(t3.event) && t3.event.url_host === r2.host && t3.event.url_path === r2.pathname && It.configIsMatch(e2.properties, t3.event) && n2.push(t3);
-          }), n2;
-        }, getPropElInLi: function (e2, r2) {
-          if (!(e2 && k(e2) && h(r2)))
-            return null;
-          if ("li" !== e2.tagName.toLowerCase())
-            return null;
-          var n2 = t.heatmap.getDomSelector(e2);
-          if (n2) {
-            var i2 = V(n2 + r2);
-            return i2 || null;
-          }
-          return $e("----custom---\u83B7\u53D6\u540C\u7EA7\u5C5E\u6027\u5143\u7D20\u5931\u8D25\uFF0Cselector\u4FE1\u606F\u5F02\u5E38", n2, r2), null;
-        }, getProp: function (e2, r2) {
-          if (!s(e2))
-            return false;
-          if (!(h(e2.name) && e2.name.length > 0))
-            return $e("----vcustom----\u5C5E\u6027\u540D\u4E0D\u5408\u6CD5,\u5C5E\u6027\u629B\u5F03", e2.name), false;
-          var n2, i2, a2 = {};
-          if ("content" === e2.method) {
-            var o2;
-            if (h(e2.element_selector) && e2.element_selector.length > 0)
-              o2 = V(e2.element_selector);
-            else {
-              if (!r2 || !h(e2.list_selector))
-                return $e("----vcustom----\u5C5E\u6027\u914D\u7F6E\u5F02\u5E38\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name), false;
-              var l2 = V(r2.properties.$element_selector);
-              if (!l2)
-                return $e("----vcustom----\u70B9\u51FB\u5143\u7D20\u83B7\u53D6\u5F02\u5E38\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name), false;
-              var u2 = t.heatmap.getClosestLi(l2);
-              o2 = It.getPropElInLi(u2, e2.list_selector);
-            }
-            if (!o2 || !k(o2))
-              return $e("----vcustom----\u5C5E\u6027\u5143\u7D20\u83B7\u53D6\u5931\u8D25\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name), false;
-            if ("input" === o2.tagName.toLowerCase())
-              n2 = o2.value || "";
-            else if ("select" === o2.tagName.toLowerCase()) {
-              var c2 = o2.selectedIndex;
-              ge(c2) && k(o2[c2]) && (n2 = pt(o2[c2], "select"));
-            } else
-              n2 = pt(o2, o2.tagName.toLowerCase());
-            if (e2.regular) {
-              try {
-                i2 = new RegExp(e2.regular).exec(n2);
-              } catch (p2) {
-                return $e("----vcustom----\u6B63\u5219\u5904\u7406\u5931\u8D25\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name), false;
-              }
-              if (null === i2)
-                return $e("----vcustom----\u5C5E\u6027\u89C4\u5219\u5904\u7406\uFF0C\u672A\u5339\u914D\u5230\u7ED3\u679C,\u5C5E\u6027\u629B\u5F03", e2.name), false;
-              if (!C(i2) || !h(i2[0]))
-                return $e("----vcustom----\u6B63\u5219\u5904\u7406\u5F02\u5E38\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name, i2), false;
-              n2 = i2[0];
-            }
-            if ("STRING" === e2.type)
-              a2[e2.name] = n2;
-            else if ("NUMBER" === e2.type) {
-              if (n2.length < 1)
-                return $e("----vcustom----\u672A\u83B7\u53D6\u5230\u6570\u5B57\u5185\u5BB9\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name, n2), false;
-              if (isNaN(Number(n2)))
-                return $e("----vcustom----\u6570\u5B57\u7C7B\u578B\u5C5E\u6027\u8F6C\u6362\u5931\u8D25\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name, n2), false;
-              a2[e2.name] = Number(n2);
-            }
-            return a2;
-          }
-          return xe("----vcustom----\u5C5E\u6027\u4E0D\u652F\u6301\u6B64\u83B7\u53D6\u65B9\u5F0F", e2.name, e2.method), false;
-        }, getAssignConfigs: function (e2, t2) {
-          var r2 = It.initUrl();
-          if (!r2 || !r2.page_url)
-            return [];
-          if (!s(t2))
-            return [];
-          var n2 = [];
-          return t2.events = t2.events || t2.eventList, C(t2.events) && t2.events.length > 0 ? (D(t2.events, function (t3) {
-            s(t3) && s(t3.event) && t3.event.url_host === r2.page_url.host && t3.event.url_path === r2.page_url.pathname && e2(t3) && n2.push(t3);
-          }), n2) : [];
+      var It = { initUrl: function() {
+        var e2, r2, n2 = { server_url: { project: "", host: "" }, page_url: { host: "", pathname: "" } };
+        if (!pe(t.para.server_url))
+          return xe("----vcollect---server_url\u5FC5\u987B\u4E3A\u6709\u6548 URL \u5B57\u7B26\u4E32"), false;
+        try {
+          e2 = b(t.para.server_url), n2.server_url.project = e2.searchParams.get("project") || "default", n2.server_url.host = e2.host;
+        } catch (i2) {
+          return xe("----vcollect---server_url\u89E3\u6790\u5F02\u5E38", i2), false;
         }
-      }, At = {
-        events: [], customProp: {
-          events: [], getAssignConfigs: It.getAssignConfigs, filterConfig: It.filterConfig, getProp: It.getProp, initUrl: It.initUrl, updateEvents: function (e2) {
-            C(e2) && (this.events = e2);
-          }, init: function () {
-            this.initAppGetPropsBridge();
-          }, geth5Props: function (e2) {
-            var r2 = {}, n2 = [], i2 = this;
-            if (!this.events.length)
-              return {};
-            if ("$WebClick" === e2.event) {
-              var a2 = this.filterConfig(e2, this.events);
-              if (!a2.length)
-                return {};
-              D(a2, function (t2) {
-                s(t2) && (C(t2.properties) && t2.properties.length > 0 && D(t2.properties, function (t3) {
-                  if (s(t3))
-                    if (false === t3.h5)
-                      C(r2.sensorsdata_app_visual_properties) || (r2.sensorsdata_app_visual_properties = []), r2.sensorsdata_app_visual_properties.push(t3);
-                    else {
-                      var n3 = i2.getProp(t3, e2);
-                      s(n3) && (r2 = $(r2, n3));
-                    }
-                }), h(t2.event_name) && n2.push(t2.event_name));
-              }), t.bridge.hasVisualModeBridge() && (r2.sensorsdata_web_visual_eventName = n2);
-            }
-            return r2.sensorsdata_app_visual_properties && (r2.sensorsdata_app_visual_properties = U(JSON.stringify(r2.sensorsdata_app_visual_properties))), r2;
-          }, initAppGetPropsBridge: function () {
-            var e2 = this, r2 = new t.SDKJSBridge("getJSVisualProperties");
-            return r2.onAppNotify(function (n2) {
-              var i2 = {};
-              try {
-                n2 = JSON.parse(L(n2));
-              } catch (l2) {
-                xe("getJSVisualProperties data parse error!");
-              }
-              if (s(n2)) {
-                var a2 = n2.sensorsdata_js_visual_properties, o2 = e2.initUrl();
-                o2 && (o2 = o2.page_url, C(a2) && a2.length > 0 && D(a2, function (t2) {
-                  if (s(t2) && t2.url_host === o2.host && t2.url_path === o2.pathname && t2.h5) {
-                    var r3 = e2.getProp(t2);
-                    s(r3) && (i2 = $(i2, r3));
-                  }
-                }));
-              }
-              return "android" === t.bridge.bridge_info.platform && r2.notifyApp({ data: i2 }, n2.message_id), i2;
-            }), r2;
+        try {
+          r2 = b(location.href), n2.page_url.host = r2.hostname, n2.page_url.pathname = r2.pathname;
+        } catch (i2) {
+          return xe("----vcollect---\u9875\u9762\u5730\u5740\u89E3\u6790\u5F02\u5E38", i2), false;
+        }
+        return n2;
+      }, isDiv: function(e2) {
+        if (e2.element_path && "div" !== v(e2.element_path.split(">").pop()).slice(0, 3))
+          return false;
+        return true;
+      }, configIsMatchNew: function(e2, t2) {
+        if (h(e2.$element_selector) && h(t2.element_selector)) {
+          if ("element_selector" === t2.element_field && "equal" === t2["function"])
+            return e2.$element_selector === t2.element_selector;
+          if ("element_selector" === t2.element_field && "contain" === t2["function"])
+            return e2.$element_selector.indexOf(t2.element_selector) > -1;
+        }
+        if (h(e2.$element_path) && h(t2.element_path)) {
+          if ("element_path" === t2.element_field && "equal" === t2["function"])
+            return e2.$element_path === t2.element_path;
+          if ("element_path" === t2.element_field && "contain" === t2["function"])
+            return e2.$element_path.indexOf(t2.element_path) > -1;
+        }
+        return false;
+      }, configIsMatch: function(e2, t2) {
+        return (!t2.limit_element_content || t2.element_content === e2.$element_content) && ((!t2.limit_element_position || t2.element_position === String(e2.$element_position)) && (t2.element_field && t2["function"] ? It.configIsMatchNew(e2, t2) : It.configIsMatchOldVersion(e2, t2)));
+      }, configIsMatchOldVersion: function(e2, t2) {
+        if (!t2.element_path)
+          return false;
+        if (e2.$element_position !== void 0) {
+          if (t2.element_path !== e2.$element_path)
+            return false;
+        } else if (It.isDiv({ element_path: t2.element_path })) {
+          if (e2.$element_path.indexOf(t2.element_path) < 0)
+            return false;
+        } else if (t2.element_path !== e2.$element_path)
+          return false;
+        return true;
+      }, filterConfig: function(e2, t2, r2) {
+        var n2 = [];
+        if (!r2) {
+          var i2 = It.initUrl();
+          if (!i2)
+            return [];
+          r2 = i2.page_url;
+        }
+        return "$WebClick" === e2.event && D(t2, function(t3) {
+          s(t3) && ("webclick" === t3.event_type || "appclick" === t3.event_type) && s(t3.event) && t3.event.url_host === r2.host && t3.event.url_path === r2.pathname && It.configIsMatch(e2.properties, t3.event) && n2.push(t3);
+        }), n2;
+      }, getPropElInLi: function(e2, r2) {
+        if (!(e2 && k(e2) && h(r2)))
+          return null;
+        if ("li" !== e2.tagName.toLowerCase())
+          return null;
+        var n2 = t.heatmap.getDomSelector(e2);
+        if (n2) {
+          var i2 = V(n2 + r2);
+          return i2 || null;
+        }
+        return $e("----custom---\u83B7\u53D6\u540C\u7EA7\u5C5E\u6027\u5143\u7D20\u5931\u8D25\uFF0Cselector\u4FE1\u606F\u5F02\u5E38", n2, r2), null;
+      }, getProp: function(e2, r2) {
+        if (!s(e2))
+          return false;
+        if (!(h(e2.name) && e2.name.length > 0))
+          return $e("----vcustom----\u5C5E\u6027\u540D\u4E0D\u5408\u6CD5,\u5C5E\u6027\u629B\u5F03", e2.name), false;
+        var n2, i2, a2 = {};
+        if ("content" === e2.method) {
+          var o2;
+          if (h(e2.element_selector) && e2.element_selector.length > 0)
+            o2 = V(e2.element_selector);
+          else {
+            if (!r2 || !h(e2.list_selector))
+              return $e("----vcustom----\u5C5E\u6027\u914D\u7F6E\u5F02\u5E38\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name), false;
+            var l2 = V(r2.properties.$element_selector);
+            if (!l2)
+              return $e("----vcustom----\u70B9\u51FB\u5143\u7D20\u83B7\u53D6\u5F02\u5E38\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name), false;
+            var u2 = t.heatmap.getClosestLi(l2);
+            o2 = It.getPropElInLi(u2, e2.list_selector);
           }
-        }, getAssignConfigs: It.getAssignConfigs, initUrl: It.initUrl, init: function () {
-          if (this.initUrl()) {
-            var e2 = this.getConfigFromApp();
-            e2 && this.updateConfigs(e2), this.customProp.init(), this.initAppUpdateConfigBridge();
-          }
-        }, initAppUpdateConfigBridge: function () {
-          var e2 = this;
-          return new t.SDKJSBridge("updateH5VisualConfig").onAppNotify(function (t2) {
-            if (t2) {
-              try {
-                t2 = JSON.parse(L(t2));
-              } catch (r2) {
-                return void xe("updateH5VisualConfig result parse error\uFF01");
-              }
-              e2.updateConfigs(t2);
-            }
-          });
-        }, getConfigFromApp: function () {
-          var e2 = new t.SDKJSBridge("sensorsdata_get_app_visual_config").notifyApp();
-          if (e2)
+          if (!o2 || !k(o2))
+            return $e("----vcustom----\u5C5E\u6027\u5143\u7D20\u83B7\u53D6\u5931\u8D25\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name), false;
+          if ("input" === o2.tagName.toLowerCase())
+            n2 = o2.value || "";
+          else if ("select" === o2.tagName.toLowerCase()) {
+            var c2 = o2.selectedIndex;
+            ge(c2) && k(o2[c2]) && (n2 = pt(o2[c2], "select"));
+          } else
+            n2 = pt(o2, o2.tagName.toLowerCase());
+          if (e2.regular) {
             try {
-              e2 = JSON.parse(L(e2));
-            } catch (r2) {
-              e2 = null, xe("getAppVisualConfig result parse error\uFF01");
+              i2 = new RegExp(e2.regular).exec(n2);
+            } catch (p2) {
+              return $e("----vcustom----\u6B63\u5219\u5904\u7406\u5931\u8D25\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name), false;
             }
-          return e2;
-        }, updateConfigs: function (e2) {
-          this.events = this.filterConfigs(e2), this.customProp.updateEvents(this.events);
-        }, filterConfigs: function (e2) {
-          return this.getAssignConfigs(function (e3) {
-            return !(!s(e3) || false === e3.h5);
-          }, e2);
+            if (null === i2)
+              return $e("----vcustom----\u5C5E\u6027\u89C4\u5219\u5904\u7406\uFF0C\u672A\u5339\u914D\u5230\u7ED3\u679C,\u5C5E\u6027\u629B\u5F03", e2.name), false;
+            if (!C(i2) || !h(i2[0]))
+              return $e("----vcustom----\u6B63\u5219\u5904\u7406\u5F02\u5E38\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name, i2), false;
+            n2 = i2[0];
+          }
+          if ("STRING" === e2.type)
+            a2[e2.name] = n2;
+          else if ("NUMBER" === e2.type) {
+            if (n2.length < 1)
+              return $e("----vcustom----\u672A\u83B7\u53D6\u5230\u6570\u5B57\u5185\u5BB9\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name, n2), false;
+            if (isNaN(Number(n2)))
+              return $e("----vcustom----\u6570\u5B57\u7C7B\u578B\u5C5E\u6027\u8F6C\u6362\u5931\u8D25\uFF0C\u5C5E\u6027\u629B\u5F03", e2.name, n2), false;
+            a2[e2.name] = Number(n2);
+          }
+          return a2;
         }
-      }, Dt = {
-        events: [], init: function (e2) {
-          this.filterWebClickEvents(e2);
-        }, filterWebClickEvents: function (e2) {
-          this.events = xt.getAssignConfigs(function (e3) {
-            return !(!s(e3) || true !== e3.event.unlimited_div || "webclick" !== e3.event_type);
-          }, e2);
-        }, isTargetEle: function (e2) {
-          var r2 = t.heatmap.getEleDetail(e2);
-          if (!s(r2) || !h(r2.$element_path))
-            return false;
-          for (var n2 = 0; n2 < this.events.length; n2++)
-            if (s(this.events[n2]) && s(this.events[n2].event) && xt.configIsMatch(r2, this.events[n2].event))
-              return true;
-          return false;
+        return xe("----vcustom----\u5C5E\u6027\u4E0D\u652F\u6301\u6B64\u83B7\u53D6\u65B9\u5F0F", e2.name, e2.method), false;
+      }, getAssignConfigs: function(e2, t2) {
+        var r2 = It.initUrl();
+        if (!r2 || !r2.page_url)
+          return [];
+        if (!s(t2))
+          return [];
+        var n2 = [];
+        return t2.events = t2.events || t2.eventList, C(t2.events) && t2.events.length > 0 ? (D(t2.events, function(t3) {
+          s(t3) && s(t3.event) && t3.event.url_host === r2.page_url.host && t3.event.url_path === r2.page_url.pathname && e2(t3) && n2.push(t3);
+        }), n2) : [];
+      } }, At = { events: [], customProp: { events: [], getAssignConfigs: It.getAssignConfigs, filterConfig: It.filterConfig, getProp: It.getProp, initUrl: It.initUrl, updateEvents: function(e2) {
+        C(e2) && (this.events = e2);
+      }, init: function() {
+        this.initAppGetPropsBridge();
+      }, geth5Props: function(e2) {
+        var r2 = {}, n2 = [], i2 = this;
+        if (!this.events.length)
+          return {};
+        if ("$WebClick" === e2.event) {
+          var a2 = this.filterConfig(e2, this.events);
+          if (!a2.length)
+            return {};
+          D(a2, function(t2) {
+            s(t2) && (C(t2.properties) && t2.properties.length > 0 && D(t2.properties, function(t3) {
+              if (s(t3))
+                if (false === t3.h5)
+                  C(r2.sensorsdata_app_visual_properties) || (r2.sensorsdata_app_visual_properties = []), r2.sensorsdata_app_visual_properties.push(t3);
+                else {
+                  var n3 = i2.getProp(t3, e2);
+                  s(n3) && (r2 = $(r2, n3));
+                }
+            }), h(t2.event_name) && n2.push(t2.event_name));
+          }), t.bridge.hasVisualModeBridge() && (r2.sensorsdata_web_visual_eventName = n2);
         }
-      }, $t = {
-        events: [], configSwitch: false, collectAble: function () {
-          return this.configSwitch && s(t.para.heatmap) && t.para.heatmap.get_vtrack_config;
-        }, updateEvents: function (e2) {
-          this.events = xt.getAssignConfigs(function (e3) {
-            return !!(s(e3) && C(e3.properties) && e3.properties.length > 0);
-          }, e2), this.events.length ? this.configSwitch = true : this.configSwitch = false;
-        }, getVtrackProps: function (e2) {
-          var t2 = {};
-          return this.collectAble() ? ("$WebClick" === e2.event && (t2 = this.clickCustomPropMaker(e2, this.events)), t2) : {};
-        }, clickCustomPropMaker: function (e2, t2, r2) {
-          var n2 = this;
-          r2 = r2 || this.filterConfig(e2, t2, xt.url_info.page_url);
+        return r2.sensorsdata_app_visual_properties && (r2.sensorsdata_app_visual_properties = U(JSON.stringify(r2.sensorsdata_app_visual_properties))), r2;
+      }, initAppGetPropsBridge: function() {
+        var e2 = this, r2 = new t.SDKJSBridge("getJSVisualProperties");
+        return r2.onAppNotify(function(n2) {
           var i2 = {};
-          return r2.length ? (D(r2, function (t3) {
-            C(t3.properties) && t3.properties.length > 0 && D(t3.properties, function (t4) {
-              var r3 = n2.getProp(t4, e2);
-              s(r3) && $(i2, r3);
-            });
-          }), i2) : {};
-        }, getProp: It.getProp, getPropElInLi: It.getPropElInLi, filterConfig: It.filterConfig
-      }, xt = {
-        unlimitedDiv: Dt, config: {}, storageEnable: true, storage_name: "webjssdkvtrackcollect", para: { session_time: 18e5, timeout: 5e3, update_interval: 18e5 }, url_info: {}, timer: null, update_time: null, customProp: $t, initUrl: function () {
-          var e2 = It.initUrl();
-          if (e2) {
-            var r2;
-            try {
-              (r2 = new y(t.para.server_url))._values.Path = "/config/visualized/Web.conf", e2.api_url = r2.getUrl();
-            } catch (n2) {
-              return xe("----vtrackcollect---API\u5730\u5740\u89E3\u6790\u5F02\u5E38", n2), false;
-            }
-            this.url_info = e2;
+          try {
+            n2 = JSON.parse(L(n2));
+          } catch (l2) {
+            xe("getJSVisualProperties data parse error!");
           }
-          return e2;
-        }, init: function () {
-          if (!s(t.para.heatmap) || !t.para.heatmap.get_vtrack_config)
-            return false;
-          if (a.isSupport() || (this.storageEnable = false), !this.initUrl())
-            return xe("----vtrackcustom----\u521D\u59CB\u5316\u5931\u8D25\uFF0Curl\u4FE1\u606F\u89E3\u6790\u5931\u8D25"), false;
-          if (this.storageEnable) {
-            var e2 = Pt.readObjectVal(this.storage_name);
-            if (s(e2) && s(e2.data))
-              if (this.serverUrlIsSame(e2.serverUrl)) {
-                this.config = e2.data, this.update_time = e2.updateTime, this.updateConfig(e2.data);
-                var r2 = new Date().getTime() - this.update_time;
-                if (ge(r2) && r2 > 0 && r2 < this.para.session_time) {
-                  var n2 = this.para.update_interval - r2;
-                  this.setNextFetch(n2);
-                } else
-                  this.getConfigFromServer();
+          if (s(n2)) {
+            var a2 = n2.sensorsdata_js_visual_properties, o2 = e2.initUrl();
+            o2 && (o2 = o2.page_url, C(a2) && a2.length > 0 && D(a2, function(t2) {
+              if (s(t2) && t2.url_host === o2.host && t2.url_path === o2.pathname && t2.h5) {
+                var r3 = e2.getProp(t2);
+                s(r3) && (i2 = $(i2, r3));
+              }
+            }));
+          }
+          return "android" === t.bridge.bridge_info.platform && r2.notifyApp({ data: i2 }, n2.message_id), i2;
+        }), r2;
+      } }, getAssignConfigs: It.getAssignConfigs, initUrl: It.initUrl, init: function() {
+        if (this.initUrl()) {
+          var e2 = this.getConfigFromApp();
+          e2 && this.updateConfigs(e2), this.customProp.init(), this.initAppUpdateConfigBridge();
+        }
+      }, initAppUpdateConfigBridge: function() {
+        var e2 = this;
+        return new t.SDKJSBridge("updateH5VisualConfig").onAppNotify(function(t2) {
+          if (t2) {
+            try {
+              t2 = JSON.parse(L(t2));
+            } catch (r2) {
+              return void xe("updateH5VisualConfig result parse error\uFF01");
+            }
+            e2.updateConfigs(t2);
+          }
+        });
+      }, getConfigFromApp: function() {
+        var e2 = new t.SDKJSBridge("sensorsdata_get_app_visual_config").notifyApp();
+        if (e2)
+          try {
+            e2 = JSON.parse(L(e2));
+          } catch (r2) {
+            e2 = null, xe("getAppVisualConfig result parse error\uFF01");
+          }
+        return e2;
+      }, updateConfigs: function(e2) {
+        this.events = this.filterConfigs(e2), this.customProp.updateEvents(this.events);
+      }, filterConfigs: function(e2) {
+        return this.getAssignConfigs(function(e3) {
+          return !(!s(e3) || false === e3.h5);
+        }, e2);
+      } }, Dt = { events: [], init: function(e2) {
+        this.filterWebClickEvents(e2);
+      }, filterWebClickEvents: function(e2) {
+        this.events = xt.getAssignConfigs(function(e3) {
+          return !(!s(e3) || true !== e3.event.unlimited_div || "webclick" !== e3.event_type);
+        }, e2);
+      }, isTargetEle: function(e2) {
+        var r2 = t.heatmap.getEleDetail(e2);
+        if (!s(r2) || !h(r2.$element_path))
+          return false;
+        for (var n2 = 0; n2 < this.events.length; n2++)
+          if (s(this.events[n2]) && s(this.events[n2].event) && xt.configIsMatch(r2, this.events[n2].event))
+            return true;
+        return false;
+      } }, $t = { events: [], configSwitch: false, collectAble: function() {
+        return this.configSwitch && s(t.para.heatmap) && t.para.heatmap.get_vtrack_config;
+      }, updateEvents: function(e2) {
+        this.events = xt.getAssignConfigs(function(e3) {
+          return !!(s(e3) && C(e3.properties) && e3.properties.length > 0);
+        }, e2), this.events.length ? this.configSwitch = true : this.configSwitch = false;
+      }, getVtrackProps: function(e2) {
+        var t2 = {};
+        return this.collectAble() ? ("$WebClick" === e2.event && (t2 = this.clickCustomPropMaker(e2, this.events)), t2) : {};
+      }, clickCustomPropMaker: function(e2, t2, r2) {
+        var n2 = this;
+        r2 = r2 || this.filterConfig(e2, t2, xt.url_info.page_url);
+        var i2 = {};
+        return r2.length ? (D(r2, function(t3) {
+          C(t3.properties) && t3.properties.length > 0 && D(t3.properties, function(t4) {
+            var r3 = n2.getProp(t4, e2);
+            s(r3) && $(i2, r3);
+          });
+        }), i2) : {};
+      }, getProp: It.getProp, getPropElInLi: It.getPropElInLi, filterConfig: It.filterConfig }, xt = { unlimitedDiv: Dt, config: {}, storageEnable: true, storage_name: "webjssdkvtrackcollect", para: { session_time: 18e5, timeout: 5e3, update_interval: 18e5 }, url_info: {}, timer: null, update_time: null, customProp: $t, initUrl: function() {
+        var e2 = It.initUrl();
+        if (e2) {
+          var r2;
+          try {
+            (r2 = new y(t.para.server_url))._values.Path = "/config/visualized/Web.conf", e2.api_url = r2.getUrl();
+          } catch (n2) {
+            return xe("----vtrackcollect---API\u5730\u5740\u89E3\u6790\u5F02\u5E38", n2), false;
+          }
+          this.url_info = e2;
+        }
+        return e2;
+      }, init: function() {
+        if (!s(t.para.heatmap) || !t.para.heatmap.get_vtrack_config)
+          return false;
+        if (a.isSupport() || (this.storageEnable = false), !this.initUrl())
+          return xe("----vtrackcustom----\u521D\u59CB\u5316\u5931\u8D25\uFF0Curl\u4FE1\u606F\u89E3\u6790\u5931\u8D25"), false;
+        if (this.storageEnable) {
+          var e2 = Pt.readObjectVal(this.storage_name);
+          if (s(e2) && s(e2.data))
+            if (this.serverUrlIsSame(e2.serverUrl)) {
+              this.config = e2.data, this.update_time = e2.updateTime, this.updateConfig(e2.data);
+              var r2 = new Date().getTime() - this.update_time;
+              if (ge(r2) && r2 > 0 && r2 < this.para.session_time) {
+                var n2 = this.para.update_interval - r2;
+                this.setNextFetch(n2);
               } else
                 this.getConfigFromServer();
-            else
+            } else
               this.getConfigFromServer();
-          } else
+          else
             this.getConfigFromServer();
-          this.pageStateListenner();
-        }, serverUrlIsSame: function (e2) {
-          return !!s(e2) && (e2.host === this.url_info.server_url.host && e2.project === this.url_info.server_url.project);
-        }, getConfigFromServer: function () {
-          var e2 = this;
-          this.sendRequest(function (t2, r2) {
-            e2.update_time = new Date().getTime();
-            var n2 = {};
-            200 === t2 ? r2 && s(r2) && "Web" === r2.os && (n2 = r2, e2.updateConfig(n2)) : 205 === t2 ? e2.updateConfig(n2) : 304 === t2 ? n2 = e2.config : (xe("----vtrackcustom----\u6570\u636E\u5F02\u5E38", t2), e2.updateConfig(n2)), e2.updateStorage(n2), e2.setNextFetch();
-          }, function (t2) {
-            e2.update_time = new Date().getTime(), xe("----vtrackcustom----\u914D\u7F6E\u62C9\u53D6\u5931\u8D25", t2), e2.setNextFetch();
-          });
-        }, setNextFetch: function (e2) {
-          var t2 = this;
-          this.timer && (clearTimeout(this.timer), this.timer = null), e2 = e2 || this.para.update_interval, this.timer = setTimeout(function () {
-            t2.getConfigFromServer();
-          }, e2);
-        }, pageStateListenner: function () {
-          var e2 = this;
-          he({
-            visible: function () {
-              var t2 = new Date().getTime() - e2.update_time;
-              if (ge(t2) && t2 > 0 && t2 < e2.para.update_interval) {
-                var r2 = e2.para.update_interval - t2;
-                e2.setNextFetch(r2);
-              } else
-                e2.getConfigFromServer();
-            }, hidden: function () {
-              e2.timer && (clearTimeout(e2.timer), e2.timer = null);
-            }
-          });
-        }, updateConfig: function (e2) {
-          if (!s(e2))
+        } else
+          this.getConfigFromServer();
+        this.pageStateListenner();
+      }, serverUrlIsSame: function(e2) {
+        return !!s(e2) && (e2.host === this.url_info.server_url.host && e2.project === this.url_info.server_url.project);
+      }, getConfigFromServer: function() {
+        var e2 = this;
+        this.sendRequest(function(t2, r2) {
+          e2.update_time = new Date().getTime();
+          var n2 = {};
+          200 === t2 ? r2 && s(r2) && "Web" === r2.os && (n2 = r2, e2.updateConfig(n2)) : 205 === t2 ? e2.updateConfig(n2) : 304 === t2 ? n2 = e2.config : (xe("----vtrackcustom----\u6570\u636E\u5F02\u5E38", t2), e2.updateConfig(n2)), e2.updateStorage(n2), e2.setNextFetch();
+        }, function(t2) {
+          e2.update_time = new Date().getTime(), xe("----vtrackcustom----\u914D\u7F6E\u62C9\u53D6\u5931\u8D25", t2), e2.setNextFetch();
+        });
+      }, setNextFetch: function(e2) {
+        var t2 = this;
+        this.timer && (clearTimeout(this.timer), this.timer = null), e2 = e2 || this.para.update_interval, this.timer = setTimeout(function() {
+          t2.getConfigFromServer();
+        }, e2);
+      }, pageStateListenner: function() {
+        var e2 = this;
+        he({ visible: function() {
+          var t2 = new Date().getTime() - e2.update_time;
+          if (ge(t2) && t2 > 0 && t2 < e2.para.update_interval) {
+            var r2 = e2.para.update_interval - t2;
+            e2.setNextFetch(r2);
+          } else
+            e2.getConfigFromServer();
+        }, hidden: function() {
+          e2.timer && (clearTimeout(e2.timer), e2.timer = null);
+        } });
+      }, updateConfig: function(e2) {
+        if (!s(e2))
+          return false;
+        this.config = e2, this.customProp.updateEvents(e2), this.unlimitedDiv.init(e2);
+      }, updateStorage: function(e2) {
+        if (!this.storageEnable)
+          return false;
+        if (!s(e2))
+          return false;
+        var t2;
+        if (this.url_info.server_url)
+          t2 = this.url_info.server_url;
+        else {
+          var r2 = xt.initUrl();
+          if (!r2)
             return false;
-          this.config = e2, this.customProp.updateEvents(e2), this.unlimitedDiv.init(e2);
-        }, updateStorage: function (e2) {
-          if (!this.storageEnable)
-            return false;
-          if (!s(e2))
-            return false;
-          var t2;
-          if (this.url_info.server_url)
-            t2 = this.url_info.server_url;
-          else {
-            var r2 = xt.initUrl();
-            if (!r2)
-              return false;
-            t2 = r2.server_url;
-          }
-          var n2 = { updateTime: new Date().getTime(), data: e2, serverUrl: t2 };
-          Pt.saveObjectVal(this.storage_name, n2);
-        }, sendRequest: function (e2, t2) {
-          var r2 = { app_id: this.url_info.page_url.host };
-          this.config.version && (r2.v = this.config.version), _e({
-            url: this.url_info.api_url, callbackName: "saJSSDKVtrackCollectConfig", data: r2, timeout: this.para.timeout, success: function (t3, r3) {
-              e2(t3, r3);
-            }, error: function (e3) {
-              t2(e3);
-            }
-          });
-        }, getAssignConfigs: It.getAssignConfigs, configIsMatch: It.configIsMatch
-      };
-      var Et = {
-        stage: null, init: function (e2) {
-          this.stage = e2;
-        }, interceptor: {
-          basicProps: {
-            priority: 0, entry: function (e2, t2) {
-              try {
-                var r2 = t2.sensors, n2 = {};
-                s(e2) && s(e2.identities) && !ce(e2.identities) ? $(n2, e2.identities) : $(n2, Pt.getIdentities());
-                var i2 = { identities: n2, distinct_id: Pt.getDistinctId(), lib: { $lib: "js", $lib_method: "code", $lib_version: String(r2.lib_version) }, properties: {} };
-                return s(e2) && s(e2.properties) && !ce(e2.properties) && (e2.properties.$lib_detail && (i2.lib.$lib_detail = e2.properties.$lib_detail, delete e2.properties.$lib_detail), e2.properties.$lib_method && (i2.lib.$lib_method = e2.properties.$lib_method, delete e2.properties.$lib_method)), q(i2, Pt.getUnionId(), e2), s(e2.properties) && !ce(e2.properties) && $(i2.properties, e2.properties), "$UnbindID" === i2.event && (i2.login_id && delete i2.login_id, i2.anonymous_id && delete i2.anonymous_id), e2.type && "profile" === e2.type.slice(0, 7) || (r2.para.properties_priority && 3 === r2.para.properties_priority ? i2.properties = $({}, it.properties(), Pt.getSessionProps(), it.currentProps, Pt.getProps(), i2.properties) : i2.properties = $({}, it.properties(), Pt.getProps(), Pt.getSessionProps(), it.currentProps, i2.properties), r2.para.preset_properties.latest_referrer && !h(i2.properties.$latest_referrer) && (i2.properties.$latest_referrer = "\u53D6\u503C\u5F02\u5E38"), r2.para.preset_properties.latest_search_keyword && !h(i2.properties.$latest_search_keyword) && (r2.para.preset_properties.search_keyword_baidu && h(i2.properties.$search_keyword_id) && ge(i2.properties.$search_keyword_id_hash) && h(i2.properties.$search_keyword_id_type) || (i2.properties.$latest_search_keyword = "\u53D6\u503C\u5F02\u5E38")), r2.para.preset_properties.latest_traffic_source_type && !h(i2.properties.$latest_traffic_source_type) && (i2.properties.$latest_traffic_source_type = "\u53D6\u503C\u5F02\u5E38"), r2.para.preset_properties.latest_landing_page && !h(i2.properties.$latest_landing_page) && (i2.properties.$latest_landing_page = "\u53D6\u503C\u5F02\u5E38"), "not_collect" === r2.para.preset_properties.latest_wx_ad_click_id ? (delete i2.properties._latest_wx_ad_click_id, delete i2.properties._latest_wx_ad_hash_key, delete i2.properties._latest_wx_ad_callbacks) : r2.para.preset_properties.latest_wx_ad_click_id && !h(i2.properties._latest_wx_ad_click_id) && (i2.properties._latest_wx_ad_click_id = "\u53D6\u503C\u5F02\u5E38", i2.properties._latest_wx_ad_hash_key = "\u53D6\u503C\u5F02\u5E38", i2.properties._latest_wx_ad_callbacks = "\u53D6\u503C\u5F02\u5E38"), h(i2.properties._latest_wx_ad_click_id) && (i2.properties.$url = ee())), i2.properties.$time && J(i2.properties.$time) ? (i2.time = 1 * i2.properties.$time, delete i2.properties.$time) : i2.time = 1 * new Date(), function (e3) {
-                  if (r2.bridge && "success" === r2.bridge.bridge_info.verify_success) {
-                    var t3 = At.customProp.geth5Props(JSON.parse(JSON.stringify(e3)));
-                    s(t3) && !ce(t3) && (e3.properties = $(e3.properties, t3));
-                  }
-                  var n3 = xt.customProp.getVtrackProps(JSON.parse(JSON.stringify(e3)));
-                  s(n3) && !ce(n3) && (e3.properties = $(e3.properties, n3));
-                }(i2), st(i2), Ve.checkIsAddSign(i2), Ve.checkIsFirstTime(i2), function (e3) {
-                  var t3 = !e3.type || "profile" !== e3.type.slice(0, 7);
-                  s(e3.properties) && t3 && ("$referrer" in e3.properties && (e3.properties.$referrer_host = "" === e3.properties.$referrer ? "" : W(e3.properties.$referrer, "\u53D6\u503C\u5F02\u5E38")), Ee.preset_properties.latest_referrer && Ee.preset_properties.latest_referrer_host && (e3.properties.$latest_referrer_host = "" === e3.properties.$latest_referrer ? "" : W(e3.properties.$latest_referrer, "\u53D6\u503C\u5F02\u5E38")));
-                }(i2), function (e3) {
-                  var t3 = !e3.type || "profile" !== e3.type.slice(0, 7), r3 = Ee.preset_properties && t3;
-                  r3 && Ee.preset_properties.url && P(e3.properties.$url) && (e3.properties.$url = ee()), r3 && Ee.preset_properties.title && P(e3.properties.$title) && (e3.properties.$title = document.title);
-                }(i2), i2;
-              } catch (a2) {
-                return { _debug_web_msg: String(a2) };
-              }
-            }
-          }, formatData: {
-            priority: 0, entry: function (e2) {
-              var t2, i2 = e2.properties;
-              be(e2), s(i2) ? (function (e3, t3) {
-                s(e3) && D(e3, function (n2, i3) {
-                  if (C(n2)) {
-                    var a2 = [];
-                    D(n2, function (e4) {
-                      if (h(e4))
-                        a2.push(e4);
-                      else if (P(e4))
-                        a2.push("null");
-                      else
-                        try {
-                          a2.push(JSON.stringify(e4));
-                        } catch (t4) {
-                          $e("\u60A8\u7684\u6570\u636E-", i3, n2, "\u6570\u7EC4\u91CC\u503C\u6709\u9519\u8BEF,\u5DF2\u5C06\u5176\u5220\u9664");
-                        }
-                    }), e3[i3] = a2;
-                  }
-                  var o2 = oe(t3 || [], i3) > -1;
-                  if (s(n2) && "$option" !== i3 && !o2)
-                    try {
-                      e3[i3] = JSON.stringify(n2);
-                    } catch (l2) {
-                      delete e3[i3], $e("\u60A8\u7684\u6570\u636E-", i3, n2, "\u6570\u636E\u503C\u6709\u9519\u8BEF\uFF0C\u5DF2\u5C06\u5176\u5220\u9664");
-                    }
-                  else
-                    h(n2) || ge(n2) || J(n2) || ue(n2) || C(n2) || r(n2) || "$option" === i3 || o2 || ($e("\u60A8\u7684\u6570\u636E-", i3, n2, "-\u683C\u5F0F\u4E0D\u6EE1\u8DB3\u8981\u6C42\uFF0C\u6211\u4EEC\u5DF2\u7ECF\u5C06\u5176\u5220\u9664"), delete e3[i3]);
-                });
-              }(i2), s(t2 = i2) && D(["distinct_id", "user_id", "id", "date", "datetime", "event", "events", "first_id", "original_id", "device_id", "properties", "second_id", "time", "users"], function (e3, r2) {
-                e3 in t2 && (oe([], e3) > -1 || (r2 < 3 ? (delete t2[e3], $e("\u60A8\u7684\u5C5E\u6027- " + e3 + "\u662F\u4FDD\u7559\u5B57\u6BB5\uFF0C\u6211\u4EEC\u5DF2\u7ECF\u5C06\u5176\u5220\u9664")) : $e("\u60A8\u7684\u5C5E\u6027- " + e3 + "\u662F\u4FDD\u7559\u5B57\u6BB5\uFF0C\u8BF7\u907F\u514D\u5176\u4F5C\u4E3A\u5C5E\u6027\u540D")));
-              }), function (e3) {
-                "undefined" != typeof e3.properties.$project && (e3.project = e3.properties.$project, delete e3.properties.$project), "undefined" != typeof e3.properties.$token && (e3.token = e3.properties.$token, delete e3.properties.$token);
-              }(e2), function (e3, t3) {
-                D(e3, function (r2, n2) {
-                  -1 === oe(t3 || [], n2) && Nt({ propertyKey: n2 }, function (t4, r3, i3) {
-                    return t4 || "keyLength" === i3 || delete e3[n2], true;
-                  });
-                });
-              }(i2), Tt(i2)) : "properties" in e2 && (e2.properties = {}), function (e3) {
-                "item_type" in e3 && Nt({ item_type: e3.item_type }, function (t3) {
-                  return t3 || delete e3.item_type, true;
-                }), "item_id" in e3 && Nt({ item_id: e3.item_id }, function (t3, r2, n2) {
-                  return t3 || "string" !== n2 || delete e3.item_id, true;
-                });
-              }(e2);
-            }
-          }, finalAdjustData: {
-            priority: 0, entry: function (e2, t2) {
-              var r2 = t2.sensors;
-              return e2._track_id = Number(String(u()).slice(2, 5) + String(u()).slice(2, 4) + String(new Date().getTime()).slice(-4)), e2._flush_time = new Date().getTime(), r2.events.tempAdd("send", e2), e2;
-            }
-          }
+          t2 = r2.server_url;
         }
-      };
+        var n2 = { updateTime: new Date().getTime(), data: e2, serverUrl: t2 };
+        Pt.saveObjectVal(this.storage_name, n2);
+      }, sendRequest: function(e2, t2) {
+        var r2 = { app_id: this.url_info.page_url.host };
+        this.config.version && (r2.v = this.config.version), _e({ url: this.url_info.api_url, callbackName: "saJSSDKVtrackCollectConfig", data: r2, timeout: this.para.timeout, success: function(t3, r3) {
+          e2(t3, r3);
+        }, error: function(e3) {
+          t2(e3);
+        } });
+      }, getAssignConfigs: It.getAssignConfigs, configIsMatch: It.configIsMatch };
+      var Et = { stage: null, init: function(e2) {
+        this.stage = e2;
+      }, interceptor: { basicProps: { priority: 0, entry: function(e2, t2) {
+        try {
+          var r2 = t2.sensors, n2 = {};
+          s(e2) && s(e2.identities) && !ce(e2.identities) ? $(n2, e2.identities) : $(n2, Pt.getIdentities());
+          var i2 = { identities: n2, distinct_id: Pt.getDistinctId(), lib: { $lib: "js", $lib_method: "code", $lib_version: String(r2.lib_version) }, properties: {} };
+          return s(e2) && s(e2.properties) && !ce(e2.properties) && (e2.properties.$lib_detail && (i2.lib.$lib_detail = e2.properties.$lib_detail, delete e2.properties.$lib_detail), e2.properties.$lib_method && (i2.lib.$lib_method = e2.properties.$lib_method, delete e2.properties.$lib_method)), q(i2, Pt.getUnionId(), e2), s(e2.properties) && !ce(e2.properties) && $(i2.properties, e2.properties), "$UnbindID" === i2.event && (i2.login_id && delete i2.login_id, i2.anonymous_id && delete i2.anonymous_id), e2.type && "profile" === e2.type.slice(0, 7) || (r2.para.properties_priority && 3 === r2.para.properties_priority ? i2.properties = $({}, it.properties(), Pt.getSessionProps(), it.currentProps, Pt.getProps(), i2.properties) : i2.properties = $({}, it.properties(), Pt.getProps(), Pt.getSessionProps(), it.currentProps, i2.properties), r2.para.preset_properties.latest_referrer && !h(i2.properties.$latest_referrer) && (i2.properties.$latest_referrer = "\u53D6\u503C\u5F02\u5E38"), r2.para.preset_properties.latest_search_keyword && !h(i2.properties.$latest_search_keyword) && (r2.para.preset_properties.search_keyword_baidu && h(i2.properties.$search_keyword_id) && ge(i2.properties.$search_keyword_id_hash) && h(i2.properties.$search_keyword_id_type) || (i2.properties.$latest_search_keyword = "\u53D6\u503C\u5F02\u5E38")), r2.para.preset_properties.latest_traffic_source_type && !h(i2.properties.$latest_traffic_source_type) && (i2.properties.$latest_traffic_source_type = "\u53D6\u503C\u5F02\u5E38"), r2.para.preset_properties.latest_landing_page && !h(i2.properties.$latest_landing_page) && (i2.properties.$latest_landing_page = "\u53D6\u503C\u5F02\u5E38"), "not_collect" === r2.para.preset_properties.latest_wx_ad_click_id ? (delete i2.properties._latest_wx_ad_click_id, delete i2.properties._latest_wx_ad_hash_key, delete i2.properties._latest_wx_ad_callbacks) : r2.para.preset_properties.latest_wx_ad_click_id && !h(i2.properties._latest_wx_ad_click_id) && (i2.properties._latest_wx_ad_click_id = "\u53D6\u503C\u5F02\u5E38", i2.properties._latest_wx_ad_hash_key = "\u53D6\u503C\u5F02\u5E38", i2.properties._latest_wx_ad_callbacks = "\u53D6\u503C\u5F02\u5E38"), h(i2.properties._latest_wx_ad_click_id) && (i2.properties.$url = ee())), i2.properties.$time && J(i2.properties.$time) ? (i2.time = 1 * i2.properties.$time, delete i2.properties.$time) : i2.time = 1 * new Date(), function(e3) {
+            if (r2.bridge && "success" === r2.bridge.bridge_info.verify_success) {
+              var t3 = At.customProp.geth5Props(JSON.parse(JSON.stringify(e3)));
+              s(t3) && !ce(t3) && (e3.properties = $(e3.properties, t3));
+            }
+            var n3 = xt.customProp.getVtrackProps(JSON.parse(JSON.stringify(e3)));
+            s(n3) && !ce(n3) && (e3.properties = $(e3.properties, n3));
+          }(i2), st(i2), Ve.checkIsAddSign(i2), Ve.checkIsFirstTime(i2), function(e3) {
+            var t3 = !e3.type || "profile" !== e3.type.slice(0, 7);
+            s(e3.properties) && t3 && ("$referrer" in e3.properties && (e3.properties.$referrer_host = "" === e3.properties.$referrer ? "" : W(e3.properties.$referrer, "\u53D6\u503C\u5F02\u5E38")), Ee.preset_properties.latest_referrer && Ee.preset_properties.latest_referrer_host && (e3.properties.$latest_referrer_host = "" === e3.properties.$latest_referrer ? "" : W(e3.properties.$latest_referrer, "\u53D6\u503C\u5F02\u5E38")));
+          }(i2), function(e3) {
+            var t3 = !e3.type || "profile" !== e3.type.slice(0, 7), r3 = Ee.preset_properties && t3;
+            r3 && Ee.preset_properties.url && P(e3.properties.$url) && (e3.properties.$url = ee()), r3 && Ee.preset_properties.title && P(e3.properties.$title) && (e3.properties.$title = document.title);
+          }(i2), i2;
+        } catch (a2) {
+          return { _debug_web_msg: String(a2) };
+        }
+      } }, formatData: { priority: 0, entry: function(e2) {
+        var t2, i2 = e2.properties;
+        be(e2), s(i2) ? (function(e3, t3) {
+          s(e3) && D(e3, function(n2, i3) {
+            if (C(n2)) {
+              var a2 = [];
+              D(n2, function(e4) {
+                if (h(e4))
+                  a2.push(e4);
+                else if (P(e4))
+                  a2.push("null");
+                else
+                  try {
+                    a2.push(JSON.stringify(e4));
+                  } catch (t4) {
+                    $e("\u60A8\u7684\u6570\u636E-", i3, n2, "\u6570\u7EC4\u91CC\u503C\u6709\u9519\u8BEF,\u5DF2\u5C06\u5176\u5220\u9664");
+                  }
+              }), e3[i3] = a2;
+            }
+            var o2 = oe(t3 || [], i3) > -1;
+            if (s(n2) && "$option" !== i3 && !o2)
+              try {
+                e3[i3] = JSON.stringify(n2);
+              } catch (l2) {
+                delete e3[i3], $e("\u60A8\u7684\u6570\u636E-", i3, n2, "\u6570\u636E\u503C\u6709\u9519\u8BEF\uFF0C\u5DF2\u5C06\u5176\u5220\u9664");
+              }
+            else
+              h(n2) || ge(n2) || J(n2) || ue(n2) || C(n2) || r(n2) || "$option" === i3 || o2 || ($e("\u60A8\u7684\u6570\u636E-", i3, n2, "-\u683C\u5F0F\u4E0D\u6EE1\u8DB3\u8981\u6C42\uFF0C\u6211\u4EEC\u5DF2\u7ECF\u5C06\u5176\u5220\u9664"), delete e3[i3]);
+          });
+        }(i2), s(t2 = i2) && D(["distinct_id", "user_id", "id", "date", "datetime", "event", "events", "first_id", "original_id", "device_id", "properties", "second_id", "time", "users"], function(e3, r2) {
+          e3 in t2 && (oe([], e3) > -1 || (r2 < 3 ? (delete t2[e3], $e("\u60A8\u7684\u5C5E\u6027- " + e3 + "\u662F\u4FDD\u7559\u5B57\u6BB5\uFF0C\u6211\u4EEC\u5DF2\u7ECF\u5C06\u5176\u5220\u9664")) : $e("\u60A8\u7684\u5C5E\u6027- " + e3 + "\u662F\u4FDD\u7559\u5B57\u6BB5\uFF0C\u8BF7\u907F\u514D\u5176\u4F5C\u4E3A\u5C5E\u6027\u540D")));
+        }), function(e3) {
+          "undefined" != typeof e3.properties.$project && (e3.project = e3.properties.$project, delete e3.properties.$project), "undefined" != typeof e3.properties.$token && (e3.token = e3.properties.$token, delete e3.properties.$token);
+        }(e2), function(e3, t3) {
+          D(e3, function(r2, n2) {
+            -1 === oe(t3 || [], n2) && Nt({ propertyKey: n2 }, function(t4, r3, i3) {
+              return t4 || "keyLength" === i3 || delete e3[n2], true;
+            });
+          });
+        }(i2), Tt(i2)) : "properties" in e2 && (e2.properties = {}), function(e3) {
+          "item_type" in e3 && Nt({ item_type: e3.item_type }, function(t3) {
+            return t3 || delete e3.item_type, true;
+          }), "item_id" in e3 && Nt({ item_id: e3.item_id }, function(t3, r2, n2) {
+            return t3 || "string" !== n2 || delete e3.item_id, true;
+          });
+        }(e2);
+      } }, finalAdjustData: { priority: 0, entry: function(e2, t2) {
+        var r2 = t2.sensors;
+        return e2._track_id = Number(String(u()).slice(2, 5) + String(u()).slice(2, 4) + String(new Date().getTime()).slice(-4)), e2._flush_time = new Date().getTime(), r2.events.tempAdd("send", e2), e2;
+      } } } };
       var Lt = {};
       function Ut(e2, t2, r2, n2) {
         var i2 = null;
@@ -2965,7 +2859,7 @@ var __publicField = (obj, key, value) => {
           }
           setTimeout(o2, 1e3), n2(t2, r2, o2);
         }
-        e2.event && a2(e2.event), e2.ele && ze(e2.ele, "click", function (e3) {
+        e2.event && a2(e2.event), e2.ele && ze(e2.ele, "click", function(e3) {
           a2(e3);
         });
       }
@@ -2973,315 +2867,309 @@ var __publicField = (obj, key, value) => {
         var e2 = location.protocol;
         return "http:" === e2 || "https:" === e2 ? e2 : "http:";
       }
-      Lt.check = Nt, Lt.sendItem = function (e2) {
+      Lt.check = Nt, Lt.sendItem = function(e2) {
         var r2 = { lib: { $lib: "js", $lib_method: "code", $lib_version: String(t.lib_version) }, time: 1 * new Date() };
-        $(r2, e2), function (e3) {
+        $(r2, e2), function(e3) {
           Et.stage.process("formatData", e3);
         }(r2), t.kit.sendData(r2);
-      }, Lt.send = function (e2, r2) {
+      }, Lt.send = function(e2, r2) {
         var n2 = t.kit.buildData(e2);
         t.kit.sendData(n2, r2);
       };
-      var Bt = {
-        stage: null, init: function (e2) {
-          this.stage = e2;
+      var Bt = { stage: null, init: function(e2) {
+        this.stage = e2;
+      } };
+      var Ht = { label: false, li: false, a: true, button: true }, Jt = { otherTags: [], initUnlimitedTags: function() {
+        D(Jt.otherTags, function(e2) {
+          e2 in Ht && (Ht[e2] = true);
+        });
+      }, isUnlimitedTag: function(e2) {
+        if (!e2 || 1 !== e2.nodeType)
+          return false;
+        var r2 = e2.nodeName.toLowerCase();
+        return Ht[r2] || ne(e2, t.para.heatmap.track_attr);
+      }, getTargetElement: function(e2, r2) {
+        var n2 = this, i2 = e2;
+        if ("object" != typeof i2)
+          return null;
+        if ("string" != typeof i2.tagName)
+          return null;
+        var a2 = i2.tagName.toLowerCase();
+        if ("body" === a2.toLowerCase() || "html" === a2.toLowerCase())
+          return null;
+        if (!i2 || !i2.parentNode || !i2.parentNode.children)
+          return null;
+        var o2 = i2.parentNode, s2 = n2.otherTags;
+        if ("a" === a2 || "button" === a2 || "input" === a2 || "textarea" === a2)
+          return i2;
+        if (oe(s2, a2) > -1)
+          return i2;
+        if ("area" === a2 && "map" === o2.tagName.toLowerCase() && O(o2).prev().tagName && "img" === O(o2).prev().tagName.toLowerCase())
+          return O(o2).prev();
+        if ("div" === a2 && t.para.heatmap.collect_tags.div && n2.isDivLevelValid(i2) && ((t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && t.para.heatmap.collect_tags.div.max_level || 1) > 1 || n2.isCollectableDiv(i2)))
+          return i2;
+        if (n2.isStyleTag(a2) && t.para.heatmap.collect_tags.div) {
+          var l2 = n2.getCollectableParent(i2);
+          if (l2 && n2.isDivLevelValid(l2))
+            return l2;
         }
-      };
-      var Ht = { label: false, li: false, a: true, button: true }, Jt = {
-        otherTags: [], initUnlimitedTags: function () {
-          D(Jt.otherTags, function (e2) {
-            e2 in Ht && (Ht[e2] = true);
-          });
-        }, isUnlimitedTag: function (e2) {
-          if (!e2 || 1 !== e2.nodeType)
+        return n2.hasElement({ event: r2 && r2.originalEvent || r2, element: e2 }, function(e3) {
+          return n2.isUnlimitedTag(e3);
+        }) || null;
+      }, getDivLevels: function(e2, t2) {
+        var r2 = Jt.getElementPath(e2, true, t2).split(" > "), n2 = 0;
+        return D(r2, function(e3) {
+          "div" === e3 && n2++;
+        }), n2;
+      }, isDivLevelValid: function(e2) {
+        for (var r2 = t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && t.para.heatmap.collect_tags.div.max_level || 1, n2 = e2.getElementsByTagName("div"), i2 = n2.length - 1; i2 >= 0; i2--)
+          if (Jt.getDivLevels(n2[i2], e2) > r2)
             return false;
-          var r2 = e2.nodeName.toLowerCase();
-          return Ht[r2] || ne(e2, t.para.heatmap.track_attr);
-        }, getTargetElement: function (e2, r2) {
-          var n2 = this, i2 = e2;
-          if ("object" != typeof i2)
-            return null;
-          if ("string" != typeof i2.tagName)
-            return null;
-          var a2 = i2.tagName.toLowerCase();
-          if ("body" === a2.toLowerCase() || "html" === a2.toLowerCase())
-            return null;
-          if (!i2 || !i2.parentNode || !i2.parentNode.children)
-            return null;
-          var o2 = i2.parentNode, s2 = n2.otherTags;
-          if ("a" === a2 || "button" === a2 || "input" === a2 || "textarea" === a2)
-            return i2;
-          if (oe(s2, a2) > -1)
-            return i2;
-          if ("area" === a2 && "map" === o2.tagName.toLowerCase() && O(o2).prev().tagName && "img" === O(o2).prev().tagName.toLowerCase())
-            return O(o2).prev();
-          if ("div" === a2 && t.para.heatmap.collect_tags.div && n2.isDivLevelValid(i2) && ((t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && t.para.heatmap.collect_tags.div.max_level || 1) > 1 || n2.isCollectableDiv(i2)))
-            return i2;
-          if (n2.isStyleTag(a2) && t.para.heatmap.collect_tags.div) {
-            var l2 = n2.getCollectableParent(i2);
-            if (l2 && n2.isDivLevelValid(l2))
-              return l2;
-          }
-          return n2.hasElement({ event: r2 && r2.originalEvent || r2, element: e2 }, function (e3) {
-            return n2.isUnlimitedTag(e3);
-          }) || null;
-        }, getDivLevels: function (e2, t2) {
-          var r2 = Jt.getElementPath(e2, true, t2).split(" > "), n2 = 0;
-          return D(r2, function (e3) {
-            "div" === e3 && n2++;
-          }), n2;
-        }, isDivLevelValid: function (e2) {
-          for (var r2 = t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && t.para.heatmap.collect_tags.div.max_level || 1, n2 = e2.getElementsByTagName("div"), i2 = n2.length - 1; i2 >= 0; i2--)
-            if (Jt.getDivLevels(n2[i2], e2) > r2)
-              return false;
-          return true;
-        }, getElementPath: function (e2, t2, r2) {
-          for (var n2 = []; e2.parentNode && k(e2);) {
-            if (!h(e2.tagName))
-              return "unknown";
-            if (e2.id && !t2 && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(e2.id)) {
-              n2.unshift(e2.tagName.toLowerCase() + "#" + e2.id);
-              break;
-            }
-            if (r2 && e2 === r2) {
-              n2.unshift(e2.tagName.toLowerCase());
-              break;
-            }
-            if (e2 === document.body) {
-              n2.unshift("body");
-              break;
-            }
-            n2.unshift(e2.tagName.toLowerCase()), e2 = e2.parentNode;
-          }
-          return n2.join(" > ");
-        }, getClosestLi: function (e2) {
-          return function (e3, t2) {
-            for (; e3 && e3 !== document && 1 === e3.nodeType; e3 = e3.parentNode)
-              if (e3.tagName && h(e3.tagName) && e3.tagName.toLowerCase() === t2)
-                return e3;
-            return null;
-          }(e2, "li");
-        }, getElementPosition: function (e2, r2, n2) {
-          var i2 = t.heatmap.getClosestLi(e2);
-          if (!i2 || !k(e2) || !h(e2.tagName))
-            return null;
-          var a2 = e2.tagName.toLowerCase(), o2 = i2.getElementsByTagName(a2), s2 = o2.length, l2 = [];
-          if (s2 > 1) {
-            for (var u2 = 0; u2 < s2; u2++) {
-              t.heatmap.getElementPath(o2[u2], n2) === r2 && l2.push(o2[u2]);
-            }
-            if (l2.length > 1)
-              return oe(l2, e2);
-          }
-          return function (e3) {
-            if (!e3.parentNode)
-              return "";
-            if (1 === O(e3).getSameTypeSiblings().length)
-              return 0;
-            for (var t2 = 0, r3 = e3; O(r3).previousElementSibling().ele; r3 = O(r3).previousElementSibling().ele, t2++)
-              ;
-            return t2;
-          }(i2);
-        }, setNotice: function (e2) {
-          t.is_heatmap_render_mode = true, t.para.heatmap || (t.errorMsg = "\u60A8 SDK \u6CA1\u6709\u914D\u7F6E\u5F00\u542F\u70B9\u51FB\u56FE \uFF01"), e2 && "http:" === e2.slice(0, 5) && "https:" === location.protocol && (t.errorMsg = "\u60A8\u7684\u5F53\u524D\u9875\u9762\u662F https \u7684\u5730\u5740\uFF0C\u795E\u7B56\u5206\u6790\u73AF\u5883\u4E5F\u5FC5\u987B\u662F https \uFF01"), t.para.heatmap_url || (t.para.heatmap_url = Rt() + "//static.sensorsdata.cn/sdk/" + t.lib_version + "/heatmap.min.js");
-        }, getDomIndex: function (e2) {
-          if (!e2.parentNode)
-            return -1;
-          for (var t2 = 0, r2 = e2.tagName, n2 = e2.parentNode.children, i2 = 0; i2 < n2.length; i2++)
-            if (n2[i2].tagName === r2) {
-              if (e2 === n2[i2])
-                return t2;
-              t2++;
-            }
-          return -1;
-        }, selector: function (e2, r2) {
-          if (!e2 || !k(e2) || !h(e2.tagName))
-            return "";
-          var n2 = e2.parentNode && 9 == e2.parentNode.nodeType ? -1 : this.getDomIndex(e2);
-          return e2.getAttribute && e2.getAttribute("id") && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(e2.getAttribute("id")) && (!t.para.heatmap || t.para.heatmap && "not_use_id" !== t.para.heatmap.element_selector) && !r2 ? "#" + e2.getAttribute("id") : e2.tagName.toLowerCase() + (~n2 ? ":nth-of-type(" + (n2 + 1) + ")" : "");
-        }, getDomSelector: function (e2, r2, n2) {
-          if (!(e2 && e2.parentNode && e2.parentNode.children && h(e2.tagName)))
+        return true;
+      }, getElementPath: function(e2, t2, r2) {
+        for (var n2 = []; e2.parentNode && k(e2); ) {
+          if (!h(e2.tagName))
             return "unknown";
-          r2 = r2 && r2.join ? r2 : [];
-          var i2 = e2.nodeName.toLowerCase();
-          return e2 && "body" !== i2 && 1 == e2.nodeType ? (r2.unshift(this.selector(e2, n2)), e2.getAttribute && e2.getAttribute("id") && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(e2.getAttribute("id")) && t.para.heatmap && "not_use_id" !== t.para.heatmap.element_selector && !n2 ? r2.join(" > ") : this.getDomSelector(e2.parentNode, r2, n2)) : (r2.unshift("body"), r2.join(" > "));
-        }, na: function () {
-          var e2 = document.documentElement.scrollLeft || window.pageXOffset;
-          return parseInt(isNaN(e2) ? 0 : e2, 10);
-        }, i: function () {
-          var e2 = 0;
-          try {
-            e2 = o.documentElement && o.documentElement.scrollTop || m.pageYOffset, e2 = isNaN(e2) ? 0 : e2;
-          } catch (t2) {
-            e2 = 0;
+          if (e2.id && !t2 && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(e2.id)) {
+            n2.unshift(e2.tagName.toLowerCase() + "#" + e2.id);
+            break;
           }
-          return parseInt(e2, 10);
-        }, getBrowserWidth: function () {
-          var e2 = window.innerWidth || document.body.clientWidth;
-          return isNaN(e2) ? 0 : parseInt(e2, 10);
-        }, getBrowserHeight: function () {
-          var e2 = window.innerHeight || document.body.clientHeight;
-          return isNaN(e2) ? 0 : parseInt(e2, 10);
-        }, getScrollWidth: function () {
-          var e2 = parseInt(document.body.scrollWidth, 10);
-          return isNaN(e2) ? 0 : e2;
-        }, getEleDetail: function (e2) {
-          var r2 = this.getDomSelector(e2), n2 = ct({ target: e2 });
-          n2.$element_selector = r2 || "", n2.$element_path = t.heatmap.getElementPath(e2, t.para.heatmap && "not_use_id" === t.para.heatmap.element_selector);
-          var i2 = t.heatmap.getElementPosition(e2, n2.$element_path, t.para.heatmap && "not_use_id" === t.para.heatmap.element_selector);
-          return ge(i2) && (n2.$element_position = i2), n2;
-        }, getPointerEventProp: function (e2, t2) {
-          if (!e2)
-            return {};
-          function r2() {
-            return { scrollLeft: document.body.scrollLeft || document.documentElement.scrollLeft || 0, scrollTop: document.body.scrollTop || document.documentElement.scrollTop || 0 };
+          if (r2 && e2 === r2) {
+            n2.unshift(e2.tagName.toLowerCase());
+            break;
           }
-          function n2(e3) {
-            if (document.documentElement.getBoundingClientRect) {
-              var t3 = e3.getBoundingClientRect();
-              return { targetEleX: t3.left + r2().scrollLeft || 0, targetEleY: t3.top + r2().scrollTop || 0 };
-            }
+          if (e2 === document.body) {
+            n2.unshift("body");
+            break;
           }
-          function i2(e3) {
-            return Number(Number(e3).toFixed(3));
-          }
-          return function (e3) {
-            var a2 = e3.pageX || e3.clientX + r2().scrollLeft || e3.offsetX + n2(t2).targetEleX || 0, o2 = e3.pageY || e3.clientY + r2().scrollTop || e3.offsetY + n2(t2).targetEleY || 0;
-            return { $page_x: i2(a2), $page_y: i2(o2) };
-          }(e2);
-        }, start: function (e2, n2, i2, a2, o2) {
-          if (s(t.para.heatmap) && r(t.para.heatmap.collect_element) && !t.para.heatmap.collect_element(n2))
-            return false;
-          var l2, u2 = Jt.getBasicEleInfo(e2, n2, i2, a2, o2);
-          l2 = u2, Bt.stage.process("webClickEvent", l2);
-        }, getBasicEleInfo: function (e2, n2, i2, a2, o2) {
-          var l2 = s(a2) ? a2 : {}, u2 = r(o2) ? o2 : r(a2) ? a2 : void 0, c2 = this.getEleDetail(n2);
-          if (t.para.heatmap && t.para.heatmap.custom_property) {
-            var p2 = t.para.heatmap.custom_property(n2);
-            s(p2) && (c2 = $(c2, p2));
-          }
-          return { event: e2, target: n2, props: c2 = $(c2, this.getPointerEventProp(e2, n2), l2), tagName: i2, callback: u2 };
-        }, hasElement: function (e2, t2) {
-          var r2;
-          if (e2.event) {
-            var n2 = e2.event;
-            r2 = n2.path || n2._getPath && n2._getPath();
-          } else
-            e2.element && (r2 = O(e2.element).getParents());
-          if (r2 && C(r2) && r2.length > 0) {
-            for (var i2 = 0; i2 < r2.length; i2++)
-              if ("object" == typeof r2[i2] && 1 === r2[i2].nodeType && t2(r2[i2]))
-                return r2[i2];
-          }
-        }, isStyleTag: function (e2, r2) {
-          return !(oe(["a", "div", "input", "button", "textarea"], e2) > -1) && (!r2 || t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div ? !!(s(t.para.heatmap) && s(t.para.heatmap.collect_tags) && s(t.para.heatmap.collect_tags.div) && C(t.para.heatmap.collect_tags.div.ignore_tags) && oe(t.para.heatmap.collect_tags.div.ignore_tags, e2) > -1) : oe(["mark", "/mark", "strong", "b", "em", "i", "u", "abbr", "ins", "del", "s", "sup"], e2) > -1);
-        }, isCollectableDiv: function (e2, r2) {
-          try {
-            if (0 === e2.children.length)
-              return true;
-            for (var n2 = 0; n2 < e2.children.length; n2++)
-              if (1 === e2.children[n2].nodeType) {
-                var i2 = h(e2.children[n2].tagName) ? e2.children[n2].tagName.toLowerCase() : "unknown", a2 = t.para && t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && t.para.heatmap.collect_tags.div.max_level;
-                if (!("div" === i2 && a2 > 1 || this.isStyleTag(i2, r2)))
-                  return false;
-                if (!this.isCollectableDiv(e2.children[n2], r2))
-                  return false;
-              }
-            return true;
-          } catch (o2) {
-            xe("isCollectableDiv:" + o2);
-          }
-          return false;
-        }, getCollectableParent: function (e2, r2) {
-          try {
-            var n2 = e2.parentNode, i2 = n2 ? n2.tagName.toLowerCase() : "";
-            if ("body" === i2)
-              return false;
-            var a2 = t.para && t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && t.para.heatmap.collect_tags.div.max_level;
-            if (i2 && "div" === i2 && (a2 > 1 || this.isCollectableDiv(n2, r2)))
-              return n2;
-            if (n2 && this.isStyleTag(i2, r2))
-              return this.getCollectableParent(n2, r2);
-          } catch (o2) {
-            xe("getCollectableParent:" + o2);
-          }
-          return false;
-        }, listenUrlChange: function (e2) {
-          e2(), t.ee.spa.on("switch", function () {
-            e2();
-          });
-        }, initScrollmap: function () {
-          if (!s(t.para.heatmap) || "default" !== t.para.heatmap.scroll_notice_map)
-            return false;
-          var e2 = true;
-          t.para.scrollmap && r(t.para.scrollmap.collect_url) && this.listenUrlChange(function () {
-            e2 = !!t.para.scrollmap.collect_url();
-          });
-          var n2 = function (e3) {
-            var t2 = {};
-            return t2.timeout = e3.timeout || 1e3, t2.func = e3.func, t2.hasInit = false, t2.inter = null, t2.main = function (e4, t3) {
-              this.func(e4, t3), this.inter = null;
-            }, t2.go = function (e4) {
-              var r2 = {};
-              this.inter || (r2.$viewport_position = document.documentElement && document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop || 0, r2.$viewport_position = Math.round(r2.$viewport_position) || 0, e4 ? t2.main(r2, true) : this.inter = setTimeout(function () {
-                t2.main(r2);
-              }, this.timeout));
-            }, t2;
-          }({
-            timeout: 1e3, func: function (e3, r2) {
-              var n3, i2 = document.documentElement && document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop || 0, a2 = new Date(), o2 = a2 - this.current_time;
-              (o2 > t.para.heatmap.scroll_delay_time && i2 - e3.$viewport_position != 0 || r2) && (e3.$url = ee(), e3.$title = document.title, e3.$url_path = te(), e3.event_duration = Math.min(t.para.heatmap.scroll_event_duration, parseInt(o2) / 1e3), e3.event_duration = e3.event_duration < 0 ? 0 : e3.event_duration, n3 = e3, Bt.stage.process("webStayEvent", n3)), this.current_time = a2;
-            }
-          });
-          n2.current_time = new Date(), ze(window, "scroll", function () {
-            if (!e2)
-              return false;
-            n2.go();
-          }), ze(window, "beforeunload", function () {
-            if (!e2)
-              return false;
-            n2.go("notime");
-          });
-        }, initHeatmap: function () {
-          var e2 = this, n2 = true;
-          if (!s(t.para.heatmap) || "default" !== t.para.heatmap.clickmap)
-            return false;
-          r(t.para.heatmap.collect_url) && this.listenUrlChange(function () {
-            n2 = !!t.para.heatmap.collect_url();
-          }), "all" === t.para.heatmap.collect_elements ? t.para.heatmap.collect_elements = "all" : t.para.heatmap.collect_elements = "interact", "all" === t.para.heatmap.collect_elements ? ze(document, "click", function (t2) {
-            if (!n2)
-              return false;
-            var r2 = t2 || window.event;
-            if (!r2)
-              return false;
-            var i2 = r2.target || r2.srcElement;
-            if ("object" != typeof i2)
-              return false;
-            if ("string" != typeof i2.tagName)
-              return false;
-            var a2 = i2.tagName.toLowerCase();
-            if ("body" === a2 || "html" === a2)
-              return false;
-            if (!i2 || !i2.parentNode || !i2.parentNode.children)
-              return false;
-            var o2 = h(i2.parentNode.tagName) ? i2.parentNode.tagName.toLowerCase() : "unknown";
-            "a" === o2 || "button" === o2 ? e2.start(r2, i2.parentNode, o2) : e2.start(r2, i2, a2);
-          }) : ze(document, "click", function (r2) {
-            if (!n2)
-              return false;
-            var i2 = r2 || window.event;
-            if (!i2)
-              return false;
-            var a2 = i2.target || i2.srcElement, o2 = t.heatmap.getTargetElement(a2, r2);
-            if (!k(o2) && !h(a2.tagName))
-              return false;
-            k(o2) && h(o2.tagName) ? e2.start(i2, o2, o2.tagName.toLowerCase()) : k(a2) && "div" === a2.tagName.toLowerCase() && s(t.para.heatmap) && t.para.heatmap.get_vtrack_config && Dt.events.length > 0 && Dt.isTargetEle(a2) && e2.start(i2, a2, a2.tagName.toLowerCase(), { $lib_method: "vtrack" });
-          });
+          n2.unshift(e2.tagName.toLowerCase()), e2 = e2.parentNode;
         }
-      };
+        return n2.join(" > ");
+      }, getClosestLi: function(e2) {
+        return function(e3, t2) {
+          for (; e3 && e3 !== document && 1 === e3.nodeType; e3 = e3.parentNode)
+            if (e3.tagName && h(e3.tagName) && e3.tagName.toLowerCase() === t2)
+              return e3;
+          return null;
+        }(e2, "li");
+      }, getElementPosition: function(e2, r2, n2) {
+        var i2 = t.heatmap.getClosestLi(e2);
+        if (!i2 || !k(e2) || !h(e2.tagName))
+          return null;
+        var a2 = e2.tagName.toLowerCase(), o2 = i2.getElementsByTagName(a2), s2 = o2.length, l2 = [];
+        if (s2 > 1) {
+          for (var u2 = 0; u2 < s2; u2++) {
+            t.heatmap.getElementPath(o2[u2], n2) === r2 && l2.push(o2[u2]);
+          }
+          if (l2.length > 1)
+            return oe(l2, e2);
+        }
+        return function(e3) {
+          if (!e3.parentNode)
+            return "";
+          if (1 === O(e3).getSameTypeSiblings().length)
+            return 0;
+          for (var t2 = 0, r3 = e3; O(r3).previousElementSibling().ele; r3 = O(r3).previousElementSibling().ele, t2++)
+            ;
+          return t2;
+        }(i2);
+      }, setNotice: function(e2) {
+        t.is_heatmap_render_mode = true, t.para.heatmap || (t.errorMsg = "\u60A8 SDK \u6CA1\u6709\u914D\u7F6E\u5F00\u542F\u70B9\u51FB\u56FE \uFF01"), e2 && "http:" === e2.slice(0, 5) && "https:" === location.protocol && (t.errorMsg = "\u60A8\u7684\u5F53\u524D\u9875\u9762\u662F https \u7684\u5730\u5740\uFF0C\u795E\u7B56\u5206\u6790\u73AF\u5883\u4E5F\u5FC5\u987B\u662F https \uFF01"), t.para.heatmap_url || (t.para.heatmap_url = Rt() + "//static.sensorsdata.cn/sdk/" + t.lib_version + "/heatmap.min.js");
+      }, getDomIndex: function(e2) {
+        if (!e2.parentNode)
+          return -1;
+        for (var t2 = 0, r2 = e2.tagName, n2 = e2.parentNode.children, i2 = 0; i2 < n2.length; i2++)
+          if (n2[i2].tagName === r2) {
+            if (e2 === n2[i2])
+              return t2;
+            t2++;
+          }
+        return -1;
+      }, selector: function(e2, r2) {
+        if (!e2 || !k(e2) || !h(e2.tagName))
+          return "";
+        var n2 = e2.parentNode && 9 == e2.parentNode.nodeType ? -1 : this.getDomIndex(e2);
+        return e2.getAttribute && e2.getAttribute("id") && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(e2.getAttribute("id")) && (!t.para.heatmap || t.para.heatmap && "not_use_id" !== t.para.heatmap.element_selector) && !r2 ? "#" + e2.getAttribute("id") : e2.tagName.toLowerCase() + (~n2 ? ":nth-of-type(" + (n2 + 1) + ")" : "");
+      }, getDomSelector: function(e2, r2, n2) {
+        if (!(e2 && e2.parentNode && e2.parentNode.children && h(e2.tagName)))
+          return "unknown";
+        r2 = r2 && r2.join ? r2 : [];
+        var i2 = e2.nodeName.toLowerCase();
+        return e2 && "body" !== i2 && 1 == e2.nodeType ? (r2.unshift(this.selector(e2, n2)), e2.getAttribute && e2.getAttribute("id") && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(e2.getAttribute("id")) && t.para.heatmap && "not_use_id" !== t.para.heatmap.element_selector && !n2 ? r2.join(" > ") : this.getDomSelector(e2.parentNode, r2, n2)) : (r2.unshift("body"), r2.join(" > "));
+      }, na: function() {
+        var e2 = document.documentElement.scrollLeft || window.pageXOffset;
+        return parseInt(isNaN(e2) ? 0 : e2, 10);
+      }, i: function() {
+        var e2 = 0;
+        try {
+          e2 = o.documentElement && o.documentElement.scrollTop || m.pageYOffset, e2 = isNaN(e2) ? 0 : e2;
+        } catch (t2) {
+          e2 = 0;
+        }
+        return parseInt(e2, 10);
+      }, getBrowserWidth: function() {
+        var e2 = window.innerWidth || document.body.clientWidth;
+        return isNaN(e2) ? 0 : parseInt(e2, 10);
+      }, getBrowserHeight: function() {
+        var e2 = window.innerHeight || document.body.clientHeight;
+        return isNaN(e2) ? 0 : parseInt(e2, 10);
+      }, getScrollWidth: function() {
+        var e2 = parseInt(document.body.scrollWidth, 10);
+        return isNaN(e2) ? 0 : e2;
+      }, getEleDetail: function(e2) {
+        var r2 = this.getDomSelector(e2), n2 = ct({ target: e2 });
+        n2.$element_selector = r2 || "", n2.$element_path = t.heatmap.getElementPath(e2, t.para.heatmap && "not_use_id" === t.para.heatmap.element_selector);
+        var i2 = t.heatmap.getElementPosition(e2, n2.$element_path, t.para.heatmap && "not_use_id" === t.para.heatmap.element_selector);
+        return ge(i2) && (n2.$element_position = i2), n2;
+      }, getPointerEventProp: function(e2, t2) {
+        if (!e2)
+          return {};
+        function r2() {
+          return { scrollLeft: document.body.scrollLeft || document.documentElement.scrollLeft || 0, scrollTop: document.body.scrollTop || document.documentElement.scrollTop || 0 };
+        }
+        function n2(e3) {
+          if (document.documentElement.getBoundingClientRect) {
+            var t3 = e3.getBoundingClientRect();
+            return { targetEleX: t3.left + r2().scrollLeft || 0, targetEleY: t3.top + r2().scrollTop || 0 };
+          }
+        }
+        function i2(e3) {
+          return Number(Number(e3).toFixed(3));
+        }
+        return function(e3) {
+          var a2 = e3.pageX || e3.clientX + r2().scrollLeft || e3.offsetX + n2(t2).targetEleX || 0, o2 = e3.pageY || e3.clientY + r2().scrollTop || e3.offsetY + n2(t2).targetEleY || 0;
+          return { $page_x: i2(a2), $page_y: i2(o2) };
+        }(e2);
+      }, start: function(e2, n2, i2, a2, o2) {
+        if (s(t.para.heatmap) && r(t.para.heatmap.collect_element) && !t.para.heatmap.collect_element(n2))
+          return false;
+        var l2, u2 = Jt.getBasicEleInfo(e2, n2, i2, a2, o2);
+        l2 = u2, Bt.stage.process("webClickEvent", l2);
+      }, getBasicEleInfo: function(e2, n2, i2, a2, o2) {
+        var l2 = s(a2) ? a2 : {}, u2 = r(o2) ? o2 : r(a2) ? a2 : void 0, c2 = this.getEleDetail(n2);
+        if (t.para.heatmap && t.para.heatmap.custom_property) {
+          var p2 = t.para.heatmap.custom_property(n2);
+          s(p2) && (c2 = $(c2, p2));
+        }
+        return { event: e2, target: n2, props: c2 = $(c2, this.getPointerEventProp(e2, n2), l2), tagName: i2, callback: u2 };
+      }, hasElement: function(e2, t2) {
+        var r2;
+        if (e2.event) {
+          var n2 = e2.event;
+          r2 = n2.path || n2._getPath && n2._getPath();
+        } else
+          e2.element && (r2 = O(e2.element).getParents());
+        if (r2 && C(r2) && r2.length > 0) {
+          for (var i2 = 0; i2 < r2.length; i2++)
+            if ("object" == typeof r2[i2] && 1 === r2[i2].nodeType && t2(r2[i2]))
+              return r2[i2];
+        }
+      }, isStyleTag: function(e2, r2) {
+        return !(oe(["a", "div", "input", "button", "textarea"], e2) > -1) && (!r2 || t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div ? !!(s(t.para.heatmap) && s(t.para.heatmap.collect_tags) && s(t.para.heatmap.collect_tags.div) && C(t.para.heatmap.collect_tags.div.ignore_tags) && oe(t.para.heatmap.collect_tags.div.ignore_tags, e2) > -1) : oe(["mark", "/mark", "strong", "b", "em", "i", "u", "abbr", "ins", "del", "s", "sup"], e2) > -1);
+      }, isCollectableDiv: function(e2, r2) {
+        try {
+          if (0 === e2.children.length)
+            return true;
+          for (var n2 = 0; n2 < e2.children.length; n2++)
+            if (1 === e2.children[n2].nodeType) {
+              var i2 = h(e2.children[n2].tagName) ? e2.children[n2].tagName.toLowerCase() : "unknown", a2 = t.para && t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && t.para.heatmap.collect_tags.div.max_level;
+              if (!("div" === i2 && a2 > 1 || this.isStyleTag(i2, r2)))
+                return false;
+              if (!this.isCollectableDiv(e2.children[n2], r2))
+                return false;
+            }
+          return true;
+        } catch (o2) {
+          xe("isCollectableDiv:" + o2);
+        }
+        return false;
+      }, getCollectableParent: function(e2, r2) {
+        try {
+          var n2 = e2.parentNode, i2 = n2 ? n2.tagName.toLowerCase() : "";
+          if ("body" === i2)
+            return false;
+          var a2 = t.para && t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && t.para.heatmap.collect_tags.div.max_level;
+          if (i2 && "div" === i2 && (a2 > 1 || this.isCollectableDiv(n2, r2)))
+            return n2;
+          if (n2 && this.isStyleTag(i2, r2))
+            return this.getCollectableParent(n2, r2);
+        } catch (o2) {
+          xe("getCollectableParent:" + o2);
+        }
+        return false;
+      }, listenUrlChange: function(e2) {
+        e2(), t.ee.spa.on("switch", function() {
+          e2();
+        });
+      }, initScrollmap: function() {
+        if (!s(t.para.heatmap) || "default" !== t.para.heatmap.scroll_notice_map)
+          return false;
+        var e2 = true;
+        t.para.scrollmap && r(t.para.scrollmap.collect_url) && this.listenUrlChange(function() {
+          e2 = !!t.para.scrollmap.collect_url();
+        });
+        var n2 = function(e3) {
+          var t2 = {};
+          return t2.timeout = e3.timeout || 1e3, t2.func = e3.func, t2.hasInit = false, t2.inter = null, t2.main = function(e4, t3) {
+            this.func(e4, t3), this.inter = null;
+          }, t2.go = function(e4) {
+            var r2 = {};
+            this.inter || (r2.$viewport_position = document.documentElement && document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop || 0, r2.$viewport_position = Math.round(r2.$viewport_position) || 0, e4 ? t2.main(r2, true) : this.inter = setTimeout(function() {
+              t2.main(r2);
+            }, this.timeout));
+          }, t2;
+        }({ timeout: 1e3, func: function(e3, r2) {
+          var n3, i2 = document.documentElement && document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop || 0, a2 = new Date(), o2 = a2 - this.current_time;
+          (o2 > t.para.heatmap.scroll_delay_time && i2 - e3.$viewport_position != 0 || r2) && (e3.$url = ee(), e3.$title = document.title, e3.$url_path = te(), e3.event_duration = Math.min(t.para.heatmap.scroll_event_duration, parseInt(o2) / 1e3), e3.event_duration = e3.event_duration < 0 ? 0 : e3.event_duration, n3 = e3, Bt.stage.process("webStayEvent", n3)), this.current_time = a2;
+        } });
+        n2.current_time = new Date(), ze(window, "scroll", function() {
+          if (!e2)
+            return false;
+          n2.go();
+        }), ze(window, "beforeunload", function() {
+          if (!e2)
+            return false;
+          n2.go("notime");
+        });
+      }, initHeatmap: function() {
+        var e2 = this, n2 = true;
+        if (!s(t.para.heatmap) || "default" !== t.para.heatmap.clickmap)
+          return false;
+        r(t.para.heatmap.collect_url) && this.listenUrlChange(function() {
+          n2 = !!t.para.heatmap.collect_url();
+        }), "all" === t.para.heatmap.collect_elements ? t.para.heatmap.collect_elements = "all" : t.para.heatmap.collect_elements = "interact", "all" === t.para.heatmap.collect_elements ? ze(document, "click", function(t2) {
+          if (!n2)
+            return false;
+          var r2 = t2 || window.event;
+          if (!r2)
+            return false;
+          var i2 = r2.target || r2.srcElement;
+          if ("object" != typeof i2)
+            return false;
+          if ("string" != typeof i2.tagName)
+            return false;
+          var a2 = i2.tagName.toLowerCase();
+          if ("body" === a2 || "html" === a2)
+            return false;
+          if (!i2 || !i2.parentNode || !i2.parentNode.children)
+            return false;
+          var o2 = h(i2.parentNode.tagName) ? i2.parentNode.tagName.toLowerCase() : "unknown";
+          "a" === o2 || "button" === o2 ? e2.start(r2, i2.parentNode, o2) : e2.start(r2, i2, a2);
+        }) : ze(document, "click", function(r2) {
+          if (!n2)
+            return false;
+          var i2 = r2 || window.event;
+          if (!i2)
+            return false;
+          var a2 = i2.target || i2.srcElement, o2 = t.heatmap.getTargetElement(a2, r2);
+          if (!k(o2) && !h(a2.tagName))
+            return false;
+          k(o2) && h(o2.tagName) ? e2.start(i2, o2, o2.tagName.toLowerCase()) : k(a2) && "div" === a2.tagName.toLowerCase() && s(t.para.heatmap) && t.para.heatmap.get_vtrack_config && Dt.events.length > 0 && Dt.isTargetEle(a2) && e2.start(i2, a2, a2.tagName.toLowerCase(), { $lib_method: "vtrack" });
+        });
+      } };
       function Mt() {
         var e2 = it.campaignParams(), r2 = {};
-        return D(e2, function (e3, n2, i2) {
+        return D(e2, function(e3, n2, i2) {
           -1 !== (" " + t.source_channel_standard + " ").indexOf(" " + n2 + " ") ? r2["$" + n2] = i2[n2] : r2[n2] = i2[n2];
         }), r2;
       }
@@ -3293,76 +3181,74 @@ var __publicField = (obj, key, value) => {
           e2($({ $first_visit_time: new Date(), $first_referrer: o2, $first_referrer_host: o2 ? W(o2, "\u53D6\u503C\u5F02\u5E38") : "", $first_browser_language: h(navigator.language) ? navigator.language.toLowerCase() : "\u53D6\u503C\u5F02\u5E38", $first_browser_charset: h(a2) ? a2.toUpperCase() : "\u53D6\u503C\u5F02\u5E38", $first_traffic_source_type: at(), $first_search_keyword: tt(), $timezone_offset: new Date().getTimezoneOffset() }, Mt(), i2)), t.is_first_visitor = false;
         }
       }
-      var Ft = {
-        autoTrackIsUsed: false, isReady: function (e2) {
-          r(e2) ? e2() : t.log("error: isReady callback must be function");
-        }, getUtm: function () {
-          return it.campaignParams();
-        }, getStayTime: function () {
-          return (new Date() - t._t) / 1e3;
-        }, setProfileLocal: function (e2) {
-          if (!a.isSupport())
-            return t.setProfile(e2), false;
-          if (!s(e2) || ce(e2))
-            return false;
-          var r2 = Pt.readObjectVal("sensorsdata_2015_jssdk_profile"), n2 = false;
-          if (s(r2) && !ce(r2)) {
-            for (var i2 in e2)
-              !(i2 in r2 && r2[i2] !== e2[i2]) && i2 in r2 || (r2[i2] = e2[i2], n2 = true);
-            n2 && (Pt.saveObjectVal("sensorsdata_2015_jssdk_profile", r2), t.setProfile(e2));
-          } else
-            Pt.saveObjectVal("sensorsdata_2015_jssdk_profile", e2), t.setProfile(e2);
-        }, setInitReferrer: function () {
-          var e2 = Qe();
-          t.setOnceProfile({ _init_referrer: e2, _init_referrer_host: it.pageProp.referrer_host });
-        }, setSessionReferrer: function () {
-          var e2 = Qe();
-          Pt.setSessionPropsOnce({ _session_referrer: e2, _session_referrer_host: it.pageProp.referrer_host });
-        }, setDefaultAttr: function () {
-          it.register({ _current_url: location.href, _referrer: Qe(), _referring_host: it.pageProp.referrer_host });
-        }, trackHeatMap: function (e2, r2, n2) {
-          if ("object" == typeof e2 && e2.tagName && k(e2.parentNode)) {
-            var i2 = e2.tagName.toLowerCase(), a2 = e2.parentNode.tagName.toLowerCase(), o2 = t.para.heatmap && t.para.heatmap.track_attr ? t.para.heatmap.track_attr : ["data-sensors-click"];
-            "button" === i2 || "a" === i2 || "a" === a2 || "button" === a2 || "input" === i2 || "textarea" === i2 || ne(e2, o2) || Jt.start(null, e2, i2, r2, n2);
-          }
-        }, trackAllHeatMap: function (e2, t2, r2) {
-          if ("object" == typeof e2 && e2.tagName) {
-            var n2 = e2.tagName.toLowerCase();
-            Jt.start(null, e2, n2, t2, r2);
-          }
-        }, autoTrackSinglePage: function (e2, r2) {
-          var n2;
-          n2 = this.autoTrackIsUsed ? it.pageProp.url : it.pageProp.referrer;
-          var i2 = !(e2 = s(e2) ? e2 : {}).not_set_profile;
-          function a2(e3, r3) {
-            t.track("$pageview", $({ $referrer: n2, $url: ee(), $url_path: te(), $title: document.title }, e3, Mt()), r3), n2 = ee();
-          }
-          e2.not_set_profile && delete e2.not_set_profile, a2(e2, r2), this.autoTrackSinglePage = a2, qt(t.setOnceProfile, false, i2);
-        }, autoTrackWithoutProfile: function (e2, t2) {
-          e2 = s(e2) ? e2 : {}, this.autoTrack($(e2, { not_set_profile: true }), t2);
-        }, autoTrack: function (e2, r2) {
-          e2 = s(e2) ? e2 : {};
-          var n2 = Mt(), i2 = !e2.not_set_profile;
-          e2.not_set_profile && delete e2.not_set_profile;
-          var a2 = location.href;
-          t.para.is_single_page && I(function () {
-            var i3 = Qe(a2, true);
-            t.track("$pageview", $({ $referrer: i3, $url: ee(), $url_path: te(), $title: document.title }, n2, e2), r2), a2 = ee();
-          }), t.track("$pageview", $({ $referrer: Qe(null, true), $url: ee(), $url_path: te(), $title: document.title }, n2, e2), r2), qt(t.setOnceProfile, true, i2), this.autoTrackIsUsed = true;
-        }, getAnonymousID: function () {
-          return ce(Pt._state) ? "SDK is not initialized." : Pt.getAnonymousId();
-        }, setPlugin: function (e2) {
-          if (!s(e2))
-            return false;
-          D(e2, function (e3, n2) {
-            r(e3) && (s(window.SensorsDataWebJSSDKPlugin) && window.SensorsDataWebJSSDKPlugin[n2] ? e3(window.SensorsDataWebJSSDKPlugin[n2]) : s(t.modules) && t.modules[n2] ? e3(t.modules[n2]) : $e(n2 + "is not found,please check sensorsdata documents."));
-          });
-        }, useModulePlugin: function () {
-          t.use.apply(t, arguments);
-        }, useAppPlugin: function () {
-          this.setPlugin.apply(this, arguments);
+      var Ft = { autoTrackIsUsed: false, isReady: function(e2) {
+        r(e2) ? e2() : t.log("error: isReady callback must be function");
+      }, getUtm: function() {
+        return it.campaignParams();
+      }, getStayTime: function() {
+        return (new Date() - t._t) / 1e3;
+      }, setProfileLocal: function(e2) {
+        if (!a.isSupport())
+          return t.setProfile(e2), false;
+        if (!s(e2) || ce(e2))
+          return false;
+        var r2 = Pt.readObjectVal("sensorsdata_2015_jssdk_profile"), n2 = false;
+        if (s(r2) && !ce(r2)) {
+          for (var i2 in e2)
+            !(i2 in r2 && r2[i2] !== e2[i2]) && i2 in r2 || (r2[i2] = e2[i2], n2 = true);
+          n2 && (Pt.saveObjectVal("sensorsdata_2015_jssdk_profile", r2), t.setProfile(e2));
+        } else
+          Pt.saveObjectVal("sensorsdata_2015_jssdk_profile", e2), t.setProfile(e2);
+      }, setInitReferrer: function() {
+        var e2 = Qe();
+        t.setOnceProfile({ _init_referrer: e2, _init_referrer_host: it.pageProp.referrer_host });
+      }, setSessionReferrer: function() {
+        var e2 = Qe();
+        Pt.setSessionPropsOnce({ _session_referrer: e2, _session_referrer_host: it.pageProp.referrer_host });
+      }, setDefaultAttr: function() {
+        it.register({ _current_url: location.href, _referrer: Qe(), _referring_host: it.pageProp.referrer_host });
+      }, trackHeatMap: function(e2, r2, n2) {
+        if ("object" == typeof e2 && e2.tagName && k(e2.parentNode)) {
+          var i2 = e2.tagName.toLowerCase(), a2 = e2.parentNode.tagName.toLowerCase(), o2 = t.para.heatmap && t.para.heatmap.track_attr ? t.para.heatmap.track_attr : ["data-sensors-click"];
+          "button" === i2 || "a" === i2 || "a" === a2 || "button" === a2 || "input" === i2 || "textarea" === i2 || ne(e2, o2) || Jt.start(null, e2, i2, r2, n2);
         }
-      };
+      }, trackAllHeatMap: function(e2, t2, r2) {
+        if ("object" == typeof e2 && e2.tagName) {
+          var n2 = e2.tagName.toLowerCase();
+          Jt.start(null, e2, n2, t2, r2);
+        }
+      }, autoTrackSinglePage: function(e2, r2) {
+        var n2;
+        n2 = this.autoTrackIsUsed ? it.pageProp.url : it.pageProp.referrer;
+        var i2 = !(e2 = s(e2) ? e2 : {}).not_set_profile;
+        function a2(e3, r3) {
+          t.track("$pageview", $({ $referrer: n2, $url: ee(), $url_path: te(), $title: document.title }, e3, Mt()), r3), n2 = ee();
+        }
+        e2.not_set_profile && delete e2.not_set_profile, a2(e2, r2), this.autoTrackSinglePage = a2, qt(t.setOnceProfile, false, i2);
+      }, autoTrackWithoutProfile: function(e2, t2) {
+        e2 = s(e2) ? e2 : {}, this.autoTrack($(e2, { not_set_profile: true }), t2);
+      }, autoTrack: function(e2, r2) {
+        e2 = s(e2) ? e2 : {};
+        var n2 = Mt(), i2 = !e2.not_set_profile;
+        e2.not_set_profile && delete e2.not_set_profile;
+        var a2 = location.href;
+        t.para.is_single_page && I(function() {
+          var i3 = Qe(a2, true);
+          t.track("$pageview", $({ $referrer: i3, $url: ee(), $url_path: te(), $title: document.title }, n2, e2), r2), a2 = ee();
+        }), t.track("$pageview", $({ $referrer: Qe(null, true), $url: ee(), $url_path: te(), $title: document.title }, n2, e2), r2), qt(t.setOnceProfile, true, i2), this.autoTrackIsUsed = true;
+      }, getAnonymousID: function() {
+        return ce(Pt._state) ? "SDK is not initialized." : Pt.getAnonymousId();
+      }, setPlugin: function(e2) {
+        if (!s(e2))
+          return false;
+        D(e2, function(e3, n2) {
+          r(e3) && (s(window.SensorsDataWebJSSDKPlugin) && window.SensorsDataWebJSSDKPlugin[n2] ? e3(window.SensorsDataWebJSSDKPlugin[n2]) : s(t.modules) && t.modules[n2] ? e3(t.modules[n2]) : $e(n2 + "is not found,please check sensorsdata documents."));
+        });
+      }, useModulePlugin: function() {
+        t.use.apply(t, arguments);
+      }, useAppPlugin: function() {
+        this.setPlugin.apply(this, arguments);
+      } };
       function Kt(e2, t2) {
         var r2 = e2.id, n2 = e2.callback, i2 = e2.name, a2 = Pt.getFirstId(), o2 = Pt.getOriginDistinctId();
         if (!Nt({ distinct_id: r2 }))
@@ -3406,205 +3292,199 @@ var __publicField = (obj, key, value) => {
       function Yt(e2, t2) {
         "number" == typeof e2 && (e2 = String(e2)), !Kt({ id: e2, callback: t2, name: He.LOGIN }, Xt) && r(t2) && t2();
       }
-      var Gt = {
-        __proto__: null, setInitVar: function () {
-          t._t = t._t || 1 * new Date(), t.is_first_visitor = false, t.source_channel_standard = Ue;
-        }, initPara: function (e2) {
-          $(Ee, e2 || t.para || {}), t.para = Ee;
-          var r2, n2 = {};
-          if (s(t.para.is_track_latest))
-            for (var i2 in t.para.is_track_latest)
-              n2["latest_" + i2] = t.para.is_track_latest[i2];
-          for (r2 in t.para.preset_properties = $({}, Le.preset_properties, n2, t.para.preset_properties || {}), Le)
-            void 0 === t.para[r2] && (t.para[r2] = Le[r2]);
-          "string" != typeof t.para.web_url || "://" !== t.para.web_url.slice(0, 3) && "//" !== t.para.web_url.slice(0, 2) || ("://" === t.para.web_url.slice(0, 3) ? t.para.web_url = location.protocol.slice(0, -1) + t.para.web_url : t.para.web_url = location.protocol + t.para.web_url), nt.protocol.serverUrl(), t.bridge && t.bridge.initPara();
-          var a2 = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"], o2 = ["www.baidu.", "m.baidu.", "m.sm.cn", "so.com", "sogou.com", "youdao.com", "google.", "yahoo.com/", "bing.com/", "ask.com/"], l2 = ["weibo.com", "renren.com", "kaixin001.com", "douban.com", "qzone.qq.com", "zhihu.com", "tieba.baidu.com", "weixin.qq.com"], u2 = { baidu: ["wd", "word", "kw", "keyword"], google: "q", bing: "q", yahoo: "p", sogou: ["query", "keyword"], so: "q", sm: "q" };
-          "object" == typeof t.para.source_type && (t.para.source_type.utm = C(t.para.source_type.utm) ? t.para.source_type.utm.concat(a2) : a2, t.para.source_type.search = C(t.para.source_type.search) ? t.para.source_type.search.concat(o2) : o2, t.para.source_type.social = C(t.para.source_type.social) ? t.para.source_type.social.concat(l2) : l2, t.para.source_type.keyword = s(t.para.source_type.keyword) ? $(u2, t.para.source_type.keyword) : u2);
-          var c2 = ["mark", "/mark", "strong", "b", "em", "i", "u", "abbr", "ins", "del", "s", "sup"];
-          if (t.para.heatmap && !s(t.para.heatmap) && (t.para.heatmap = {}), s(t.para.heatmap)) {
-            t.para.heatmap.clickmap = t.para.heatmap.clickmap || "default", t.para.heatmap.scroll_notice_map = t.para.heatmap.scroll_notice_map || "default", t.para.heatmap.scroll_delay_time = t.para.heatmap.scroll_delay_time || 4e3, t.para.heatmap.scroll_event_duration = t.para.heatmap.scroll_event_duration || 18e3, t.para.heatmap.renderRefreshTime = t.para.heatmap.renderRefreshTime || 1e3, t.para.heatmap.loadTimeout = t.para.heatmap.loadTimeout || 1e3, t.para.heatmap.request_timeout = t.para.heatmap.request_timeout || 1e4, true !== t.para.heatmap.get_vtrack_config && (t.para.heatmap.get_vtrack_config = false);
-            var p2 = C(t.para.heatmap.track_attr) ? F(t.para.heatmap.track_attr, function (e3) {
-              return e3 && "string" == typeof e3;
-            }) : [];
-            p2.push("data-sensors-click"), t.para.heatmap.track_attr = p2, s(t.para.heatmap.collect_tags) ? true === t.para.heatmap.collect_tags.div ? t.para.heatmap.collect_tags.div = { ignore_tags: c2, max_level: 1 } : s(t.para.heatmap.collect_tags.div) ? (t.para.heatmap.collect_tags.div.ignore_tags ? C(t.para.heatmap.collect_tags.div.ignore_tags) || ($e("ignore_tags \u53C2\u6570\u5FC5\u987B\u662F\u6570\u7EC4\u683C\u5F0F"), t.para.heatmap.collect_tags.div.ignore_tags = c2) : t.para.heatmap.collect_tags.div.ignore_tags = c2, t.para.heatmap.collect_tags.div.max_level && -1 === oe([1, 2, 3], t.para.heatmap.collect_tags.div.max_level) && (t.para.heatmap.collect_tags.div.max_level = 1)) : t.para.heatmap.collect_tags.div = false : t.para.heatmap.collect_tags = { div: false };
-          }
-          t.para.server_url = ft(t.para.server_url, t.para.custom_server_url), true === t.para.noCache ? t.para.noCache = "?" + new Date().getTime() : t.para.noCache = "", t.para.callback_timeout > t.para.datasend_timeout && (t.para.datasend_timeout = t.para.callback_timeout), t.para.heatmap && t.para.heatmap.collect_tags && s(t.para.heatmap.collect_tags) && D(t.para.heatmap.collect_tags, function (e3, r3) {
-            "div" !== r3 && e3 && t.heatmap.otherTags.push(r3);
-          }), t.para.heatmap && "default" === t.para.heatmap.clickmap && t.heatmap.initUnlimitedTags();
-        }, quick: function () {
-          var e2 = Array.prototype.slice.call(arguments), r2 = e2[0], n2 = e2.slice(1);
-          if ("string" == typeof r2 && Ft[r2])
-            return Ft[r2].apply(Ft, n2);
-          "function" == typeof r2 ? r2.apply(t, n2) : $e("quick\u65B9\u6CD5\u4E2D\u6CA1\u6709\u8FD9\u4E2A\u529F\u80FD" + e2[0]);
-        }, use: Wt, track: function (e2, t2, r2) {
-          Nt({ event: e2, properties: t2 }) && Lt.send({ type: "track", event: e2, properties: t2 }, r2);
-        }, bind: function (e2, t2) {
-          if (!Nt({ bindKey: e2, bindValue: t2 }))
+      var Gt = { __proto__: null, setInitVar: function() {
+        t._t = t._t || 1 * new Date(), t.is_first_visitor = false, t.source_channel_standard = Ue;
+      }, initPara: function(e2) {
+        $(Ee, e2 || t.para || {}), t.para = Ee;
+        var r2, n2 = {};
+        if (s(t.para.is_track_latest))
+          for (var i2 in t.para.is_track_latest)
+            n2["latest_" + i2] = t.para.is_track_latest[i2];
+        for (r2 in t.para.preset_properties = $({}, Le.preset_properties, n2, t.para.preset_properties || {}), Le)
+          void 0 === t.para[r2] && (t.para[r2] = Le[r2]);
+        "string" != typeof t.para.web_url || "://" !== t.para.web_url.slice(0, 3) && "//" !== t.para.web_url.slice(0, 2) || ("://" === t.para.web_url.slice(0, 3) ? t.para.web_url = location.protocol.slice(0, -1) + t.para.web_url : t.para.web_url = location.protocol + t.para.web_url), nt.protocol.serverUrl(), t.bridge && t.bridge.initPara();
+        var a2 = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"], o2 = ["www.baidu.", "m.baidu.", "m.sm.cn", "so.com", "sogou.com", "youdao.com", "google.", "yahoo.com/", "bing.com/", "ask.com/"], l2 = ["weibo.com", "renren.com", "kaixin001.com", "douban.com", "qzone.qq.com", "zhihu.com", "tieba.baidu.com", "weixin.qq.com"], u2 = { baidu: ["wd", "word", "kw", "keyword"], google: "q", bing: "q", yahoo: "p", sogou: ["query", "keyword"], so: "q", sm: "q" };
+        "object" == typeof t.para.source_type && (t.para.source_type.utm = C(t.para.source_type.utm) ? t.para.source_type.utm.concat(a2) : a2, t.para.source_type.search = C(t.para.source_type.search) ? t.para.source_type.search.concat(o2) : o2, t.para.source_type.social = C(t.para.source_type.social) ? t.para.source_type.social.concat(l2) : l2, t.para.source_type.keyword = s(t.para.source_type.keyword) ? $(u2, t.para.source_type.keyword) : u2);
+        var c2 = ["mark", "/mark", "strong", "b", "em", "i", "u", "abbr", "ins", "del", "s", "sup"];
+        if (t.para.heatmap && !s(t.para.heatmap) && (t.para.heatmap = {}), s(t.para.heatmap)) {
+          t.para.heatmap.clickmap = t.para.heatmap.clickmap || "default", t.para.heatmap.scroll_notice_map = t.para.heatmap.scroll_notice_map || "default", t.para.heatmap.scroll_delay_time = t.para.heatmap.scroll_delay_time || 4e3, t.para.heatmap.scroll_event_duration = t.para.heatmap.scroll_event_duration || 18e3, t.para.heatmap.renderRefreshTime = t.para.heatmap.renderRefreshTime || 1e3, t.para.heatmap.loadTimeout = t.para.heatmap.loadTimeout || 1e3, t.para.heatmap.request_timeout = t.para.heatmap.request_timeout || 1e4, true !== t.para.heatmap.get_vtrack_config && (t.para.heatmap.get_vtrack_config = false);
+          var p2 = C(t.para.heatmap.track_attr) ? F(t.para.heatmap.track_attr, function(e3) {
+            return e3 && "string" == typeof e3;
+          }) : [];
+          p2.push("data-sensors-click"), t.para.heatmap.track_attr = p2, s(t.para.heatmap.collect_tags) ? true === t.para.heatmap.collect_tags.div ? t.para.heatmap.collect_tags.div = { ignore_tags: c2, max_level: 1 } : s(t.para.heatmap.collect_tags.div) ? (t.para.heatmap.collect_tags.div.ignore_tags ? C(t.para.heatmap.collect_tags.div.ignore_tags) || ($e("ignore_tags \u53C2\u6570\u5FC5\u987B\u662F\u6570\u7EC4\u683C\u5F0F"), t.para.heatmap.collect_tags.div.ignore_tags = c2) : t.para.heatmap.collect_tags.div.ignore_tags = c2, t.para.heatmap.collect_tags.div.max_level && -1 === oe([1, 2, 3], t.para.heatmap.collect_tags.div.max_level) && (t.para.heatmap.collect_tags.div.max_level = 1)) : t.para.heatmap.collect_tags.div = false : t.para.heatmap.collect_tags = { div: false };
+        }
+        t.para.server_url = ft(t.para.server_url, t.para.custom_server_url), true === t.para.noCache ? t.para.noCache = "?" + new Date().getTime() : t.para.noCache = "", t.para.callback_timeout > t.para.datasend_timeout && (t.para.datasend_timeout = t.para.callback_timeout), t.para.heatmap && t.para.heatmap.collect_tags && s(t.para.heatmap.collect_tags) && D(t.para.heatmap.collect_tags, function(e3, r3) {
+          "div" !== r3 && e3 && t.heatmap.otherTags.push(r3);
+        }), t.para.heatmap && "default" === t.para.heatmap.clickmap && t.heatmap.initUnlimitedTags();
+      }, quick: function() {
+        var e2 = Array.prototype.slice.call(arguments), r2 = e2[0], n2 = e2.slice(1);
+        if ("string" == typeof r2 && Ft[r2])
+          return Ft[r2].apply(Ft, n2);
+        "function" == typeof r2 ? r2.apply(t, n2) : $e("quick\u65B9\u6CD5\u4E2D\u6CA1\u6709\u8FD9\u4E2A\u529F\u80FD" + e2[0]);
+      }, use: Wt, track: function(e2, t2, r2) {
+        Nt({ event: e2, properties: t2 }) && Lt.send({ type: "track", event: e2, properties: t2 }, r2);
+      }, bind: function(e2, t2) {
+        if (!Nt({ bindKey: e2, bindValue: t2 }))
+          return false;
+        Pt._state.identities[e2] = t2, Pt.save(), Lt.send({ type: "track_id_bind", event: "$BindID", properties: {} });
+      }, unbind: function(e2, t2) {
+        var r2 = function(e3, t3) {
+          if (!Nt({ unbindKey: e3, bindValue: t3 }))
             return false;
-          Pt._state.identities[e2] = t2, Pt.save(), Lt.send({ type: "track_id_bind", event: "$BindID", properties: {} });
-        }, unbind: function (e2, t2) {
-          var r2 = function (e3, t3) {
-            if (!Nt({ unbindKey: e3, bindValue: t3 }))
-              return false;
-            if (s(Pt._state.identities) && Pt._state.identities.hasOwnProperty(e3) && Pt._state.identities[e3] === t3) {
-              var r3 = Pt.getUnionId().login_id;
-              r3 && e3 + "+" + t3 === r3 && (Pt._state.distinct_id = Pt._state.first_id, Pt._state.first_id = "", Pt.set("history_login_id", { name: "", value: "" })), "$identity_cookie_id" !== e3 && (delete Pt._state.identities[e3], Pt.save());
-            }
-            var n2 = {};
-            return n2[e3] = t3, n2;
-          }(e2, t2);
-          r2 && Lt.send({ identities: r2, type: "track_id_unbind", event: "$UnbindID", properties: {} });
-        }, trackLink: function (e2, r2, n2) {
-          "object" == typeof e2 && e2.tagName ? Ut({ ele: e2 }, r2, n2, t.track) : "object" == typeof e2 && e2.target && e2.event && Ut(e2, r2, n2, t.track);
-        }, trackLinks: function (e2, r2, n2) {
-          return n2 = n2 || {}, !(!e2 || "object" != typeof e2) && !(!e2.href || /^javascript/.test(e2.href) || e2.target) && void ze(e2, "click", function (i2) {
-            i2.preventDefault();
-            var a2 = false;
-            function o2() {
-              a2 || (a2 = true, location.href = e2.href);
-            }
-            setTimeout(o2, 1e3), t.track(r2, n2, o2);
-          });
-        }, setItem: function (e2, t2, r2) {
-          Nt({ item_type: e2, item_id: t2, properties: r2 }) && Lt.sendItem({ type: "item_set", item_type: e2, item_id: t2, properties: r2 || {} });
-        }, deleteItem: function (e2, t2) {
-          Nt({ item_type: e2, item_id: t2 }) && Lt.sendItem({ type: "item_delete", item_type: e2, item_id: t2 });
-        }, setProfile: function (e2, t2) {
-          Nt({ propertiesMust: e2 }) && Lt.send({ type: "profile_set", properties: e2 }, t2);
-        }, setOnceProfile: function (e2, t2) {
-          Nt({ propertiesMust: e2 }) && Lt.send({ type: "profile_set_once", properties: e2 }, t2);
-        }, appendProfile: function (e2, t2) {
-          Nt({ propertiesMust: e2 }) && (D(e2, function (t3, r2) {
-            h(t3) && Ne(r2) ? e2[r2] = [t3] : C(t3) && Ne(r2) ? e2[r2] = t3 : (delete e2[r2], $e("appendProfile\u5C5E\u6027\u7684\u503C\u5FC5\u987B\u662F\u5B57\u7B26\u4E32\u6216\u8005\u6570\u7EC4"));
-          }), ce(e2) || Lt.send({ type: "profile_append", properties: e2 }, t2));
-        }, incrementProfile: function (e2, t2) {
-          var r2 = e2;
-          h(e2) && ((e2 = {})[r2] = 1), Nt({ propertiesMust: e2 }) && (function (e3) {
-            for (var t3 in e3)
-              if (Object.prototype.hasOwnProperty.call(e3, t3) && !/-*\d+/.test(String(e3[t3])))
-                return false;
-            return true;
-          }(e2) ? Lt.send({ type: "profile_increment", properties: e2 }, t2) : xe("profile_increment\u7684\u503C\u53EA\u80FD\u662F\u6570\u5B57"));
-        }, deleteProfile: function (e2) {
-          Lt.send({ type: "profile_delete" }, e2), Pt.set("distinct_id", S()), Pt.set("first_id", "");
-        }, unsetProfile: function (e2, t2) {
-          var r2 = e2, n2 = {};
-          h(e2) && (e2 = []).push(r2), C(e2) ? (D(e2, function (e3) {
-            h(e3) ? n2[e3] = true : $e("profile_unset\u7ED9\u7684\u6570\u7EC4\u91CC\u9762\u7684\u503C\u5FC5\u987B\u65F6string,\u5DF2\u7ECF\u8FC7\u6EE4\u6389", e3);
-          }), Lt.send({ type: "profile_unset", properties: n2 }, t2)) : xe("profile_unset\u7684\u53C2\u6570\u5FC5\u987B\u662F\u6570\u7EC4");
-        }, identify: function (e2) {
-          "number" == typeof e2 && (e2 = String(e2));
-          var t2 = Pt.getFirstId();
-          if (void 0 === e2) {
-            var r2 = S();
-            t2 ? Pt.set("first_id", r2) : Pt.set("distinct_id", r2);
-          } else
-            Nt({ distinct_id: e2 }) && (t2 ? Pt.set("first_id", e2) : Pt.set("distinct_id", e2));
-        }, resetAnonymousIdentity: function (e2) {
-          if (Pt.getFirstId())
-            return xe("resetAnonymousIdentity must be used in a logout state \uFF01"), false;
-          if ("number" == typeof e2 && (e2 = String(e2)), void 0 === e2) {
-            var t2 = S();
-            Pt._state.identities.$identity_cookie_id = t2, Pt.set("distinct_id", t2);
-          } else
-            Nt({ distinct_id: e2 }) && (Pt._state.identities.$identity_cookie_id = e2, Pt.set("distinct_id", e2));
-        }, trackSignup: function (e2, t2, r2, n2) {
-          "number" == typeof e2 && (e2 = String(e2)), Nt({ distinct_id: e2, event: t2, properties: r2 }) && Xt(e2, t2, r2, n2);
-        }, registerPage: function (e2) {
-          Nt({ properties: e2 }) ? $(it.currentProps, e2) : xe("register\u8F93\u5165\u7684\u53C2\u6570\u6709\u8BEF");
-        }, clearAllRegister: function (e2) {
-          Pt.clearAllProps(e2);
-        }, clearPageRegister: function (e2) {
-          var t2;
-          if (C(e2) && e2.length > 0)
-            for (t2 = 0; t2 < e2.length; t2++)
-              h(e2[t2]) && e2[t2] in it.currentProps && delete it.currentProps[e2[t2]];
-          else if (true === e2)
-            for (t2 in it.currentProps)
-              delete it.currentProps[t2];
-        }, register: Zt, registerOnce: function (e2) {
-          Nt({ properties: e2 }) ? Pt.setPropsOnce(e2) : xe("registerOnce\u8F93\u5165\u7684\u53C2\u6570\u6709\u8BEF");
-        }, registerSession: function (e2) {
-          t.log("registerSession \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u6709\u95EE\u9898\u8054\u7CFB\u6280\u672F\u987E\u95EE"), Nt({ properties: e2 }) ? Pt.setSessionProps(e2) : xe("registerSession\u8F93\u5165\u7684\u53C2\u6570\u6709\u8BEF");
-        }, registerSessionOnce: function (e2) {
-          t.log("registerSessionOnce \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u6709\u95EE\u9898\u8054\u7CFB\u6280\u672F\u987E\u95EE"), Nt({ properties: e2 }) ? Pt.setSessionPropsOnce(e2) : xe("registerSessionOnce\u8F93\u5165\u7684\u53C2\u6570\u6709\u8BEF");
-        }, login: Yt, loginWithKey: function (e2, t2) {
-          return $e("loginWithKey is deprecated !!!"), "number" == typeof t2 && (t2 = String(t2)), "number" == typeof e2 && (e2 = String(e2)), !!Nt({ loginIdKey: e2 }) && (He.LOGIN === e2 ? (Yt(t2), false) : void Kt({ id: t2, callback: null, name: e2 }, Xt));
-        }, logout: function (e2) {
-          var t2 = Pt.getFirstId();
-          if (t2)
-            if (Pt.set("first_id", ""), true === e2) {
-              var r2 = S();
-              Pt.set("distinct_id", r2);
-            } else
-              Pt.set("distinct_id", t2);
-          Vt({ $identity_cookie_id: Pt._state.identities.$identity_cookie_id }), Pt.set("history_login_id", { name: "", value: "" });
-        }, getPresetProperties: function () {
-          var e2, r2, n2 = { $is_first_day: Fe(), $is_first_time: Ve.is_page_first_visited, $referrer: it.pageProp.referrer || "", $referrer_host: it.pageProp.referrer ? W(it.pageProp.referrer) : "", $url: ee(), $url_path: te(), $title: document.title || "", _distinct_id: Pt.getDistinctId(), identities: Pt.getIdentities() }, i2 = $({}, it.properties(), Pt.getProps(), (e2 = it.campaignParams(), r2 = {}, D(e2, function (e3, n3, i3) {
-            -1 !== (" " + t.source_channel_standard + " ").indexOf(" " + n3 + " ") ? r2["$" + n3] = i3[n3] : r2[n3] = i3[n3];
-          }), r2), n2);
-          return t.para.preset_properties.latest_referrer && t.para.preset_properties.latest_referrer_host && (i2.$latest_referrer_host = "" === i2.$latest_referrer ? "" : W(i2.$latest_referrer)), i2;
-        }, readyState: {
-          state: 0, historyState: [], stateType: { 1: "1-init\u672A\u5F00\u59CB", 2: "2-init\u5F00\u59CB", 3: "3-store\u5B8C\u6210" }, getState: function () {
-            return this.historyState.join("\n");
-          }, setState: function (e2) {
-            String(e2) in this.stateType && (this.state = e2), this.historyState.push(this.stateType[e2]);
+          if (s(Pt._state.identities) && Pt._state.identities.hasOwnProperty(e3) && Pt._state.identities[e3] === t3) {
+            var r3 = Pt.getUnionId().login_id;
+            r3 && e3 + "+" + t3 === r3 && (Pt._state.distinct_id = Pt._state.first_id, Pt._state.first_id = "", Pt.set("history_login_id", { name: "", value: "" })), "$identity_cookie_id" !== e3 && (delete Pt._state.identities[e3], Pt.save());
           }
-        }, debug: nt, on: mt, log: De
-      };
+          var n2 = {};
+          return n2[e3] = t3, n2;
+        }(e2, t2);
+        r2 && Lt.send({ identities: r2, type: "track_id_unbind", event: "$UnbindID", properties: {} });
+      }, trackLink: function(e2, r2, n2) {
+        "object" == typeof e2 && e2.tagName ? Ut({ ele: e2 }, r2, n2, t.track) : "object" == typeof e2 && e2.target && e2.event && Ut(e2, r2, n2, t.track);
+      }, trackLinks: function(e2, r2, n2) {
+        return n2 = n2 || {}, !(!e2 || "object" != typeof e2) && !(!e2.href || /^javascript/.test(e2.href) || e2.target) && void ze(e2, "click", function(i2) {
+          i2.preventDefault();
+          var a2 = false;
+          function o2() {
+            a2 || (a2 = true, location.href = e2.href);
+          }
+          setTimeout(o2, 1e3), t.track(r2, n2, o2);
+        });
+      }, setItem: function(e2, t2, r2) {
+        Nt({ item_type: e2, item_id: t2, properties: r2 }) && Lt.sendItem({ type: "item_set", item_type: e2, item_id: t2, properties: r2 || {} });
+      }, deleteItem: function(e2, t2) {
+        Nt({ item_type: e2, item_id: t2 }) && Lt.sendItem({ type: "item_delete", item_type: e2, item_id: t2 });
+      }, setProfile: function(e2, t2) {
+        Nt({ propertiesMust: e2 }) && Lt.send({ type: "profile_set", properties: e2 }, t2);
+      }, setOnceProfile: function(e2, t2) {
+        Nt({ propertiesMust: e2 }) && Lt.send({ type: "profile_set_once", properties: e2 }, t2);
+      }, appendProfile: function(e2, t2) {
+        Nt({ propertiesMust: e2 }) && (D(e2, function(t3, r2) {
+          h(t3) && Ne(r2) ? e2[r2] = [t3] : C(t3) && Ne(r2) ? e2[r2] = t3 : (delete e2[r2], $e("appendProfile\u5C5E\u6027\u7684\u503C\u5FC5\u987B\u662F\u5B57\u7B26\u4E32\u6216\u8005\u6570\u7EC4"));
+        }), ce(e2) || Lt.send({ type: "profile_append", properties: e2 }, t2));
+      }, incrementProfile: function(e2, t2) {
+        var r2 = e2;
+        h(e2) && ((e2 = {})[r2] = 1), Nt({ propertiesMust: e2 }) && (function(e3) {
+          for (var t3 in e3)
+            if (Object.prototype.hasOwnProperty.call(e3, t3) && !/-*\d+/.test(String(e3[t3])))
+              return false;
+          return true;
+        }(e2) ? Lt.send({ type: "profile_increment", properties: e2 }, t2) : xe("profile_increment\u7684\u503C\u53EA\u80FD\u662F\u6570\u5B57"));
+      }, deleteProfile: function(e2) {
+        Lt.send({ type: "profile_delete" }, e2), Pt.set("distinct_id", S()), Pt.set("first_id", "");
+      }, unsetProfile: function(e2, t2) {
+        var r2 = e2, n2 = {};
+        h(e2) && (e2 = []).push(r2), C(e2) ? (D(e2, function(e3) {
+          h(e3) ? n2[e3] = true : $e("profile_unset\u7ED9\u7684\u6570\u7EC4\u91CC\u9762\u7684\u503C\u5FC5\u987B\u65F6string,\u5DF2\u7ECF\u8FC7\u6EE4\u6389", e3);
+        }), Lt.send({ type: "profile_unset", properties: n2 }, t2)) : xe("profile_unset\u7684\u53C2\u6570\u5FC5\u987B\u662F\u6570\u7EC4");
+      }, identify: function(e2) {
+        "number" == typeof e2 && (e2 = String(e2));
+        var t2 = Pt.getFirstId();
+        if (void 0 === e2) {
+          var r2 = S();
+          t2 ? Pt.set("first_id", r2) : Pt.set("distinct_id", r2);
+        } else
+          Nt({ distinct_id: e2 }) && (t2 ? Pt.set("first_id", e2) : Pt.set("distinct_id", e2));
+      }, resetAnonymousIdentity: function(e2) {
+        if (Pt.getFirstId())
+          return xe("resetAnonymousIdentity must be used in a logout state \uFF01"), false;
+        if ("number" == typeof e2 && (e2 = String(e2)), void 0 === e2) {
+          var t2 = S();
+          Pt._state.identities.$identity_cookie_id = t2, Pt.set("distinct_id", t2);
+        } else
+          Nt({ distinct_id: e2 }) && (Pt._state.identities.$identity_cookie_id = e2, Pt.set("distinct_id", e2));
+      }, trackSignup: function(e2, t2, r2, n2) {
+        "number" == typeof e2 && (e2 = String(e2)), Nt({ distinct_id: e2, event: t2, properties: r2 }) && Xt(e2, t2, r2, n2);
+      }, registerPage: function(e2) {
+        Nt({ properties: e2 }) ? $(it.currentProps, e2) : xe("register\u8F93\u5165\u7684\u53C2\u6570\u6709\u8BEF");
+      }, clearAllRegister: function(e2) {
+        Pt.clearAllProps(e2);
+      }, clearPageRegister: function(e2) {
+        var t2;
+        if (C(e2) && e2.length > 0)
+          for (t2 = 0; t2 < e2.length; t2++)
+            h(e2[t2]) && e2[t2] in it.currentProps && delete it.currentProps[e2[t2]];
+        else if (true === e2)
+          for (t2 in it.currentProps)
+            delete it.currentProps[t2];
+      }, register: Zt, registerOnce: function(e2) {
+        Nt({ properties: e2 }) ? Pt.setPropsOnce(e2) : xe("registerOnce\u8F93\u5165\u7684\u53C2\u6570\u6709\u8BEF");
+      }, registerSession: function(e2) {
+        t.log("registerSession \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u6709\u95EE\u9898\u8054\u7CFB\u6280\u672F\u987E\u95EE"), Nt({ properties: e2 }) ? Pt.setSessionProps(e2) : xe("registerSession\u8F93\u5165\u7684\u53C2\u6570\u6709\u8BEF");
+      }, registerSessionOnce: function(e2) {
+        t.log("registerSessionOnce \u65B9\u6CD5\u5DF2\u7ECF\u5F03\u7528\uFF0C\u6709\u95EE\u9898\u8054\u7CFB\u6280\u672F\u987E\u95EE"), Nt({ properties: e2 }) ? Pt.setSessionPropsOnce(e2) : xe("registerSessionOnce\u8F93\u5165\u7684\u53C2\u6570\u6709\u8BEF");
+      }, login: Yt, loginWithKey: function(e2, t2) {
+        return $e("loginWithKey is deprecated !!!"), "number" == typeof t2 && (t2 = String(t2)), "number" == typeof e2 && (e2 = String(e2)), !!Nt({ loginIdKey: e2 }) && (He.LOGIN === e2 ? (Yt(t2), false) : void Kt({ id: t2, callback: null, name: e2 }, Xt));
+      }, logout: function(e2) {
+        var t2 = Pt.getFirstId();
+        if (t2)
+          if (Pt.set("first_id", ""), true === e2) {
+            var r2 = S();
+            Pt.set("distinct_id", r2);
+          } else
+            Pt.set("distinct_id", t2);
+        Vt({ $identity_cookie_id: Pt._state.identities.$identity_cookie_id }), Pt.set("history_login_id", { name: "", value: "" });
+      }, getPresetProperties: function() {
+        var e2, r2, n2 = { $is_first_day: Fe(), $is_first_time: Ve.is_page_first_visited, $referrer: it.pageProp.referrer || "", $referrer_host: it.pageProp.referrer ? W(it.pageProp.referrer) : "", $url: ee(), $url_path: te(), $title: document.title || "", _distinct_id: Pt.getDistinctId(), identities: Pt.getIdentities() }, i2 = $({}, it.properties(), Pt.getProps(), (e2 = it.campaignParams(), r2 = {}, D(e2, function(e3, n3, i3) {
+          -1 !== (" " + t.source_channel_standard + " ").indexOf(" " + n3 + " ") ? r2["$" + n3] = i3[n3] : r2[n3] = i3[n3];
+        }), r2), n2);
+        return t.para.preset_properties.latest_referrer && t.para.preset_properties.latest_referrer_host && (i2.$latest_referrer_host = "" === i2.$latest_referrer ? "" : W(i2.$latest_referrer)), i2;
+      }, readyState: { state: 0, historyState: [], stateType: { 1: "1-init\u672A\u5F00\u59CB", 2: "2-init\u5F00\u59CB", 3: "3-store\u5B8C\u6210" }, getState: function() {
+        return this.historyState.join("\n");
+      }, setState: function(e2) {
+        String(e2) in this.stateType && (this.state = e2), this.historyState.push(this.stateType[e2]);
+      } }, debug: nt, on: mt, log: De };
       i.setup(De);
       var Qt = $({}, Te, St);
-      var er = {
-        bridge_info: { touch_app_bridge: false, verify_success: false, platform: "", support_two_way_call: false }, is_verify_success: false, initPara: function () {
-          var e2 = { is_send: false !== t.para.use_app_track_is_send && "only" !== t.para.use_app_track, white_list: [], is_mui: "mui" === t.para.use_app_track };
-          "object" == typeof t.para.app_js_bridge ? t.para.app_js_bridge = $({}, e2, t.para.app_js_bridge) : true !== t.para.use_app_track && true !== t.para.app_js_bridge && "only" !== t.para.use_app_track && "mui" !== t.para.use_app_track || (t.para.app_js_bridge = $({}, e2)), false === t.para.app_js_bridge.is_send && $e("\u8BBE\u7F6E\u4E86 is_send:false,\u5982\u679C\u6253\u901A\u5931\u8D25\uFF0C\u6570\u636E\u5C06\u88AB\u4E22\u5F03!");
-        }, app_js_bridge_v1: function () {
-          var e2 = null, r2 = null;
-          window.sensorsdata_app_js_bridge_call_js = function (t2) {
-            !function (t3) {
-              fe(e2 = t3) && (e2 = JSON.parse(e2)), r2 && (r2(e2), r2 = null, e2 = null);
-            }(t2);
-          }, t.getAppStatus = function (t2) {
-            if (function () {
-              if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-                var e3 = document.createElement("iframe");
-                e3.setAttribute("src", "sensorsanalytics://getAppInfo"), document.documentElement.appendChild(e3), e3.parentNode.removeChild(e3), e3 = null;
-              }
-            }(), "object" == typeof window.SensorsData_APP_JS_Bridge && window.SensorsData_APP_JS_Bridge.sensorsdata_call_app && fe(e2 = window.SensorsData_APP_JS_Bridge.sensorsdata_call_app()) && (e2 = JSON.parse(e2)), !t2)
-              return e2;
-            null === e2 ? r2 = t2 : (t2(e2), e2 = null);
-          };
-        }, hasVisualModeBridge: function () {
-          var e2 = window.SensorsData_App_Visual_Bridge, t2 = "sensorsdata_visualized_mode";
-          return s(e2) && e2[t2] && (true === e2[t2] || e2[t2]());
-        }, validateAppUrl: function (e2) {
-          function r2(e3) {
-            var t2 = { hostname: "", project: "" };
-            try {
-              e3 = b(e3), t2.hostname = e3.hostname, t2.project = e3.searchParams.get("project") || "default";
-            } catch (r3) {
-              xe("validateAppUrl:" + r3);
+      var er = { bridge_info: { touch_app_bridge: false, verify_success: false, platform: "", support_two_way_call: false }, is_verify_success: false, initPara: function() {
+        var e2 = { is_send: false !== t.para.use_app_track_is_send && "only" !== t.para.use_app_track, white_list: [], is_mui: "mui" === t.para.use_app_track };
+        "object" == typeof t.para.app_js_bridge ? t.para.app_js_bridge = $({}, e2, t.para.app_js_bridge) : true !== t.para.use_app_track && true !== t.para.app_js_bridge && "only" !== t.para.use_app_track && "mui" !== t.para.use_app_track || (t.para.app_js_bridge = $({}, e2)), false === t.para.app_js_bridge.is_send && $e("\u8BBE\u7F6E\u4E86 is_send:false,\u5982\u679C\u6253\u901A\u5931\u8D25\uFF0C\u6570\u636E\u5C06\u88AB\u4E22\u5F03!");
+      }, app_js_bridge_v1: function() {
+        var e2 = null, r2 = null;
+        window.sensorsdata_app_js_bridge_call_js = function(t2) {
+          !function(t3) {
+            fe(e2 = t3) && (e2 = JSON.parse(e2)), r2 && (r2(e2), r2 = null, e2 = null);
+          }(t2);
+        }, t.getAppStatus = function(t2) {
+          if (function() {
+            if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+              var e3 = document.createElement("iframe");
+              e3.setAttribute("src", "sensorsanalytics://getAppInfo"), document.documentElement.appendChild(e3), e3.parentNode.removeChild(e3), e3 = null;
             }
-            return t2;
+          }(), "object" == typeof window.SensorsData_APP_JS_Bridge && window.SensorsData_APP_JS_Bridge.sensorsdata_call_app && fe(e2 = window.SensorsData_APP_JS_Bridge.sensorsdata_call_app()) && (e2 = JSON.parse(e2)), !t2)
+            return e2;
+          null === e2 ? r2 = t2 : (t2(e2), e2 = null);
+        };
+      }, hasVisualModeBridge: function() {
+        var e2 = window.SensorsData_App_Visual_Bridge, t2 = "sensorsdata_visualized_mode";
+        return s(e2) && e2[t2] && (true === e2[t2] || e2[t2]());
+      }, validateAppUrl: function(e2) {
+        function r2(e3) {
+          var t2 = { hostname: "", project: "" };
+          try {
+            e3 = b(e3), t2.hostname = e3.hostname, t2.project = e3.searchParams.get("project") || "default";
+          } catch (r3) {
+            xe("validateAppUrl:" + r3);
           }
-          var n2 = r2(e2), i2 = r2(t.para.server_url);
-          if (n2.hostname === i2.hostname && n2.project === i2.project)
-            return true;
-          if (C(t.para.app_js_bridge.white_list))
-            for (var a2 = 0; a2 < t.para.app_js_bridge.white_list.length; a2++) {
-              var o2 = r2(t.para.app_js_bridge.white_list[a2]);
-              if (o2.hostname === n2.hostname && o2.project === n2.project)
-                return true;
-            }
-          return false;
+          return t2;
         }
-      };
+        var n2 = r2(e2), i2 = r2(t.para.server_url);
+        if (n2.hostname === i2.hostname && n2.project === i2.project)
+          return true;
+        if (C(t.para.app_js_bridge.white_list))
+          for (var a2 = 0; a2 < t.para.app_js_bridge.white_list.length; a2++) {
+            var o2 = r2(t.para.app_js_bridge.white_list[a2]);
+            if (o2.hostname === n2.hostname && o2.project === n2.project)
+              return true;
+          }
+        return false;
+      } };
       function tr(e2) {
         var t2 = this;
-        this.type = e2, this.resultCbs = {}, this.timeoutCbs = {}, this.timerId = null, this.appCallJsCallback = null, window.sensorsdata_app_call_js || (window.sensorsdata_app_call_js = function (e3, t3) {
+        this.type = e2, this.resultCbs = {}, this.timeoutCbs = {}, this.timerId = null, this.appCallJsCallback = null, window.sensorsdata_app_call_js || (window.sensorsdata_app_call_js = function(e3, t3) {
           if (e3 in window.sensorsdata_app_call_js.modules)
             return window.sensorsdata_app_call_js.modules[e3](t3);
-        }), window.sensorsdata_app_call_js.modules = window.sensorsdata_app_call_js.modules || {}, window.sensorsdata_app_call_js.modules[this.type] = function (e3) {
+        }), window.sensorsdata_app_call_js.modules = window.sensorsdata_app_call_js.modules || {}, window.sensorsdata_app_call_js.modules[this.type] = function(e3) {
           try {
             var r2 = L(e3) || e3;
             try {
@@ -3648,126 +3528,114 @@ var __publicField = (obj, key, value) => {
         }
         return null === t2 && (t2 = Z(location.href, e2) || null), t2;
       }
-      tr.prototype.call = function (e2, t2) {
+      tr.prototype.call = function(e2, t2) {
         var r2 = this, n2 = new Date().getTime().toString(16) + String(u()).replace(".", "").slice(1, 8);
         this.resultCbs[n2] = r2.resultCbs[n2] || { result: null, callbacks: [] }, this.timeoutCbs[n2] = r2.timeoutCbs[n2] || { isTimeout: false, callbacks: [] }, (e2 = e2.data ? e2 : { data: e2 }).data.message_id = n2;
         var i2 = $({ callType: this.type }, e2);
-        return t2 && (this.timerId = setTimeout(function () {
+        return t2 && (this.timerId = setTimeout(function() {
           for (var e3 in r2.timeoutCbs[n2].isTimeout = true, r2.timeoutCbs[n2].callbacks)
             r2.timeoutCbs[n2].callbacks[e3].call(null), r2.timeoutCbs[n2].callbacks.splice(e3, 1);
-        }, t2)), rr(i2), {
-          onResult: function (e3) {
-            return r2.resultCbs[n2].result ? (e3(r2.resultCbs[n2].result), this) : (!r2.timeoutCbs[n2].isTimeout && r2.resultCbs[n2].callbacks.push(e3), this);
-          }, onTimeout: function (e3) {
-            return r2.timeoutCbs[n2].isTimeout ? (e3(), this) : (!r2.resultCbs[n2].result && r2.timeoutCbs[n2].callbacks.push(e3), this);
-          }
-        };
-      }, tr.prototype.onAppNotify = function (e2) {
+        }, t2)), rr(i2), { onResult: function(e3) {
+          return r2.resultCbs[n2].result ? (e3(r2.resultCbs[n2].result), this) : (!r2.timeoutCbs[n2].isTimeout && r2.resultCbs[n2].callbacks.push(e3), this);
+        }, onTimeout: function(e3) {
+          return r2.timeoutCbs[n2].isTimeout ? (e3(), this) : (!r2.resultCbs[n2].result && r2.timeoutCbs[n2].callbacks.push(e3), this);
+        } };
+      }, tr.prototype.onAppNotify = function(e2) {
         this.appCallJsCallback = e2;
-      }, tr.prototype.notifyApp = function (e2, t2) {
+      }, tr.prototype.notifyApp = function(e2, t2) {
         var r2 = $({ callType: this.type }, e2);
         return t2 && (r2.message_id = t2), rr(r2);
-      }, nr.prototype = {
-        double: function () {
-        }, getAppData: function () {
-        }, hasAppBridge: function () {
-          return t.bridge.bridge_info.support_two_way_call;
-        }, init: function () {
-        }, jsCallApp: function () {
-        }, requestToApp: function (e2) {
-          this.bridge.call(e2, e2.timeout.time).onResult(function (t2) {
-            r(e2.callback) && e2.callback(t2);
-          }).onTimeout(function () {
-            r(e2.timeout.callback) && e2.timeout.callback();
-          });
+      }, nr.prototype = { double: function() {
+      }, getAppData: function() {
+      }, hasAppBridge: function() {
+        return t.bridge.bridge_info.support_two_way_call;
+      }, init: function() {
+      }, jsCallApp: function() {
+      }, requestToApp: function(e2) {
+        this.bridge.call(e2, e2.timeout.time).onResult(function(t2) {
+          r(e2.callback) && e2.callback(t2);
+        }).onTimeout(function() {
+          r(e2.timeout.callback) && e2.timeout.callback();
+        });
+      } };
+      var ar = { isSeachHasKeyword: function() {
+        return "" !== Z(location.href, "sa-request-id") && ("string" == typeof sessionStorage.getItem("sensors-visual-mode") && sessionStorage.removeItem("sensors-visual-mode"), true);
+      }, hasKeywordHandle: function() {
+        var e2 = location.href, t2 = Z(e2, "sa-request-id") || null, r2 = Z(e2, "sa-request-type") || null, n2 = Z(e2, "sa-request-url") || null;
+        if (Jt.setNotice(n2), we.isSupport())
+          if (null !== n2 && sessionStorage.setItem("sensors_heatmap_url", n2), sessionStorage.setItem("sensors_heatmap_id", t2), null !== r2)
+            "1" === r2 || "2" === r2 || "3" === r2 ? sessionStorage.setItem("sensors_heatmap_type", r2) : r2 = null;
+          else {
+            var i2 = sessionStorage.getItem("sensors_heatmap_type");
+            r2 = null !== i2 ? i2 : null;
+          }
+        this.isReady(t2, r2);
+      }, isReady: function(e2, r2, n2) {
+        t.para.heatmap_url && t.para.heatmap ? me({ success: function() {
+          setTimeout(function() {
+            "undefined" != typeof sa_jssdk_heatmap_render && (sa_jssdk_heatmap_render(t, e2, r2, n2), "object" == typeof console && "function" == typeof console.log && (t.heatmap_version && t.heatmap_version === t.lib_version || $e("heatmap.js\u4E0Esensorsdata.js\u7248\u672C\u53F7\u4E0D\u4E00\u81F4\uFF0C\u53EF\u80FD\u5B58\u5728\u98CE\u9669!")));
+          }, 0);
+        }, error: function() {
+        }, type: "js", url: t.para.heatmap_url }) : $e("\u6CA1\u6709\u914D\u7F6E heatmap \u5F00\u542F\u70B9\u51FB\u56FE\uFF0C\u6216\u8005\u6CA1\u6709\u6307\u5B9A heatmap_url \u7684\u8DEF\u5F84");
+      }, isStorageHasKeyword: function() {
+        return we.isSupport() && "string" == typeof sessionStorage.getItem("sensors_heatmap_id");
+      }, storageHasKeywordHandle: function() {
+        Jt.setNotice(), ar.isReady(sessionStorage.getItem("sensors_heatmap_id"), sessionStorage.getItem("sensors_heatmap_type"), location.href);
+      }, isWindowNameHasKeyword: function() {
+        try {
+          var e2 = JSON.parse(window.name), t2 = h(e2["sa-heatmap-src"]) ? g(e2["sa-heatmap-src"]) : null;
+          return e2["sa-request-id"] && h(e2["sa-request-id"]) && t2 === location.href;
+        } catch (r2) {
+          return false;
         }
-      };
-      var ar = {
-        isSeachHasKeyword: function () {
-          return "" !== Z(location.href, "sa-request-id") && ("string" == typeof sessionStorage.getItem("sensors-visual-mode") && sessionStorage.removeItem("sensors-visual-mode"), true);
-        }, hasKeywordHandle: function () {
-          var e2 = location.href, t2 = Z(e2, "sa-request-id") || null, r2 = Z(e2, "sa-request-type") || null, n2 = Z(e2, "sa-request-url") || null;
-          if (Jt.setNotice(n2), we.isSupport())
-            if (null !== n2 && sessionStorage.setItem("sensors_heatmap_url", n2), sessionStorage.setItem("sensors_heatmap_id", t2), null !== r2)
-              "1" === r2 || "2" === r2 || "3" === r2 ? sessionStorage.setItem("sensors_heatmap_type", r2) : r2 = null;
-            else {
-              var i2 = sessionStorage.getItem("sensors_heatmap_type");
-              r2 = null !== i2 ? i2 : null;
-            }
-          this.isReady(t2, r2);
-        }, isReady: function (e2, r2, n2) {
-          t.para.heatmap_url && t.para.heatmap ? me({
-            success: function () {
-              setTimeout(function () {
-                "undefined" != typeof sa_jssdk_heatmap_render && (sa_jssdk_heatmap_render(t, e2, r2, n2), "object" == typeof console && "function" == typeof console.log && (t.heatmap_version && t.heatmap_version === t.lib_version || $e("heatmap.js\u4E0Esensorsdata.js\u7248\u672C\u53F7\u4E0D\u4E00\u81F4\uFF0C\u53EF\u80FD\u5B58\u5728\u98CE\u9669!")));
-              }, 0);
-            }, error: function () {
-            }, type: "js", url: t.para.heatmap_url
-          }) : $e("\u6CA1\u6709\u914D\u7F6E heatmap \u5F00\u542F\u70B9\u51FB\u56FE\uFF0C\u6216\u8005\u6CA1\u6709\u6307\u5B9A heatmap_url \u7684\u8DEF\u5F84");
-        }, isStorageHasKeyword: function () {
-          return we.isSupport() && "string" == typeof sessionStorage.getItem("sensors_heatmap_id");
-        }, storageHasKeywordHandle: function () {
-          Jt.setNotice(), ar.isReady(sessionStorage.getItem("sensors_heatmap_id"), sessionStorage.getItem("sensors_heatmap_type"), location.href);
-        }, isWindowNameHasKeyword: function () {
-          try {
-            var e2 = JSON.parse(window.name), t2 = h(e2["sa-heatmap-src"]) ? g(e2["sa-heatmap-src"]) : null;
-            return e2["sa-request-id"] && h(e2["sa-request-id"]) && t2 === location.href;
-          } catch (r2) {
+      }, windowNameHasKeywordHandle: function() {
+        var e2 = JSON.parse(window.name);
+        function t2(t3) {
+          var r3 = e2[t3];
+          return h(r3) ? g(r3) : null;
+        }
+        var r2 = t2("sa-request-id"), n2 = t2("sa-request-type"), i2 = t2("sa-request-url"), o2 = t2("sa-request-language");
+        Jt.setNotice(i2), a.isSupport() && h(o2) && a.set("web_sdk_heatmap_language", o2), we.isSupport() && (null !== i2 && sessionStorage.setItem("sensors_heatmap_url", i2), sessionStorage.setItem("sensors_heatmap_id", r2), null !== n2 ? "1" === n2 || "2" === n2 || "3" === n2 ? sessionStorage.setItem("sensors_heatmap_type", n2) : n2 = null : n2 = null !== sessionStorage.getItem("sensors_heatmap_type") ? sessionStorage.getItem("sensors_heatmap_type") : null), ar.isReady(r2, n2);
+      } }, or = { isStorageHasKeyword: function() {
+        return we.isSupport() && "string" == typeof sessionStorage.getItem("sensors-visual-mode");
+      }, isSearchHasKeyword: function() {
+        return (true === ir("sa-visual-mode") || "true" === ir("sa-visual-mode")) && ("string" == typeof sessionStorage.getItem("sensors_heatmap_id") && sessionStorage.removeItem("sensors_heatmap_id"), true);
+      }, loadVtrack: function() {
+        me({ success: function() {
+        }, error: function() {
+        }, type: "js", url: t.para.vtrack_url ? t.para.vtrack_url : Rt() + "//static.sensorsdata.cn/sdk/" + t.lib_version + "/vtrack.min.js" });
+      }, messageListener: function(e2) {
+        if (!e2 || !e2.data || "sa-fe" !== e2.data.source)
+          return false;
+        if ("v-track-mode" === e2.data.type) {
+          if (e2.data.data && e2.data.data.isVtrack)
+            if (we.isSupport() && sessionStorage.setItem("sensors-visual-mode", "true"), e2.data.data.userURL && location.href.match(/sa-visual-mode=true/)) {
+              var t2 = e2.data.data.userURL;
+              h(t2) && (je(t2, "http://") || je(t2, "https://")) && (window.location.href = encodeURI(t2), setTimeout(function() {
+                window.location.reload(true);
+              }, 1e3));
+            } else
+              or.loadVtrack();
+          window.removeEventListener("message", or.messageListener, false);
+        }
+      }, removeMessageHandle: function() {
+        window.removeEventListener && window.removeEventListener("message", or.messageListener, false);
+      }, verifyVtrackMode: function() {
+        window.addEventListener && window.addEventListener("message", or.messageListener, false), or.postMessage();
+      }, postMessage: function() {
+        try {
+          window.parent && window.parent.postMessage && window.parent.postMessage({ source: "sa-web-sdk", type: "v-is-vtrack", data: { sdkversion: Re } }, "*");
+        } catch (e2) {
+          xe("\u6D4F\u89C8\u5668\u7248\u672C\u8FC7\u4F4E\uFF0C\u4E0D\u652F\u6301 postMessage API");
+        }
+      }, notifyUser: function() {
+        var e2 = function(t2) {
+          if (!t2 || !t2.data || "sa-fe" !== t2.data.source)
             return false;
-          }
-        }, windowNameHasKeywordHandle: function () {
-          var e2 = JSON.parse(window.name);
-          function t2(t3) {
-            var r3 = e2[t3];
-            return h(r3) ? g(r3) : null;
-          }
-          var r2 = t2("sa-request-id"), n2 = t2("sa-request-type"), i2 = t2("sa-request-url"), o2 = t2("sa-request-language");
-          Jt.setNotice(i2), a.isSupport() && h(o2) && a.set("web_sdk_heatmap_language", o2), we.isSupport() && (null !== i2 && sessionStorage.setItem("sensors_heatmap_url", i2), sessionStorage.setItem("sensors_heatmap_id", r2), null !== n2 ? "1" === n2 || "2" === n2 || "3" === n2 ? sessionStorage.setItem("sensors_heatmap_type", n2) : n2 = null : n2 = null !== sessionStorage.getItem("sensors_heatmap_type") ? sessionStorage.getItem("sensors_heatmap_type") : null), ar.isReady(r2, n2);
-        }
-      }, or = {
-        isStorageHasKeyword: function () {
-          return we.isSupport() && "string" == typeof sessionStorage.getItem("sensors-visual-mode");
-        }, isSearchHasKeyword: function () {
-          return (true === ir("sa-visual-mode") || "true" === ir("sa-visual-mode")) && ("string" == typeof sessionStorage.getItem("sensors_heatmap_id") && sessionStorage.removeItem("sensors_heatmap_id"), true);
-        }, loadVtrack: function () {
-          me({
-            success: function () {
-            }, error: function () {
-            }, type: "js", url: t.para.vtrack_url ? t.para.vtrack_url : Rt() + "//static.sensorsdata.cn/sdk/" + t.lib_version + "/vtrack.min.js"
-          });
-        }, messageListener: function (e2) {
-          if (!e2 || !e2.data || "sa-fe" !== e2.data.source)
-            return false;
-          if ("v-track-mode" === e2.data.type) {
-            if (e2.data.data && e2.data.data.isVtrack)
-              if (we.isSupport() && sessionStorage.setItem("sensors-visual-mode", "true"), e2.data.data.userURL && location.href.match(/sa-visual-mode=true/)) {
-                var t2 = e2.data.data.userURL;
-                h(t2) && (je(t2, "http://") || je(t2, "https://")) && (window.location.href = encodeURI(t2), setTimeout(function () {
-                  window.location.reload(true);
-                }, 1e3));
-              } else
-                or.loadVtrack();
-            window.removeEventListener("message", or.messageListener, false);
-          }
-        }, removeMessageHandle: function () {
-          window.removeEventListener && window.removeEventListener("message", or.messageListener, false);
-        }, verifyVtrackMode: function () {
-          window.addEventListener && window.addEventListener("message", or.messageListener, false), or.postMessage();
-        }, postMessage: function () {
-          try {
-            window.parent && window.parent.postMessage && window.parent.postMessage({ source: "sa-web-sdk", type: "v-is-vtrack", data: { sdkversion: Re } }, "*");
-          } catch (e2) {
-            xe("\u6D4F\u89C8\u5668\u7248\u672C\u8FC7\u4F4E\uFF0C\u4E0D\u652F\u6301 postMessage API");
-          }
-        }, notifyUser: function () {
-          var e2 = function (t2) {
-            if (!t2 || !t2.data || "sa-fe" !== t2.data.source)
-              return false;
-            "v-track-mode" === t2.data.type && (t2.data.data && t2.data.data.isVtrack && alert("\u5F53\u524D\u7248\u672C\u4E0D\u652F\u6301\uFF0C\u8BF7\u5347\u7EA7\u90E8\u7F72\u795E\u7B56\u6570\u636E\u6CBB\u7406"), window.removeEventListener("message", e2, false));
-          };
-          window.addEventListener && window.addEventListener("message", e2, false), or.postMessage();
-        }
-      };
+          "v-track-mode" === t2.data.type && (t2.data.data && t2.data.data.isVtrack && alert("\u5F53\u524D\u7248\u672C\u4E0D\u652F\u6301\uFF0C\u8BF7\u5347\u7EA7\u90E8\u7F72\u795E\u7B56\u6570\u636E\u6CBB\u7406"), window.removeEventListener("message", e2, false));
+        };
+        window.addEventListener && window.addEventListener("message", e2, false), or.postMessage();
+      } };
       function sr(e2) {
         var r2 = t.bridge.bridge_info;
         function n2() {
@@ -3781,14 +3649,12 @@ var __publicField = (obj, key, value) => {
                 window.sa_jssdk_app_define_mode(t, e2);
               else {
                 var i2 = location.protocol;
-                me({
-                  success: function () {
-                    setTimeout(function () {
-                      "undefined" != typeof sa_jssdk_app_define_mode && window.sa_jssdk_app_define_mode(t, e2);
-                    }, 0);
-                  }, error: function () {
-                  }, type: "js", url: (i2 = oe(["http:", "https:"], i2) > -1 ? i2 : "https:") + "//static.sensorsdata.cn/sdk/" + t.lib_version + "/vapph5define.min.js"
-                });
+                me({ success: function() {
+                  setTimeout(function() {
+                    "undefined" != typeof sa_jssdk_app_define_mode && window.sa_jssdk_app_define_mode(t, e2);
+                  }, 0);
+                }, error: function() {
+                }, type: "js", url: (i2 = oe(["http:", "https:"], i2) > -1 ? i2 : "https:") + "//static.sensorsdata.cn/sdk/" + t.lib_version + "/vapph5define.min.js" });
               }
             else
               n2();
@@ -3797,10 +3663,10 @@ var __publicField = (obj, key, value) => {
       }
       function lr() {
         var e2;
-        t.readyState.setState(3), new t.SDKJSBridge("visualized").onAppNotify(function () {
+        t.readyState.setState(3), new t.SDKJSBridge("visualized").onAppNotify(function() {
           "undefined" != typeof sa_jssdk_app_define_mode ? sr(true) : sr(false);
-        }), sr(false), t.bridge.app_js_bridge_v1(), it.initPage(), t.para.is_track_single_page && ht.on("switch", function (n2) {
-          var i2 = function (i3) {
+        }), sr(false), t.bridge.app_js_bridge_v1(), it.initPage(), t.para.is_track_single_page && ht.on("switch", function(n2) {
+          var i2 = function(i3) {
             if (i3 = i3 || {}, n2 !== location.href) {
               it.pageProp.referrer = ee(n2);
               var a3 = $({ $url: ee(), $referrer: ee(n2) }, i3);
@@ -3813,11 +3679,11 @@ var __publicField = (obj, key, value) => {
             var a2 = t.para.is_track_single_page();
             s(a2) ? i2(a2) : true === a2 && i2();
           }
-        }), Pt.init(), function () {
+        }), Pt.init(), function() {
           var e3 = it.pageProp.url_domain, t2 = {};
           "" === e3 && (e3 = "url\u89E3\u6790\u5931\u8D25");
           var r2 = tt(document.referrer, true);
-          if (Ee.preset_properties.search_keyword_baidu ? et(document.referrer) && (!Xe() || s(r2) && r2.active ? Pt._state && Pt._state.props && (Pt._state.props.$search_keyword_id && delete Pt._state.props.$search_keyword_id, Pt._state.props.$search_keyword_id_type && delete Pt._state.props.$search_keyword_id_type, Pt._state.props.$search_keyword_id_hash && delete Pt._state.props.$search_keyword_id_hash) : (t2.$search_keyword_id = Ze.id(), t2.$search_keyword_id_type = Ze.type(), t2.$search_keyword_id_hash = ae(t2.$search_keyword_id))) : Pt._state && Pt._state.props && (Pt._state.props.$search_keyword_id && delete Pt._state.props.$search_keyword_id, Pt._state.props.$search_keyword_id_type && delete Pt._state.props.$search_keyword_id_type, Pt._state.props.$search_keyword_id_hash && delete Pt._state.props.$search_keyword_id_hash), Pt.save(), D(Ee.preset_properties, function (r3, n3) {
+          if (Ee.preset_properties.search_keyword_baidu ? et(document.referrer) && (!Xe() || s(r2) && r2.active ? Pt._state && Pt._state.props && (Pt._state.props.$search_keyword_id && delete Pt._state.props.$search_keyword_id, Pt._state.props.$search_keyword_id_type && delete Pt._state.props.$search_keyword_id_type, Pt._state.props.$search_keyword_id_hash && delete Pt._state.props.$search_keyword_id_hash) : (t2.$search_keyword_id = Ze.id(), t2.$search_keyword_id_type = Ze.type(), t2.$search_keyword_id_hash = ae(t2.$search_keyword_id))) : Pt._state && Pt._state.props && (Pt._state.props.$search_keyword_id && delete Pt._state.props.$search_keyword_id, Pt._state.props.$search_keyword_id_type && delete Pt._state.props.$search_keyword_id_type, Pt._state.props.$search_keyword_id_hash && delete Pt._state.props.$search_keyword_id_hash), Pt.save(), D(Ee.preset_properties, function(r3, n3) {
             if (-1 === n3.indexOf("latest_"))
               return false;
             if (n3 = n3.slice(7), r3) {
@@ -3847,7 +3713,7 @@ var __publicField = (obj, key, value) => {
               for (var a3 in Pt._state.props)
                 (0 === a3.indexOf("$latest_utm") || 0 === a3.indexOf("_latest_") && a3.indexOf("_latest_wx_ad_") < 0) && delete Pt._state.props[a3];
             else
-              Pt._state && Pt._state.props && "$latest_" + n3 in Pt._state.props ? delete Pt._state.props["$latest_" + n3] : "wx_ad_click_id" == n3 && Pt._state && Pt._state.props && false === r3 && D(["_latest_wx_ad_click_id", "_latest_wx_ad_hash_key", "_latest_wx_ad_callbacks"], function (e4) {
+              Pt._state && Pt._state.props && "$latest_" + n3 in Pt._state.props ? delete Pt._state.props["$latest_" + n3] : "wx_ad_click_id" == n3 && Pt._state && Pt._state.props && false === r3 && D(["_latest_wx_ad_click_id", "_latest_wx_ad_hash_key", "_latest_wx_ad_callbacks"], function(e4) {
                 e4 in Pt._state.props && delete Pt._state.props[e4];
               });
           }), Ee.preset_properties.latest_utm) {
@@ -3855,7 +3721,7 @@ var __publicField = (obj, key, value) => {
             ce(i2) || $(t2, i2), ce(a2) || $(t2, a2);
           }
           Zt(t2);
-        }(), xt.init(), "success" === t.bridge.bridge_info.verify_success && At.init(), t.readyState.setState(4), t._q && C(t._q) && t._q.length > 0 && D(t._q, function (e3) {
+        }(), xt.init(), "success" === t.bridge.bridge_info.verify_success && At.init(), t.readyState.setState(4), t._q && C(t._q) && t._q.length > 0 && D(t._q, function(e3) {
           t[e3[0]].apply(t, Array.prototype.slice.call(e3[1]));
         }), s(t.para.heatmap) && (Jt.initHeatmap(), Jt.initScrollmap());
       }
@@ -3864,9 +3730,9 @@ var __publicField = (obj, key, value) => {
       }
       var cr = ["setItem", "deleteItem", "getAppStatus", "track", "quick", "register", "registerPage", "registerOnce", "trackSignup", "setProfile", "setOnceProfile", "appendProfile", "incrementProfile", "deleteProfile", "unsetProfile", "identify", "resetAnonymousIdentity", "login", "logout", "trackLink", "clearAllRegister", "clearPageRegister", "bind", "unbind", "loginWithKey"];
       function pr() {
-        D(cr, function (e2) {
+        D(cr, function(e2) {
           var n2 = t[e2];
-          t[e2] = function () {
+          t[e2] = function() {
             if (t.readyState.state < 3)
               return C(t._q) || (t._q = []), $e("calling sdk api before init is deprecated."), t._q.push([e2, arguments]), false;
             if (!r(t.getDisabled) || !t.getDisabled()) {
@@ -3877,42 +3743,40 @@ var __publicField = (obj, key, value) => {
           };
         });
       }
-      var dr = {
-        track: function (e2, t2, r2) {
-        }, quick: function (e2, t2, r2, n2) {
-        }, register: function (e2) {
-        }, registerPage: function (e2) {
-        }, registerOnce: function (e2) {
-        }, clearAllRegister: function (e2) {
-        }, trackSignup: function (e2, t2, r2, n2) {
-        }, setProfile: function (e2, t2) {
-        }, setOnceProfile: function (e2, t2) {
-        }, appendProfile: function (e2, t2) {
-        }, incrementProfile: function (e2, t2) {
-        }, deleteProfile: function (e2) {
-        }, unsetProfile: function (e2, t2) {
-        }, identify: function (e2, t2) {
-        }, resetAnonymousIdentity: function (e2) {
-        }, login: function (e2, t2) {
-        }, logout: function (e2) {
-        }, trackLink: function (e2, t2, r2) {
-        }, deleteItem: function (e2, t2) {
-        }, setItem: function (e2, t2, r2) {
-        }, getAppStatus: function (e2) {
-        }, clearPageRegister: function (e2) {
-        }, bind: function (e2, t2) {
-        }, unbind: function (e2, t2) {
-        }, registerPropertyPlugin: function (e2) {
-        }
-      };
+      var dr = { track: function(e2, t2, r2) {
+      }, quick: function(e2, t2, r2, n2) {
+      }, register: function(e2) {
+      }, registerPage: function(e2) {
+      }, registerOnce: function(e2) {
+      }, clearAllRegister: function(e2) {
+      }, trackSignup: function(e2, t2, r2, n2) {
+      }, setProfile: function(e2, t2) {
+      }, setOnceProfile: function(e2, t2) {
+      }, appendProfile: function(e2, t2) {
+      }, incrementProfile: function(e2, t2) {
+      }, deleteProfile: function(e2) {
+      }, unsetProfile: function(e2, t2) {
+      }, identify: function(e2, t2) {
+      }, resetAnonymousIdentity: function(e2) {
+      }, login: function(e2, t2) {
+      }, logout: function(e2) {
+      }, trackLink: function(e2, t2, r2) {
+      }, deleteItem: function(e2, t2) {
+      }, setItem: function(e2, t2, r2) {
+      }, getAppStatus: function(e2) {
+      }, clearPageRegister: function(e2) {
+      }, bind: function(e2, t2) {
+      }, unbind: function(e2, t2) {
+      }, registerPropertyPlugin: function(e2) {
+      } };
       function fr(e2, t2) {
-        this.cancel = function () {
+        this.cancel = function() {
           e2 = true;
-        }, this.getCanceled = function () {
+        }, this.getCanceled = function() {
           return e2 || false;
-        }, this.stop = function () {
+        }, this.stop = function() {
           t2 = true;
-        }, this.getStopped = function () {
+        }, this.getStopped = function() {
           return t2 || false;
         };
       }
@@ -3922,9 +3786,9 @@ var __publicField = (obj, key, value) => {
           n2 = JSON.parse(JSON.stringify(e2 || null));
         } catch (i2) {
         }
-        this.getOriginalData = function () {
+        this.getOriginalData = function() {
           return n2;
-        }, this.getPosition = function () {
+        }, this.getPosition = function() {
           return t2;
         }, this.cancellationToken = new fr(), this.sensors = r2;
       }
@@ -3933,7 +3797,7 @@ var __publicField = (obj, key, value) => {
           throw "error: Stage constructor requires arguments.";
         this.processDef = e2, this.registeredInterceptors = {};
       }
-      _r.prototype.process = function (e2, r2) {
+      _r.prototype.process = function(e2, r2) {
         if (e2 && e2 in this.processDef) {
           var n2 = this.registeredInterceptors[e2];
           if (n2 && C(n2) && n2.length > 0)
@@ -3949,16 +3813,16 @@ var __publicField = (obj, key, value) => {
           return this.processDef[e2] && this.processDef[e2] in this.processDef && (r2 = this.process(this.processDef[e2], r2)), r2;
         }
         xe("process [" + e2 + "] is not supported");
-      }, _r.prototype.registerStageImplementation = function (e2) {
+      }, _r.prototype.registerStageImplementation = function(e2) {
         e2 && e2.init && r(e2.init) && (e2.init(this), e2.interceptor && this.registerInterceptor(e2.interceptor));
-      }, _r.prototype.registerInterceptor = function (e2) {
+      }, _r.prototype.registerInterceptor = function(e2) {
         if (e2)
           for (var t2 in e2) {
             var n2 = e2[t2];
             if (n2 && s(n2) && r(n2.entry)) {
               ge(n2.priority) || (n2.priority = Number.MAX_VALUE), this.registeredInterceptors[t2] || (this.registeredInterceptors[t2] = []);
               var i2 = this.registeredInterceptors[t2];
-              n2.entry.priority = n2.priority, i2.push(n2.entry), i2.sort(function (e3, t3) {
+              n2.entry.priority = n2.priority, i2.push(n2.entry), i2.sort(function(e3, t3) {
                 return e3.priority - t3.priority;
               });
             }
@@ -3968,36 +3832,26 @@ var __publicField = (obj, key, value) => {
       function br(e2) {
         e2 && e2.buildDataStage && hr.registerStageImplementation(e2.buildDataStage), e2 && e2.businessStage && vr.registerStageImplementation(e2.businessStage), e2 && e2.sendDataStage && mr.registerStageImplementation(e2.sendDataStage), e2 && e2.viewStage && yr.registerStageImplementation(e2.viewStage);
       }
-      var wr = {
-        buildDataStage: function (e2) {
-          e2 && hr.registerInterceptor(e2);
-        }, businessStage: function (e2) {
-          e2 && vr.registerInterceptor(e2);
-        }, sendDataStage: function (e2) {
-          e2 && mr.registerInterceptor(e2);
-        }, viewStage: function (e2) {
-          e2 && yr.registerInterceptor(e2);
-        }
-      };
+      var wr = { buildDataStage: function(e2) {
+        e2 && hr.registerInterceptor(e2);
+      }, businessStage: function(e2) {
+        e2 && vr.registerInterceptor(e2);
+      }, sendDataStage: function(e2) {
+        e2 && mr.registerInterceptor(e2);
+      }, viewStage: function(e2) {
+        e2 && yr.registerInterceptor(e2);
+      } };
       function Sr(e2, t2) {
         wr[e2] && wr[e2](t2);
       }
-      var kr = {
-        stage: null, init: function (e2) {
-          this.stage = e2;
-        }
-      };
-      var Pr = {
-        stage: null, init: function (e2) {
-          this.stage = e2;
-        }, interceptor: {
-          send: {
-            entry: function (e2) {
-              return e2;
-            }
-          }
-        }
-      };
+      var kr = { stage: null, init: function(e2) {
+        this.stage = e2;
+      } };
+      var Pr = { stage: null, init: function(e2) {
+        this.stage = e2;
+      }, interceptor: { send: { entry: function(e2) {
+        return e2;
+      } } } };
       var Cr = {};
       function Or(e2) {
         e2.kit = Cr, e2.saEvent = Lt, this.buildDataStage = Et, this.sendDataStage = Pr, this.businessStage = kr;
@@ -4005,45 +3859,35 @@ var __publicField = (obj, key, value) => {
       function jr(e2) {
         e2.heatmap = Jt, this.viewStage = Bt;
       }
-      Cr.buildData = function (e2) {
+      Cr.buildData = function(e2) {
         return t2 = e2, Et.stage.process("basicProps", t2);
         var t2;
-      }, Cr.sendData = function (e2, r2) {
+      }, Cr.sendData = function(e2, r2) {
         var n2 = lt(e2.properties);
-        !function (e3) {
+        !function(e3) {
           Pr.stage.process("send", e3);
         }({ origin_data: e2, server_url: t.para.server_url, data: e2, config: n2 || {}, callback: r2 }), t.log(e2);
-      }, Cr.encodeTrackData = function (e2) {
+      }, Cr.encodeTrackData = function(e2) {
         return gt(e2);
-      }, Cr.getUtmData = function () {
+      }, Cr.getUtmData = function() {
         return kr.stage && kr.stage.process("getUtmData");
       };
-      var Nr = {
-        webClickEvent: {
-          entry: function (e2, t2) {
-            var r2 = t2.sensors;
-            "a" === e2.tagName && r2.para.heatmap && true === r2.para.heatmap.isTrackLink ? r2.trackLink({ event: e2.event, target: e2.target }, "$WebClick", e2.props) : r2.track("$WebClick", e2.props, e2.callback);
-          }
-        }, webStayEvent: {
-          entry: function (e2, t2) {
-            t2.sensors.track("$WebStay", e2);
-          }
-        }
-      };
+      var Nr = { webClickEvent: { entry: function(e2, t2) {
+        var r2 = t2.sensors;
+        "a" === e2.tagName && r2.para.heatmap && true === r2.para.heatmap.isTrackLink ? r2.trackLink({ event: e2.event, target: e2.target }, "$WebClick", e2.props) : r2.track("$WebClick", e2.props, e2.callback);
+      } }, webStayEvent: { entry: function(e2, t2) {
+        t2.sensors.track("$WebStay", e2);
+      } } };
       function Tr(e2) {
-        r(e2.properties) ? !e2.isMatchedWithFilter || r(e2.isMatchedWithFilter) ? Sr("buildDataStage", {
-          finalAdjustData: {
-            priority: 100, entry: function (t2) {
-              try {
-                if (r(e2.isMatchedWithFilter))
-                  return e2.isMatchedWithFilter(t2) && e2.properties(t2);
-                e2.properties(t2);
-              } catch (n2) {
-                xe("execute registerPropertyPlugin callback error:" + n2);
-              }
-            }
+        r(e2.properties) ? !e2.isMatchedWithFilter || r(e2.isMatchedWithFilter) ? Sr("buildDataStage", { finalAdjustData: { priority: 100, entry: function(t2) {
+          try {
+            if (r(e2.isMatchedWithFilter))
+              return e2.isMatchedWithFilter(t2) && e2.properties(t2);
+            e2.properties(t2);
+          } catch (n2) {
+            xe("execute registerPropertyPlugin callback error:" + n2);
           }
-        }) : xe("registerPropertyPlugin arguments error, isMatchedWithFilter must be function") : xe("registerPropertyPlugin arguments error, properties must be function");
+        } } }) : xe("registerPropertyPlugin arguments error, isMatchedWithFilter must be function") : xe("registerPropertyPlugin arguments error, properties must be function");
       }
       var Ir = window.sensors_data_pre_config, Ar = !!Qt.isObject(Ir) && Ir.is_compliance_enabled;
       function Dr(e2) {
@@ -4053,28 +3897,28 @@ var __publicField = (obj, key, value) => {
           t[n2] = r2[n2];
         t.logger = Ae, t.log = De, t._ = Qt, t.on = mt, t.ee = _t, t.use = Wt, t.lib_version = Re, t.registerPropertyPlugin = Tr;
       }
-      t.init = function (e2) {
+      t.init = function(e2) {
         if (_t.sdk.emit("beforeInit"), t.readyState && t.readyState.state && t.readyState.state >= 2)
           return false;
         var r2, n2;
-        Ar && (Dr(true), pr()), _t.initSystemEvent(), t.setInitVar(), t.readyState.setState(2), t.initPara(e2), _t.sdk.emit("initPara"), _t.sdk.emit("afterInitPara"), _t.sdk.emit("initAPI"), _t.sdk.emit("afterInitAPI"), t.detectMode(), r2 = "", n2 = " { cursor: pointer; -webkit-tap-highlight-color: rgba(0,0,0,0); }", t.heatmap && C(t.heatmap.otherTags) && D(t.heatmap.otherTags, function (e3) {
+        Ar && (Dr(true), pr()), _t.initSystemEvent(), t.setInitVar(), t.readyState.setState(2), t.initPara(e2), _t.sdk.emit("initPara"), _t.sdk.emit("afterInitPara"), _t.sdk.emit("initAPI"), _t.sdk.emit("afterInitAPI"), t.detectMode(), r2 = "", n2 = " { cursor: pointer; -webkit-tap-highlight-color: rgba(0,0,0,0); }", t.heatmap && C(t.heatmap.otherTags) && D(t.heatmap.otherTags, function(e3) {
           r2 += e3 + n2;
         }), de() && X() && X() < 13 && (t.para.heatmap && t.para.heatmap.collect_tags && t.para.heatmap.collect_tags.div && Se("div, [data-sensors-click]" + n2), t.para.heatmap && t.para.heatmap.track_attr && Se("[" + t.para.heatmap.track_attr.join("], [") + "]" + n2), "" !== r2 && Se(r2)), _t.sdk.emit("afterInit"), _t.sdk.emit("ready");
       }, Ar ? Dr(false) : (Dr(true), pr());
       var $r = "1.27.11";
-      var xr, Er, Lr, Ur = (function (e2, t2, r2) {
+      var xr, Er, Lr, Ur = (function(e2, t2, r2) {
         if (t2 && (e2.plugin_name = t2), r2 && e2.init) {
           var n2 = e2.init;
-          e2.init = function (i2, a2) {
-            if (function (e3, t3, r3) {
+          e2.init = function(i2, a2) {
+            if (function(e3, t3, r3) {
               function n3(t4, n4) {
                 e3.logger ? e3.logger.msg.apply(e3.logger, n4).module(r3 + "" || "").level(t4).log() : e3.log && e3.log.apply(e3, n4);
               }
-              t3.log = function () {
+              t3.log = function() {
                 n3("log", arguments);
-              }, t3.warn = function () {
+              }, t3.warn = function() {
                 n3("warn", arguments);
-              }, t3.error = function () {
+              }, t3.error = function() {
                 n3("error", arguments);
               };
             }(i2, e2, t2), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4085,34 +3929,32 @@ var __publicField = (obj, key, value) => {
             i2.on(r2, o2);
           };
         }
-      }(xr = {
-        init: function (e2) {
-          var t2 = e2._.isString, r2 = e2._.rot13defs, n2 = e2._.dfmapping, i2 = "data:enc;";
-          e2.ee.sdk.on("afterInitPara", function () {
-            e2.kit.userEncrypt = function (e3) {
-              return "dfm-enc-" + n2(e3);
-            }, e2.kit.userDecrypt = function (e3) {
-              return 0 === e3.indexOf(i2) ? (e3 = e3.substring(i2.length), e3 = r2(e3)) : 0 === e3.indexOf("dfm-enc-") && (e3 = e3.substring("dfm-enc-".length), e3 = n2(e3)), e3;
-            }, e2.kit.userDecryptIfNeeded = function (r3) {
-              return !t2(r3) || 0 !== r3.indexOf(i2) && 0 !== r3.indexOf("dfm-enc-") || (r3 = e2.kit.userDecrypt(r3)), r3;
-            };
-          });
-        }, plugin_name: "UserEncryptDefault"
-      }, Er, Lr), xr.plugin_version = $r, xr), Rr = "1.27.11";
-      var Br = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      }(xr = { init: function(e2) {
+        var t2 = e2._.isString, r2 = e2._.rot13defs, n2 = e2._.dfmapping, i2 = "data:enc;";
+        e2.ee.sdk.on("afterInitPara", function() {
+          e2.kit.userEncrypt = function(e3) {
+            return "dfm-enc-" + n2(e3);
+          }, e2.kit.userDecrypt = function(e3) {
+            return 0 === e3.indexOf(i2) ? (e3 = e3.substring(i2.length), e3 = r2(e3)) : 0 === e3.indexOf("dfm-enc-") && (e3 = e3.substring("dfm-enc-".length), e3 = n2(e3)), e3;
+          }, e2.kit.userDecryptIfNeeded = function(r3) {
+            return !t2(r3) || 0 !== r3.indexOf(i2) && 0 !== r3.indexOf("dfm-enc-") || (r3 = e2.kit.userDecrypt(r3)), r3;
+          };
+        });
+      }, plugin_name: "UserEncryptDefault" }, Er, Lr), xr.plugin_version = $r, xr), Rr = "1.27.11";
+      var Br = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4124,84 +3966,76 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = Rr, e2;
-      }({
-        sd: null, init: function (e2) {
-          if (this.sd)
-            return false;
-          if (this.sd = e2, !this.sd || !this.sd._)
-            return false;
-          var t2 = this.sd._.cookie.get("sensors_amp_id"), r2 = this.sd.store._state.distinct_id;
-          if (t2 && t2.length > 0) {
-            var n2 = "amp-" === t2.slice(0, 4);
-            if (t2 !== r2) {
-              if (!n2)
-                return false;
-              this.sd.store._state.first_id ? (this.sd.identify(t2, true), this.sd.saEvent.send({ original_id: t2, distinct_id: r2, type: "track_signup", event: "$SignUp", properties: {} }, null), this.setAmpId(r2)) : this.sd.identify(t2, true);
-            }
-          } else
-            this.setAmpId(r2);
-          this.addListener();
-        }, addListener: function () {
-          var e2 = this;
-          this.sd.events.on("changeDistinctId", function (t2) {
-            e2.setAmpId(t2);
-          }), this.sd.events.isReady();
-        }, setAmpId: function (e2) {
-          this.sd._.cookie.set("sensors_amp_id", e2);
-        }
-      }, "Amp", "sdkReady"), Hr = window.SensorsData_App_Visual_Bridge, Jr = Hr && Hr.sensorsdata_visualized_mode, Mr = Hr && Hr.sensorsdata_visualized_alert_info, qr = Hr && Hr.sensorsdata_hover_web_nodes;
+      }({ sd: null, init: function(e2) {
+        if (this.sd)
+          return false;
+        if (this.sd = e2, !this.sd || !this.sd._)
+          return false;
+        var t2 = this.sd._.cookie.get("sensors_amp_id"), r2 = this.sd.store._state.distinct_id;
+        if (t2 && t2.length > 0) {
+          var n2 = "amp-" === t2.slice(0, 4);
+          if (t2 !== r2) {
+            if (!n2)
+              return false;
+            this.sd.store._state.first_id ? (this.sd.identify(t2, true), this.sd.saEvent.send({ original_id: t2, distinct_id: r2, type: "track_signup", event: "$SignUp", properties: {} }, null), this.setAmpId(r2)) : this.sd.identify(t2, true);
+          }
+        } else
+          this.setAmpId(r2);
+        this.addListener();
+      }, addListener: function() {
+        var e2 = this;
+        this.sd.events.on("changeDistinctId", function(t2) {
+          e2.setAmpId(t2);
+        }), this.sd.events.isReady();
+      }, setAmpId: function(e2) {
+        this.sd._.cookie.set("sensors_amp_id", e2);
+      } }, "Amp", "sdkReady"), Hr = window.SensorsData_App_Visual_Bridge, Jr = Hr && Hr.sensorsdata_visualized_mode, Mr = Hr && Hr.sensorsdata_visualized_alert_info, qr = Hr && Hr.sensorsdata_hover_web_nodes;
       function Fr(e2) {
         return Jr.call(Hr) && qr && qr.call(Hr, JSON.stringify(e2));
       }
-      var Kr, Vr, zr, Wr, Xr, Zr, Yr = {
-        isVerify: function () {
-          return Jr && (true === Jr || Jr.call(Hr));
-        }, commands: {
-          app_alert: function (e2) {
-            return Mr && Mr.call(Hr, JSON.stringify(e2));
-          }, visualized_track: Fr, page_info: Fr, sensorsdata_get_app_visual_config: function (e2, t2) {
-            return t2 && "function" == typeof t2[e2.callType] && t2[e2.callType]();
-          }
-        }
-      }, Gr = "1.27.11";
-      var Qr = {
-        init: function (e2) {
-          Xr = (Wr = e2) && Wr._, Zr = Wr && Wr.log || console && console.log || function () {
-          }, function () {
-            if (Kr = window.SensorsData_APP_New_H5_Bridge, Vr = Kr && Kr.sensorsdata_track, zr = Vr && Kr.sensorsdata_get_server_url && Kr.sensorsdata_get_server_url(), Zr("---test---fail---", !Wr, Wr.bridge.activeBridge, !zr), !Wr || Wr.bridge.activeBridge || !zr)
-              return;
-            Wr.bridge.activeBridge = Qr, Wr.para.app_js_bridge && !Wr.para.app_js_bridge.is_mui && (Wr.bridge.is_verify_success = zr && Wr.bridge.validateAppUrl(zr), Zr("---test---bridge-verify-", Wr.bridge.is_verify_success));
-            if (Wr.bridge.bridge_info = { touch_app_bridge: true, platform: "android", verify_success: Wr.bridge.is_verify_success ? "success" : "fail", support_two_way_call: !!Kr.sensorsdata_js_call_app }, !Wr.para.app_js_bridge)
-              return void Zr("---test---app_js_bridge is not configured, data will not be sent by android bridge.");
-            Wr.registerInterceptor("sendDataStage", { send: { priority: 60, entry: en } });
-          }();
-        }, handleCommand: function (e2) {
-          var t2 = e2.callType;
-          if (t2 in Yr.commands)
-            return Yr.commands[t2](e2, Kr);
-          Kr && Xr.isFunction(Kr.sensorsdata_js_call_app) && Kr.sensorsdata_js_call_app(JSON.stringify(e2));
-        }
-      };
+      var Kr, Vr, zr, Wr, Xr, Zr, Yr = { isVerify: function() {
+        return Jr && (true === Jr || Jr.call(Hr));
+      }, commands: { app_alert: function(e2) {
+        return Mr && Mr.call(Hr, JSON.stringify(e2));
+      }, visualized_track: Fr, page_info: Fr, sensorsdata_get_app_visual_config: function(e2, t2) {
+        return t2 && "function" == typeof t2[e2.callType] && t2[e2.callType]();
+      } } }, Gr = "1.27.11";
+      var Qr = { init: function(e2) {
+        Xr = (Wr = e2) && Wr._, Zr = Wr && Wr.log || console && console.log || function() {
+        }, function() {
+          if (Kr = window.SensorsData_APP_New_H5_Bridge, Vr = Kr && Kr.sensorsdata_track, zr = Vr && Kr.sensorsdata_get_server_url && Kr.sensorsdata_get_server_url(), Zr("---test---fail---", !Wr, Wr.bridge.activeBridge, !zr), !Wr || Wr.bridge.activeBridge || !zr)
+            return;
+          Wr.bridge.activeBridge = Qr, Wr.para.app_js_bridge && !Wr.para.app_js_bridge.is_mui && (Wr.bridge.is_verify_success = zr && Wr.bridge.validateAppUrl(zr), Zr("---test---bridge-verify-", Wr.bridge.is_verify_success));
+          if (Wr.bridge.bridge_info = { touch_app_bridge: true, platform: "android", verify_success: Wr.bridge.is_verify_success ? "success" : "fail", support_two_way_call: !!Kr.sensorsdata_js_call_app }, !Wr.para.app_js_bridge)
+            return void Zr("---test---app_js_bridge is not configured, data will not be sent by android bridge.");
+          Wr.registerInterceptor("sendDataStage", { send: { priority: 60, entry: en } });
+        }();
+      }, handleCommand: function(e2) {
+        var t2 = e2.callType;
+        if (t2 in Yr.commands)
+          return Yr.commands[t2](e2, Kr);
+        Kr && Xr.isFunction(Kr.sensorsdata_js_call_app) && Kr.sensorsdata_js_call_app(JSON.stringify(e2));
+      } };
       function en(e2, t2) {
         if (Zr("---test---datasend-", Wr.bridge.is_verify_success), Wr.para.app_js_bridge.is_mui || "item_set" === e2.data.type || "item_delete" === e2.data.type)
           return e2;
         var r2 = e2.callback;
         return Wr.bridge.is_verify_success ? (Zr("---test---bridge-verify-success---", e2.data), Vr && Vr.call(Kr, JSON.stringify(Xr.extend({ server_url: Wr.para.server_url }, e2.data))), Xr.isFunction(r2) && r2(), t2.cancellationToken.cancel(), e2) : (Zr("---test---bridge-verify-fail-----", Wr.bridge.is_verify_success), Wr.para.app_js_bridge.is_send ? (Wr.debug.apph5({ data: e2.data, step: "4.2", output: "all" }), e2) : (Xr.isFunction(r2) && r2(), t2.cancellationToken.cancel(), e2));
       }
-      var tn = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var tn = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4217,39 +4051,33 @@ var __publicField = (obj, key, value) => {
       function sn(e2) {
         return nn.call(rn) && on && on.call(rn, JSON.stringify(e2));
       }
-      var ln, un, cn, pn, dn, fn, gn, _n = {
-        isVerify: function () {
-          return nn && (true === nn || nn.call(rn));
-        }, commands: {
-          app_alert: function (e2) {
-            return an && an.call(rn, JSON.stringify(e2));
-          }, visualized_track: sn, page_info: sn, sensorsdata_get_app_visual_config: function (e2, t2) {
-            return t2 && "function" == typeof t2[e2.callType] && t2[e2.callType]();
-          }
-        }
-      }, hn = "1.27.11";
-      var mn = {
-        init: function (e2) {
-          fn = (dn = e2) && dn._, gn = dn && dn.log || console && console.log || function () {
-          }, function () {
-            if (gn("ObsoleteBridge---test---init---"), ln = window.SensorsData_APP_JS_Bridge, un = ln && ln.sensorsdata_track, cn = ln && ln.sensorsdata_verify, pn = ln && ln.sensorsdata_visual_verify, gn("ObsoleteBridge-", dn.bridge.activeBridge, cn, un, pn), !dn || dn.bridge.activeBridge || !(cn || un || pn))
-              return;
-            dn.bridge.activeBridge = mn;
-            var e3 = cn || un;
-            pn && (e3 = !!pn.call(ln, JSON.stringify({ server_url: dn.para.server_url })), gn("ObsoleteBridge---called-return", e3));
-            if (dn.bridge.bridge_info = { touch_app_bridge: true, platform: "android", verify_success: e3 ? "success" : "fail" }, !dn.para.app_js_bridge)
-              return void gn("app_js_bridge is not configured, data will not be sent by android obsolete bridge.");
-            dn.registerInterceptor("sendDataStage", { send: { priority: 80, entry: vn } }), gn("Android obsolete bridge inits succeed.");
-          }();
-        }, handleCommand: function (e2) {
-          gn("ObsoleteBridge---handleCommadn");
-          var t2 = e2.callType;
-          if (t2 in _n.commands)
-            return gn("ObsoleteBridge---", t2, _n.commands), _n.commands[t2](e2, ln);
-          if (ln && fn.isFunction(ln.sensorsdata_js_call_app))
-            return gn("ObsoleteBridge---handleCommadn-abridge"), ln.sensorsdata_js_call_app(JSON.stringify(e2));
-        }
-      };
+      var ln, un, cn, pn, dn, fn, gn, _n = { isVerify: function() {
+        return nn && (true === nn || nn.call(rn));
+      }, commands: { app_alert: function(e2) {
+        return an && an.call(rn, JSON.stringify(e2));
+      }, visualized_track: sn, page_info: sn, sensorsdata_get_app_visual_config: function(e2, t2) {
+        return t2 && "function" == typeof t2[e2.callType] && t2[e2.callType]();
+      } } }, hn = "1.27.11";
+      var mn = { init: function(e2) {
+        fn = (dn = e2) && dn._, gn = dn && dn.log || console && console.log || function() {
+        }, function() {
+          if (gn("ObsoleteBridge---test---init---"), ln = window.SensorsData_APP_JS_Bridge, un = ln && ln.sensorsdata_track, cn = ln && ln.sensorsdata_verify, pn = ln && ln.sensorsdata_visual_verify, gn("ObsoleteBridge-", dn.bridge.activeBridge, cn, un, pn), !dn || dn.bridge.activeBridge || !(cn || un || pn))
+            return;
+          dn.bridge.activeBridge = mn;
+          var e3 = cn || un;
+          pn && (e3 = !!pn.call(ln, JSON.stringify({ server_url: dn.para.server_url })), gn("ObsoleteBridge---called-return", e3));
+          if (dn.bridge.bridge_info = { touch_app_bridge: true, platform: "android", verify_success: e3 ? "success" : "fail" }, !dn.para.app_js_bridge)
+            return void gn("app_js_bridge is not configured, data will not be sent by android obsolete bridge.");
+          dn.registerInterceptor("sendDataStage", { send: { priority: 80, entry: vn } }), gn("Android obsolete bridge inits succeed.");
+        }();
+      }, handleCommand: function(e2) {
+        gn("ObsoleteBridge---handleCommadn");
+        var t2 = e2.callType;
+        if (t2 in _n.commands)
+          return gn("ObsoleteBridge---", t2, _n.commands), _n.commands[t2](e2, ln);
+        if (ln && fn.isFunction(ln.sensorsdata_js_call_app))
+          return gn("ObsoleteBridge---handleCommadn-abridge"), ln.sensorsdata_js_call_app(JSON.stringify(e2));
+      } };
       function vn(e2, t2) {
         if (gn("ObsoleteBridge---senddata"), dn.para.app_js_bridge.is_mui || "item_set" === e2.data.type || "item_delete" === e2.data.type)
           return e2;
@@ -4260,20 +4088,20 @@ var __publicField = (obj, key, value) => {
         }
         return gn("ObsoleteBridge---is-send-old-way", dn.para.app_js_bridge.is_send), un && un.call(ln, JSON.stringify(fn.extend({ server_url: dn.para.server_url }, e2.data))), fn.isFunction(r2) && r2(), t2.cancellationToken.cancel(), e2;
       }
-      var yn, bn, wn, Sn, kn = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var yn, bn, wn, Sn, kn = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4286,92 +4114,84 @@ var __publicField = (obj, key, value) => {
           }
         }(e2, t2, r2), e2.plugin_version = hn, e2;
       }(mn, "AndroidObsoleteBridge", "sdkAfterInitPara"), Pn = "1.27.11";
-      var Cn, On = {
-        event_list: [], latest_event_initial_time: null, max_save_time: 2592e6, init: function (e2, t2) {
-          if (bn || !e2)
+      var Cn, On = { event_list: [], latest_event_initial_time: null, max_save_time: 2592e6, init: function(e2, t2) {
+        if (bn || !e2)
+          return false;
+        Sn = (t2 = t2 || {}).cookie_name || "sensorsdata2015jssdkchannel", bn = e2;
+        var r2 = this;
+        !function() {
+          if (yn = bn._, wn = bn.store, !yn.localStorage.isSupport())
             return false;
-          Sn = (t2 = t2 || {}).cookie_name || "sensorsdata2015jssdkchannel", bn = e2;
-          var r2 = this;
-          !function () {
-            if (yn = bn._, wn = bn.store, !yn.localStorage.isSupport())
-              return false;
-            r2.eventList.init(), r2.addLatestChannelUrl(), r2.addIsChannelCallbackEvent();
-          }();
-        }, addIsChannelCallbackEvent: function () {
-          bn.registerPage({
-            $is_channel_callback_event: function (e2) {
-              if (yn.isObject(e2) && e2.event && "$WebClick" !== e2.event && "$pageview" !== e2.event && "$WebStay" !== e2.event && "$SignUp" !== e2.event)
-                return !On.eventList.hasEvent(e2.event) && (On.eventList.add(e2.event), true);
-            }
-          });
-        }, addLatestChannelUrl: function () {
-          var e2 = this.getUrlDomain(), t2 = this.cookie.getChannel();
-          if ("url\u89E3\u6790\u5931\u8D25" === e2)
-            this.registerAndSave({ _sa_channel_landing_url: "", _sa_channel_landing_url_error: "url\u7684domain\u89E3\u6790\u5931\u8D25" });
-          else if (yn.isReferralTraffic(document.referrer)) {
-            var r2 = yn.getQueryParam(location.href, "sat_cf");
-            yn.isString(r2) && r2.length > 0 ? (this.registerAndSave({ _sa_channel_landing_url: location.href }), On.channelLinkHandler()) : this.registerAndSave({ _sa_channel_landing_url: "" });
-          } else
-            t2 ? bn.registerPage(t2) : bn.registerPage({ _sa_channel_landing_url: "", _sa_channel_landing_url_error: "\u53D6\u503C\u5F02\u5E38" });
-        }, registerAndSave: function (e2) {
-          bn.registerPage(e2), this.cookie.saveChannel(e2);
-        }, cookie: {
-          getChannel: function () {
-            var e2 = bn.kit.userDecryptIfNeeded(yn.cookie.get(Sn));
-            return e2 = yn.safeJSONParse(e2), !(!yn.isObject(e2) || !e2.prop) && e2.prop;
-          }, saveChannel: function (e2) {
-            var t2 = { prop: e2 }, r2 = JSON.stringify(t2);
-            bn.para.encrypt_cookie && (r2 = bn.kit.userEncrypt(r2)), yn.cookie.set(Sn, r2);
-          }
-        }, channelLinkHandler: function () {
-          this.eventList.reset(), bn.track("$ChannelLinkReaching");
-        }, getUrlDomain: function () {
-          var e2 = yn.info.pageProp.url_domain;
-          return "" === e2 && (e2 = "url\u89E3\u6790\u5931\u8D25"), e2;
-        }, eventList: {
-          init: function () {
-            var e2 = this.get(), t2 = new Date().getTime();
-            if (e2 && yn.isNumber(e2.latest_event_initial_time) && yn.isArray(e2.eventList)) {
-              var r2 = t2 - e2.latest_event_initial_time;
-              r2 > 0 && r2 < On.max_save_time ? (On.event_list = e2.eventList, On.latest_event_initial_time = e2.latest_event_initial_time) : this.reset();
-            } else
-              this.reset();
-          }, get: function () {
-            var e2 = {};
-            try {
-              e2 = wn.readObjectVal("sawebjssdkchannel");
-            } catch (t2) {
-              bn.log(t2);
-            }
-            return e2;
-          }, add: function (e2) {
-            On.event_list.push(e2), this.save();
-          }, save: function () {
-            var e2 = { latest_event_initial_time: On.latest_event_initial_time, eventList: On.event_list };
-            wn.saveObjectVal("sawebjssdkchannel", e2);
-          }, reset: function () {
-            On.event_list = [], On.latest_event_initial_time = new Date().getTime(), this.save();
-          }, hasEvent: function (e2) {
-            var t2 = false;
-            return yn.each(On.event_list, function (r2) {
-              r2 === e2 && (t2 = true);
-            }), t2;
-          }
+          r2.eventList.init(), r2.addLatestChannelUrl(), r2.addIsChannelCallbackEvent();
+        }();
+      }, addIsChannelCallbackEvent: function() {
+        bn.registerPage({ $is_channel_callback_event: function(e2) {
+          if (yn.isObject(e2) && e2.event && "$WebClick" !== e2.event && "$pageview" !== e2.event && "$WebStay" !== e2.event && "$SignUp" !== e2.event)
+            return !On.eventList.hasEvent(e2.event) && (On.eventList.add(e2.event), true);
+        } });
+      }, addLatestChannelUrl: function() {
+        var e2 = this.getUrlDomain(), t2 = this.cookie.getChannel();
+        if ("url\u89E3\u6790\u5931\u8D25" === e2)
+          this.registerAndSave({ _sa_channel_landing_url: "", _sa_channel_landing_url_error: "url\u7684domain\u89E3\u6790\u5931\u8D25" });
+        else if (yn.isReferralTraffic(document.referrer)) {
+          var r2 = yn.getQueryParam(location.href, "sat_cf");
+          yn.isString(r2) && r2.length > 0 ? (this.registerAndSave({ _sa_channel_landing_url: location.href }), On.channelLinkHandler()) : this.registerAndSave({ _sa_channel_landing_url: "" });
+        } else
+          t2 ? bn.registerPage(t2) : bn.registerPage({ _sa_channel_landing_url: "", _sa_channel_landing_url_error: "\u53D6\u503C\u5F02\u5E38" });
+      }, registerAndSave: function(e2) {
+        bn.registerPage(e2), this.cookie.saveChannel(e2);
+      }, cookie: { getChannel: function() {
+        var e2 = bn.kit.userDecryptIfNeeded(yn.cookie.get(Sn));
+        return e2 = yn.safeJSONParse(e2), !(!yn.isObject(e2) || !e2.prop) && e2.prop;
+      }, saveChannel: function(e2) {
+        var t2 = { prop: e2 }, r2 = JSON.stringify(t2);
+        bn.para.encrypt_cookie && (r2 = bn.kit.userEncrypt(r2)), yn.cookie.set(Sn, r2);
+      } }, channelLinkHandler: function() {
+        this.eventList.reset(), bn.track("$ChannelLinkReaching");
+      }, getUrlDomain: function() {
+        var e2 = yn.info.pageProp.url_domain;
+        return "" === e2 && (e2 = "url\u89E3\u6790\u5931\u8D25"), e2;
+      }, eventList: { init: function() {
+        var e2 = this.get(), t2 = new Date().getTime();
+        if (e2 && yn.isNumber(e2.latest_event_initial_time) && yn.isArray(e2.eventList)) {
+          var r2 = t2 - e2.latest_event_initial_time;
+          r2 > 0 && r2 < On.max_save_time ? (On.event_list = e2.eventList, On.latest_event_initial_time = e2.latest_event_initial_time) : this.reset();
+        } else
+          this.reset();
+      }, get: function() {
+        var e2 = {};
+        try {
+          e2 = wn.readObjectVal("sawebjssdkchannel");
+        } catch (t2) {
+          bn.log(t2);
         }
-      }, jn = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+        return e2;
+      }, add: function(e2) {
+        On.event_list.push(e2), this.save();
+      }, save: function() {
+        var e2 = { latest_event_initial_time: On.latest_event_initial_time, eventList: On.event_list };
+        wn.saveObjectVal("sawebjssdkchannel", e2);
+      }, reset: function() {
+        On.event_list = [], On.latest_event_initial_time = new Date().getTime(), this.save();
+      }, hasEvent: function(e2) {
+        var t2 = false;
+        return yn.each(On.event_list, function(r2) {
+          r2 === e2 && (t2 = true);
+        }), t2;
+      } } }, jn = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4385,7 +4205,7 @@ var __publicField = (obj, key, value) => {
         }(e2, t2, r2), e2.plugin_version = Pn, e2;
       }(On, "SensorsChannel", "sdkAfterInitAPI"), Nn = "1.27.11";
       /micromessenger\/([\d.]+)/i.test(navigator.userAgent || "");
-      var Tn = function () {
+      var Tn = function() {
         var e2 = {};
         return "undefined" != typeof document.hidden ? (e2.hidden = "hidden", e2.visibilityChange = "visibilitychange") : "undefined" != typeof document.msHidden ? (e2.hidden = "msHidden", e2.visibilityChange = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (e2.hidden = "webkitHidden", e2.visibilityChange = "webkitvisibilitychange"), e2;
       };
@@ -4393,95 +4213,91 @@ var __publicField = (obj, key, value) => {
         return void 0 !== Cn && document[Cn];
       }
       Cn = Tn().hidden;
-      var An, Dn, $n, xn, En, Ln = { android: /Android/i, iOS: /iPhone|iPad|iPod/i, harmony: /OpenHarmony/i }, Un = function () {
+      var An, Dn, $n, xn, En, Ln = { android: /Android/i, iOS: /iPhone|iPad|iPod/i, harmony: /OpenHarmony/i }, Un = function() {
         for (var e2 in Ln)
           if (navigator.userAgent.match(Ln[e2]))
             return e2;
         return "";
-      }(), Rn = function (e2) {
+      }(), Rn = function(e2) {
         return null != e2 && "[object Object]" == Object.prototype.toString.call(e2);
-      }, Bn = function (e2, t2, r2) {
+      }, Bn = function(e2, t2, r2) {
         e2.log("\u5C1D\u8BD5\u5524\u8D77 android app");
         var n2 = t2;
-        e2.log("\u5524\u8D77APP\u7684\u5730\u5740\uFF1A" + n2), window.location = n2, e2.timer = setTimeout(function () {
+        e2.log("\u5524\u8D77APP\u7684\u5730\u5740\uFF1A" + n2), window.location = n2, e2.timer = setTimeout(function() {
           var t3 = In();
           if (e2.log("hide:" + Cn + ":" + document[Cn]), t3)
             return e2.log("The page is hidden, stop navigating to download page"), false;
           e2.log("App\u53EF\u80FD\u672A\u5B89\u88C5\uFF0C\u8DF3\u8F6C\u5230\u4E0B\u8F7D\u5730\u5740"), window.location = r2;
         }, e2.timeout);
-      }, Hn = {
-        plugin_name: ["deeplink", "Deeplink"], key: null, timer: null, sd: null, data: null, timeout: 2500, apiURL: "{origin}/sdk/deeplink/param?key={key}&system_type=JS&project={project}", init: function (e2) {
-          if (this.sd)
-            return this.logger("deeplink\u5DF2\u7ECF\u521D\u59CB\u5316"), false;
-          arguments[0] ? Rn(arguments[0]) && "number" == typeof arguments[0].timeout ? this.sd = window.sensorsDataAnalytic201505 : this.sd = e2 : this.sd = window.sensorsDataAnalytic201505;
-          var t2 = {};
-          if (arguments.length > 0 && (1 === arguments.length && Rn(arguments[0]) ? t2 = arguments[0] : arguments.length >= 2 && Rn(arguments[1]) && (t2 = arguments[1])), !Ln.hasOwnProperty(Un))
-            return this.logger("\u4E0D\u652F\u6301\u5F53\u524D\u7CFB\u7EDF\uFF0C\u76EE\u524D\u53EA\u652F\u6301Android\u548CiOS"), false;
-          if (Rn(t2) && this.sd._.isNumber(t2.timeout) && t2.timeout >= 2500 && (this.timeout = t2.timeout), !this.sd.para.server_url)
-            return this.logger("\u795E\u7B56JS SDK\u914D\u7F6E\u9879server_url\u672A\u6B63\u786E\u914D\u7F6E"), false;
-          var r2 = function (e3) {
-            var t3 = e3._.URL(e3.para.server_url);
-            return { origin: t3.origin, project: t3.searchParams.get("project") || "default" };
-          }(this.sd);
-          this.apiURL = this.apiURL.replace("{origin}", r2.origin).replace("{project}", r2.project);
-          var n2 = this.sd._.getQueryParam(window.location.href, "deeplink");
-          if (!n2)
-            return this.logger("\u5F53\u524D\u9875\u9762\u7F3A\u5C11deeplink\u53C2\u6570"), false;
-          n2 = window.decodeURIComponent(n2);
-          var i2 = n2.match(/\/sd\/(\w+)\/(\w+)$/);
-          if (!i2)
-            return this.logger("\u5F53\u524D\u9875\u9762\u7684deeplink\u53C2\u6570\u65E0\u6548"), false;
-          this.key = i2[2], this.apiURL = this.apiURL.replace("{key}", window.encodeURIComponent(i2[2])), this.sd._.ajax({
-            url: this.apiURL, type: "GET", cors: true, credentials: false, success: function (e3) {
-              if (e3.errorMsg)
-                return Hn.logger("API\u62A5\u9519\uFF1A" + e3.errorMsg), false;
-              Hn.data = e3, Hn.logger("API\u67E5\u8BE2\u6210\u529F\uFF0C\u6570\u636E\uFF1A" + JSON.stringify(e3, null, "  ")), this.data.app_key && (this.data.android_info && this.data.android_info.url_schemes && (this.data.android_info.url_schemes += "://sensorsdata/sd/" + this.data.app_key + "/" + this.key), this.data.ios_info && this.data.ios_info.url_schemes && (this.data.ios_info.url_schemes += "://sensorsdata/sd/" + this.data.app_key + "/" + this.key), this.data.harmony_info && this.data.harmony_info.url_schemes && (this.data.harmony_info.url_schemes += "://sensorsdata/sd/" + this.data.app_key + "/" + this.key));
-            }.bind(this), error: function () {
-              Hn.logger("API\u67E5\u8BE2\u51FA\u9519");
-            }
-          }), this.addListeners();
-        }, openDeepLink: function () {
-          if (this.logger("openDeeplink()"), !this.data)
-            return this.logger("\u6CA1\u6709Deep link\u6570\u636E!"), false;
-          if ("iOS" === Un) {
-            this.logger("\u5F53\u524D\u7CFB\u7EDF\u662FiOS");
-            var e2 = this.sd && this.sd._ && this.sd._.getIOSVersion() >= 9 && this.data.ios_info.ios_wake_url ? this.data.ios_info.ios_wake_url : this.data.ios_info.url_schemes;
-            this.logger("\u5524\u8D77APP\u7684\u5730\u5740\uFF1A" + e2), r2 = this, n2 = e2, i2 = this.data.ios_info.download_url, r2.log("\u5C1D\u8BD5\u5524\u8D77 iOS app:" + n2), window.location.href = n2, r2.timer = setTimeout(function () {
-              if (In())
-                return r2.log("The page is hidden, stop navigating to download page"), false;
-              r2.log("App\u53EF\u80FD\u672A\u5B89\u88C5\uFF0C\u8DF3\u8F6C\u5230\u4E0B\u8F7D\u5730\u5740"), window.location.href = i2;
-            }, r2.timeout), r2.log("new timer:" + r2.timer);
-          } else if ("android" === Un)
-            this.logger("\u5F53\u524D\u7CFB\u7EDF\u662F android"), Bn(this, this.data.android_info.url_schemes, this.data.android_info.download_url);
-          else if ("harmony" === Un) {
-            var t2 = this.data.harmony_info.app_linking_url || this.data.harmony_info.url_schemes;
-            this.logger("\u5F53\u524D\u7CFB\u7EDF\u662F HarmonyOS"), Bn(this, t2, this.data.harmony_info.download_url);
-          }
-          var r2, n2, i2;
-        }, logger: function (e2) {
-          this.sd && this.sd.log(e2);
-        }, addListeners: function () {
-          var e2 = Tn().visibilityChange, t2 = this;
-          e2 && document.addEventListener(e2, function () {
-            clearTimeout(t2.timer), t2.logger("visibilitychange, clear timeout:" + t2.timer);
-          }, false), window.addEventListener("pagehide", function () {
-            t2.logger("page hide, clear timeout:" + t2.timer), clearTimeout(t2.timer);
-          }, false);
+      }, Hn = { plugin_name: ["deeplink", "Deeplink"], key: null, timer: null, sd: null, data: null, timeout: 2500, apiURL: "{origin}/sdk/deeplink/param?key={key}&system_type=JS&project={project}", init: function(e2) {
+        if (this.sd)
+          return this.logger("deeplink\u5DF2\u7ECF\u521D\u59CB\u5316"), false;
+        arguments[0] ? Rn(arguments[0]) && "number" == typeof arguments[0].timeout ? this.sd = window.sensorsDataAnalytic201505 : this.sd = e2 : this.sd = window.sensorsDataAnalytic201505;
+        var t2 = {};
+        if (arguments.length > 0 && (1 === arguments.length && Rn(arguments[0]) ? t2 = arguments[0] : arguments.length >= 2 && Rn(arguments[1]) && (t2 = arguments[1])), !Ln.hasOwnProperty(Un))
+          return this.logger("\u4E0D\u652F\u6301\u5F53\u524D\u7CFB\u7EDF\uFF0C\u76EE\u524D\u53EA\u652F\u6301Android\u548CiOS"), false;
+        if (Rn(t2) && this.sd._.isNumber(t2.timeout) && t2.timeout >= 2500 && (this.timeout = t2.timeout), !this.sd.para.server_url)
+          return this.logger("\u795E\u7B56JS SDK\u914D\u7F6E\u9879server_url\u672A\u6B63\u786E\u914D\u7F6E"), false;
+        var r2 = function(e3) {
+          var t3 = e3._.URL(e3.para.server_url);
+          return { origin: t3.origin, project: t3.searchParams.get("project") || "default" };
+        }(this.sd);
+        this.apiURL = this.apiURL.replace("{origin}", r2.origin).replace("{project}", r2.project);
+        var n2 = this.sd._.getQueryParam(window.location.href, "deeplink");
+        if (!n2)
+          return this.logger("\u5F53\u524D\u9875\u9762\u7F3A\u5C11deeplink\u53C2\u6570"), false;
+        n2 = window.decodeURIComponent(n2);
+        var i2 = n2.match(/\/sd\/(\w+)\/(\w+)$/);
+        if (!i2)
+          return this.logger("\u5F53\u524D\u9875\u9762\u7684deeplink\u53C2\u6570\u65E0\u6548"), false;
+        this.key = i2[2], this.apiURL = this.apiURL.replace("{key}", window.encodeURIComponent(i2[2])), this.sd._.ajax({ url: this.apiURL, type: "GET", cors: true, credentials: false, success: function(e3) {
+          if (e3.errorMsg)
+            return Hn.logger("API\u62A5\u9519\uFF1A" + e3.errorMsg), false;
+          Hn.data = e3, Hn.logger("API\u67E5\u8BE2\u6210\u529F\uFF0C\u6570\u636E\uFF1A" + JSON.stringify(e3, null, "  ")), this.data.app_key && (this.data.android_info && this.data.android_info.url_schemes && (this.data.android_info.url_schemes += "://sensorsdata/sd/" + this.data.app_key + "/" + this.key), this.data.ios_info && this.data.ios_info.url_schemes && (this.data.ios_info.url_schemes += "://sensorsdata/sd/" + this.data.app_key + "/" + this.key), this.data.harmony_info && this.data.harmony_info.url_schemes && (this.data.harmony_info.url_schemes += "://sensorsdata/sd/" + this.data.app_key + "/" + this.key));
+        }.bind(this), error: function() {
+          Hn.logger("API\u67E5\u8BE2\u51FA\u9519");
+        } }), this.addListeners();
+      }, openDeepLink: function() {
+        if (this.logger("openDeeplink()"), !this.data)
+          return this.logger("\u6CA1\u6709Deep link\u6570\u636E!"), false;
+        if ("iOS" === Un) {
+          this.logger("\u5F53\u524D\u7CFB\u7EDF\u662FiOS");
+          var e2 = this.sd && this.sd._ && this.sd._.getIOSVersion() >= 9 && this.data.ios_info.ios_wake_url ? this.data.ios_info.ios_wake_url : this.data.ios_info.url_schemes;
+          this.logger("\u5524\u8D77APP\u7684\u5730\u5740\uFF1A" + e2), r2 = this, n2 = e2, i2 = this.data.ios_info.download_url, r2.log("\u5C1D\u8BD5\u5524\u8D77 iOS app:" + n2), window.location.href = n2, r2.timer = setTimeout(function() {
+            if (In())
+              return r2.log("The page is hidden, stop navigating to download page"), false;
+            r2.log("App\u53EF\u80FD\u672A\u5B89\u88C5\uFF0C\u8DF3\u8F6C\u5230\u4E0B\u8F7D\u5730\u5740"), window.location.href = i2;
+          }, r2.timeout), r2.log("new timer:" + r2.timer);
+        } else if ("android" === Un)
+          this.logger("\u5F53\u524D\u7CFB\u7EDF\u662F android"), Bn(this, this.data.android_info.url_schemes, this.data.android_info.download_url);
+        else if ("harmony" === Un) {
+          var t2 = this.data.harmony_info.app_linking_url || this.data.harmony_info.url_schemes;
+          this.logger("\u5F53\u524D\u7CFB\u7EDF\u662F HarmonyOS"), Bn(this, t2, this.data.harmony_info.download_url);
         }
-      }, Jn = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+        var r2, n2, i2;
+      }, logger: function(e2) {
+        this.sd && this.sd.log(e2);
+      }, addListeners: function() {
+        var e2 = Tn().visibilityChange, t2 = this;
+        e2 && document.addEventListener(e2, function() {
+          clearTimeout(t2.timer), t2.logger("visibilitychange, clear timeout:" + t2.timer);
+        }, false), window.addEventListener("pagehide", function() {
+          t2.logger("page hide, clear timeout:" + t2.timer), clearTimeout(t2.timer);
+        }, false);
+      } }, Jn = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4494,48 +4310,46 @@ var __publicField = (obj, key, value) => {
           }
         }(e2, t2, r2), e2.plugin_version = Nn, e2;
       }(Hn, null, "sdkReady"), Mn = "1.27.11";
-      var qn = {
-        init: function (e2) {
-          xn = ($n = e2) && $n._, En = $n && $n.log || console && console.log || function () {
-          }, function () {
-            if (An = window.SensorsData_iOS_JS_Bridge && window.SensorsData_iOS_JS_Bridge.sensorsdata_app_server_url, Dn = function () {
-              return window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.sensorsdataNativeTracker;
-            }, !$n || $n.bridge.activeBridge || !Dn() || !Dn().postMessage)
-              return;
-            $n.bridge.activeBridge = qn, $n.para.app_js_bridge && !$n.para.app_js_bridge.is_mui && ($n.bridge.is_verify_success = An && $n.bridge.validateAppUrl(An));
-            if ($n.bridge.bridge_info = { touch_app_bridge: true, platform: "ios", verify_success: $n.bridge.is_verify_success ? "success" : "fail", support_two_way_call: true }, !$n.para.app_js_bridge)
-              return void En("app_js_bridge is not configured, data will not be sent by iOS bridge.");
-            $n.registerInterceptor("sendDataStage", { send: { priority: 70, entry: Fn } }), En("IOS bridge inits succeed.");
-          }();
-        }, handleCommand: function (e2) {
-          var t2 = e2.callType;
-          if (("page_info" === t2 || "visualized_track" === t2) && !$n.bridge.hasVisualModeBridge())
-            return null;
-          if ("sensorsdata_get_app_visual_config" === t2)
-            return xn.isObject(window.SensorsData_APP_New_H5_Bridge) && window.SensorsData_APP_New_H5_Bridge[t2];
-          return Dn() && Dn().postMessage(JSON.stringify(e2));
-        }
-      };
+      var qn = { init: function(e2) {
+        xn = ($n = e2) && $n._, En = $n && $n.log || console && console.log || function() {
+        }, function() {
+          if (An = window.SensorsData_iOS_JS_Bridge && window.SensorsData_iOS_JS_Bridge.sensorsdata_app_server_url, Dn = function() {
+            return window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.sensorsdataNativeTracker;
+          }, !$n || $n.bridge.activeBridge || !Dn() || !Dn().postMessage)
+            return;
+          $n.bridge.activeBridge = qn, $n.para.app_js_bridge && !$n.para.app_js_bridge.is_mui && ($n.bridge.is_verify_success = An && $n.bridge.validateAppUrl(An));
+          if ($n.bridge.bridge_info = { touch_app_bridge: true, platform: "ios", verify_success: $n.bridge.is_verify_success ? "success" : "fail", support_two_way_call: true }, !$n.para.app_js_bridge)
+            return void En("app_js_bridge is not configured, data will not be sent by iOS bridge.");
+          $n.registerInterceptor("sendDataStage", { send: { priority: 70, entry: Fn } }), En("IOS bridge inits succeed.");
+        }();
+      }, handleCommand: function(e2) {
+        var t2 = e2.callType;
+        if (("page_info" === t2 || "visualized_track" === t2) && !$n.bridge.hasVisualModeBridge())
+          return null;
+        if ("sensorsdata_get_app_visual_config" === t2)
+          return xn.isObject(window.SensorsData_APP_New_H5_Bridge) && window.SensorsData_APP_New_H5_Bridge[t2];
+        return Dn() && Dn().postMessage(JSON.stringify(e2));
+      } };
       function Fn(e2, t2) {
         if ($n.para.app_js_bridge.is_mui || "item_set" === e2.data.type || "item_delete" === e2.data.type)
           return e2;
         var r2 = e2.callback;
         return $n.bridge.is_verify_success ? (Dn() && Dn().postMessage(JSON.stringify({ callType: "app_h5_track", data: xn.extend({ server_url: $n.para.server_url }, e2.data) })), xn.isFunction(r2) && r2(), t2.cancellationToken.cancel(), e2) : $n.para.app_js_bridge.is_send ? ($n.debug.apph5({ data: e2.data, step: "4.1", output: "all" }), e2) : (xn.isFunction(r2) && r2(), t2.cancellationToken.cancel(), e2);
       }
-      var Kn, Vn, zn, Wn = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var Kn, Vn, zn, Wn = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4548,18 +4362,16 @@ var __publicField = (obj, key, value) => {
           }
         }(e2, t2, r2), e2.plugin_version = Mn, e2;
       }(qn, "IOSBridge", "sdkAfterInitPara"), Xn = "1.27.11";
-      var Zn = {
-        init: function (e2) {
-          Vn = (Kn = e2) && Kn._, zn = Kn && Kn.log || console && console.log || function () {
-          }, function () {
-            if (!Kn || Kn.bridge.activeBridge || !/sensors-verify/.test(navigator.userAgent) && !/sa-sdk-ios/.test(navigator.userAgent) || window.MSStream)
-              return;
-            if (Kn.bridge.activeBridge = Zn, Kn.bridge.bridge_info = { touch_app_bridge: true, platform: "ios", verify_success: Yn() ? "success" : "fail" }, !Kn.para.app_js_bridge)
-              return void zn("app_js_bridge is not configured, data will not be sent by iOS obsolete bridge.");
-            Kn.registerInterceptor("sendDataStage", { send: { priority: 90, entry: Gn } }), zn("IOS obsolete bridge inits succeed.");
-          }();
-        }
-      };
+      var Zn = { init: function(e2) {
+        Vn = (Kn = e2) && Kn._, zn = Kn && Kn.log || console && console.log || function() {
+        }, function() {
+          if (!Kn || Kn.bridge.activeBridge || !/sensors-verify/.test(navigator.userAgent) && !/sa-sdk-ios/.test(navigator.userAgent) || window.MSStream)
+            return;
+          if (Kn.bridge.activeBridge = Zn, Kn.bridge.bridge_info = { touch_app_bridge: true, platform: "ios", verify_success: Yn() ? "success" : "fail" }, !Kn.para.app_js_bridge)
+            return void zn("app_js_bridge is not configured, data will not be sent by iOS obsolete bridge.");
+          Kn.registerInterceptor("sendDataStage", { send: { priority: 90, entry: Gn } }), zn("IOS obsolete bridge inits succeed.");
+        }();
+      } };
       function Yn() {
         if (/sensors-verify/.test(navigator.userAgent)) {
           var e2 = navigator.userAgent.match(/sensors-verify\/([^\s]+)/);
@@ -4587,20 +4399,20 @@ var __publicField = (obj, key, value) => {
         }
         return Kn.para.app_js_bridge.is_send ? (Kn.debug.apph5({ data: e2.data, step: "3.2", output: "all" }), e2) : (Vn.isFunction(i2) && i2(), t2.cancellationToken.cancel(), e2);
       }
-      var Qn = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var Qn = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4617,7 +4429,7 @@ var __publicField = (obj, key, value) => {
       function ri() {
         this.sd = null, this.start_time = +new Date(), this.page_show_status = true, this.page_hidden_status = false, this._ = {}, this.timer = null, this.current_page_url = document.referrer, this.url = location.href, this.title = document.title || "", this.option = {}, this.heartbeat_interval_time = 5e3, this.heartbeat_interval_timer = null, this.page_id = null, this.storage_name = "sawebjssdkpageleave", this.max_duration = ti;
       }
-      ri.prototype.init = function (e2, t2) {
+      ri.prototype.init = function(e2, t2) {
         if (e2) {
           if (this.sd = e2, this._ = this.sd._, t2) {
             this.option = t2;
@@ -4629,71 +4441,69 @@ var __publicField = (obj, key, value) => {
           this.page_id = Number(String(this._.getRandom()).slice(2, 5) + String(this._.getRandom()).slice(2, 4) + String(new Date().getTime()).slice(-4)), this.addEventListener(), true === document.hidden ? this.page_show_status = false : this.addHeartBeatInterval(), this.log("PageLeave\u521D\u59CB\u5316\u5B8C\u6BD5");
         } else
           this.log("\u795E\u7B56JS SDK\u672A\u6210\u529F\u5F15\u5165");
-      }, ri.prototype.log = function (e2) {
+      }, ri.prototype.log = function(e2) {
         this.sd && this.sd.log(e2);
-      }, ri.prototype.refreshPageEndTimer = function () {
+      }, ri.prototype.refreshPageEndTimer = function() {
         var e2 = this;
-        this.timer && (clearTimeout(this.timer), this.timer = null), this.timer = setTimeout(function () {
+        this.timer && (clearTimeout(this.timer), this.timer = null), this.timer = setTimeout(function() {
           e2.page_hidden_status = false;
         }, 5e3);
-      }, ri.prototype.hiddenStatusHandler = function () {
+      }, ri.prototype.hiddenStatusHandler = function() {
         clearTimeout(this.timer), this.timer = null, this.page_hidden_status = false;
-      }, ri.prototype.pageStartHandler = function () {
+      }, ri.prototype.pageStartHandler = function() {
         this.start_time = +new Date(), true == !document.hidden ? this.page_show_status = true : this.page_show_status = false, this.url = location.href, this.title = document.title;
-      }, ri.prototype.pageEndHandler = function () {
+      }, ri.prototype.pageEndHandler = function() {
         if (true !== this.page_hidden_status) {
           var e2 = this.getPageLeaveProperties();
           false === this.page_show_status && delete e2.event_duration, this.page_show_status = false, this.page_hidden_status = true, this.isCollectUrl(this.url) && this.sd.track("$WebPageLeave", e2), this.refreshPageEndTimer(), this.delHeartBeatData();
         }
-      }, ri.prototype.addEventListener = function () {
+      }, ri.prototype.addEventListener = function() {
         this.addPageStartListener(), this.addPageSwitchListener(), this.addSinglePageListener(), this.addPageEndListener();
-      }, ri.prototype.addPageStartListener = function () {
+      }, ri.prototype.addPageStartListener = function() {
         var e2 = this;
-        "onpageshow" in window && this._.addEvent(window, "pageshow", function () {
+        "onpageshow" in window && this._.addEvent(window, "pageshow", function() {
           e2.pageStartHandler(), e2.hiddenStatusHandler();
         });
-      }, ri.prototype.isCollectUrl = function (e2) {
+      }, ri.prototype.isCollectUrl = function(e2) {
         return "function" != typeof this.option.isCollectUrl || ("string" != typeof e2 || "" === e2 || this.option.isCollectUrl(e2));
-      }, ri.prototype.addSinglePageListener = function () {
+      }, ri.prototype.addSinglePageListener = function() {
         var e2 = this;
-        this.sd.ee && this.sd.ee.spa.prepend("switch", function (t2) {
+        this.sd.ee && this.sd.ee.spa.prepend("switch", function(t2) {
           t2 !== location.href && (e2.url = t2, e2.pageEndHandler(), e2.stopHeartBeatInterval(), e2.current_page_url = e2.url, e2.pageStartHandler(), e2.hiddenStatusHandler(), e2.addHeartBeatInterval());
         });
-      }, ri.prototype.addPageEndListener = function () {
+      }, ri.prototype.addPageEndListener = function() {
         var e2 = this;
-        this._.each(["pagehide", "beforeunload", "unload"], function (t2) {
-          "on" + t2 in window && e2._.addEvent(window, t2, function () {
+        this._.each(["pagehide", "beforeunload", "unload"], function(t2) {
+          "on" + t2 in window && e2._.addEvent(window, t2, function() {
             e2.pageEndHandler(), e2.stopHeartBeatInterval();
           });
         });
-      }, ri.prototype.addPageSwitchListener = function () {
+      }, ri.prototype.addPageSwitchListener = function() {
         var e2 = this;
-        this._.listenPageState({
-          visible: function () {
-            e2.pageStartHandler(), e2.hiddenStatusHandler(), e2.addHeartBeatInterval();
-          }, hidden: function () {
-            e2.url = location.href, e2.title = document.title, e2.pageEndHandler(), e2.stopHeartBeatInterval();
-          }
-        });
-      }, ri.prototype.addHeartBeatInterval = function () {
+        this._.listenPageState({ visible: function() {
+          e2.pageStartHandler(), e2.hiddenStatusHandler(), e2.addHeartBeatInterval();
+        }, hidden: function() {
+          e2.url = location.href, e2.title = document.title, e2.pageEndHandler(), e2.stopHeartBeatInterval();
+        } });
+      }, ri.prototype.addHeartBeatInterval = function() {
         this._.localStorage.isSupport() && this.startHeartBeatInterval();
-      }, ri.prototype.startHeartBeatInterval = function () {
+      }, ri.prototype.startHeartBeatInterval = function() {
         var e2 = this;
         this.heartbeat_interval_timer && this.stopHeartBeatInterval();
         var t2 = true;
-        this.isCollectUrl(this.url) || (t2 = false), this.heartbeat_interval_timer = setInterval(function () {
+        this.isCollectUrl(this.url) || (t2 = false), this.heartbeat_interval_timer = setInterval(function() {
           t2 && e2.saveHeartBeatData();
         }, this.heartbeat_interval_time), t2 && this.saveHeartBeatData("is_first_heartbeat"), this.reissueHeartBeatData();
-      }, ri.prototype.stopHeartBeatInterval = function () {
+      }, ri.prototype.stopHeartBeatInterval = function() {
         clearInterval(this.heartbeat_interval_timer), this.heartbeat_interval_timer = null;
-      }, ri.prototype.saveHeartBeatData = function (e2) {
+      }, ri.prototype.saveHeartBeatData = function(e2) {
         var t2 = this.getPageLeaveProperties(), r2 = new Date();
         t2.$time = r2, "is_first_heartbeat" === e2 && (t2.event_duration = 3.14);
         var n2 = this.sd.kit.buildData({ type: "track", event: "$WebPageLeave", properties: t2 });
         n2.heartbeat_interval_time = this.heartbeat_interval_time, this.sd.store.saveObjectVal(this.storage_name + "-" + this.page_id, n2);
-      }, ri.prototype.delHeartBeatData = function (e2) {
+      }, ri.prototype.delHeartBeatData = function(e2) {
         this._.localStorage.isSupport() && this._.localStorage.remove(e2 || this.storage_name + "-" + this.page_id);
-      }, ri.prototype.reissueHeartBeatData = function () {
+      }, ri.prototype.reissueHeartBeatData = function() {
         for (var e2 = window.localStorage.length - 1; e2 >= 0; e2--) {
           var t2 = window.localStorage.key(e2);
           if (t2 && t2 !== this.storage_name + "-" + this.page_id && 0 === t2.indexOf(this.storage_name + "-")) {
@@ -4701,7 +4511,7 @@ var __publicField = (obj, key, value) => {
             this._.isObject(r2) && 1 * new Date() - r2.time > r2.heartbeat_interval_time + 5e3 && (delete r2.heartbeat_interval_time, r2._flush_time = new Date().getTime(), this.sd.kit.sendData(r2), this.delHeartBeatData(t2));
           }
         }
-      }, ri.prototype.getPageLeaveProperties = function () {
+      }, ri.prototype.getPageLeaveProperties = function() {
         var e2 = (+new Date() - this.start_time) / 1e3;
         (isNaN(e2) || e2 < 0 || e2 > this.max_duration) && (e2 = 0), e2 = Number(e2.toFixed(3));
         var t2 = this._.getReferrer(this.current_page_url), r2 = document.documentElement && document.documentElement.scrollTop || window.pageYOffset || document.body && document.body.scrollTop || 0;
@@ -4709,20 +4519,20 @@ var __publicField = (obj, key, value) => {
         var n2 = { $title: this.title, $url: this._.getURL(this.url), $url_path: this._.getURLPath(this._.URL(this.url).pathname), $referrer_host: t2 ? this._.getHostname(t2) : "", $referrer: t2, $viewport_position: r2 };
         return 0 !== e2 && (n2.event_duration = e2), n2 = this._.extend(n2, this.option.custom_props);
       };
-      var ni = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var ni = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4735,20 +4545,20 @@ var __publicField = (obj, key, value) => {
           }
         }(e2, t2, r2), e2.plugin_version = ei, e2;
       }(new ri(), "PageLeave", "sdkReady"), ii = "1.27.11";
-      var ai = false, oi = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var ai = false, oi = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4760,85 +4570,79 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = ii, e2;
-      }({
-        init: function (e2, t2) {
-          function r2() {
-            var n2 = 0, i2 = window.performance || window.webkitPerformance || window.msPerformance || window.mozPerformance, a2 = { $url: e2._.getURL(), $title: document.title, $url_path: e2._.getURLPath(), $referrer: e2._.getReferrer(null, true) };
-            if (i2 ? (n2 = function (t3) {
-              var r3 = 0;
-              return e2._.isFunction(t3.getEntriesByType) && (r3 = ((t3.getEntriesByType("navigation") || [{}])[0] || {}).domContentLoadedEventEnd || 0), r3;
-            }(i2) || function (t3) {
-              var r3 = 0;
-              if (t3.timing) {
-                var n3 = t3.timing;
-                0 !== n3.fetchStart && e2._.isNumber(n3.fetchStart) && 0 !== n3.domContentLoadedEventEnd && e2._.isNumber(n3.domContentLoadedEventEnd) ? r3 = n3.domContentLoadedEventEnd - n3.fetchStart : e2.log("performance \u6570\u636E\u83B7\u53D6\u5F02\u5E38");
-              }
-              return r3;
-            }(i2), function (t3, r3) {
-              if (t3.getEntries && "function" == typeof t3.getEntries) {
-                for (var n3 = t3.getEntries(), i3 = null, a3 = 0; a3 < n3.length; a3++)
-                  "transferSize" in n3[a3] && (i3 += n3[a3].transferSize);
-                e2._.isNumber(i3) && i3 >= 0 && i3 < 10737418240 && (r3.$page_resource_size = Number((i3 / 1024).toFixed(3)));
-              }
-            }(i2, a2)) : e2.log("\u6D4F\u89C8\u5668\u672A\u652F\u6301 performance API."), n2 > 0) {
-              var o2 = e2._.isObject(t2) && t2.max_duration || 1800;
-              n2 = Number((n2 / 1e3).toFixed(3)), (!e2._.isNumber(o2) || o2 <= 0 || n2 <= o2) && (a2.event_duration = n2);
+      }({ init: function(e2, t2) {
+        function r2() {
+          var n2 = 0, i2 = window.performance || window.webkitPerformance || window.msPerformance || window.mozPerformance, a2 = { $url: e2._.getURL(), $title: document.title, $url_path: e2._.getURLPath(), $referrer: e2._.getReferrer(null, true) };
+          if (i2 ? (n2 = function(t3) {
+            var r3 = 0;
+            return e2._.isFunction(t3.getEntriesByType) && (r3 = ((t3.getEntriesByType("navigation") || [{}])[0] || {}).domContentLoadedEventEnd || 0), r3;
+          }(i2) || function(t3) {
+            var r3 = 0;
+            if (t3.timing) {
+              var n3 = t3.timing;
+              0 !== n3.fetchStart && e2._.isNumber(n3.fetchStart) && 0 !== n3.domContentLoadedEventEnd && e2._.isNumber(n3.domContentLoadedEventEnd) ? r3 = n3.domContentLoadedEventEnd - n3.fetchStart : e2.log("performance \u6570\u636E\u83B7\u53D6\u5F02\u5E38");
             }
-            ai || (e2.track("$WebPageLoad", a2), ai = true), window.removeEventListener ? window.removeEventListener("load", r2) : window.detachEvent && window.detachEvent("onload", r2);
+            return r3;
+          }(i2), function(t3, r3) {
+            if (t3.getEntries && "function" == typeof t3.getEntries) {
+              for (var n3 = t3.getEntries(), i3 = null, a3 = 0; a3 < n3.length; a3++)
+                "transferSize" in n3[a3] && (i3 += n3[a3].transferSize);
+              e2._.isNumber(i3) && i3 >= 0 && i3 < 10737418240 && (r3.$page_resource_size = Number((i3 / 1024).toFixed(3)));
+            }
+          }(i2, a2)) : e2.log("\u6D4F\u89C8\u5668\u672A\u652F\u6301 performance API."), n2 > 0) {
+            var o2 = e2._.isObject(t2) && t2.max_duration || 1800;
+            n2 = Number((n2 / 1e3).toFixed(3)), (!e2._.isNumber(o2) || o2 <= 0 || n2 <= o2) && (a2.event_duration = n2);
           }
-          "complete" == document.readyState ? r2() : window.addEventListener ? window.addEventListener("load", r2) : window.attachEvent && window.attachEvent("onload", r2);
+          ai || (e2.track("$WebPageLoad", a2), ai = true), window.removeEventListener ? window.removeEventListener("load", r2) : window.detachEvent && window.detachEvent("onload", r2);
         }
-      }, "PageLoad", "sdkReady");
+        "complete" == document.readyState ? r2() : window.addEventListener ? window.addEventListener("load", r2) : window.attachEvent && window.attachEvent("onload", r2);
+      } }, "PageLoad", "sdkReady");
       function si() {
-        this.sd = null, this.log = window.console && window.console.log || function () {
+        this.sd = null, this.log = window.console && window.console.log || function() {
         }, this.customRegister = [];
       }
-      si.prototype.init = function (e2) {
+      si.prototype.init = function(e2) {
         if (e2) {
           this.sd = e2, this._ = e2._, this.log = e2.log;
           var t2 = this;
-          e2.registerInterceptor("buildDataStage", {
-            extendProps: {
-              priority: 0, entry: function (e3) {
-                return function (e4, t3) {
-                  if ("track" !== e4.type)
-                    return e4;
-                  var r2 = t3.sd, n2 = r2._, i2 = r2.saEvent.check, a2 = n2.extend2Lev({ properties: {} }, e4), o2 = t3.customRegister, s2 = a2.properties, l2 = a2.event, u2 = {};
-                  return n2.each(o2, function (e5) {
-                    if (n2.isObject(e5))
-                      n2.indexOf(e5.events, l2) > -1 && i2({ properties: e5.properties }) && (u2 = n2.extend(u2, e5.properties));
-                    else if (n2.isFunction(e5)) {
-                      var t4 = e5({ event: l2, properties: s2, data: a2 });
-                      n2.isObject(t4) && !n2.isEmptyObject(t4) && i2({ properties: t4 }) && (u2 = n2.extend(u2, t4));
-                    }
-                  }), e4.properties = n2.extend(s2, u2), e4;
-                }(e3, t2);
-              }
-            }
-          });
+          e2.registerInterceptor("buildDataStage", { extendProps: { priority: 0, entry: function(e3) {
+            return function(e4, t3) {
+              if ("track" !== e4.type)
+                return e4;
+              var r2 = t3.sd, n2 = r2._, i2 = r2.saEvent.check, a2 = n2.extend2Lev({ properties: {} }, e4), o2 = t3.customRegister, s2 = a2.properties, l2 = a2.event, u2 = {};
+              return n2.each(o2, function(e5) {
+                if (n2.isObject(e5))
+                  n2.indexOf(e5.events, l2) > -1 && i2({ properties: e5.properties }) && (u2 = n2.extend(u2, e5.properties));
+                else if (n2.isFunction(e5)) {
+                  var t4 = e5({ event: l2, properties: s2, data: a2 });
+                  n2.isObject(t4) && !n2.isEmptyObject(t4) && i2({ properties: t4 }) && (u2 = n2.extend(u2, t4));
+                }
+              }), e4.properties = n2.extend(s2, u2), e4;
+            }(e3, t2);
+          } } });
         } else
           this.log("\u795E\u7B56JS SDK\u672A\u6210\u529F\u5F15\u5165");
-      }, si.prototype.register = function (e2) {
+      }, si.prototype.register = function(e2) {
         this.sd ? this._.isObject(e2) && this._.isArray(e2.events) && e2.events.length > 0 && this._.isObject(e2.properties) && !this._.isEmptyObject(e2.properties) ? this.customRegister.push(e2) : this.log("RegisterProperties: register \u53C2\u6570\u9519\u8BEF") : this.log("\u795E\u7B56JS SDK\u672A\u6210\u529F\u5F15\u5165");
-      }, si.prototype.hookRegister = function (e2) {
+      }, si.prototype.hookRegister = function(e2) {
         this.sd ? this._.isFunction(e2) ? this.customRegister.push(e2) : this.log("RegisterProperties: hookRegister \u53C2\u6570\u9519\u8BEF") : this.log("\u795E\u7B56JS SDK\u672A\u6210\u529F\u5F15\u5165");
       };
       var li = "1.27.11";
       si.prototype.plugin_name = "RegisterProperties";
-      var ui = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var ui = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4851,7 +4655,7 @@ var __publicField = (obj, key, value) => {
           }
         }(e2, t2, r2), e2.plugin_version = li, e2;
       }(new si()), ci = "1.27.11";
-      var pi, di, fi = window.console && window.console.log || function () {
+      var pi, di, fi = window.console && window.console.log || function() {
       };
       function gi(e2) {
         try {
@@ -4864,20 +4668,20 @@ var __publicField = (obj, key, value) => {
         }
         return di.call(pi.kit, e2);
       }
-      var _i = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var _i = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4889,90 +4693,86 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = ci, e2;
-      }({
-        init: function (e2) {
-          fi = (pi = e2) && pi.log || fi, e2 && e2.kit && e2.kit.buildData ? (di = pi.kit.buildData, pi.kit.buildData = gi, fi("RegisterPropertyPageHeight \u63D2\u4EF6\u521D\u59CB\u5316\u5B8C\u6210")) : fi("RegisterPropertyPageHeight \u63D2\u4EF6\u521D\u59CB\u5316\u5931\u8D25,\u5F53\u524D\u4E3Bsdk\u4E0D\u652F\u6301 RegisterPropertyPageHeight \u63D2\u4EF6\uFF0C\u8BF7\u5347\u7EA7\u4E3Bsdk");
+      }({ init: function(e2) {
+        fi = (pi = e2) && pi.log || fi, e2 && e2.kit && e2.kit.buildData ? (di = pi.kit.buildData, pi.kit.buildData = gi, fi("RegisterPropertyPageHeight \u63D2\u4EF6\u521D\u59CB\u5316\u5B8C\u6210")) : fi("RegisterPropertyPageHeight \u63D2\u4EF6\u521D\u59CB\u5316\u5931\u8D25,\u5F53\u524D\u4E3Bsdk\u4E0D\u652F\u6301 RegisterPropertyPageHeight \u63D2\u4EF6\uFF0C\u8BF7\u5347\u7EA7\u4E3Bsdk");
+      } }, "RegisterPropertyPageHeight", "sdkReady"), hi = "1.27.11";
+      var mi, vi = { getPart: function(e2) {
+        var t2 = this.option.length;
+        if (t2) {
+          for (var r2 = 0; r2 < t2; r2++)
+            if (e2.indexOf(this.option[r2].part_url) > -1)
+              return true;
         }
-      }, "RegisterPropertyPageHeight", "sdkReady"), hi = "1.27.11";
-      var mi, vi = {
-        getPart: function (e2) {
-          var t2 = this.option.length;
-          if (t2) {
-            for (var r2 = 0; r2 < t2; r2++)
-              if (e2.indexOf(this.option[r2].part_url) > -1)
-                return true;
-          }
-          return false;
-        }, getPartHash: function (e2) {
-          var t2 = this.option.length;
-          if (t2) {
-            for (var r2 = 0; r2 < t2; r2++)
-              if (e2.indexOf(this.option[r2].part_url) > -1)
-                return this.option[r2].after_hash;
-          }
-          return false;
-        }, getCurrenId: function () {
-          var e2 = this.store.getDistinctId() || "", t2 = this.store.getFirstId() || "";
-          return this._.urlSafeBase64 && this._.urlSafeBase64.encode ? e2 = e2 ? this._.urlSafeBase64.trim(this._.urlSafeBase64.encode(this._.base64Encode(e2))) : "" : this._.rot13obfs && (e2 = e2 ? this._.rot13obfs(e2) : ""), encodeURIComponent(t2 ? "f" + e2 : "d" + e2);
-        }, rewriteUrl: function (e2, t2) {
-          var r2 = this, n2 = /([^?#]+)(\?[^#]*)?(#.*)?/.exec(e2), i2 = "";
-          if (n2) {
-            var a2, o2 = n2[1] || "", s2 = n2[2] || "", l2 = n2[3] || "", u2 = "_sasdk=" + this.getCurrenId(), c2 = function (e3) {
-              var t3 = e3.split("&"), n3 = [];
-              return r2._.each(t3, function (e4) {
-                e4.indexOf("_sasdk=") > -1 ? n3.push(u2) : n3.push(e4);
-              }), n3.join("&");
-            };
-            if (this.getPartHash(e2))
-              a2 = l2.indexOf("_sasdk"), i2 = l2.indexOf("?") > -1 ? a2 > -1 ? o2 + s2 + "#" + l2.substring(1, a2) + c2(l2.substring(a2, l2.length)) : o2 + s2 + l2 + "&" + u2 : o2 + s2 + "#" + l2.substring(1) + "?" + u2;
-            else
-              a2 = s2.indexOf("_sasdk"), i2 = /^\?(\w)+/.test(s2) ? a2 > -1 ? o2 + "?" + c2(s2.substring(1)) + l2 : o2 + s2 + "&" + u2 + l2 : o2 + "?" + u2 + l2;
-            return t2 && (t2.href = i2), i2;
-          }
-        }, getUrlId: function () {
-          var e2 = location.href.match(/_sasdk=([aufd][^\?\#\&\=]+)/);
-          if (this._.isArray(e2) && e2[1]) {
-            var t2 = decodeURIComponent(e2[1]);
-            return !t2 || "f" !== t2.substring(0, 1) && "d" !== t2.substring(0, 1) || (this._.urlSafeBase64 && this._.urlSafeBase64.isUrlSafeBase64 && this._.urlSafeBase64.isUrlSafeBase64(t2) ? t2 = t2.substring(0, 1) + this._.base64Decode(this._.urlSafeBase64.decode(t2.substring(1))) : this._.rot13defs && (t2 = t2.substring(0, 1) + this._.rot13defs(t2.substring(1)))), t2;
-          }
-          return "";
-        }, setRefferId: function (e2) {
-          var t2 = this.store.getDistinctId(), r2 = this.getUrlId();
-          if (r2 && "" !== r2) {
-            var n2 = "a" === r2.substring(0, 1) || "d" === r2.substring(0, 1);
-            (r2 = r2.substring(1)) !== t2 && (n2 ? (this.sd.identify(r2, true), this.store.getFirstId() && this.sd.saEvent.send({ original_id: r2, distinct_id: t2, type: "track_signup", event: "$SignUp", properties: {} }, null)) : this.store.getFirstId() && !e2.re_login || this.sd.login(r2));
-          }
-        }, addListen: function () {
-          var e2 = this, t2 = function (t3) {
-            var r2, n2, i2 = t3.target, a2 = i2.tagName.toLowerCase(), o2 = i2.parentNode;
-            if ("a" === a2 && i2.href || o2 && o2.tagName && "a" === o2.tagName.toLowerCase() && o2.href) {
-              "a" === a2 && i2.href ? (r2 = i2.href, n2 = i2) : (r2 = o2.href, n2 = o2);
-              var s2 = e2._.URL(r2).protocol;
-              "http:" !== s2 && "https:" !== s2 || e2.getPart(r2) && e2.rewriteUrl(r2, n2);
-            }
+        return false;
+      }, getPartHash: function(e2) {
+        var t2 = this.option.length;
+        if (t2) {
+          for (var r2 = 0; r2 < t2; r2++)
+            if (e2.indexOf(this.option[r2].part_url) > -1)
+              return this.option[r2].after_hash;
+        }
+        return false;
+      }, getCurrenId: function() {
+        var e2 = this.store.getDistinctId() || "", t2 = this.store.getFirstId() || "";
+        return this._.urlSafeBase64 && this._.urlSafeBase64.encode ? e2 = e2 ? this._.urlSafeBase64.trim(this._.urlSafeBase64.encode(this._.base64Encode(e2))) : "" : this._.rot13obfs && (e2 = e2 ? this._.rot13obfs(e2) : ""), encodeURIComponent(t2 ? "f" + e2 : "d" + e2);
+      }, rewriteUrl: function(e2, t2) {
+        var r2 = this, n2 = /([^?#]+)(\?[^#]*)?(#.*)?/.exec(e2), i2 = "";
+        if (n2) {
+          var a2, o2 = n2[1] || "", s2 = n2[2] || "", l2 = n2[3] || "", u2 = "_sasdk=" + this.getCurrenId(), c2 = function(e3) {
+            var t3 = e3.split("&"), n3 = [];
+            return r2._.each(t3, function(e4) {
+              e4.indexOf("_sasdk=") > -1 ? n3.push(u2) : n3.push(e4);
+            }), n3.join("&");
           };
-          e2._.addEvent(document, "mousedown", t2), window.PointerEvent && "maxTouchPoints" in window.navigator && window.navigator.maxTouchPoints >= 0 && e2._.addEvent(document, "pointerdown", t2);
-        }, init: function (e2, t2) {
-          this.sd = e2, this._ = e2._, this.store = e2.store, this.para = e2.para, this._.isObject(t2) && this._.isArray(t2.linker) && t2.linker.length > 0 ? (this.setRefferId(t2), this.addListen(), this.option = t2.linker, this.option = function (t3) {
-            for (var r2 = t3.length, n2 = [], i2 = 0; i2 < r2; i2++)
-              /[A-Za-z0-9]+\./.test(t3[i2].part_url) && "[object Boolean]" == Object.prototype.toString.call(t3[i2].after_hash) ? n2.push(t3[i2]) : e2.log("linker \u914D\u7F6E\u7684\u7B2C " + (i2 + 1) + " \u9879\u683C\u5F0F\u4E0D\u6B63\u786E\uFF0C\u8BF7\u68C0\u67E5\u53C2\u6570\u683C\u5F0F\uFF01");
-            return n2;
-          }(this.option)) : e2.log("\u8BF7\u914D\u7F6E\u6253\u901A\u57DF\u540D\u53C2\u6570\uFF01");
+          if (this.getPartHash(e2))
+            a2 = l2.indexOf("_sasdk"), i2 = l2.indexOf("?") > -1 ? a2 > -1 ? o2 + s2 + "#" + l2.substring(1, a2) + c2(l2.substring(a2, l2.length)) : o2 + s2 + l2 + "&" + u2 : o2 + s2 + "#" + l2.substring(1) + "?" + u2;
+          else
+            a2 = s2.indexOf("_sasdk"), i2 = /^\?(\w)+/.test(s2) ? a2 > -1 ? o2 + "?" + c2(s2.substring(1)) + l2 : o2 + s2 + "&" + u2 + l2 : o2 + "?" + u2 + l2;
+          return t2 && (t2.href = i2), i2;
         }
-      }, yi = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      }, getUrlId: function() {
+        var e2 = location.href.match(/_sasdk=([aufd][^\?\#\&\=]+)/);
+        if (this._.isArray(e2) && e2[1]) {
+          var t2 = decodeURIComponent(e2[1]);
+          return !t2 || "f" !== t2.substring(0, 1) && "d" !== t2.substring(0, 1) || (this._.urlSafeBase64 && this._.urlSafeBase64.isUrlSafeBase64 && this._.urlSafeBase64.isUrlSafeBase64(t2) ? t2 = t2.substring(0, 1) + this._.base64Decode(this._.urlSafeBase64.decode(t2.substring(1))) : this._.rot13defs && (t2 = t2.substring(0, 1) + this._.rot13defs(t2.substring(1)))), t2;
+        }
+        return "";
+      }, setRefferId: function(e2) {
+        var t2 = this.store.getDistinctId(), r2 = this.getUrlId();
+        if (r2 && "" !== r2) {
+          var n2 = "a" === r2.substring(0, 1) || "d" === r2.substring(0, 1);
+          (r2 = r2.substring(1)) !== t2 && (n2 ? (this.sd.identify(r2, true), this.store.getFirstId() && this.sd.saEvent.send({ original_id: r2, distinct_id: t2, type: "track_signup", event: "$SignUp", properties: {} }, null)) : this.store.getFirstId() && !e2.re_login || this.sd.login(r2));
+        }
+      }, addListen: function() {
+        var e2 = this, t2 = function(t3) {
+          var r2, n2, i2 = t3.target, a2 = i2.tagName.toLowerCase(), o2 = i2.parentNode;
+          if ("a" === a2 && i2.href || o2 && o2.tagName && "a" === o2.tagName.toLowerCase() && o2.href) {
+            "a" === a2 && i2.href ? (r2 = i2.href, n2 = i2) : (r2 = o2.href, n2 = o2);
+            var s2 = e2._.URL(r2).protocol;
+            "http:" !== s2 && "https:" !== s2 || e2.getPart(r2) && e2.rewriteUrl(r2, n2);
+          }
+        };
+        e2._.addEvent(document, "mousedown", t2), window.PointerEvent && "maxTouchPoints" in window.navigator && window.navigator.maxTouchPoints >= 0 && e2._.addEvent(document, "pointerdown", t2);
+      }, init: function(e2, t2) {
+        this.sd = e2, this._ = e2._, this.store = e2.store, this.para = e2.para, this._.isObject(t2) && this._.isArray(t2.linker) && t2.linker.length > 0 ? (this.setRefferId(t2), this.addListen(), this.option = t2.linker, this.option = function(t3) {
+          for (var r2 = t3.length, n2 = [], i2 = 0; i2 < r2; i2++)
+            /[A-Za-z0-9]+\./.test(t3[i2].part_url) && "[object Boolean]" == Object.prototype.toString.call(t3[i2].after_hash) ? n2.push(t3[i2]) : e2.log("linker \u914D\u7F6E\u7684\u7B2C " + (i2 + 1) + " \u9879\u683C\u5F0F\u4E0D\u6B63\u786E\uFF0C\u8BF7\u68C0\u67E5\u53C2\u6570\u683C\u5F0F\uFF01");
+          return n2;
+        }(this.option)) : e2.log("\u8BF7\u914D\u7F6E\u6253\u901A\u57DF\u540D\u53C2\u6570\uFF01");
+      } }, yi = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -4985,20 +4785,20 @@ var __publicField = (obj, key, value) => {
           }
         }(e2, t2, r2), e2.plugin_version = hi, e2;
       }(vi, "SiteLinker", "sdkReady"), bi = "utm_source utm_medium utm_campaign utm_content utm_term", wi = "1.27.11";
-      var Si = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var Si = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5010,23 +4810,17 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = wi, e2;
-      }({
-        init: function (e2) {
-          e2 && !mi && (mi = e2).registerInterceptor("businessStage", {
-            getUtmData: {
-              priority: 0, entry: function () {
-                return function () {
-                  var e3 = bi.split(" "), t2 = "", r2 = {};
-                  mi._.isArray(mi.para.source_channel) && mi.para.source_channel.length > 0 && (e3 = e3.concat(mi.para.source_channel), e3 = mi._.unique(e3));
-                  return mi._.each(e3, function (e4) {
-                    (t2 = mi._.getQueryParam(location.href, e4)).length && (r2[e4] = t2);
-                  }), r2;
-                }();
-              }
-            }
-          });
-        }
-      }, "Utm", "sdkAfterInitPara"), ki = "1.27.11";
+      }({ init: function(e2) {
+        e2 && !mi && (mi = e2).registerInterceptor("businessStage", { getUtmData: { priority: 0, entry: function() {
+          return function() {
+            var e3 = bi.split(" "), t2 = "", r2 = {};
+            mi._.isArray(mi.para.source_channel) && mi.para.source_channel.length > 0 && (e3 = e3.concat(mi.para.source_channel), e3 = mi._.unique(e3));
+            return mi._.each(e3, function(e4) {
+              (t2 = mi._.getQueryParam(location.href, e4)).length && (r2[e4] = t2);
+            }), r2;
+          }();
+        } } });
+      } }, "Utm", "sdkAfterInitPara"), ki = "1.27.11";
       var Pi = false, Ci = null;
       function Oi() {
         Pi = true;
@@ -5037,20 +4831,20 @@ var __publicField = (obj, key, value) => {
       function Ni() {
         return Pi;
       }
-      var Ti, Ii, Ai = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var Ti, Ii, Ai = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5062,47 +4856,43 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = ki, e2;
-      }({
-        init: function (e2) {
-          (Ci = e2).disableSDK = Oi, Ci.enableSDK = ji, Ci.getDisabled = Ni;
-        }
-      }, "DisableSDK", "sdkInitAPI"), Di = "1.27.11";
+      }({ init: function(e2) {
+        (Ci = e2).disableSDK = Oi, Ci.enableSDK = ji, Ci.getDisabled = Ni;
+      } }, "DisableSDK", "sdkInitAPI"), Di = "1.27.11";
       function $i(e2, t2) {
         if (true === Ti.para.debug_mode) {
           var r2 = e2.data;
           e2.callback;
-          !function (e3) {
+          !function(e3) {
             var t3 = e3, r3 = "";
-            r3 = -1 !== Ti.para.debug_mode_url.indexOf("?") ? Ti.para.debug_mode_url + "&" + Ti.kit.encodeTrackData(e3) : Ti.para.debug_mode_url + "?" + Ti.kit.encodeTrackData(e3), Ii.ajax({
-              url: r3, type: "GET", cors: true, header: { "Dry-Run": String(Ti.para.debug_mode_upload) }, success: function (e4) {
-                true === Ii.isEmptyObject(e4) ? alert("debug\u6570\u636E\u53D1\u9001\u6210\u529F" + t3) : alert("debug\u5931\u8D25 \u9519\u8BEF\u539F\u56E0" + JSON.stringify(e4));
-              }
-            });
+            r3 = -1 !== Ti.para.debug_mode_url.indexOf("?") ? Ti.para.debug_mode_url + "&" + Ti.kit.encodeTrackData(e3) : Ti.para.debug_mode_url + "?" + Ti.kit.encodeTrackData(e3), Ii.ajax({ url: r3, type: "GET", cors: true, header: { "Dry-Run": String(Ti.para.debug_mode_upload) }, success: function(e4) {
+              true === Ii.isEmptyObject(e4) ? alert("debug\u6570\u636E\u53D1\u9001\u6210\u529F" + t3) : alert("debug\u5931\u8D25 \u9519\u8BEF\u539F\u56E0" + JSON.stringify(e4));
+            } });
           }(JSON.stringify(r2)), t2.cancellationToken.stop();
         }
         return e2;
       }
       function xi() {
-        Ti.on("sdkInitPara", function () {
+        Ti.on("sdkInitPara", function() {
           true === Ti.para.debug_mode && (Ti.para.debug_mode_upload = Ti.para.debug_mode_upload || false, Ii.isString(Ti.para.debug_mode_url) || (Ii.isString(Ti.para.server_url) ? Ti.para.debug_mode_url = Ti.para.server_url.replace("sa.gif", "debug") : Ii.isArray(Ti.para.server_url) && Ii.isString(Ti.para.server_url[0]) ? Ti.para.debug_mode_url = Ti.para.server_url[0].replace("sa.gif", "debug") : Ti.para.debug_mode = false));
-        }), Ti.on("sdkAfterInitPara", function () {
+        }), Ti.on("sdkAfterInitPara", function() {
           Ti.registerInterceptor("sendDataStage", { send: { priority: 30, entry: $i } });
         });
       }
-      var Ei, Li, Ui = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var Ei, Li, Ui = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5114,11 +4904,9 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = Di, e2;
-      }({
-        plugin_name: "DebugSender", init: function (e2) {
-          Ii = (Ti = e2)._, xi();
-        }
-      }), Ri = "1.27.11";
+      }({ plugin_name: "DebugSender", init: function(e2) {
+        Ii = (Ti = e2)._, xi();
+      } }), Ri = "1.27.11";
       function Bi(e2, t2) {
         if (Li.isObject(Ei.para.jsapp) && !Ei.para.jsapp.isOnline && "function" == typeof Ei.para.jsapp.setData) {
           var r2 = e2;
@@ -5130,26 +4918,26 @@ var __publicField = (obj, key, value) => {
         if (true === e2 && Li.isObject(Ei.para.jsapp) && "function" == typeof Ei.para.jsapp.getData) {
           Ei.para.jsapp.isOnline = true;
           var t2 = Ei.para.jsapp.getData();
-          Li.isArray(t2) && t2.length > 0 && Li.each(t2, function (e3) {
+          Li.isArray(t2) && t2.length > 0 && Li.each(t2, function(e3) {
             Li.isJSONString(e3) && Ei.kit.sendData(JSON.parse(e3));
           });
         } else
           Ei.para.jsapp.isOnline = false;
       }
-      var Ji, Mi, qi = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var Ji, Mi, qi = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5161,39 +4949,37 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = Ri, e2;
-      }({
-        plugin_name: "JsappSender", init: function (e2) {
-          Li = (Ei = e2)._, Ei.on("sdkAfterInitAPI", function () {
-            Li.isObject(Ei.commonWays) && (Ei.commonWays.setOnlineState = Hi), Ei.registerInterceptor("sendDataStage", { send: { priority: 40, entry: Bi } });
-          });
-        }
-      }), Fi = "1.27.11";
+      }({ plugin_name: "JsappSender", init: function(e2) {
+        Li = (Ei = e2)._, Ei.on("sdkAfterInitAPI", function() {
+          Li.isObject(Ei.commonWays) && (Ei.commonWays.setOnlineState = Hi), Ei.registerInterceptor("sendDataStage", { send: { priority: 40, entry: Bi } });
+        });
+      } }), Fi = "1.27.11";
       var Ki = null;
       function Vi(e2, t2) {
         return !Ji.para.app_js_bridge && Ji.para.batch_send && Mi.localStorage.isSupport() && localStorage.length < Ji.para.batch_send.storage_length && (Ki.add(e2.data), t2.cancellationToken.stop()), e2;
       }
       function zi() {
-        Ji.on("sdkInitPara", function () {
+        Ji.on("sdkInitPara", function() {
           var e2;
           e2 = { datasend_timeout: 6e3, send_interval: 6e3, storage_length: 200 }, Mi.localStorage.isSupport() && Mi.isSupportCors() && "object" == typeof localStorage ? true === Ji.para.batch_send ? Ji.para.batch_send = Mi.extend({}, e2) : "object" == typeof Ji.para.batch_send && (Ji.para.batch_send = Mi.extend({}, e2, Ji.para.batch_send)) : Ji.para.batch_send = false;
-        }), Ji.on("sdkAfterInitPara", function () {
+        }), Ji.on("sdkAfterInitPara", function() {
           !Ji.para.app_js_bridge && Ji.para.batch_send && Mi.localStorage.isSupport() && (Ki || (Ki = new Mi.BatchSend()), Ki.batchInterval(), Ji.registerInterceptor("sendDataStage", { send: { priority: 100, entry: Vi } }));
         });
       }
-      var Wi, Xi, Zi = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var Wi, Xi, Zi = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5205,11 +4991,9 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = Fi, e2;
-      }({
-        plugin_name: "BatchSender", init: function (e2) {
-          Mi = (Ji = e2)._, zi();
-        }
-      }), Yi = "1.27.11";
+      }({ plugin_name: "BatchSender", init: function(e2) {
+        Mi = (Ji = e2)._, zi();
+      } }), Yi = "1.27.11";
       function Gi(e2) {
         new Xi.BeaconSend(e2).start();
       }
@@ -5217,33 +5001,33 @@ var __publicField = (obj, key, value) => {
         var r2 = null, n2 = null;
         if (Xi.isObject(e2.config) && (r2 = e2.config.send_type, n2 = Xi.optimizeServerUrl(e2.config.server_url)), ("beacon" === r2 || !r2 && "beacon" === Wi.para.send_type) && Xi.isSupportBeaconSend()) {
           var i2 = n2 || e2.server_url;
-          e2.server_url = i2, e2.data = Wi.kit.encodeTrackData(e2.data), Xi.isArray(i2) && i2.length ? Xi.each(i2, function (t3) {
+          e2.server_url = i2, e2.data = Wi.kit.encodeTrackData(e2.data), Xi.isArray(i2) && i2.length ? Xi.each(i2, function(t3) {
             e2.callback = null, e2.server_url = t3, Gi(e2);
           }) : "string" == typeof i2 && "" !== i2 ? Gi(e2) : Wi.log("\u5F53\u524D server_url \u4E3A\u7A7A\u6216\u4E0D\u6B63\u786E\uFF0C\u53EA\u5728\u63A7\u5236\u53F0\u6253\u5370\u65E5\u5FD7\uFF0Cnetwork \u4E2D\u4E0D\u4F1A\u53D1\u6570\u636E\uFF0C\u8BF7\u914D\u7F6E\u6B63\u786E\u7684 server_url\uFF01"), t2.cancellationToken.stop();
         }
         return e2;
       }
       function ea() {
-        Wi.on("sdkInitPara", function () {
+        Wi.on("sdkInitPara", function() {
           "beacon" !== Wi.para.send_type || Xi.isSupportBeaconSend() || (Wi.para.send_type = Wi.DEFAULT_SEND_TYPE);
-        }), Wi.on("sdkAfterInitPara", function () {
+        }), Wi.on("sdkAfterInitPara", function() {
           Wi.registerInterceptor("sendDataStage", { send: { priority: 110, entry: Qi } });
         });
       }
-      var ta, ra, na = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var ta, ra, na = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5255,11 +5039,9 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = Yi, e2;
-      }({
-        plugin_name: "BeaconSender", init: function (e2) {
-          Xi = (Wi = e2)._, ea();
-        }
-      }), ia = "1.27.11";
+      }({ plugin_name: "BeaconSender", init: function(e2) {
+        Xi = (Wi = e2)._, ea();
+      } }), ia = "1.27.11";
       function aa(e2) {
         new ra.AjaxSend(e2).start();
       }
@@ -5267,33 +5049,33 @@ var __publicField = (obj, key, value) => {
         var r2 = null, n2 = null;
         if (ra.isObject(e2.config) && (r2 = e2.config.send_type, n2 = ra.optimizeServerUrl(e2.config.server_url)), ("ajax" === r2 || !r2 && "ajax" === ta.para.send_type) && ra.isSupportCors()) {
           var i2 = n2 || e2.server_url;
-          e2.server_url = i2, e2.data = ta.kit.encodeTrackData(e2.data), ra.isArray(i2) && i2.length ? ra.each(i2, function (t3) {
+          e2.server_url = i2, e2.data = ta.kit.encodeTrackData(e2.data), ra.isArray(i2) && i2.length ? ra.each(i2, function(t3) {
             e2.callback = null, e2.server_url = t3, aa(e2);
           }) : "string" == typeof i2 && "" !== i2 ? aa(e2) : ta.log("\u5F53\u524D server_url \u4E3A\u7A7A\u6216\u4E0D\u6B63\u786E\uFF0C\u53EA\u5728\u63A7\u5236\u53F0\u6253\u5370\u65E5\u5FD7\uFF0Cnetwork \u4E2D\u4E0D\u4F1A\u53D1\u6570\u636E\uFF0C\u8BF7\u914D\u7F6E\u6B63\u786E\u7684 server_url\uFF01"), t2.cancellationToken.stop();
         }
         return e2;
       }
       function sa() {
-        ta.on("sdkInitPara", function () {
+        ta.on("sdkInitPara", function() {
           "ajax" !== ta.para.send_type || ra.isSupportCors() || (ta.para.send_type = ta.DEFAULT_SEND_TYPE);
-        }), ta.on("sdkAfterInitPara", function () {
+        }), ta.on("sdkAfterInitPara", function() {
           ta.registerInterceptor("sendDataStage", { send: { priority: 120, entry: oa } });
         });
       }
-      var la, ua, ca = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var la, ua, ca = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5305,11 +5087,9 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = ia, e2;
-      }({
-        plugin_name: "AjaxSender", init: function (e2) {
-          ra = (ta = e2)._, sa();
-        }
-      }), pa = "1.27.11";
+      }({ plugin_name: "AjaxSender", init: function(e2) {
+        ra = (ta = e2)._, sa();
+      } }), pa = "1.27.11";
       function da(e2, t2) {
         var r2 = la.kit.encodeTrackData(t2);
         return -1 !== e2.indexOf("?") ? e2 + "&" + r2 : e2 + "?" + r2;
@@ -5321,31 +5101,31 @@ var __publicField = (obj, key, value) => {
         var r2 = null;
         ua.isObject(e2.config) && (r2 = ua.optimizeServerUrl(e2.config.server_url));
         var n2 = r2 || e2.server_url, i2 = e2.data;
-        e2.server_url = n2, ua.isArray(n2) && n2.length ? ua.each(n2, function (t3) {
+        e2.server_url = n2, ua.isArray(n2) && n2.length ? ua.each(n2, function(t3) {
           t3 && (e2.data = da(t3, i2), e2.callback = null, e2.server_url = t3, fa(e2));
         }) : "string" == typeof n2 && "" !== n2 ? (e2.data = da(n2, i2), fa(e2)) : la.logger && la.logger.msg("\u5F53\u524D server_url \u4E3A\u7A7A\u6216\u4E0D\u6B63\u786E\uFF0C\u53EA\u5728\u63A7\u5236\u53F0\u6253\u5370\u65E5\u5FD7\uFF0Cnetwork \u4E2D\u4E0D\u4F1A\u53D1\u6570\u636E\uFF0C\u8BF7\u914D\u7F6E\u6B63\u786E\u7684 server_url\uFF01").level("warn").log(), t2.cancellationToken.stop();
       }
       function _a() {
-        la.on("sdkInitPara", function () {
+        la.on("sdkInitPara", function() {
           "image" !== la.para.send_type && "ajax" !== la.para.send_type && "beacon" !== la.para.send_type && (la.para.send_type = "image");
-        }), la.on("sdkAfterInitPara", function () {
+        }), la.on("sdkAfterInitPara", function() {
           la.registerInterceptor("sendDataStage", { send: { priority: 130, entry: ga } });
         });
       }
-      var ha = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      var ha = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5357,25 +5137,23 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = pa, e2;
-      }({
-        plugin_name: "ImageSender", init: function (e2) {
-          ua = (la = e2)._, _a();
-        }
-      });
-      var ma = null, va = null, ya = [], ba = function (e2, t2, r2) {
-        return function (e3, t3, r3) {
+      }({ plugin_name: "ImageSender", init: function(e2) {
+        ua = (la = e2)._, _a();
+      } });
+      var ma = null, va = null, ya = [], ba = function(e2, t2, r2) {
+        return function(e3, t3, r3) {
           if (t3 && (e3.plugin_name = t3), r3 && e3.init) {
             var n2 = e3.init;
-            e3.init = function (i2, a2) {
-              if (function (e4, t4, r4) {
+            e3.init = function(i2, a2) {
+              if (function(e4, t4, r4) {
                 function n3(t5, n4) {
                   e4.logger ? e4.logger.msg.apply(e4.logger, n4).module(r4 + "" || "").level(t5).log() : e4.log && e4.log.apply(e4, n4);
                 }
-                t4.log = function () {
+                t4.log = function() {
                   n3("log", arguments);
-                }, t4.warn = function () {
+                }, t4.warn = function() {
                   n3("warn", arguments);
-                }, t4.error = function () {
+                }, t4.error = function() {
                   n3("error", arguments);
                 };
               }(i2, e3, t3), i2.readyState && i2.readyState.state >= 3 || !i2.on)
@@ -5387,17 +5165,15 @@ var __publicField = (obj, key, value) => {
             };
           }
         }(e2, t2, r2), e2.plugin_version = Re, e2;
-      }({
-        init: function (e2) {
-          e2 && (va = (ma = e2)._, ma.logger && ma.logger.appendWriter(wa), ma.on && ma.on("sdkAfterInitPara", function () {
-            for (var e3 = 0; e3 < ya.length; e3++)
-              Sa(ya[e3]);
-            ya = null;
-          }), ma.on && ma.on("sdkInitAPI", function () {
-            ma.enableLocalLog = Oa, ma.disableLocalLog = ja;
-          }));
-        }
-      }, "ConsoleLogger");
+      }({ init: function(e2) {
+        e2 && (va = (ma = e2)._, ma.logger && ma.logger.appendWriter(wa), ma.on && ma.on("sdkAfterInitPara", function() {
+          for (var e3 = 0; e3 < ya.length; e3++)
+            Sa(ya[e3]);
+          ya = null;
+        }), ma.on && ma.on("sdkInitAPI", function() {
+          ma.enableLocalLog = Oa, ma.disableLocalLog = ja;
+        }));
+      } }, "ConsoleLogger");
       function wa(e2) {
         null !== ya ? ya.push(e2) : Sa(e2);
       }
@@ -5405,13 +5181,13 @@ var __publicField = (obj, key, value) => {
         try {
           if ("log" === e2.level && ka())
             return void Pa(e2);
-          if ("warn" === e2.level && function () {
+          if ("warn" === e2.level && function() {
             if (Na())
               return true;
             return ka() || va.isObject(ma.para.show_log) && "warn" === ma.para.show_log.level;
           }())
             return void Pa(e2);
-          if ("error" === e2.level && function () {
+          if ("error" === e2.level && function() {
             if (Na())
               return true;
             if (va.isObject(ma.para.show_log))
@@ -5426,7 +5202,7 @@ var __publicField = (obj, key, value) => {
         return !!Na() || (true === ma.para.show_log || va.isObject(ma.para.show_log) && "log" === ma.para.show_log.level);
       }
       function Pa(e2) {
-        var t2 = e2.content, r2 = va.isObject(t2[0]) ? va.formatJsonString(t2[0]) : t2[0], n2 = function (e3) {
+        var t2 = e2.content, r2 = va.isObject(t2[0]) ? va.formatJsonString(t2[0]) : t2[0], n2 = function(e3) {
           var t3 = "", r3 = "", n3 = ma.para.show_log;
           va.isObject(n3) && false === n3.show_brand || (t3 += e3.brand);
           va.isObject(n3) && false === n3.show_level || (t3 += (t3.length > 0 ? "-" : "") + e3.level);
@@ -5453,7 +5229,7 @@ var __publicField = (obj, key, value) => {
       t.modules = t.modules || {};
       for (var Ta = [ba, Br, tn, kn, jn, Jn, Wn, Qn, ni, oi, ui, _i, yi, Si, Ai, Ui, qi, Zi, na, ca, ha], Ia = [ba, Ur, Si, Ai, qi, Ui, tn, Wn, kn, Qn, Zi, na, ca, ha], Aa = 0; Aa < Ta.length; Aa++) {
         var Da = Ta[Aa];
-        t._.isString(Da.plugin_name) ? t.modules[Da.plugin_name] = Da : t._.isArray(Da.plugin_name) && t._.each(Da.plugin_name, function (e2) {
+        t._.isString(Da.plugin_name) ? t.modules[Da.plugin_name] = Da : t._.isArray(Da.plugin_name) && t._.each(Da.plugin_name, function(e2) {
           t.modules[e2] = Da;
         });
       }
@@ -5589,37 +5365,33 @@ var __publicField = (obj, key, value) => {
     return new PrintLogger(name, level);
   }
   var dayjs_min = { exports: {} };
-  (function (module, exports) {
-    !function (t, e) {
+  (function(module, exports) {
+    !function(t, e) {
       module.exports = e();
-    }(commonjsGlobal, function () {
-      var t = 1e3, e = 6e4, n = 36e5, r = "millisecond", i = "second", s = "minute", u = "hour", a = "day", o2 = "week", c = "month", f = "quarter", h = "year", d = "date", l = "Invalid Date", $ = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, y = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, M = {
-        name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function (t2) {
-          var e2 = ["th", "st", "nd", "rd"], n2 = t2 % 100;
-          return "[" + t2 + (e2[(n2 - 20) % 10] || e2[n2] || e2[0]) + "]";
-        }
-      }, m2 = function (t2, e2, n2) {
+    }(commonjsGlobal, function() {
+      var t = 1e3, e = 6e4, n = 36e5, r = "millisecond", i = "second", s = "minute", u = "hour", a = "day", o2 = "week", c = "month", f = "quarter", h = "year", d = "date", l = "Invalid Date", $ = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, y = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, M = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function(t2) {
+        var e2 = ["th", "st", "nd", "rd"], n2 = t2 % 100;
+        return "[" + t2 + (e2[(n2 - 20) % 10] || e2[n2] || e2[0]) + "]";
+      } }, m2 = function(t2, e2, n2) {
         var r2 = String(t2);
         return !r2 || r2.length >= e2 ? t2 : "" + Array(e2 + 1 - r2.length).join(n2) + t2;
-      }, v = {
-        s: m2, z: function (t2) {
-          var e2 = -t2.utcOffset(), n2 = Math.abs(e2), r2 = Math.floor(n2 / 60), i2 = n2 % 60;
-          return (e2 <= 0 ? "+" : "-") + m2(r2, 2, "0") + ":" + m2(i2, 2, "0");
-        }, m: function t2(e2, n2) {
-          if (e2.date() < n2.date())
-            return -t2(n2, e2);
-          var r2 = 12 * (n2.year() - e2.year()) + (n2.month() - e2.month()), i2 = e2.clone().add(r2, c), s2 = n2 - i2 < 0, u2 = e2.clone().add(r2 + (s2 ? -1 : 1), c);
-          return +(-(r2 + (n2 - i2) / (s2 ? i2 - u2 : u2 - i2)) || 0);
-        }, a: function (t2) {
-          return t2 < 0 ? Math.ceil(t2) || 0 : Math.floor(t2);
-        }, p: function (t2) {
-          return { M: c, y: h, w: o2, d: a, D: d, h: u, m: s, s: i, ms: r, Q: f }[t2] || String(t2 || "").toLowerCase().replace(/s$/, "");
-        }, u: function (t2) {
-          return void 0 === t2;
-        }
-      }, g = "en", D = {};
+      }, v = { s: m2, z: function(t2) {
+        var e2 = -t2.utcOffset(), n2 = Math.abs(e2), r2 = Math.floor(n2 / 60), i2 = n2 % 60;
+        return (e2 <= 0 ? "+" : "-") + m2(r2, 2, "0") + ":" + m2(i2, 2, "0");
+      }, m: function t2(e2, n2) {
+        if (e2.date() < n2.date())
+          return -t2(n2, e2);
+        var r2 = 12 * (n2.year() - e2.year()) + (n2.month() - e2.month()), i2 = e2.clone().add(r2, c), s2 = n2 - i2 < 0, u2 = e2.clone().add(r2 + (s2 ? -1 : 1), c);
+        return +(-(r2 + (n2 - i2) / (s2 ? i2 - u2 : u2 - i2)) || 0);
+      }, a: function(t2) {
+        return t2 < 0 ? Math.ceil(t2) || 0 : Math.floor(t2);
+      }, p: function(t2) {
+        return { M: c, y: h, w: o2, d: a, D: d, h: u, m: s, s: i, ms: r, Q: f }[t2] || String(t2 || "").toLowerCase().replace(/s$/, "");
+      }, u: function(t2) {
+        return void 0 === t2;
+      } }, g = "en", D = {};
       D[g] = M;
-      var p = "$isDayjsObject", S = function (t2) {
+      var p = "$isDayjsObject", S = function(t2) {
         return t2 instanceof _ || !(!t2 || !t2[p]);
       }, w = function t2(e2, n2, r2) {
         var i2;
@@ -5636,22 +5408,22 @@ var __publicField = (obj, key, value) => {
           D[a2] = e2, i2 = a2;
         }
         return !r2 && i2 && (g = i2), i2 || !r2 && g;
-      }, O = function (t2, e2) {
+      }, O = function(t2, e2) {
         if (S(t2))
           return t2.clone();
         var n2 = "object" == typeof e2 ? e2 : {};
         return n2.date = t2, n2.args = arguments, new _(n2);
       }, b = v;
-      b.l = w, b.i = S, b.w = function (t2, e2) {
+      b.l = w, b.i = S, b.w = function(t2, e2) {
         return O(t2, { locale: e2.$L, utc: e2.$u, x: e2.$x, $offset: e2.$offset });
       };
-      var _ = function () {
+      var _ = function() {
         function M2(t2) {
           this.$L = w(t2.locale, null, true), this.parse(t2), this.$x = this.$x || t2.x || {}, this[p] = true;
         }
         var m3 = M2.prototype;
-        return m3.parse = function (t2) {
-          this.$d = function (t3) {
+        return m3.parse = function(t2) {
+          this.$d = function(t3) {
             var e2 = t3.date, n2 = t3.utc;
             if (null === e2)
               return new Date(NaN);
@@ -5668,31 +5440,31 @@ var __publicField = (obj, key, value) => {
             }
             return new Date(e2);
           }(t2), this.init();
-        }, m3.init = function () {
+        }, m3.init = function() {
           var t2 = this.$d;
           this.$y = t2.getFullYear(), this.$M = t2.getMonth(), this.$D = t2.getDate(), this.$W = t2.getDay(), this.$H = t2.getHours(), this.$m = t2.getMinutes(), this.$s = t2.getSeconds(), this.$ms = t2.getMilliseconds();
-        }, m3.$utils = function () {
+        }, m3.$utils = function() {
           return b;
-        }, m3.isValid = function () {
+        }, m3.isValid = function() {
           return !(this.$d.toString() === l);
-        }, m3.isSame = function (t2, e2) {
+        }, m3.isSame = function(t2, e2) {
           var n2 = O(t2);
           return this.startOf(e2) <= n2 && n2 <= this.endOf(e2);
-        }, m3.isAfter = function (t2, e2) {
+        }, m3.isAfter = function(t2, e2) {
           return O(t2) < this.startOf(e2);
-        }, m3.isBefore = function (t2, e2) {
+        }, m3.isBefore = function(t2, e2) {
           return this.endOf(e2) < O(t2);
-        }, m3.$g = function (t2, e2, n2) {
+        }, m3.$g = function(t2, e2, n2) {
           return b.u(t2) ? this[e2] : this.set(n2, t2);
-        }, m3.unix = function () {
+        }, m3.unix = function() {
           return Math.floor(this.valueOf() / 1e3);
-        }, m3.valueOf = function () {
+        }, m3.valueOf = function() {
           return this.$d.getTime();
-        }, m3.startOf = function (t2, e2) {
-          var n2 = this, r2 = !!b.u(e2) || e2, f2 = b.p(t2), l2 = function (t3, e3) {
+        }, m3.startOf = function(t2, e2) {
+          var n2 = this, r2 = !!b.u(e2) || e2, f2 = b.p(t2), l2 = function(t3, e3) {
             var i2 = b.w(n2.$u ? Date.UTC(n2.$y, e3, t3) : new Date(n2.$y, e3, t3), n2);
             return r2 ? i2 : i2.endOf(a);
-          }, $2 = function (t3, e3) {
+          }, $2 = function(t3, e3) {
             return b.w(n2.toDate()[t3].apply(n2.toDate("s"), (r2 ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e3)), n2);
           }, y2 = this.$W, M3 = this.$M, m4 = this.$D, v2 = "set" + (this.$u ? "UTC" : "");
           switch (f2) {
@@ -5715,9 +5487,9 @@ var __publicField = (obj, key, value) => {
             default:
               return this.clone();
           }
-        }, m3.endOf = function (t2) {
+        }, m3.endOf = function(t2) {
           return this.startOf(t2, false);
-        }, m3.$set = function (t2, e2) {
+        }, m3.$set = function(t2, e2) {
           var n2, o3 = b.p(t2), f2 = "set" + (this.$u ? "UTC" : ""), l2 = (n2 = {}, n2[a] = f2 + "Date", n2[d] = f2 + "Date", n2[c] = f2 + "Month", n2[h] = f2 + "FullYear", n2[u] = f2 + "Hours", n2[s] = f2 + "Minutes", n2[i] = f2 + "Seconds", n2[r] = f2 + "Milliseconds", n2)[o3], $2 = o3 === a ? this.$D + (e2 - this.$W) : e2;
           if (o3 === c || o3 === h) {
             var y2 = this.clone().set(d, 1);
@@ -5725,14 +5497,14 @@ var __publicField = (obj, key, value) => {
           } else
             l2 && this.$d[l2]($2);
           return this.init(), this;
-        }, m3.set = function (t2, e2) {
+        }, m3.set = function(t2, e2) {
           return this.clone().$set(t2, e2);
-        }, m3.get = function (t2) {
+        }, m3.get = function(t2) {
           return this[b.p(t2)]();
-        }, m3.add = function (r2, f2) {
+        }, m3.add = function(r2, f2) {
           var d2, l2 = this;
           r2 = Number(r2);
-          var $2 = b.p(f2), y2 = function (t2) {
+          var $2 = b.p(f2), y2 = function(t2) {
             var e2 = O(l2);
             return b.w(e2.date(e2.date() + Math.round(t2 * r2)), l2);
           };
@@ -5746,22 +5518,22 @@ var __publicField = (obj, key, value) => {
             return y2(7);
           var M3 = (d2 = {}, d2[s] = e, d2[u] = n, d2[i] = t, d2)[$2] || 1, m4 = this.$d.getTime() + r2 * M3;
           return b.w(m4, this);
-        }, m3.subtract = function (t2, e2) {
+        }, m3.subtract = function(t2, e2) {
           return this.add(-1 * t2, e2);
-        }, m3.format = function (t2) {
+        }, m3.format = function(t2) {
           var e2 = this, n2 = this.$locale();
           if (!this.isValid())
             return n2.invalidDate || l;
-          var r2 = t2 || "YYYY-MM-DDTHH:mm:ssZ", i2 = b.z(this), s2 = this.$H, u2 = this.$m, a2 = this.$M, o3 = n2.weekdays, c2 = n2.months, f2 = n2.meridiem, h2 = function (t3, n3, i3, s3) {
+          var r2 = t2 || "YYYY-MM-DDTHH:mm:ssZ", i2 = b.z(this), s2 = this.$H, u2 = this.$m, a2 = this.$M, o3 = n2.weekdays, c2 = n2.months, f2 = n2.meridiem, h2 = function(t3, n3, i3, s3) {
             return t3 && (t3[n3] || t3(e2, r2)) || i3[n3].slice(0, s3);
-          }, d2 = function (t3) {
+          }, d2 = function(t3) {
             return b.s(s2 % 12 || 12, t3, "0");
-          }, $2 = f2 || function (t3, e3, n3) {
+          }, $2 = f2 || function(t3, e3, n3) {
             var r3 = t3 < 12 ? "AM" : "PM";
             return n3 ? r3.toLowerCase() : r3;
           };
-          return r2.replace(y, function (t3, r3) {
-            return r3 || function (t4) {
+          return r2.replace(y, function(t3, r3) {
+            return r3 || function(t4) {
               switch (t4) {
                 case "YY":
                   return String(e2.$y).slice(-2);
@@ -5815,10 +5587,10 @@ var __publicField = (obj, key, value) => {
               return null;
             }(t3) || i2.replace(":", "");
           });
-        }, m3.utcOffset = function () {
+        }, m3.utcOffset = function() {
           return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
-        }, m3.diff = function (r2, d2, l2) {
-          var $2, y2 = this, M3 = b.p(d2), m4 = O(r2), v2 = (m4.utcOffset() - this.utcOffset()) * e, g2 = this - m4, D2 = function () {
+        }, m3.diff = function(r2, d2, l2) {
+          var $2, y2 = this, M3 = b.p(d2), m4 = O(r2), v2 = (m4.utcOffset() - this.utcOffset()) * e, g2 = this - m4, D2 = function() {
             return b.m(y2, m4);
           };
           switch (M3) {
@@ -5850,34 +5622,34 @@ var __publicField = (obj, key, value) => {
               $2 = g2;
           }
           return l2 ? $2 : b.a($2);
-        }, m3.daysInMonth = function () {
+        }, m3.daysInMonth = function() {
           return this.endOf(c).$D;
-        }, m3.$locale = function () {
+        }, m3.$locale = function() {
           return D[this.$L];
-        }, m3.locale = function (t2, e2) {
+        }, m3.locale = function(t2, e2) {
           if (!t2)
             return this.$L;
           var n2 = this.clone(), r2 = w(t2, e2, true);
           return r2 && (n2.$L = r2), n2;
-        }, m3.clone = function () {
+        }, m3.clone = function() {
           return b.w(this.$d, this);
-        }, m3.toDate = function () {
+        }, m3.toDate = function() {
           return new Date(this.valueOf());
-        }, m3.toJSON = function () {
+        }, m3.toJSON = function() {
           return this.isValid() ? this.toISOString() : null;
-        }, m3.toISOString = function () {
+        }, m3.toISOString = function() {
           return this.$d.toISOString();
-        }, m3.toString = function () {
+        }, m3.toString = function() {
           return this.$d.toUTCString();
         }, M2;
       }(), k = _.prototype;
-      return O.prototype = k, [["$ms", r], ["$s", i], ["$m", s], ["$H", u], ["$W", a], ["$M", c], ["$y", h], ["$D", d]].forEach(function (t2) {
-        k[t2[1]] = function (e2) {
+      return O.prototype = k, [["$ms", r], ["$s", i], ["$m", s], ["$H", u], ["$W", a], ["$M", c], ["$y", h], ["$D", d]].forEach(function(t2) {
+        k[t2[1]] = function(e2) {
           return this.$g(e2, t2[0], t2[1]);
         };
-      }), O.extend = function (t2, e2) {
+      }), O.extend = function(t2, e2) {
         return t2.$i || (t2(e2, _, O), t2.$i = true), O;
-      }, O.locale = w, O.isDayjs = S, O.unix = function (t2) {
+      }, O.locale = w, O.isDayjs = S, O.unix = function(t2) {
         return O(1e3 * t2);
       }, O.en = D[g], O.Ls = D, O.p = {}, O;
     });
@@ -5984,7 +5756,7 @@ var __publicField = (obj, key, value) => {
       __publicField(this, "combineTimer");
       __publicField(this, "globalAttrs", {});
       let self2 = this;
-      this.throttleLog = throttle(1e3 * 10, function () {
+      this.throttleLog = throttle(1e3 * 10, function() {
         self2.log.apply(self2, arguments);
       }, { atBegin: true });
     }
@@ -6725,6 +6497,7 @@ var __publicField = (obj, key, value) => {
     rdpuser: "123",
     port: 9070,
     token: "123",
+    crf: 23,
     reConnectPromise: () => Promise.resolve(false),
     copyFile: true,
     grubgemy
