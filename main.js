@@ -6175,6 +6175,7 @@ var __publicField = (obj, key, value) => {
         productName,
         mouseThrottle
       } = configProps;
+      console.log("\u{1F680} ~ file: core.ts:74 ~ configProps:", configProps);
       let currentConfig = {
         physicalWidth,
         physicalHeight,
@@ -6471,7 +6472,20 @@ var __publicField = (obj, key, value) => {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(key) || defaultValue;
   }
+  const initWidth = 1600;
+  const initHeight = 900;
+  let timeOut;
   const rootDom = document.querySelector("body");
+  let observer;
+  if (rootDom) {
+    observer = new ResizeObserver(([entry]) => {
+      const target = entry == null ? void 0 : entry.target;
+      if (target) {
+        sizeChange(target);
+      }
+    });
+    observer.observe(rootDom);
+  }
   if (rootDom) {
     rootDom.clientWidth;
     rootDom.clientHeight;
@@ -6507,17 +6521,48 @@ var __publicField = (obj, key, value) => {
     var _a;
     console.log("---lifeng33333", rootDom == null ? void 0 : rootDom.clientWidth, rootDom == null ? void 0 : rootDom.clientHeight);
     (_a = player == null ? void 0 : player.changeWidthHeight) == null ? void 0 : _a.call(player, { width: 1600, height: 900 });
-    player == null ? void 0 : player.setDisplayLocation({ width: 1600, height: 900 });
-    const scaleX = ((rootDom == null ? void 0 : rootDom.clientWidth) || 1600) / 1600;
-    const scaleY = ((rootDom == null ? void 0 : rootDom.clientHeight) || 900) / 900;
-    const container = document.getElementById("zlink-component-container");
-    if (container) {
-      container.style.transform = `scaleX(${scaleX}) scaleY(${scaleY})`;
-      container.style.transformOrigin = "0 0";
-    }
+    sizeChange(rootDom);
   });
   player.on("change-resolution", (data) => {
     console.log("change-resolution =>>>", data);
   });
+  const sizeChange = (target) => {
+    clearTimeout(timeOut);
+    timeOut = setTimeout(() => {
+      var _a;
+      const targetWidth = target.clientWidth;
+      const targetHeight = target.clientHeight;
+      const container = document.getElementById("zlink-component-container");
+      let x2 = 0;
+      let y2 = 0;
+      const ratio = targetWidth / targetHeight;
+      const heightByMaxWidth = initWidth / ratio;
+      const widthByMaxHeight = initHeight * ratio;
+      if (heightByMaxWidth <= initHeight) {
+        x2 = initWidth;
+        y2 = heightByMaxWidth;
+      } else {
+        x2 = widthByMaxHeight;
+        y2 = initHeight;
+      }
+      x2 = Math.floor(x2);
+      y2 = Math.floor(y2);
+      (_a = player == null ? void 0 : player.setDisplayLocation) == null ? void 0 : _a.call(player, { width: x2, height: y2, x: 0, y: 0 });
+      let scale = 1;
+      if (container) {
+        if (targetWidth > initWidth && x2 < targetWidth) {
+          scale = targetWidth / x2;
+        } else if (targetWidth < initWidth && x2 < targetWidth) {
+          scale = x2 / targetWidth;
+        } else if (targetWidth < initWidth && x2 > targetWidth) {
+          scale = targetWidth / x2;
+        } else {
+          scale = 1;
+        }
+        container.style.transformOrigin = "0 0";
+        container.style.transform = `scaleX(${scale}) scaleY(${scale > 0 ? scale + 4 / 900 : scale - 4 / 900})`;
+      }
+    }, 200);
+  };
   window.player = player;
 })();
