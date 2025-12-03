@@ -6175,7 +6175,6 @@ var __publicField = (obj, key, value) => {
         productName,
         mouseThrottle
       } = configProps;
-      console.log("\u{1F680} ~ file: core.ts:74 ~ configProps:", configProps);
       let currentConfig = {
         physicalWidth,
         physicalHeight,
@@ -6473,7 +6472,6 @@ var __publicField = (obj, key, value) => {
     return urlParams.get(key) || defaultValue;
   }
   const initWidth = 1600;
-  const initHeight = 900;
   let timeOut;
   const rootDom = document.querySelector("body");
   let observer;
@@ -6519,7 +6517,6 @@ var __publicField = (obj, key, value) => {
   player.start();
   player.on("ready", (data) => {
     var _a;
-    console.log("---lifeng33333", rootDom == null ? void 0 : rootDom.clientWidth, rootDom == null ? void 0 : rootDom.clientHeight);
     (_a = player == null ? void 0 : player.changeWidthHeight) == null ? void 0 : _a.call(player, { width: 1600, height: 900 });
     sizeChange(rootDom);
   });
@@ -6532,22 +6529,24 @@ var __publicField = (obj, key, value) => {
       var _a;
       const targetWidth = target.clientWidth;
       const targetHeight = target.clientHeight;
+      const maxWidth = 1600;
+      const maxHeight = 900;
       const container = document.getElementById("zlink-component-container");
       let x2 = 0;
       let y2 = 0;
       const ratio = targetWidth / targetHeight;
-      const heightByMaxWidth = initWidth / ratio;
-      const widthByMaxHeight = initHeight * ratio;
-      if (heightByMaxWidth <= initHeight) {
-        x2 = initWidth;
+      const heightByMaxWidth = maxWidth / ratio;
+      const widthByMaxHeight = maxHeight * ratio;
+      if (heightByMaxWidth <= maxHeight) {
+        x2 = maxWidth;
         y2 = heightByMaxWidth;
       } else {
         x2 = widthByMaxHeight;
-        y2 = initHeight;
+        y2 = maxHeight;
       }
       x2 = Math.floor(x2);
       y2 = Math.floor(y2);
-      (_a = player == null ? void 0 : player.setDisplayLocation) == null ? void 0 : _a.call(player, { width: x2, height: y2, x: 0, y: 0 });
+      (_a = player == null ? void 0 : player.setDisplayLocation) == null ? void 0 : _a.call(player, { width: x2, height: y2, x: 0, y: 0, isDemo: true });
       let scale = 1;
       if (container) {
         if (targetWidth > initWidth && x2 < targetWidth) {
@@ -6560,7 +6559,7 @@ var __publicField = (obj, key, value) => {
           scale = 1;
         }
         container.style.transformOrigin = "0 0";
-        container.style.transform = `scaleX(${scale}) scaleY(${scale > 0 ? scale + 4 / 900 : scale - 4 / 900})`;
+        container.style.transform = `scale(${scale})`;
       }
     }, 200);
   };
