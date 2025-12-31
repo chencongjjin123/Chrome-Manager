@@ -6489,7 +6489,7 @@ var __publicField = (obj, key, value) => {
     rootDom.clientHeight;
   }
   const flag = `zlink-component`;
-  const ip = getUrlParam("ip", "112.126.68.183");
+  const ip = getUrlParam("ip", "47.95.43.31");
   const grubgemy = getUrlParam("grubgemy", "0_0_1600_900");
   const player = new ZlinkPlayer({
     env: "local",
